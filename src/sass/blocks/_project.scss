@@ -1,0 +1,68 @@
+
+.project {
+    // &__block {
+    //     margin-left: -15px;
+    //     margin-right: -15px;
+    // }
+    &__scale {
+        overflow: hidden;        
+    }
+    &__link {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__item {
+        position: relative;
+        padding-top: 100px;
+        height: 220px;
+        // border: solid 1px $border;
+        color: $black;
+        transition: opacity 0.35s ease 0s;
+       
+        &_school {
+            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/school.jpg') center (center / cover) no-repeat;
+           
+        }
+        &_univer {
+            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_board.jpg') center (center / cover) no-repeat;
+        }
+        &_child-house {
+            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_child.jpg') center (center / cover) no-repeat;
+        }
+        &_chess-day {
+            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_day.jpg') center (center / cover) no-repeat;
+        }
+        &:hover {
+            transform: scale(1.1);/* Увеличиваем масштаб */
+        }
+    
+    }
+ 
+    &__title {
+        color: $white;
+        font-size: 20px;
+        font-weight: 500;
+        // line-height: 31px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+// .gradient {
+// 	display: inline-block;
+// 	position: relative;    
+// 	line-height: 0;
+// }
+// .gradient:after {
+// 	content: "";
+// 	display: block;    
+// 	width: 100%;
+// 	height: 100%;    
+// 	position: absolute;
+// 	top: 0;      
+// 	left: 0;   
+// 	background: transparent;
+// 	background-image: linear-gradient(to left, #11de93, #0e7ad6);
+// 	opacity: 0.8;
+// }

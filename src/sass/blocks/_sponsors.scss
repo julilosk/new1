@@ -1,0 +1,19 @@
+.sponsors {
+    
+    &__block {
+        // width: 100%;
+        // background-color: #f9f9f9;
+        justify-content: space-around;
+        align-items: center;
+        // padding: 10px 0;
+        a {
+            display: block;
+        }
+        img {
+            // height: 100px;
+            max-width: 160px;           
+            object-fit: contain;
+        }
+
+    }
+}

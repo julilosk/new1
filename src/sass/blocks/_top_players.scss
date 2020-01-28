@@ -1,0 +1,86 @@
+.toplist {
+    // border: solid 0.7px $border; 
+    &__tabs {
+        display: flex;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    &__tab {
+        // margin-bottom: 0;
+        width: 33.333%;
+        padding: 7px 0;
+        cursor: pointer;
+        // border: solid 0.7px gray; 
+        &:hover {
+            box-shadow: 3px 3px 20px $main-color;
+            // border: none;
+        }
+        &_active {
+            background-color: $second-color;
+            color: #ffffff;
+            border: none;
+        }
+        h5 {
+            margin: 0 0;
+        }           
+    }   
+    
+        
+    &__content {
+        // width: 100%;
+        padding: 7px 7px 7px 15px;    
+        display: none;
+        // margin-top: 10px;
+        &_active {
+            display: block; 
+            background-color: $second-color; 
+            color: $light-color;              
+        }
+    }
+      
+    
+    &__other {
+        display: block;
+        padding: 10px 15px;
+        background-color: $second-color;
+        color: $light-color;   
+        font-size: 14px;      
+    }
+
+    // table {
+    //     // border: solid 1px $main-color;
+    //     width: 100%;       
+    // }
+
+    th {
+        vertical-align: top; 
+        text-align: center;
+        line-height: 1.1;
+        // background-color: $third-color;
+    }
+    .chessplayer {
+        height: 28px;
+        font-size: 14px;
+        border-bottom: 1px solid #fff;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover {
+            background-color: #868cad;
+            cursor: pointer;
+            color: #fff;            
+        }
+    }    
+
+.number {
+    text-align: left;
+    width: 10%;
+}
+.player {
+    width: 65%;
+}
+.rating {
+    text-align: center;
+    width: 25%;
+}
+}

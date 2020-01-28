@@ -1,0 +1,51 @@
+.button-wpapper{
+    // text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    &_mt {
+        margin-top: 0;
+    }
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // text-align: center;
+    width: 100%;
+    height: 3em;
+    padding: 0 15px;
+    // text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: $main-color;
+    // background-color: $gray2;
+    color: $gray2;
+    
+    overflow: hidden;
+    clear: both;
+    // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out,  box-shadow 0.2s ease-in-out; 
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+    &:hover {
+        text-decoration: none;
+        background-color: $third-color;
+        // border: none;
+        color: $white;
+        font-weight: 500;
+        // border: solid 0.5px $dark-color;
+        box-shadow: 3px 3px 10px $main-color;
+    }  
+    &raquo {
+        font-size: 16px;
+    }
+    span {
+        display: block;
+    }
+    .twoarrow {
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+

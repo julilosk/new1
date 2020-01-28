@@ -1,0 +1,44 @@
+.logos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-height: 112px;
+    padding-top: 15px;  
+    &__item {
+        width: 135px;
+        // background-color: $gray1;
+        // background-color: rgba(0,0,0,.025);
+        // border: 1px solid $border;
+        text-align: center;
+    }
+    &__scale {
+        display: inline-block; /* Строчно-блочный элемент */
+        overflow: hidden; /* Скрываем всё за контуром */       
+    }
+    &__scale img {
+        width: 63px;
+        height: 63px;
+        display: block;
+        margin: 0 auto;                      
+        margin-top: 8px;
+        transition: opacity 0.35s ease 0s;
+        &:hover {
+            transform: scale(1.1);/* Увеличиваем масштаб */
+        }
+    }       
+    &__title {
+        margin-top: 7px;
+        font-size: 12px;
+        text-align: center;   
+        margin-bottom: 5px; 
+        line-height: 1.2;       
+    }
+    &__link {
+        cursor: pointer;
+        color: $second-color;
+        &:hover {
+            text-decoration: none;
+            color: $accent-color;
+        }
+    }
+}

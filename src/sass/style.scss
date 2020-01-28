@@ -1,0 +1,82 @@
+@import'libs/bootstrap-reboot.min';
+@import'libs/bootstrap-grid.min';
+@import'libs/bootstrap.min';
+@import'libs/animate';
+@import'libs/font';
+@import 'base/variables';
+@import'base/arrow';
+
+.clear {
+    clear: both;
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:  $gray1;    
+    // background-color: $white;
+    color: $black;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.container {
+    // border: solid 0.5px black; /* убрать позже */
+    background-color: $white;   
+    max-width: 1270px;
+}
+// a {
+    // color: $black;
+
+// }
+.home-page-block {
+    padding-bottom: 40px;   
+    
+}
+y
+// a:hover {
+//     text-decoration: none;
+// }
+h1 {
+    font-size: 40px;
+    color: #000000;
+}
+h2 {
+    font-size: 36px;
+    margin: 0 auto;
+    text-align: center;
+    // margin-left: 15px;
+    margin-bottom: 10px;
+    color: $black;
+    font-weight: 600;
+}
+h5, h3 {
+    //margin-left: 15px;  
+    text-align: center;
+    color: $dark-color; 
+}
+h3 {
+    font-size: 25px;
+    margin-top: 8px;
+    // color: $main-color;
+}
+ul {
+    list-style-type: none; 
+}
+
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/news_card';
+@import 'blocks/button';
+@import 'blocks/logos';
+@import 'blocks/advts';
+@import 'blocks/tournaments';
+@import 'blocks/top_players';
+@import 'blocks/project';
+@import 'blocks/sponsors';
+@import 'blocks/footer';
+@import'blocks/pageup';
+
+
+
