@@ -4,7 +4,7 @@
 @import'libs/animate';
 @import'libs/font';
 @import 'base/variables';
-@import'base/arrow';
+
 
 .clear {
     clear: both;
@@ -25,20 +25,18 @@ body {
     background-color: $white;   
     max-width: 1270px;
 }
-// a {
-    // color: $black;
-
-// }
 .home-page-block {
-    padding-bottom: 40px;   
-    
+    padding-bottom: 40px; 
+    margin-left: -15px;
+    margin-right: -15px;
+  
 }
-y
-// a:hover {
-//     text-decoration: none;
-// }
+.without-margin {
+    margin-left: 0;
+    margin-right: 0;
+}
 h1 {
-    font-size: 40px;
+    font-size: 2.7rem;
     color: #000000;
 }
 h2 {

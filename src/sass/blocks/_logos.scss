@@ -1,9 +1,10 @@
 .logos {
+
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 112px;
-    padding-top: 15px;  
+    padding-top: 25px;  
     &__item {
         width: 135px;
         // background-color: $gray1;
@@ -13,14 +14,16 @@
     }
     &__scale {
         display: inline-block; /* Строчно-блочный элемент */
-        overflow: hidden; /* Скрываем всё за контуром */       
+        overflow: hidden; /* Скрываем всё за контуром */  
+        // border: 1px solid $border;    
+        // border-radius: 10px 10px 10px 10px; 
+        // border: none;
     }
     &__scale img {
         width: 63px;
         height: 63px;
         display: block;
         margin: 0 auto;                      
-        margin-top: 8px;
         transition: opacity 0.35s ease 0s;
         &:hover {
             transform: scale(1.1);/* Увеличиваем масштаб */
