@@ -11,6 +11,7 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="css/font.css"> -->
     <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
    
     <link rel="icon" href="img/logo1.png">
@@ -20,18 +21,19 @@
     <header id="up" class="top-header">
         <div class="container">
             <div class="top-header__block row">
-               
-                <div class="top-header__logo col-lg-2">
-                    <a href="#">  <img src="img/Logo1.png" alt="logo" class="top-header__img"> </a>
-                </div>
+                <div class="top-header__headline ">
                     
-                
-                <div class="top-header__title col-lg-8">
-                    <h1> Федерация шахмат Алтайского края</h1>
-                    <span class="top-header__subtitle">общественная организация</span>
+                    <div class="top-header__logo">
+                        <a href="#">  <img src="img/Logo1.png" alt="logo" class="top-header__img"> </a>
+                    </div>
+
+                    <div  class="top-header__title ">
+                        <h1> Федерация шахмат Алтайского края</h1>
+                        <span class="top-header__subtitle">общественная организация</span>
+                    </div>
                 </div>
             
-                <div class="top-header__icons col-lg-2">
+                <div class="top-header__icons ">
                     Здесь будут иконки
                     <!-- <a href=""> <img src="" alt="facebook" class="header_icon"></a> -->
                     <!-- <a href=""><img src="" alt="instagram" class="header_icon"></a> -->
@@ -57,7 +59,7 @@
                     </li>        
 
                     <li class="menu__item"><a href="">Турниры</a>
-                        <ul>
+                        <ul class="menu__sub-menu">
                             <li><a href="#">Календарь</a></li>
                             <li><a href="#">2020</a></li>
                             <li><a href="#">2019</a></li>
@@ -67,7 +69,7 @@
                     </li>
 
                     <li class="menu__item"><a href="">Федерация</a>
-                    <ul>
+                        <ul class="menu__sub-menu">
                             <li><a href="#">Президиум</a></li>
                             <li><a href="#">Тренерский совет</a></li>
                             <li><a href="#">Судейско-квалификационная комиссия</a></li>
@@ -88,7 +90,7 @@
                     </li>
 
                     <li class="menu__item"><a href="">Шахматисты</a>
-                        <ul>
+                        <ul class="menu__sub-menu">
                             <li><a href="#">Рейтинг-лист</a></li>
                             <li><a href="#">Сборные</a></li>
                             <li><a href="#">Молодежная сборная АК</a></li>
@@ -98,7 +100,7 @@
                     </li>
                     <li class="menu__item"><a href="">Трансляция</a></li>
                     <li class="menu__item"><a href="">Клубы и школы</a>
-                        <ul>
+                        <ul class="menu__sub-menu">
                             <li><a href="#"> Краевой шахматный клуб</a></li>
                                 <!-- Администрация АКШК
                                 Время работы
@@ -111,16 +113,15 @@
                     </li>
                     <li class="menu__item"><a href="">Фотоальбом</a></li>
                 </ul>
-                <div class="menu__search">
-                    <div class="search">
-                        <input type="search" name="search_field" value="" placeholder="поиск"/> <!--placeholder - подсказка для формы -->
-                        <input type="submit" class="btn" name="dfsg" value="найти"/> <!--кнопка с надписью "Найти"-->
-                    </div>
-                </div>
+                <form>
+                    <input type="text" placeholder="">
+                    <button type="submit"></button>
+                </form>
            </div>
        </div>
     </nav>
 
+    
     <section> 
         <div class="container">    
            
@@ -580,26 +581,27 @@
    
     <footer >
         <div class="container">
-            <div class="footer row">                
-                <ul class="menu">
-                    <li class="menu__item menu__item_footer"><a  href="#" class="menu__link"> Новости</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Турниры</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Федерация</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Шахматисты</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Трансляция</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Клубы и школы</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Фотоальбом</a></li>
-                    <li class="menu__item menu__item_footer"><a href="">Контакты</a></li>                  
+            <div class="footer">                
+                <ul class="footer__menu">
+                    <li class="footer__item"><a  href="#" class="menu__link"> Новости</a></li>
+                    <li class="footer__item"><a href="">Турниры</a></li>
+                    <li class="footer__item"><a href="">Федерация</a></li>
+                    <li class="footer__item"><a href="">Шахматисты</a></li>
+                    <li class="footer__item"><a href="">Трансляция</a></li>
+                    <li class="footer__item"><a href="">Клубы и школы</a></li>
+                    <li class="footer__item"><a href="">Фотоальбом</a></li>
+                    <li class="footer__item"><a href="">Контакты</a></li>                  
                 </ul>
     
-                <div class="footer__contact">
-                    <div class="footer__item">&#9993; info@chess22.ru</div> 
-                    <div class="footer__item">&#9990; 89050845777</div>
-                    <div class="footer__item"><a href="">Обратная свяь</a></div>
-                    <div class="footer__item">&copy; 2020 Федерация шахмат Алтайского края</div>
+                <div class="footer__contacts">
+                    <div class="footer__contact">&#9993; info@chess22.ru</div> 
+                    <div class="footer__contact">&#9990; 89050845777</div>
+                    <div class="footer__contact"><a href="">Обратная свяь</a></div>                   
                 </div>
                
-                <span>При использовании материалов ссылка на www.chess22.ru обязательна</span>
+                <div class="footer__title">
+                    &copy; 2020 Федерация шахмат Алтайского края. При использовании материалов ссылка на www.chess22.ru обязательна
+                </div>
             </div>       
         </div>
     </footer>
