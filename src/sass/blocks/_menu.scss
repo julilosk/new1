@@ -17,16 +17,14 @@ nav {
         display: flex;
         // justify-content: space-between;
         font-size: 16px;
-        // font-weight: 500;
+        font-weight: 500;
         margin-bottom: 0;
         a  {
             // color: $main-color;
-            // color: $white;
-            color: $gray2;
-
+            color: $white;
             &:hover {
-                // color: $third-color;
-                color: $accent-color;
+                color: $third-color;
+                // color: $accent-color;
                 text-decoration: none;
             }
         }
@@ -34,7 +32,7 @@ nav {
             display: block;
             position: relative;
             padding-right: 30px;
-            // border: solid 1px red;
+           
             ul {
                 display: none;
             }
@@ -44,15 +42,13 @@ nav {
             position: absolute;
             z-index: 100;
             transition: all 0.5s;
-            // margin: 0;
-            // padding-right: 18px;
             padding-left: 5px;
             background-color: $main-color;
             font-size: 14px;
-            // border: solid 2px red;
+           
             padding-top: 12px;
             li {
-                                // width: 100%;
+                // width: 100%;
                 white-space: nowrap;
                 // float: none;
                 // border: solid 2px red;
