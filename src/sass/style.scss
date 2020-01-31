@@ -16,17 +16,20 @@
 body {
     background-color:  $gray1;    
     // background-color: $white;
+    
     color: $black;
     font-size: 1rem;
     line-height: 1.5;
 }
 .container {
     // border: solid 0.5px black; /* убрать позже */
+    // background-color: #f2f2f2;
     background-color: $white;   
     max-width: 1270px;
 }
 .home-page-block {
-    padding-bottom: 40px; 
+    padding-top: 30px; 
+    padding-bottom: 25px;
     margin-left: -15px;
     margin-right: -15px;
   

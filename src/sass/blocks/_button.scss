@@ -1,9 +1,13 @@
 .button-wpapper{
+    // margin-left: -15px;
+    // margin-right: -15px;
     // text-align: center;
     // border: solid 2px green;
-    width: 100%;
+    // width: 100%;
     // margin-top: 5px;
     &_mt {
+        // margin-left: 0;
+        // margin-right: 0;
         margin-top: 0;
     }
 }
@@ -14,15 +18,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 3em;
-    padding: 12px 15px;   
+    height: 58px;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     background-color: $main-color;
     // background-color: #f7f7f7;
     // color: $gray2;
-    // color: $third-color;
+    // color: $accent-color;
     color: $white;
     overflow: hidden;
     clear: both;

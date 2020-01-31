@@ -1,5 +1,11 @@
+.tourn-top {
+    background-color: $light-gray;
+}
 .tourn {
-    // background-color: $light-color;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20); 
+    border-radius: 10px 10px 0px 0px;
+    border: solid 0.5px $border;
     // border: solid 2px red;
     width: 100%;
     // border: solid 1px $border;

@@ -14,5 +14,16 @@
             max-width: 160px;           
             object-fit: contain;
         }
+        // img:not(:hover) {
+        //     transition: 2s;
+        //     // filter: saturate(0%);
+        //     // filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+        //     // -webkit-filter: saturate(0%);
+        //     // filter:  contrast(.5);
+        //     }
+        // img:hover {
+        //     transition: 0.3s;
+          
+        // }
     }
 }
