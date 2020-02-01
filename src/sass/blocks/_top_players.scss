@@ -1,4 +1,5 @@
 .toplist {
+    margin-top: 15px;
     // border: solid 0.7px $border; 
     &__tabs {
         display: flex;
@@ -35,6 +36,9 @@
         // width: 100%;
         padding: 7px 7px 7px 15px;    
         display: none;
+        table {
+            width: 100%;
+        }
         &_active {
             display: block; 
             background-color: $second-color; 
@@ -67,7 +71,7 @@
         }
         &:hover {
             background-color: #868cad;
-            cursor: pointer;
+            // cursor: pointer;
             color: #fff;            
         }
     }

@@ -1,0 +1,73 @@
+// @media (max-width: 1200px) {
+
+// }
+
+
+@media (max-width: 991px) {
+    // .top-header__block {
+    //   padding-right: 15px;
+    // }
+    .top-header__title {
+        letter-spacing: 1.0px;
+        margin-right: auto;
+        line-height: 0.5;      
+        h1 {
+            font-size: 33px;
+        } 
+    }
+    form  {
+        display: none;
+    }
+    .social {
+        margin-left: auto;
+    }
+    .button-wpapper  {
+        display: none;
+    }    
+    .logos {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .top-header__title {
+        margin-left: 25px;
+        h1 {
+            font-size: 27px;
+        }   
+    }
+    .photo {
+        display: none;
+    }
+    .footer__menu {
+        display: none;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .top-header__title {
+        margin-left: 15px;
+        margin-bottom: 10px;
+        h1 {
+            font-size: 25px;
+        }
+        span {
+            display: none;
+        }   
+    }
+    .news__card {
+        height: 250px;
+    }
+    .news__img {
+        display: none;
+    }
+    .tourn__list {
+        height: 100%;
+        overflow-y: visible;
+    }
+    
+       
+}

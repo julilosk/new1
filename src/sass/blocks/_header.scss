@@ -1,6 +1,8 @@
 .top-header {
     .row {
         justify-content: space-between;
+        flex-wrap: wrap;
+       
     }    
     &__block {
         // background-color: $gray1;
@@ -21,40 +23,18 @@
         }
     }
     &__title {
-        margin: 0 15px;
+        color: $main-color;
+        letter-spacing: 1.5px;
+        margin-left: 55px;
+        line-height: 0.5;
+        span {
+            display: block;
+            text-align: right;
+            letter-spacing: 1.0px;
+        }
     }
 
-    &__social {
-        display: flex;      
-        justify-content: space-between; 
-        // align-items: center; 
-        margin-top: 10px;
-        // border: solid 2px red;
-        &-icon {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 100%;
-            border: 2px solid $main-color;
-            width: 30px;
-            height: 30px;
-            margin-left: 10px;
-            &:first-child {
-                margin-left: 0;
-            }
-           
-            img {
-                height: 17px;
-                display: block;
-            }
-        }
-       
-        &-icon:not(:hover) {
-            filter:  contrast(.5);
-        }
-        &-icon:hover {
-            transition: .5s;
-        }
+   
         
         // img:not(:hover) {
         //     // filter: saturate(0%);
@@ -71,7 +51,7 @@
     }
    
 
-}
+
 // background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5))/* , url('../../img/blue_chess.jpg') */; 
     // background-size: cover;
     // background-image: linear-gradient(white, $third-color);

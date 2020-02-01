@@ -1,0 +1,42 @@
+.social {
+    display: flex;      
+    justify-content: space-between; 
+    // align-items: center; 
+    margin: 15px 0;
+    // border: solid 2px red;
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        border: 2px solid $main-color;
+        width: 30px;
+        height: 30px;
+        margin-left: 25px;
+        transition: all 0.5s;
+        &:first-child {
+            margin-left: 0;
+        }
+        // &:hover {
+        //     border: 2px solid $gray;
+           
+        // }
+        img {
+            height: 17px;
+            display: block;
+        }
+    }
+    &__footer {
+        justify-content: center;
+        a {
+            background-color: $gray2;
+        }
+    }
+    // фильтр на иконки
+    // &__icon:not(:hover) {
+    //     filter:  contrast(.5);
+    // }
+    // &__icon:hover {
+    //     transition: .5s;
+    // }
+}
