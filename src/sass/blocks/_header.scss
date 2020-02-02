@@ -2,14 +2,12 @@
     .row {
         justify-content: space-between;
         flex-wrap: wrap;
-       
     }    
     &__block {
         // background-color: $gray1;
         padding: 5px 35px;
         // border: solid 2px green;
     }
-  
     &__headline {
         display: flex;
         // border: solid 2px red;
