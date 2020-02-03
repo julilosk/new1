@@ -1,12 +1,15 @@
 .top-header {
+    // background-color: $white;
     .row {
         justify-content: space-between;
         flex-wrap: wrap;
     }    
     &__block {
         // background-color: $gray1;
-        padding: 5px 35px;
+        // padding: 5px 35px;
         // border: solid 2px green;
+        padding-right: 15px;
+        padding-left: 15px;
     }
     &__headline {
         display: flex;

@@ -14,28 +14,23 @@
     padding: 0;
 }
 body {
-    background-color:  $gray1;    
-    // background-color: $white;
+    // background-color:  $gray1;    
+    background-color: $white;
     color: $black;
     font-size: 1rem;
     line-height: 1.5;
 }
-.container {
-    // border: solid 0.5px black; /* убрать позже */
+// .container {
+    // border: solid 0.5px black; /* убрать пgit озже */
     // background-color: #f2f2f2;
-    background-color: $white;   
-    max-width: 1270px;
-}
+    // background-color: $white;   
+    // max-width: 1270px;
+// }
 .home-page-block {
     padding-top: 30px; 
-    padding-bottom: 25px;
-    margin-left: -15px;
-    margin-right: -15px;
+    padding-bottom: 30px;    
 }
-.without-margin {
-    margin-left: 0;
-    margin-right: 0;
-}
+
 h1 {
     font-size: 2.7rem;
     // color: #000000;
@@ -45,7 +40,6 @@ h2 {
     font-size: 36px;
     margin: 0 auto;
     text-align: center;
-    // margin-left: 15px;
     margin-bottom: 10px;
     // color: $black;
     color: $main-color;
@@ -58,14 +52,12 @@ h2 {
     }
 }
 h5, h3 {
-    //margin-left: 15px;  
     text-align: center;
-    color: $dark-color; 
+    color: $main-color; 
 }
 h3 {
     font-size: 25px;
-    margin-top: 8px;
-    // color: $main-color;
+    margin-top: 8px;   
 }
 ul {
     list-style-type: none; 

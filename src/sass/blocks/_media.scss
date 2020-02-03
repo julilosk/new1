@@ -12,12 +12,48 @@
             } 
         }
     }
+    nav {
+        .menu {
+            &__block {
+                font-size: 14px;
+                font-weight: 500;
+                li {
+                    padding-right: 15px;
+                }
+            }
+        }
+    }
+    form {
+        max-width: 200px;
+    }
+    .logos {
+        justify-content: space-around;
+    }
+    .news {
+        &__title {
+            font-size: 14px;
+        }
+        &__text {
+            font-size: 13px;
+        }
+    }
+    .toplist {
+        h5 {
+            font-size: 16px;
+        }
+    }
+    th.number {
+        font-size: 14px;
+    }
 }
 @media (max-width: 991px) {
     // .top-header__block {
     //   padding-right: 15px;
     // }
     .top-header {
+        &__headline {
+            align-items: center;
+        }
         &__block {
             align-items: center;
             padding: 5px 15px;
@@ -28,8 +64,11 @@
             line-height: 0.5;   
             margin-left: 15px;   
             h1 {
-                font-size: 30px;
+                font-size: 25px;
             } 
+            span {
+                font-size: 12px;
+            }
         }
     }
     .social {
@@ -42,23 +81,57 @@
     }
     // .social {
     //     margin-left: auto;
-    // }
+    // }    
+    .news {
+        &__card {
+            margin-bottom: 15px;
+        }
+    }
+    .advt {
+        &__block {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+        &__item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            &:nth-child(2) {
+                border-right: none;
+            }
+        }
+    }
+    
     .button-wpapper  {
         display: none;
     }    
     .logos {
         justify-content: center;
     }
+    .project {
+        &__item {
+            margin-bottom: 15px;
+        }
+    }
+    .photo {
+        &__card { 
+            margin-bottom: 15px;
+        }
+    }
+    .top {
+        margin-top: 25px;
+    }
+    .sponsors {
+        img {
+            margin: 0 5px;
+        }
+    }
 }
 
 
 @media (max-width: 767px) {
     .top-header {
-        &__headline {
-            align-items: center;
-        }
         &__block {
-            padding-right: 55px;
+            padding-right: 40px;
         }
         &__title {
             margin-left: 0;
@@ -73,7 +146,6 @@
     }
    
     .social {
-
         &__icon {
             margin-left: 5px;
             width: 25px;
@@ -81,7 +153,6 @@
             margin-left: 5px;
             img {
                 height: 12px;
-               
             }
         }
     }
@@ -166,16 +237,7 @@
             display: none;
         }
     }
-    .advt {
-        &__block {
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-        &__item {
-            padding-top: 15px;
-            padding-bottom: 15px;
-        }
-    }
+  
     .photo {
         display: none;
     }
