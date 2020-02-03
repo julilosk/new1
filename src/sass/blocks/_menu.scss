@@ -48,7 +48,11 @@ nav {
 }
 .hamburger {
     display: none;
+    &_active {
+        display: none;
+    }
 }
+
 form {
     position: relative;
     max-width: 300px;

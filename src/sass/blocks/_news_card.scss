@@ -20,10 +20,21 @@
     &__img {
         display: block;
         height: 150px;
+        border-radius: 10px 10px 0px 0px;
         &_1 {
            background: url('../../img/projects/school.jpg') center (center / cover) no-repeat;
-           border-radius: 10px 10px 0px 0px;
+        //    border-radius: 10px 10px 0px 0px;
         }
+        &_2 {
+            background: url('../../img/1814.jpg') center (center / cover) no-repeat;
+        }
+        &_3 {
+            background: url('../../img/projects/school.jpg') center (center / cover) no-repeat;
+        }
+        &_4 {
+            background: url('../../img/projects/school.jpg') center (center / cover) no-repeat;
+        }
+
     }
     &__body{
         padding: 20px 20px 27px 20px;

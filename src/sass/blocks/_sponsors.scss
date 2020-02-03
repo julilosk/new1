@@ -1,6 +1,8 @@
 .sponsors {
     
     &__block {
+        display: flex;
+        flex-wrap: wrap;
         // width: 100%;
         // background-color: #f9f9f9;
         justify-content: space-around;
