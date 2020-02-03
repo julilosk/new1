@@ -3,10 +3,8 @@
 // }
 
 @media (max-width: 1199px) {
-    .top-header {
-       
-        &__title {
-              
+    .top-header {       
+        &__title {              
             h1 {
                 font-size: 30px;
             } 
@@ -46,10 +44,8 @@
         font-size: 14px;
     }
 }
+
 @media (max-width: 991px) {
-    // .top-header__block {
-    //   padding-right: 15px;
-    // }
     .top-header {
         &__headline {
             align-items: center;
@@ -68,6 +64,7 @@
             } 
             span {
                 font-size: 12px;
+                letter-spacing: normal;
             }
         }
     }
@@ -79,9 +76,6 @@
     form  {
         display: none;
     }
-    // .social {
-    //     margin-left: auto;
-    // }    
     .news {
         &__card {
             margin-bottom: 15px;
@@ -99,8 +93,7 @@
                 border-right: none;
             }
         }
-    }
-    
+    }    
     .button-wpapper  {
         display: none;
     }    
@@ -122,7 +115,7 @@
     }
     .sponsors {
         img {
-            margin: 0 5px;
+            margin: 5px 5px;
         }
     }
 }
@@ -130,44 +123,42 @@
 
 @media (max-width: 767px) {
     .top-header {
-        &__block {
-            padding-right: 40px;
+        &__logo {
+            img {
+                height: 60px;
+            }
         }
         &__title {
-            margin-left: 0;
+            margin-left: 10px;
             // margin-top: 10px;
             h1 {
-                font-size: 18px;
+                font-size: 20px;
             }   
             span {
                 font-size: 12px;
             }
         }
-    }
-   
-    .social {
-        &__icon {
-            margin-left: 5px;
-            width: 25px;
-            height: 25px;
-            margin-left: 5px;
-            img {
-                height: 12px;
+        .social {
+            &__icon {
+                margin-left: 5px;
+                width: 25px;
+                height: 25px;
+                margin-left: 5px;
+                img {
+                    height: 12px;
+                }
             }
         }
-    }
+    }   
     .menu {
         position: fixed;
         top: 0;
         left: -100%;
-        // flex-direction: column;
-        // justify-content: flex-start;
         &__block {
             position: fixed;
             flex-direction: column;
             justify-content: flex-start;
             top: 0;
-            // left: 0;
             left: -100%;
             width: 100%;
             height: 100vh;
@@ -187,7 +178,7 @@
         display: block;
         position: absolute;
         right: 15px;
-        top: 42px;
+        top: 35px;
         transform: translateY(-50%);
         width: 26px;
         height: 15px;
@@ -237,7 +228,41 @@
             display: none;
         }
     }
-  
+    .tourn {
+        &__logo {
+            img {
+                width: 55px;
+                height: 55px;            
+            }
+        }
+        &__block {
+            margin-left: 25px;
+            flex-direction: column;
+        }
+        &__day {
+            width: 100%;
+            height: 100%;
+            text-align-last: left;
+            box-shadow: none;
+            font-size: 16px;
+        }
+        &__title {
+            margin-top: 10px;
+        }
+    }
+    .advt {
+        &__item {
+            margin: 0 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-right: none;
+            border-bottom: solid 0.5px $border;
+            &:last-child {
+                border-bottom: none;
+            }
+        } 
+    }
+
     .photo {
         display: none;
     }
@@ -247,6 +272,19 @@
 }
 
 
+@media (max-width: 605px) {
+    .top-header { 
+        &__logo {
+            img {
+                height: 50px;
+            }
+        }  
+        &__block {
+            padding-right: 30px;
+        }
+    }   
+}
+
 @media (max-width: 575px) {
     .top-header{
         &__logo {
@@ -254,29 +292,30 @@
                 height: 40px;
             }
         }
-    
-        &__title {
-            // margin-left: 15px;
-            // margin-bottom: 10px;
+        &__title {           
             h1 {
-                font-size: 16px;
+                font-size: 22px;                
             }
             span {
-                display: none;
+                font-size: 11px;              
             }   
         }
-    }
-    .social {
-        &__icon {
-           
-            width: 20px;
-            height: 20px;
-           
-            img {
-                height: 8px;
-               
+        &__block {
+            padding-right: 50px;
+        }
+        .social {
+            &__icon {           
+                width: 20px;
+                height: 20px;
+                img {
+                    height: 8px;
+                }
             }
         }
+    }
+    
+    .hamburger {
+        top: 30px;
     }
     .news__card {
         height: 250px;
@@ -284,10 +323,95 @@
     .news__img {
         display: none;
     }
-    .tourn__list {
+    .tourn {
+        &__list {
         height: 100%;
         overflow-y: visible;
+        }     
+        &__day {
+            font-size: 14px;
+        }
+        &__item {
+            font-size: 14px;
+        }
     }
-    
-       
 }
+
+
+@media (max-width: 560px) {
+    .top-header {
+        .social {
+            &__icon {           
+                &:nth-child(1) {
+                    display: none;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 513px) {
+    .top-header{
+        &__title {            
+            h1 {
+                font-size: 20px;                
+            }           
+        }
+    }
+}
+
+@media (max-width: 479px) {
+    .top-header{
+        &__title {            
+            h1 {
+                font-size: 18px;                
+            }           
+        }
+    }
+}
+
+@media (max-width: 444px) {
+    .top-header{
+        &__title {            
+            h1 {
+                font-size: 16px;                
+            }           
+        }
+    }
+}
+
+@media (max-width: 410px) {
+    .top-header{
+        &__title {            
+            h1 {
+                font-size: 14px;                
+            }           
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .top-header{
+        .row {
+            flex-wrap: nowrap;
+        }
+        &__title {            
+            h1 {
+                font-size: 12px;                
+            }    
+            span {
+                font-size: 10px;     
+                text-align: left;         
+            }          
+        }
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+
+
+

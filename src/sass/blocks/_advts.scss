@@ -1,4 +1,4 @@
-.advt {
+    .advt {
     background-color: #ffffff;
     // border: solid 2px red;
     &__block {
@@ -19,7 +19,7 @@
             border-right: none;
         }
     }
-    &__data {
+    &__day {
         color: $gray;
         font-size: 14px;
         // letter-spacing: 1.5px;
