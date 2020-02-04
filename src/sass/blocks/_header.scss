@@ -5,22 +5,16 @@
         flex-wrap: wrap;
     }    
     &__block {
-        // background-color: $gray1;
-        // padding: 5px 35px;
-        // border: solid 2px green;
+       
         padding-right: 15px;
         padding-left: 15px;
     }
     &__headline {
         display: flex;
-        // border: solid 2px red;
     }
     &__logo {
-        // border: solid 2px red;
-        // margin: 0 15px;
         img {
             display: block;
-            // border: solid 2px red;
         }
     }
     &__title {
@@ -28,7 +22,11 @@
         letter-spacing: 1.5px;
         margin-left: 55px;
         line-height: 0.5;
+        h1 {
+            margin-right: -2px;
+        }
         span {
+            width: 100%;
             display: block;
             text-align: right;
             letter-spacing: 1.0px;

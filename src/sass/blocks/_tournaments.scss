@@ -1,5 +1,12 @@
+
 .tourn-top {
     background-color: $light-gray;
+    // &__tourn {
+    //     border: solid 2px red;
+    // }
+    // &__top {
+    //     border: solid 2px green;
+    // }   
 }
 .tourn {
     background-color: #ffffff;
@@ -9,7 +16,7 @@
     width: 100%;
     &__list {
         padding: 0 15px;
-        height: 349px;
+        height: 346px;
         overflow: hidden;
         overflow-y: scroll;
     }
@@ -22,9 +29,7 @@
         &:hover {
             background-color: rgba(179, 196, 255, 0.3);
             .tourn__day {
-                color: $third-color;
-                // display: flex;
-                // flex-direction: column;    
+                color: $third-color;   
             }
         }
         &:first-child {

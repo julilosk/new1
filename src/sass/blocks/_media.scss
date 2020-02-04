@@ -34,15 +34,7 @@
         &__text {
             font-size: 13px;
         }
-    }
-    .toplist {
-        h5 {
-            font-size: 16px;
-        }
-    }
-    th.number {
-        font-size: 14px;
-    }
+    }   
 }
 
 @media (max-width: 991px) {
@@ -112,6 +104,14 @@
     }
     .top {
         margin-top: 25px;
+    }
+    .toplist {
+        h5 {
+            font-size: 16px;
+        }
+    }
+    th.number {
+        font-size: 14px;
     }
     .sponsors {
         img {
@@ -211,22 +211,22 @@
     }
     .news {
         &__card {
-            border-radius: 0 0 0 0;
-            height: 250px;          
+            // border-radius: 0 0 0 0;
+            height: 490px;          
         }
         &__img {
-            border-radius: 0 0 0 0;
+            // border-radius: 0 0 0 0;
             height: 250px;
         }
-        &__img_2 {
-            display: none;
-        }
-        &__img_3 {
-            display: none;
-        }
-        &__img_4 {
-            display: none;
-        }
+        // &__img_2 {
+        //     display: none;
+        // }
+        // &__img_3 {
+        //     display: none;
+        // }
+        // &__img_4 {
+        //     display: none;
+        // }
     }
     .tourn {
         &__logo {
@@ -262,7 +262,6 @@
             }
         } 
     }
-
     .photo {
         display: none;
     }
@@ -317,12 +316,23 @@
     .hamburger {
         top: 30px;
     }
-    .news__card {
-        height: 250px;
+    .news {
+        &__card {
+            // border-radius: 0 0 0 0;
+            height: 390px;          
+        }
+        &__img {
+            // border-radius: 0 0 0 0;
+            height: 150px;
+        }
+        // &__img_3 {
+        //     display: none;
+        // }
+        // &__img_4 {
+        //     display: none;
+        // }
     }
-    .news__img {
-        display: none;
-    }
+   
     .tourn {
         &__list {
         height: 100%;
