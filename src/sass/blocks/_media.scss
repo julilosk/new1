@@ -65,6 +65,14 @@
             margin-left: 15px;
         }
     }
+    nav {
+        .menu {
+            &__block {
+                font-size: 13px;
+            }
+        }
+    }
+    
     form  {
         display: none;
     }
@@ -160,7 +168,7 @@
             justify-content: flex-start;
             top: 0;
             left: -100%;
-            width: 100%;
+            width: 50%;
             height: 100vh;
             padding: 20px 15px;
             background-color: $main-color;
@@ -195,7 +203,7 @@
         }
         &_active {
             span {
-                background-color: $white;
+                // background-color: $white;
                 margin-bottom: -2px;
                 &:nth-child(1) {
                     transform: translateY(10px) rotate(-45deg);
@@ -420,6 +428,18 @@
     }
     h2 {
         font-size: 25px;
+    }
+    .menu {
+        &__block {
+            width: 100%;
+        }
+    }
+    .hamburger {
+        &_active {
+            span {
+                background-color: $white;          
+            }
+        }
     }
 }
 
