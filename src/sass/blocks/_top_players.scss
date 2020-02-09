@@ -1,11 +1,21 @@
 .toplist {
     margin-top: 15px;
     height: 100%;
+    &_men {
+        margin-top: 0;
+    }
     // border: solid 0.7px $border; 
     &__tabs {
         display: flex;
         padding-left: 0;
         margin-bottom: 0;
+    }
+    &__box > div {
+        display: none;
+        box-sizing: border-box;
+    }
+    &__box > .active {
+        display: block;
     }
     &__tab {
         width: 33.333%;
@@ -37,6 +47,9 @@
         // width: 100%;
         padding: 7px 7px 7px 15px;    
         display: none;
+        &_men {
+            padding: 0 0;
+        }
         table {
             width: 100%;
         }
