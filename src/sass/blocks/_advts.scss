@@ -14,7 +14,7 @@
     }   
     &__item {
         font-size: 16px;
-        border-right: solid 1px $border;
+        border-right: solid 1px  $gray2;
         &:last-child {
             border-right: none;
         }

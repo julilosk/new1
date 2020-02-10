@@ -9,8 +9,9 @@ $(document).ready(function(){
         .addClass('toplist__tab_active').siblings().removeClass('toplist__tab_active')
         .closest('div.toplist').find('div.toplist__content').removeClass('toplist__content_active').eq($(this).index()).addClass('toplist__content_active');
     });
+  
 
-    
+
   // activate wow.js - подключение скрипта для анимации
   new WOW().init(); 
 
@@ -33,6 +34,7 @@ $(document).ready(function(){
 });
 
 
+
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu__block'),
   menuItem = document.querySelectorAll('.menu__item'),
@@ -49,4 +51,27 @@ window.addEventListener('DOMContentLoaded', () => {
           menu.classList.toggle('menu__block_active');
       });
   });
+});
+
+
+
+
+// tabs nuber two
+
+
+$('.toplist__tabs li').click(function(e) {
+  var a = $(this),
+      parent = a.parents('.tabs'),
+      nav = parent.children('.toplist__tabs').children('li'),
+      box = parent.children('.toplist__box').children('div');
+ 
+  if (!a.hasClass('active')) {
+    a.addClass('activ')
+      .siblings().removeClass('active');
+ 
+    box.eq(a.index()).addClass('active')
+      .siblings().removeClass('active');
+  }
+ 
+  e.preventDefault();
 });
