@@ -4,11 +4,11 @@ $(document).ready(function(){
   
   //tabs
     
-  $('ul.toplist__tabs').on('click', 'li:not(.toplist__tab_active)', function() {
-      $(this)
-        .addClass('toplist__tab_active').siblings().removeClass('toplist__tab_active')
-        .closest('div.toplist').find('div.toplist__content').removeClass('toplist__content_active').eq($(this).index()).addClass('toplist__content_active');
-    });
+  // $('ul.toplist__tabs').on('click', 'li:not(.toplist__tab_active)', function() {
+  //     $(this)
+  //       .addClass('toplist__tab_active').siblings().removeClass('toplist__tab_active')
+  //       .closest('div.toplist').find('div.toplist__content').removeClass('toplist__content_active').eq($(this).index()).addClass('toplist__content_active');
+  //   });
   
 
     //tabs calendar

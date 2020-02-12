@@ -11,7 +11,9 @@
         width: 10%;
         padding: 9px 0;
         margin-right: 5px;
-        background-color: $third-color;
+        // background-color: $third-color;
+        // background-color: #455ead;
+        background-color: $light-color;
         cursor: pointer;
         // transform: skewX(-25deg);
         // border: solid 0.7px gray; 
@@ -47,6 +49,7 @@
         border-collapse: collapse;
         margin-bottom: 30px;
         th {
+            
             vertical-align: top; 
             text-align: center;
             line-height: 1.1;
@@ -58,11 +61,18 @@
             // text-transform: uppercase;
             font-weight: 500;
             font-size: 16px;
+            &:first-child {
+                border-radius: 0px 0px 0px 5px;
+            }
+            &:last-child {
+                border-radius: 0px 0px 5px 0px;
+            }
         }  
     }
     &__tourn {
         // height: 28px;
         font-size: 14px;
+       
         // border-bottom: 0.5px solid $gray2;
         color: $main-color;
         // background-color: $light-color;

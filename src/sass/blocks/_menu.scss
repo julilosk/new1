@@ -1,6 +1,6 @@
 nav {
     background-color: $main-color;
-    box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
+    // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
     .row {
         justify-content: space-between;
         align-items: center;
@@ -13,7 +13,7 @@ nav {
             display: flex;
             // flex-wrap: wrap;
             font-size: 14px;
-            font-weight: 500;
+            // font-weight: 500;
             margin-bottom: 0;
             a  {
                 text-transform: uppercase;
@@ -94,8 +94,8 @@ button {
 
 .submenu {
     // background-color: #455ead;
-    background-color: $gray2;
-    box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
+    // background-color: #f8f8f8;
+    // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
 //   background-color: rgba(47, 64, 118, 0.7);
     // background-color: $second-color;
     .row {
@@ -108,7 +108,7 @@ button {
         &__block {
             display: flex;
             // flex-wrap: wrap;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 500;
             margin-bottom: 0;
             a  {
