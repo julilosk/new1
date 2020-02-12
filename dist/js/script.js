@@ -11,6 +11,16 @@ $(document).ready(function(){
     });
   
 
+    //tabs calendar
+    
+    $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
+      $(this)
+        .addClass('calendar__tab_active').siblings().removeClass('calendar__tab_active')
+        .closest('div.calendar').find('div.calendar__content').removeClass('calendar__content_active').eq($(this).index()).addClass('calendar__content_active');
+    });
+  
+  
+
 
   // activate wow.js - подключение скрипта для анимации
   new WOW().init(); 
@@ -29,6 +39,11 @@ $(document).ready(function(){
     var _href = $(this).attr("href");
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;
+  });
+
+
+  $("#add").on("click", function() {
+    $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo("section");
   });
 
 });
