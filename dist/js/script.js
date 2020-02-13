@@ -4,11 +4,11 @@ $(document).ready(function(){
   
   //tabs
     
-  $('ul.toplist__tabs').on('click', 'li:not(.toplist__tab_active)', function() {
-      $(this)
-        .addClass('toplist__tab_active').siblings().removeClass('toplist__tab_active')
-        .closest('div.toplist').find('div.toplist__content').removeClass('toplist__content_active').eq($(this).index()).addClass('toplist__content_active');
-    });
+  // $('ul.toplist__tabs').on('click', 'li:not(.toplist__tab_active)', function() {
+  //     $(this)
+  //       .addClass('toplist__tab_active').siblings().removeClass('toplist__tab_active')
+  //       .closest('div.toplist').find('div.toplist__content').removeClass('toplist__content_active').eq($(this).index()).addClass('toplist__content_active');
+  //   });
   
 
     //tabs calendar
@@ -74,14 +74,32 @@ window.addEventListener('DOMContentLoaded', () => {
 // tabs nuber two
 
 
-$('.toplist__tabs li').click(function(e) {
+// $('.toplist__tabs li').click(function(e) {
+//   var a = $(this),
+//       parent = a.parents('.tabs'),
+//       nav = parent.children('.toplist__tabs').children('li'),
+//       box = parent.children('.toplist__box').children('div');
+ 
+//   if (!a.hasClass('active')) {
+//     a.addClass('activ')
+//       .siblings().removeClass('active');
+ 
+//     box.eq(a.index()).addClass('active')
+//       .siblings().removeClass('active');
+//   }
+ 
+//   e.preventDefault();
+// });
+
+
+$('.tabs__nav li').click(function(e) {
   var a = $(this),
       parent = a.parents('.tabs'),
-      nav = parent.children('.toplist__tabs').children('li'),
-      box = parent.children('.toplist__box').children('div');
+      nav = parent.children('.tabs__nav').children('li'),
+      box = parent.children('.tabs__box').children('div');
  
   if (!a.hasClass('active')) {
-    a.addClass('activ')
+    a.addClass('active')
       .siblings().removeClass('active');
  
     box.eq(a.index()).addClass('active')

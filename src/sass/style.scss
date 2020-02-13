@@ -76,15 +76,15 @@ ul {
     list-style-type: none; 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background: #f3eaea;
     width: 14px;
   }
-  ::-webkit-scrollbar-track{
+  ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 10px rgba(12, 12, 12, 0.4);
     border-radius: 10px;
   }
-  ::-webkit-scrollbar-thumb{
+  ::-webkit-scrollbar-thumb {
     background: linear-gradient(125deg, $third-color, $main-color);
     border-radius: 12px;
   }
@@ -97,7 +97,6 @@ ul {
 @import 'blocks/logos';
 @import 'blocks/advts';
 @import 'blocks/tournaments';
-@import 'blocks/top_players';
 @import 'blocks/project';
 @import 'blocks/sponsors';
 @import'blocks/photo';
@@ -105,7 +104,6 @@ ul {
 @import'blocks/pageup';
 @import'blocks/media';
 @import 'blocks/tab';
-
 @import 'blocks/calendar';
 
 
