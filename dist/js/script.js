@@ -1,6 +1,12 @@
 
 $(document).ready(function(){
 
+  var url=document.location.href;
+  $.each($(".menu__block a"),function(){
+    if(this.href==url){$(this).addClass('activelink');
+  };
+});
+
 
   //tabs calendar
   

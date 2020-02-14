@@ -37,8 +37,8 @@ section {
     // max-width: 1270px;
 // }
 .home-page-block {
-    padding-top: 30px; 
-    padding-bottom: 30px;    
+    padding-top: 25px; 
+    padding-bottom: 25px;    
 }
 
 h1 {
@@ -64,6 +64,9 @@ h2 {
 h5, h3 {
     text-align: center;
     color: $main-color; 
+}
+h6 {
+    text-align: center;
 }
 h3 {
     font-size: 25px;
@@ -92,6 +95,7 @@ ul {
 @import 'blocks/header';
 @import 'blocks/socialicons';
 @import 'blocks/menu';
+@import 'blocks/submenu';
 @import 'blocks/news_card';
 @import 'blocks/button';
 @import 'blocks/logos';

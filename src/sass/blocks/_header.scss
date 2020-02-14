@@ -1,12 +1,18 @@
 .top-header {
-    flex: 0 0 auto;
+    padding: 10px 0;
+    flex: 0 0 auto;   
+    // background: linear-gradient(to right, #1a3068, #141f31);
     // background-color: $white;
+
+    // background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url('../../img/blue_chess.jpg'); 
+    // background-size: cover;
+
+    // background: linear-gradient(to right, white, $second-color);
     .row {
         justify-content: space-between;
         flex-wrap: wrap;
     }    
     &__block {
-       
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -31,6 +37,7 @@
             display: block;
             text-align: right;
             letter-spacing: 1.0px;
+            // color: $gray;
         }
     }
 
