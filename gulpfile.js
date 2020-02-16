@@ -39,6 +39,40 @@ gulp.task('html', function () {
         .pipe(gulp.dest("dist/"));
 });
 
+
+
+
+
+// для перевода html из папок
+gulp.task('watch', function() {
+    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
+    gulp.watch("src/**/*.html").on('change', gulp.parallel('html'));
+});
+
+gulp.task('html', function () {
+    return gulp.src("src/**/*.html")
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest("dist/"));
+});
+
+
+// для перевода html из папок/folders
+gulp.task('watch', function() {
+    gulp.watch("src/sass/**/*.+(scss|sass|css)", gulp.parallel('styles'));
+    gulp.watch("src/**/**/*.html").on('change', gulp.parallel('html'));
+});
+
+gulp.task('html', function () {
+    return gulp.src("src/**/**/*.html")
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest("dist/"));
+});
+
+
+
+
+
+
 gulp.task('scripts', function () {
     return gulp.src("src/js/**/*.js")
         .pipe(gulp.dest("dist/js"));

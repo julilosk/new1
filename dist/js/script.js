@@ -1,10 +1,26 @@
 
 $(document).ready(function(){
 
-  var url=document.location.href;
-  $.each($(".menu__block a"),function(){
-    if(this.href==url){$(this).addClass('activelink');
-  };
+//   var url=document.location.href;
+//   $.each($(".menu__block a"),function(){
+//     if(this.href==url){$(this).addClass('activelink');
+//   };
+// });
+
+
+
+// $('.menu__block a').each(function() {
+//   if ( (window.location.pathname.indexOf( $(this).attr('href') ) ) > -1) {
+//     $(this).addClass('activelink');
+   
+//   }
+// });
+
+
+document.querySelectorAll('.menu li a').forEach(function(el) {
+  if ( window.location.pathname.indexOf(el.getAttribute('href')) > -1 ) {
+      el.classList.add('active');
+  }
 });
 
 
@@ -21,8 +37,7 @@ $(document).ready(function(){
   new WOW().init(); 
 
 
-  // smooth scroll and pageup
-    
+  // smooth scroll and pageup    
   $(window).scroll(function(){
     if($(this).scrollTop() > 1100){
         $('.pageup').fadeIn();
