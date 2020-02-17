@@ -24,6 +24,7 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
 });
 
 
+
   //tabs calendar
   
   $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
@@ -32,6 +33,18 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
       .closest('div.calendar').find('div.calendar__content').removeClass('calendar__content_active').eq($(this).index()).addClass('calendar__content_active');
   });
   
+
+
+ //tabs sidebar
+  
+  $('ul.structure__tabs').on('click', 'li:not(.structure__tab_active)', function() {
+    $(this)
+      .addClass('structure__tab_active').siblings().removeClass('structure__tab_active')
+      .closest('div.structure').find('div.structure__content').removeClass('structure__content_active').eq($(this).index()).addClass('structure__content_active');
+  });
+  
+
+
 
   // activate wow.js - подключение скрипта для анимации
   new WOW().init(); 
