@@ -1,24 +1,26 @@
 nav {
-    background-color: $main-color;
-    // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
+    // background-color: $main-color;
+    box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
     .row {
         justify-content: space-between;
         align-items: center;
     }
     .menu {
-        background-color: $main-color;
+        // background-color: $main-color;
         // background-color: $gray2;
         padding: 12px 15px;
         &__block {
             display: flex;
             // flex-wrap: wrap;
             font-size: 14px;
-            font-weight: 500;
+            font-weight: 700;
             margin-bottom: 0;
             a  {
                 text-decoration: none;
                 text-transform: uppercase;
-                color: $white;
+                // color: $white;
+                color: $main-color;
+               
                 // &:hover {
                 //     color: $accent-color;
                 //     text-decoration: none;
