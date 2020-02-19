@@ -44,6 +44,15 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
   });
   
 
+ //tabs news-all
+  
+  $('ul.news-all__tabs').on('click', 'li:not(.news-all__tab_active)', function() {
+    $(this)
+      .addClass('news-all__tab_active').siblings().removeClass('news-all__tab_active')
+      .closest('div.news-all').find('div.news-all__content').removeClass('news-all__content_active').eq($(this).index()).addClass('news-all__content_active');
+  });
+  
+
 
 
   // activate wow.js - подключение скрипта для анимации
@@ -63,6 +72,7 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
     return false;
   });
 
+  
 
   $("#add").on("click", function() {
     $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo("section");
@@ -88,6 +98,8 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
+
 
 
 // tabs nuber two

@@ -44,6 +44,15 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
   });
   
 
+ //tabs news-all
+  
+  $('ul.news-all__tabs').on('click', 'li:not(.news-all__tab_active)', function() {
+    $(this)
+      .addClass('news-all__tab_active').siblings().removeClass('news-all__tab_active')
+      .closest('div.news-all').find('div.news-all__content').removeClass('news-all__content_active').eq($(this).index()).addClass('news-all__content_active');
+  });
+  
+
 
 
   // activate wow.js - подключение скрипта для анимации
