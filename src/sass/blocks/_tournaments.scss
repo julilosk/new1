@@ -11,8 +11,9 @@
 .tourn {
     background-color: #ffffff;
     // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20); 
-    border-radius: 10px 10px 0px 0px;
-    border: solid 0.5px $border;
+    // border-radius: 10px 10px 0px 0px;
+    // border: solid 0.5px $border;
+
     width: 100%;
     &__list {
         padding: 0 15px;
@@ -24,8 +25,8 @@
         display: flex;
         align-items: center;
         border-top: 1px solid $border;
-        font-size: 16px;
-        padding: 10px 15px;
+        font-size: 18px;
+        padding: 15px 15px;
         &:hover {
             background-color: rgba(179, 196, 255, 0.3);
             .tourn__day {
@@ -46,8 +47,8 @@
         display: block;      
         img {
             display: block;
-            width: 45px;
-            height: 45px;            
+            width: 75px;
+            height: 75px;            
         }
     }
     &__block {
@@ -55,12 +56,13 @@
         align-items: center;
     }
     &__day {
-        width: 70px;
-        height: 48px;
-        margin: 0 5px;
+        // width: 80px;
+        // height: 55px;
+        padding: 10px 15px;
+        // margin: 0 15px;
         text-align: center;
         color: $gray;  
-        font-size: 14px;
+        font-size: 16px;
         // letter-spacing: 1.5px;
         // font-weight: 500;
         line-height: 1.18; 
@@ -69,20 +71,24 @@
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.20);
     }
     &__link {
+        margin-left: 10px;
+        // margin-right: 5px;
         display: block;
         &:hover {
             text-decoration: none;
         }
     }
     &__title {
-        color: $black;
+        color: $main-color;
         font-weight: 500;
     }
     &__adress {
+        margin-top: 10px;
         color: $gray;
     }
     &__record {
         color: $third-color;
+        margin-top: 10px;
         &:hover {
             // color: $black;
             text-decoration: none;

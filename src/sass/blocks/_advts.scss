@@ -1,4 +1,4 @@
-    .advt {
+.advt {
     background-color: #ffffff;
     // border: solid 2px red;
     &__block {
@@ -8,8 +8,8 @@
         justify-content: space-between;
         flex-wrap: wrap;
         background-color:  rgba(179, 196, 255, 0.3);
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         // min-height: 80px;        
     }   
     &__item {
@@ -21,16 +21,17 @@
     }
     &__data {
         color: $gray;
-        font-size: 16px;
+        font-size: 14px;
         // letter-spacing: 1.5px;
-        // font-weight: 500;
+        font-weight: 500;
     }
     &__descr {
-        margin-top: 10px;
+        margin-top: 20px;
         display: block;
         color: $black;
         &:hover {
-            color: $accent-color;
+            color: $third-color;
+            text-decoration: none;
         }
     }
 }
