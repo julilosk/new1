@@ -1,11 +1,7 @@
 
 .submenu {
-        // background-color: #92a1cb; /* color submenu fide */
-        // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
-        //   background-color: rgba(47, 64, 118, 0.7);
-        // background-color: $second-color;
+        margin-top: 15px;
         background: rgba(179, 196, 255, 0.3);
-        // background-color: #c9d5ec; 
         max-height: 80px;
         min-height: 40px;
         width: 100%;
@@ -13,17 +9,20 @@
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        &__block {
-            padding: 0 15px;
-        }
+        margin-bottom: 20px;
+        // &__block {
+        //     margin: 0 auto; 
+        // }
         &__link {
             display: inline-block;
-            padding: 0 25px;
-            color: #fff;
+            padding: 0 35px;
+            color: $white;
             letter-spacing: .01em;
             position: relative;
-            // color: $main-color;
-            color: $gray;
+            color: $main-color;
+            // color: $gray;
+            text-transform: uppercase;
+            font-weight: 500;
             &:after {
                 content: "";
                 width: 1px;
@@ -34,7 +33,7 @@
                 top: 0;                
             }            
             &:first-child {
-                padding-left: 0;
+                padding-left: 15px;
             }
             &:last-child {
                 padding-right: 0;
