@@ -81,7 +81,12 @@ img {
     vertical-align: middle;
     border-style: none;
 }
-
+.indent-bottom {
+    margin-bottom: 30px;
+}
+.indent-top {
+    margin-top: 40px;
+}
 ::-webkit-scrollbar {
     background: #f3eaea;
     width: 8px;
@@ -115,6 +120,7 @@ img {
 @import 'blocks/calendar';
 @import'blocks/sidebar';
 @import'blocks/news-advts-all';
+@import'blocks/team';
 
 
 
