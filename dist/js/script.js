@@ -1,13 +1,18 @@
 
 $(document).ready(function(){
 
-//   var url=document.location.href;
-//   $.each($(".menu__block a"),function(){
-//     if(this.href==url){$(this).addClass('activelink');
-//   };
-// });
+  var url=document.location.href;
+  $.each($(".menu__block a"),function(){
+    if(this.href==url){$(this).addClass('activelink');
+  };
+});
 
 
+var url=document.location.href;
+$.each($(".submenu__block a"),function(){
+  if(this.href==url){$(this).addClass('activelink2');
+};
+});
 
 // $('.menu__block a').each(function() {
 //   if ( (window.location.pathname.indexOf( $(this).attr('href') ) ) > -1) {
@@ -17,26 +22,24 @@ $(document).ready(function(){
 // });
 
 
-document.querySelectorAll('.menu li a').forEach(function(el) {
-  if ( window.location.pathname.indexOf(el.getAttribute('href')) > -1 ) {
-      el.classList.add('active');
-  }
+// document.querySelectorAll('.menu li a').forEach(function(el) {
+//   if ( window.location.pathname.indexOf(el.getAttribute('href')) > -1 ) {
+//       el.classList.add('active');
+//   }
+// });
+
+
+
+//tabs calendar
+$('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
+  $(this)
+    .addClass('calendar__tab_active').siblings().removeClass('calendar__tab_active')
+    .closest('div.calendar').find('div.calendar__content').removeClass('calendar__content_active').eq($(this).index()).addClass('calendar__content_active');
 });
-
-
-
-  //tabs calendar
-  
-  $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
-    $(this)
-      .addClass('calendar__tab_active').siblings().removeClass('calendar__tab_active')
-      .closest('div.calendar').find('div.calendar__content').removeClass('calendar__content_active').eq($(this).index()).addClass('calendar__content_active');
-  });
   
 
 
- //tabs sidebar
-  
+//tabs sidebar  
   $('ul.structure__tabs').on('click', 'li:not(.structure__tab_active)', function() {
     $(this)
       .addClass('structure__tab_active').siblings().removeClass('structure__tab_active')
@@ -44,8 +47,7 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
   });
   
 
- //tabs news-all
-  
+ //tabs news-all  
   $('ul.news-all__tabs').on('click', 'li:not(.news-all__tab_active)', function() {
     $(this)
       .addClass('news-all__tab_active').siblings().removeClass('news-all__tab_active')
@@ -66,6 +68,7 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
     } else $('.pageup').fadeOut();
   });
 
+
   $("a[href=#up]").click(function(){
     var _href = $(this).attr("href");
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
@@ -74,9 +77,9 @@ document.querySelectorAll('.menu li a').forEach(function(el) {
 
   
 
-  $("#add").on("click", function() {
-    $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo("section");
-  });
+$("#add").on("click", function() {
+  $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo("section");
+});
 
 });
 
@@ -103,7 +106,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 // tabs nuber two
-
 $('.tabs__nav li').click(function(e) {
   var a = $(this),
       parent = a.parents('.tabs'),
