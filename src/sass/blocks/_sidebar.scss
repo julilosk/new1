@@ -5,9 +5,12 @@
     background-color: $light-gray;
     box-shadow: 0 3px 21px rgba(0, 0, 0, 0.18);
     // border: 1px solid red;
+    h4 {
+        margin-bottom: 30px;
+    }
     &__tabs {
         // height: 100%;
-        width: 32%;
+        width: 33%;
         display: flex;
         flex-direction: column;
         // justify-content: center;
@@ -75,6 +78,8 @@
             border-bottom: none;
         }
     }
+
+   
     &__post {
         font-size: 18px;
         // font-weight: 400;
@@ -92,8 +97,42 @@
         object-fit: cover;
         float: left;
     }
+
+  
     &__email {
         margin-top: 20px;
         color: $gray;
     }
+
+
+
+    // documents page
+    &__document {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        color: $main-color;
+        border-bottom: 1px solid #c9d5ec; 
+        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);   
+        &:hover {
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20); 
+            text-decoration: none;
+        }
+        &:first-child {
+            padding-top: 0;
+        }      
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__doc {
+        width: 100%;
+        width: 60px;
+        padding-right: 25px;
+        height: 60px;
+        // object-fit: cover;
+        float: left;
+    }
+
 }

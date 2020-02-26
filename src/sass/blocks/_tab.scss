@@ -40,18 +40,40 @@
             }
         }
        .type {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             width: 33.3%;
             margin-right: 0px;
+            // margin: 0 auto;
             color: $gray;
             border-radius: 0px 0px 0px 0px;
-            padding: 5px 0;       
+            // padding: 10px 0;       
             // background-color: rgba(179, 196, 255, 0.4);
             background-color: $second-color;
             cursor: pointer;
             // border: solid 0.7px gray; 
-            transition: background-color 0.2s ease-in-out; 
+            transition: background-color 0.2s ease-in-out;            
             &:hover {
                 color: $white;
+                svg  #board, #clock, #clock1, #flash, #board1, #clock2, #clock3, #flash1 {
+                    fill: $white;
+                }
+
+            }
+            // img {
+            //     display: block;
+            //     height: 20px;
+            //     margin-right: 7px;
+            // }
+            svg {
+                display: block;
+                height: 17px;
+                width: 17px;
+                margin-right: 8px;
+            }
+            h6 {
+                margin-bottom: 0;
             }
         } 
         &__box > div {
@@ -74,6 +96,9 @@
             color: $white;
             h5 {
                 color: $white;
+            }           
+            svg  #board, #clock, #clock1, #flash, #board1, #clock2, #clock3, #flash1 {
+                fill: $white;
             }
         }  
         @keyframes fade {
@@ -135,4 +160,11 @@
             color: $accent-color;
         }   
     }
+    svg:hover #clock,
+svg:hover #clock1 { 
+  fill: #111;
 }
+}
+
+
+

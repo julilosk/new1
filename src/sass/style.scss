@@ -58,6 +58,9 @@ h2 {
         }
     }
 }
+h4 {
+    color: $main-color; 
+}
 h5, h3 {
     text-align: center;
     color: $main-color; 
@@ -121,6 +124,8 @@ img {
 @import'blocks/sidebar';
 @import'blocks/news-advts-all';
 @import'blocks/team';
+@import'blocks/tourn_page';
+
 
 
 
