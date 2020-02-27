@@ -6,11 +6,13 @@
     box-shadow: 0 3px 21px rgba(0, 0, 0, 0.18);
     // border: 1px solid red;
     h4 {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        font-size: 25px;
     }
     &__tabs {
         // height: 100%;
-        width: 33%;
+        width: 25%;
         display: flex;
         flex-direction: column;
         // justify-content: center;
@@ -49,9 +51,9 @@
     }   
     &__content {
         background-color: $light-gray;
-        padding: 15px 35px;
+        padding: 15px 15px 15px 35px;
         // height: 100%;
-        width: 68%;
+        width: 75%;
         display: none;
         &_active {
             display: block;
@@ -108,9 +110,10 @@
 
     // documents page
     &__document {
-        display: block;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        // display: block;
+        display: flex;
+        align-items: center;
+        padding: 25px 0;       
         width: 100%;
         color: $main-color;
         border-bottom: 1px solid #c9d5ec; 
@@ -133,6 +136,17 @@
         height: 60px;
         // object-fit: cover;
         float: left;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+    }
+    &__data {
+        margin-bottom: 15px;
+        font-size: 16px;
+        // letter-spacing: 1.5px;
+        font-weight: 500;
+        color: $gray;       
     }
 
 }
