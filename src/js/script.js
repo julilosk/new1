@@ -14,19 +14,6 @@ $.each($(".submenu__block a"),function(){
 };
 });
 
-// $('.menu__block a').each(function() {
-//   if ( (window.location.pathname.indexOf( $(this).attr('href') ) ) > -1) {
-//     $(this).addClass('activelink');
-   
-//   }
-// });
-
-
-// document.querySelectorAll('.menu li a').forEach(function(el) {
-//   if ( window.location.pathname.indexOf(el.getAttribute('href')) > -1 ) {
-//       el.classList.add('active');
-//   }
-// });
 
 
 
@@ -47,6 +34,7 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
   });
   
 
+
  //tabs news-all  
   $('ul.news-all__tabs').on('click', 'li:not(.news-all__tab_active)', function() {
     $(this)
@@ -59,6 +47,8 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
 
   // activate wow.js - подключение скрипта для анимации
   new WOW().init(); 
+
+
 
 
   // smooth scroll and pageup    
@@ -75,11 +65,8 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
     return false;
   });
 
-  
+ 
 
-// $("#add").on("click", function() {
-//   $("<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>").appendTo("section");
-// });
 
 });
 
