@@ -79,6 +79,9 @@ h5 {
 ul {
     list-style-type: none; 
 }
+.italic {
+    font-style: italic;
+}
 
 img {
     vertical-align: middle;
@@ -127,6 +130,9 @@ img {
 @import'blocks/tourn_page';
 @import'blocks/kshk';
 @import'blocks/academy';
+@import'blocks/champ';
+@import'blocks/rating';
+@import'blocks/schools';
 
 
 

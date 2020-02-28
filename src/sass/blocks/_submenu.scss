@@ -55,13 +55,16 @@
             }                
         }
         &:hover {
-            text-decoration: none;           
+            text-decoration: none;    
+                
         }
     }
 }
 
 .activelink2 {
-    color: $third-color;
+    color: $third-color;                        
+    // border-bottom: 2px solid $third-color;
+    
 }
 
 

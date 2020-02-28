@@ -108,3 +108,12 @@ $('.tabs__nav li').click(function(e) {
   } 
   e.preventDefault();
 });
+
+
+$('#ratingTable td.rating__color').each(function() {
+  if(parseInt($(this).html())>0){
+  $(this).addClass("higherthan100");
+  }else if (parseInt($(this).html())<0){
+  $(this).addClass("lowerthan100");
+  }    
+});
