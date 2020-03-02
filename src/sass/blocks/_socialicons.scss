@@ -13,7 +13,7 @@
         width: 30px;
         height: 30px;
         margin-left: 25px;
-        transition: all 0.5s;
+        // transition: all 0.5s;
         &:first-child {
             margin-left: 0;
         }
@@ -38,4 +38,21 @@
     // &__icon:hover {
     //     transition: .5s;
     // }
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 3px solid $main-color;
+    width: 55px;
+    height: 55px;
+    margin-right: 20px; 
+    // background-color: $gray;
+    img {
+        height: 25px;
+        display: block;
+    }
 }

@@ -51,7 +51,7 @@
     }   
     &__content {
         background-color: $light-gray;
-        padding: 15px 15px 15px 35px;
+        padding: 15px 35px 15px 35px;
         // height: 100%;
         width: 75%;
         display: none;
@@ -130,10 +130,10 @@
         }
     }
     &__doc {
-        width: 100%;
-        width: 60px;
+        // width: 100%;
+        width: 55px;
         padding-right: 25px;
-        height: 60px;
+        height: 55px;
         // object-fit: cover;
         float: left;
     }

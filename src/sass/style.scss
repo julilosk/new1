@@ -30,6 +30,8 @@ body {
 section {
     flex: 1 0 auto;
 }
+
+
 // .container {
     // border: solid 0.5px black; /* убрать пgit озже */
 //     // background-color: #f2f2f2;
@@ -93,6 +95,16 @@ img {
 .indent-top {
     margin-top: 40px;
 }
+
+// .align-content-flex-start {
+//     align-content: flex-start;
+// }
+
+.fat {
+    font-weight: 700;
+    margin-right: 5px;
+}
+
 ::-webkit-scrollbar {
     background: #f3eaea;
     width: 8px;
@@ -133,6 +145,10 @@ img {
 @import'blocks/champ';
 @import'blocks/rating';
 @import'blocks/schools';
+@import'blocks/federation';
+@import'blocks/table';
+
+
 
 
 
