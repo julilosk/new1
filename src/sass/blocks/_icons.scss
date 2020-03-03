@@ -4,6 +4,9 @@
     // align-items: center; 
     margin: 15px 0;
     // border: solid 2px red;
+    &_academy {
+        justify-content: center;
+    }
     &__icon {
         display: flex;
         justify-content: center;
@@ -46,13 +49,16 @@
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    border: 3px solid $main-color;
-    width: 55px;
-    height: 55px;
+    border: 2px solid $main-color;
+    width: 45px;
+    height: 45px;
     margin-right: 20px; 
+    &_indent {
+        margin: 0 30px;
+    }
     // background-color: $gray;
     img {
-        height: 25px;
+        height: 20px;
         display: block;
     }
 }

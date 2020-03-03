@@ -41,8 +41,24 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
       .addClass('news-all__tab_active').siblings().removeClass('news-all__tab_active')
       .closest('div.news-all').find('div.news-all__content').removeClass('news-all__content_active').eq($(this).index()).addClass('news-all__content_active');
   });
+
+
+   //tabs news-all  
+   $('ul.tabs-page__tabs').on('click', 'li:not(.tabs-page__tab_active)', function() {
+    $(this)
+      .addClass('tabs-page__tab_active').siblings().removeClass('tabs-page__tab_active')
+      .closest('div.tabs-page').find('div.tabs-page__content').removeClass('tabs-page__content_active').eq($(this).index()).addClass('tabs-page__content_active');
+  });
+  
   
 
+//tabs tourn-all  
+  $('ul.tourn-all__tabs').on('click', 'li:not(.tourn-all__tab_active)', function() {
+    $(this)
+      .addClass('tourn-all__tab_active').siblings().removeClass('tourn-all__tab_active')
+      .closest('div.tourn-all__box').find('div.tourn-all__content').removeClass('tourn-all__content_active').eq($(this).index()).addClass('tourn-all__content_active');
+  });
+  
 
 
   // activate wow.js - подключение скрипта для анимации
