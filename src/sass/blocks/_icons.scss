@@ -24,7 +24,7 @@
         //     border: 2px solid $gray;
         // }
         img {
-            height: 20px;
+            height: 17px;
             display: block;
         }
     }
@@ -54,7 +54,13 @@
     height: 45px;
     margin-right: 20px; 
     &_indent {
-        margin: 0 30px;
+        margin: 0 17px;
+        &:first-child {
+            margin-left: 0;
+        }
+        // &:last-child {
+        //     margin-right: 0;
+        // }
     }
     // background-color: $gray;
     img {
@@ -62,3 +68,6 @@
         display: block;
     }
 }
+
+
+

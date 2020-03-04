@@ -75,12 +75,34 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
   });
 
 
+
   $("a[href=#up]").click(function(){
     var _href = $(this).attr("href");
     $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
     return false;
   });
 
+
+
+
+  // carousel
+  $('.carousel__inner').slick({
+    speed: 1200,
+    adaptiveHeight: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
+    responsive: [
+        {
+          breakpoint: 992,
+          settings: {
+          dots: true,
+          arrows: false
+          }
+        }
+    ]        
+});
  
 
 
