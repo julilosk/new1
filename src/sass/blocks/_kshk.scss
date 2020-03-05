@@ -1,4 +1,10 @@
 .kshk {
+    // span {
+    //     line-height: 1.7; 
+    //     display: block;
+    // }
+    // color: $main-color;
+    
     &__branch {
         width: 100%;
         // border: 1px solid red;
@@ -27,6 +33,7 @@
         width: 100%;
         margin: 0 auto;
         font-size: 16px;
+        color: $main-color;
         // border: 1px solid red;       
         th {
             text-align: center;
@@ -42,7 +49,6 @@
             &:first-child {
                 width: 15%;
             }
-            
         }
         tr {
             border-bottom: 0.5px solid $gray;
@@ -54,6 +60,10 @@
             //     // cursor: pointer;
             //     color: #fff;            
             // }
+            &:nth-child(2) {
+                font-weight: 700;
+                text-align: center;
+            }
         }
     }
     &__text {

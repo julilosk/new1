@@ -1,4 +1,7 @@
 .federation {
+    &__text {
+        margin: 15px 0;
+    }
     &__contact {
         display: flex;
         margin-bottom: 30px;       
@@ -22,5 +25,8 @@
     iframe {
         width: 100%;
     }
-    
+    &__goal {
+        margin-left: 15px;
+    }
+
 }
