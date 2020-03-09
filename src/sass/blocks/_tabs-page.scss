@@ -18,36 +18,42 @@
         // line-height: 36px;   
         // border: 1px solid red;  
         border-bottom: 1px solid $border;  
-        
         margin: 15px 0;
-       
-              
     }    
     &__tab {        
         // margin: 15px 0;   
         padding: 0 15px;         
         cursor: pointer;      
-        transition: 0.2s all;
+        // transition: 0.2s all;
         font-weight: 500;    
         // border: 1px solid red;    
-        // border-bottom: 1px solid $border;  
+        // border-bottom: 1px solid $border;      
+        h5 {
+            color: $gray;
+        }
         &:hover {                      
-            border-bottom: 2px solid $third-color;               
+            // border-bottom: 2px solid $third-color;   
+            h5 {
+                color: $third-color;       
+            }
+                 
         }  
         &_active {                      
-            border-bottom: 2px solid $third-color;
+            border-bottom: 3px solid $third-color;
+            h5 {
+                color: $third-color;       
+            }
         }
         &:first-child {
             margin-left: 0;
         }
         &:last-child {
             margin-right: 0;
-        }
-        // &_tourn {
-        //     margin-left: 15px;
-        // }
+        }      
     }   
-    &__content {       
+    &__content {    
+        margin-top: 35px;   
+        // border: 1px solid green;    
         // height: 100%;
         width: 100%;
         display: none;       
@@ -68,7 +74,6 @@
             padding-left: 25px;
             padding-right: 25px;
         }
-
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
         }
