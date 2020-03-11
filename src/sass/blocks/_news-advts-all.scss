@@ -1,6 +1,7 @@
 .news-all  { 
     padding-left: 15px;       
-    width: calc(75% - 15px);
+    // width: calc(75% - 15px);
+   width: 100%;
     margin-right: 15px;
     &_wide {
         width: 100%;
@@ -9,6 +10,7 @@
         padding-left: 0;
     }
     &__tabs {  
+        // width: 100%;
        display: flex; 
        padding-left: 0;
        font-size: 14px;
@@ -45,17 +47,26 @@
             margin-right: 0;
         }      
     }   
-    &__content {       
+    &__content {             
         // height: 100%;
         width: 100%;
         display: none;       
         &_active {
-            display: block;
+            // display: block;
+            display: flex;
         }
     }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: calc(75% - 15px);
+        margin-right: 15px;
+    }
+
     
     &__block {
         margin: 35px 0;
+        width: 100%;  
         height: 220px;
         padding-right: 15px;       
         // border-bottom: 1px solid #c9d5ec; 
@@ -140,7 +151,7 @@
     // flex-grow:  auto;
     height: 100%;
     width: calc(25% - 15px);   
-    margin-top: 83px;
+    margin-top: 35px;
     margin-left: 15px;   
     background-color: $light-gray;
     // height: auto;
