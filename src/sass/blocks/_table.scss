@@ -31,13 +31,14 @@
         //     border-bottom: none;
         // }
         &:nth-child(odd) {
-            background-color: #dfdfed;
+            // background-color: #dfdfed;
+            background-color: $gray1;
         }
-        &:hover {
-            background-color: #868cad;
-            // cursor: pointer;
-            color: #fff;            
-        }
+        // &:hover {
+        //     background-color: #868cad;
+        //     // cursor: pointer;
+        //     color: #fff;            
+        // }
     }  
     td {
         padding: 7px 7px;   
