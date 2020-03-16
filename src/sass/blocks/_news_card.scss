@@ -33,7 +33,6 @@
         &_4 {
             background: url('../../img/chess.jpg') center (center / cover) no-repeat;
         }
-
     }
     &__body{
         padding: 15px 15px 27px 15px;
@@ -66,7 +65,8 @@
         line-height: 1.5;  
     }
     &__read {
-        color: $accent-color;
+        // color: $accent-color;
+        color: $gray;
         margin-top: 10px;
         margin-bottom: 5px;
     }

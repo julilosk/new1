@@ -10,7 +10,7 @@
         justify-content: center;
     }
     &__card {
-        background: linear-gradient(to left, #ADCEE9 0%, #FFF, #ADCEE9);
+        background: linear-gradient(to left, #B3C4FF 0%, #FFF, #B3C4FF);
         height: 270px;
         // border: solid 0.5px $border;
         border-radius: 10px 10px 10px 10px;
@@ -32,7 +32,6 @@
         font-weight: 700;
         text-align: center;
         margin-top: 10px;
-        // color: $main-color;
         color: $second-color;
     }
     &__body {        
