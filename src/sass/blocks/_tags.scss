@@ -1,0 +1,19 @@
+.tags {
+    color: gray;
+    display: flex;
+    margin-top: 20px;
+    &__title {
+        font-weight: 500;
+        margin-right: 35px;
+    }
+    &__item {
+        border: 1px solid $border;
+        margin-right: 15px;
+        padding: 5px 5px;
+        color: gray;
+        &:hover {
+            text-decoration: none;
+            color: gray;
+        }
+    }
+}

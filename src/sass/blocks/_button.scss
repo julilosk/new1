@@ -1,12 +1,14 @@
 
-
 .button-wpapper{
     // border: solid 2px green;
     margin-top: 30px;
     text-align: center;
 }
 .button {
+    // display: flex;
+    // align-items: center;
     padding: 10px 30px;
+    // padding-bottom: 0;
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase; 
@@ -22,7 +24,7 @@
         text-decoration: none;
         // background-color: $third-color;
         background-color: $main-color;
-        color: #f7f7f7;
+        color: $white;
         box-shadow: 3px 3px 10px $main-color;
     }  
     // span {

@@ -107,6 +107,15 @@ img {
     display: inline;
 }
 
+.padding-block {
+    // padding: 0 155px;
+    // background-color: $white;
+    width: 66.66%;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+
+
 ::-webkit-scrollbar {
     background: #f3eaea;
     width: 8px;
@@ -151,6 +160,7 @@ img {
 @import'blocks/table';
 @import'blocks/tabs-page';
 @import'blocks/carousel';
+@import'blocks/tags';
 
 
 

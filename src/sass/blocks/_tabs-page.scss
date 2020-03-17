@@ -1,7 +1,9 @@
 .tabs-page  { 
-    padding: 0 15px;       
+    // padding: 0 15px;       
     width: calc(75% - 15px);
     margin-right: 15px;
+    // margin-left: 15px;
+    // border: 1px solid red;
     &_wide {
         width: 100%;
     }
