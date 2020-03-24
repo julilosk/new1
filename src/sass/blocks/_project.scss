@@ -20,19 +20,19 @@
         color: $black;
         transition: opacity 0.35s ease 0s;
        
-        &_school {
-            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/school.jpg') center (center / cover) no-repeat;
+        // &_school {
+        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/school.jpg') center (center / cover) no-repeat;
            
-        }
-        &_univer {
-            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_board.jpg') center (center / cover) no-repeat;
-        }
-        &_child-house {
-            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_child.jpg') center (center / cover) no-repeat;
-        }
-        &_chess-day {
-            background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_day.jpg') center (center / cover) no-repeat;
-        }
+        // }
+        // &_univer {
+        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_board.jpg') center (center / cover) no-repeat;
+        // }
+        // &_child-house {
+        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_child.jpg') center (center / cover) no-repeat;
+        // }
+        // &_chess-day {
+        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_day.jpg') center (center / cover) no-repeat;
+        // }
         &:hover {
             transform: scale(1.1);/* Увеличиваем масштаб */
         }

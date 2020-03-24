@@ -1,0 +1,57 @@
+echo get_template_directory_uri() . '../assets/img/not-found.jpg'; - выводит путь к картинке not found
+
+
+nav .menu__block a.menu__item_active{
+  color: #007bff;
+}
+nav .menu__block li.current-menu-parent>a{
+  color: #007bff;
+}
+
+.submenu__block  li {
+  display: inline-block;
+  border-left: 1px solid #000;
+}
+.submenu__block  li:first-of-type{
+  border: 0;
+}
+.submenu__block  li a{
+    display: inline-block;
+    padding: 0 20px;
+    letter-spacing: .01em;
+    position: relative;
+    color: #000000;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.submenu__block  li a:after {
+    content: "";
+    width: 1px;
+    height: 22px;
+    background: #9b9b9b;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.submenu__block  li a:first-child {
+    padding-left: 15px;
+}
+
+.submenu__block  li a:last-child {
+    padding-right: 15px;
+}
+
+.submenu__block  li a:last-child:after {
+    display: none;
+}
+
+.submenu__block  li a:hover {
+    text-decoration: none;
+}
+
+.activelink2 {
+    color: #0069d2!important;
+}

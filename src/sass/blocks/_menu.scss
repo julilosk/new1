@@ -20,7 +20,7 @@ nav {
             a  {
                 text-decoration: none;
                 text-transform: uppercase;
-                color: $white;
+                // color: $white;
                 // color: $main-color;               
                 &:hover {
                     color: $third-color;
@@ -107,6 +107,17 @@ nav {
                 }
             }             
         } 
+        &__item {
+           a {
+            color: $white;
+           }
+            &_active {
+                a {
+                    color: $third-color;
+                }
+               
+            }
+        }
     }
 
 
