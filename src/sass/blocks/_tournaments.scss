@@ -23,9 +23,10 @@
         height: 283px;
         overflow: hidden;
         overflow-y: scroll;
+        width: 100%;
     }
     &__item {
-        // width: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
         border-top: 1px solid $border;
@@ -59,7 +60,7 @@
     &__block {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
         padding: 10px 20px;
     }
     &__link {        

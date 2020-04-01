@@ -8,7 +8,7 @@
         width: 50%;
         font-weight: 500;
         // color: $main-color;
-        color: $black;       
+        color: $main-color;       
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);   
         &:hover {
             // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20); 
@@ -37,7 +37,6 @@
         a {
             color: $black;
             &:hover {
-                // color: $white;
                 font-size: 14px;
             }
         }
@@ -46,10 +45,8 @@
             text-align: center;
             line-height: 1.1;
             background-color: $second-color;
-            // background-color: $main-color;
             color: $gray2;
             padding: 10px 5px;
-            // text-transform: uppercase;
             font-weight: 500;
             font-size: 16px;
             &:first-child {
@@ -61,13 +58,8 @@
         }  
         tr {           
             font-size: 14px;   
-            margin: 10px 0;    
-            // border-bottom: 0.5px solid $gray2;
+            margin: 10px 0; 
             color: $black;
-            // background-color: $light-color;
-            // &:last-child {
-            //     border-bottom: none;
-            // }
             &:nth-child(odd) {
                 background-color: #dfdfed;
             }
@@ -81,7 +73,6 @@
             }
         }  
         td {
-            // width: auto;
             padding: 5px 5px;   
         }       
     }
@@ -90,12 +81,10 @@
         text-align: center;
     }
     &__id {
-        width: 10%; 
-        // font-weight: 500;
+        width: 10%;
     }
     &__name {
         width: 25%; 
-        // font-weight: 500;
     }
     &__year {
         width: 8%; 

@@ -1,10 +1,11 @@
 .tags {
     color: gray;
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
     &__title {
         font-weight: 500;
         margin-right: 35px;
+        vertical-align: middle
     }
     &__item {
         border: 1px solid $border;

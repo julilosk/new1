@@ -1,7 +1,6 @@
 .news-all  { 
-    padding-left: 15px;       
-    // width: calc(75% - 15px);
-   width: 100%;
+    padding-left: 15px;  
+    width: 100%;
     margin-right: 15px;
     &_wide {
         width: 100%;
@@ -31,8 +30,7 @@
             // border-bottom: 2px solid $third-color;   
             h5 {
                 color: $third-color;       
-            }
-                 
+            }                 
         }  
         &_active {                      
             border-bottom: 3px solid $third-color;
@@ -61,9 +59,7 @@
         flex-direction: column;
         width: calc(75% - 15px);
         margin-right: 15px;
-    }
-
-    
+    }    
     &__block {
         margin: 35px 0;
         width: 100%;  
@@ -77,7 +73,6 @@
             padding-left: 25px;
             padding-right: 25px;
         }
-
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
         }
@@ -88,21 +83,27 @@
             border-bottom: none;
         } 
     }
-
-    &__img {
-        // border: 1px solid red;
-        // width: 100%;        
+    &__img {               
         width: 400px;
         padding-right: 25px;
         height: 220px;
         object-fit: cover;
+        background-position: center;
         float: left;
+        &_single {
+            width: 100%;
+            margin: 0 auto;
+            height: 350px;
+            margin-top: 25px;
+        }
     }
-
+    h2 {
+        font-size: 30px;
+        text-align: left;
+    }
     &__data {
         padding-top: 15px;
-        font-size: 16px;
-        // letter-spacing: 1.5px;
+        font-size: 16px;        
         font-weight: 500;
         color: $gray;       
     }
@@ -145,16 +146,12 @@
     }
 }
 
-
-
-.news-all-side {
-    // flex-grow:  auto;
+.news-all-side {    
     height: 100%;
     width: calc(25% - 15px);   
     margin-top: 35px;
     margin-left: 15px;   
-    background-color: $light-gray;
-    // height: auto;
+    background-color: $light-gray;    
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);   
     font-weight: 500;
     &__item {
@@ -177,7 +174,6 @@
         }
     }
 }
-
 
 
 // for inform.html
@@ -207,17 +203,13 @@
             font-size: 22px;
             line-height: 1.3;
             font-weight: 500;
-            color: $black;
-                     
-            // &:hover {
-            //     color: $third-color;
-            //     text-decoration: none;
-            // }
-        }
-       
-    }
+            color: $black;            
+        }       
+    }  
    
 }
+
+
 
   
 

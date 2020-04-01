@@ -80,11 +80,16 @@
             border-bottom: none;
         }
     }
-
+    &__branch {
+        color: $second-color;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
    
     &__post {
         font-size: 18px;
-        // font-weight: 400;
+        padding-bottom: 5px;        
     }
     &__name {
         font-size: 20px;

@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 var url=document.location.href;
-$.each($(".submenu__block a"),function(){
+$.each($(".submenu__block li a"),function(){
   if(this.href==url){$(this).addClass('activelink2');
 };
 });
@@ -91,7 +91,11 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
     adaptiveHeight: true,
     slidesToShow: 2,
     slidesToScroll: 2,
+
+    
     prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
+
+    
     nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
     responsive: [
         {

@@ -1,0 +1,58 @@
+Полезное в php
+
+     //выводите расширение файла
+                        <?php
+                            $path_parts = pathinfo(get_field('kshk-documents_link'));
+                            echo $path_parts['extension'], "\n"; //выводите расширение файла
+                            // echo $path_parts['dirname'], "\n";
+                            // echo $path_parts['basename'], "\n";
+                            // echo $path_parts['extension'], "\n";
+                            // echo $path_parts['filename'], "\n"; // начиная с PHP 5.2.0
+                        ?>
+
+
+ <?php
+                        $datetime1 = new DateTime(get_field('tourn_date-begin'));
+                        $datetime2 = new DateTime(get_field('tourn_date-end'));
+                        $interval = $datetime1->diff($datetime2);
+                        echo $interval->format('%R%a дней');
+                        ?>
+
+                            <?php
+                            echo strtotime("now"), "\n";
+                            // echo strtotime("10 September 2000"), "\n";
+                            // echo strtotime("+1 day"), "\n";
+                            // echo strtotime("+1 week"), "\n";
+                            // echo strtotime("+1 week 2 days 4 hours 2 seconds"), "\n";
+                            // echo strtotime("next Thursday"), "\n";
+                            echo strtotime(get_field('tourn_date-begin'));
+                            ?>
+
+
+ 		<?php
+                        $begin = strtotime(get_field('tourn_date-begin'));
+                        $now = strtotime(date('Y-m-d'));
+                        $end = strtotime(get_field('tourn_date-end'));
+                        $future = strtotime("+14 day");
+                        $past = strtotime("-14 day");
+                       
+                        
+                        if($now < $begin and $begin < $future){
+                          echo 'турнир скоро будет';
+                        }else{
+                          echo 'Вы не попали)';
+                        }
+
+                        if($begin < $now and $now < $end){
+                            echo 'турнир идет сейчас';
+                          }else{
+                            echo 'Вы не попали)';
+                          }
+
+                        if($past < $end and $end < $now){
+                        echo 'турнир недавно был';
+                        }else{
+                        echo 'Вы не попали)';
+                        }
+                    ?> 
+                     

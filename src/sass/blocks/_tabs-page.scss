@@ -1,9 +1,12 @@
-.tabs-page  { 
-    // padding: 0 15px;       
+.tabs-page  {          
     width: calc(75% - 15px);
     margin-right: 15px;
-    // margin-left: 15px;
-    // border: 1px solid red;
+    &__left {
+        width: calc(75% - 15px);
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+    }
     &_wide {
         width: 100%;
     }
@@ -37,8 +40,7 @@
             // border-bottom: 2px solid $third-color;   
             h5 {
                 color: $third-color;       
-            }
-                 
+            }                 
         }  
         &_active {                      
             border-bottom: 3px solid $third-color;
@@ -60,7 +62,7 @@
         width: 100%;
         display: none;       
         &_active {
-            display: block;
+            display: flex;
         }
     }
     

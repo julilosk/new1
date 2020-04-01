@@ -1,4 +1,3 @@
-echo get_template_directory_uri() . '../assets/img/not-found.jpg'; - выводит путь к картинке not found
 
 
 nav .menu__block a.menu__item_active{
@@ -7,6 +6,8 @@ nav .menu__block a.menu__item_active{
 nav .menu__block li.current-menu-parent>a{
   color: #007bff;
 }
+
+
 
 .submenu__block  li {
   display: inline-block;
