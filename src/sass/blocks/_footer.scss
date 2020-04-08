@@ -19,16 +19,19 @@ footer {
             display: block;            
         }
     }
-    &__item {
+    li {
         font-size: 14px;
         // color: $gray2;
         color: $white;
         padding: 0 16px;
         margin-bottom: 10px;
         a {
-            text-transform: uppercase;
-            // color: $gray2;
+            text-transform: uppercase;            
             color: $white;
+            &:hover {
+                color: $third-color;
+                text-decoration: none;
+            }
         }
     }
     &__contacts {

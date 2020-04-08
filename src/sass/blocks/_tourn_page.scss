@@ -1,45 +1,67 @@
 .tourn-all  {
-    background-color: $light-gray;
-    // &__box { 
-    //     padding-left: 15px;       
-    //     width: calc(75% - 15px);
-    //     margin-right: 15px;   
-    // }
-    // &__tabs {        
-    //     // width: 20%;
-    //     display: flex;       
-    //     // flex-direction: column;
-    //     // justify-content: center;
-    //     padding-left: 0;
-    //     font-size: 14px;
-    //     line-height: 36px;            
-    // }    
-    // &__tab {        
-    //     margin: 15px 10px;   
-    //     // padding: 20px 20px;         
-    //     cursor: pointer;      
-    //     transition: 0.2s all;
-    //     font-weight: 500;       
-    //     &:hover {                      
-    //         border-bottom: 2px solid $third-color;               
-    //     }  
-    //     &_active {                      
-    //         border-bottom: 2px solid $third-color;
-    //     }
-    //     &:first-child {
-    //         margin-left: 0;
-    //     }
-    //     &:last-child {
-    //         margin-right: 0;
-    //     }
-    // }   
-    // &__content {   
-    //     width: 100%;
-    //     display: none;       
-    //     &_active {
-    //         display: block;
-    //     }
-    // }
+    // background-color: $light-gray;
+    padding-left: 15px;  
+    width: 100%;
+    margin-right: 15px;
+    &__tabs {  
+        // width: 100%;
+       display: flex; 
+       padding-left: 0;
+       font-size: 14px;
+       border-bottom: 1px solid $border;  
+       margin: 15px 0;          
+    }    
+    &__tab {        
+        padding: 0 15px;         
+        cursor: pointer;      
+        // transition: 0.2s all;
+        font-weight: 500;    
+        // border: 1px solid red;    
+        // border-bottom: 1px solid $border;      
+        h5 {
+            color: $gray;
+        }
+        &:hover {                      
+            // border-bottom: 2px solid $third-color;   
+            h5 {
+                color: $third-color;       
+            }                 
+        }  
+        &_active {                      
+            border-bottom: 3px solid $third-color;
+            h5 {
+                color: $third-color;       
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }      
+    }   
+
+    
+    &__content {             
+        // height: 100%;
+        width: 100%;
+        display: none;       
+        &_active {
+            display: block;
+            // display: flex;
+        }
+    }
+    &__box {
+        width: 100%;
+        display: flex;
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        width: calc(75% - 15px);
+        margin-right: 15px;
+    }   
+
 
 
     // for one tourn
@@ -54,15 +76,18 @@
         display: block;
         width: 180px;
         height: 180px;
-        margin-right: 35px;        
+        margin-right: 35px;
+        object-fit: cover;
+        // float: left;
     }  
+    
     &__link {
         display: block;
     } 
     &__block {
-        margin: 35px 0;
+        margin: 20px 0;
         width: 100%;
-        height: 180px;        
+        min-height: 180px;        
         background-color: $white;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);         
         &:hover {
@@ -111,7 +136,7 @@
         display: flex;
         align-items: center;
         color: $gray;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;        
     }
     &__calendar {
@@ -119,49 +144,61 @@
         width: 18px;
         margin-right: 10px;
     }
-    &__date {
+    &__date {        
         margin-right: 25px;
+        white-space: nowrap;        
     }
-    &__place {
+    &__place {        
         margin-right: 10px;
         height: 18px;
         width: 18px;
     }
+    &__address {
+        width: 65%;
+    }
 }
+
 
 
 
 .tourn-all-side {   
     height: 100%;
     width: calc(25% - 15px);   
-    margin-top: 35px;
+    margin-top: 20px;
     margin-left: 15px;   
     background-color: $light-gray;    
     box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20); 
-    
+    font-weight: 500;
     ul {
-        margin-bottom: 0;
-        padding: 5px 0;
+        margin-bottom: 0;        
         li a {
-            font-weight: 500;
-            display: block;   
-            padding: 10px 15px;
-            display: block;
-            color: $second-color;
-            text-decoration: none;           
-            // &:first-child {
-            //     padding-top: 15px;
-            //     // color: $third-color;
-            // }
-            // &:last-child {
-            //     padding-bottom: 15px;
-            // }
-            &:hover {
-                background-color: $gray2;
-                color: $third-color;                      
+               
+                display: block;   
+                padding: 10px 15px;
+                display: block;
+                color: $second-color;
+                text-decoration: none;           
+                // &:first-child {
+                //     padding-top: 15px;
+                //     // color: $third-color;
+                // }
+                // &:last-child {
+                //     padding-bottom: 15px;
+                // }
+                &:hover {
+                    background-color: $gray2;
+                    color: $third-color;                      
+                }
+            }
+        .current-cat {
+            a {
+                color: $third-color;
             }
         }
     } 
+    &__item a {
+        padding-top: 15px!important;
+    }
 }
    
 

@@ -56,3 +56,128 @@
                         }
                     ?> 
                      
+
+ $args = array(
+                                            // Наименование поля для сортировки (укажите свое)
+                                                'meta_key'       => 'tourn_number',
+                                                // Определяем тип сортировки. В нашем случае - число.    
+                                                'orderby'        => 'meta_value_num',     
+                                                // Тип записей (если требуется)    
+                                                'post_type'      => 'tournaments',
+                                                // Вывод по убываниюю (от 1000 к 1)
+                                                'order'          => 'DESC', 
+                                                // Вывод по возрастанию (от 1 к 1000)
+                                                //'order'          => 'ASC', 
+                                                // Количество записей на странице: не более 20
+                                                'posts_per_page' => 7,
+                                            );
+                                            // Передаем массив опций в query_posts
+                                            query_posts( $args );
+
+
+
+ <!-- вывод наименований рубрик -->
+                    <!-- <?php 
+                        $terms = get_terms( 'rubriki' );
+                        if( $terms && ! is_wp_error($terms) ){
+                          echo "<ul>";
+                          foreach( $terms as $term ){
+                            echo "<li>". $term->name ."</li>";                  
+                          }
+                          echo "</ul>";
+                        }
+                    ?>       -->
+
+
+  <!-- вывод ссылок на метки -->
+                    <!-- <?php 
+                    
+                      $tags = get_tags();
+                      $html = '<div class="">';
+
+                      foreach ( $tags as $tag ) {
+                        $tag_link = get_tag_link( $tag->term_id );
+                        $html .= "<a href='{$tag_link}' title='{$tag->name} Tag' class='tourn-all-side__item'>";
+                        $html .= "{$tag->name}</a>";
+                      }
+                      
+                      $html .= '</div>';
+                      echo $html;
+                    ?>    -->
+
+
+
+Код Артёма
+ <?php
+                      // получаю запрос из uRL $_GET
+                      $dayfilter = htmlspecialchars($_GET["day"]);
+                      $args = array(
+                        'post_type' => 'news',
+                        'post_status'   => 'publish',
+                        );
+                        // проверяю наличие фильтра day
+                        if (!empty($dayfilter)) {
+                          // обрати внимание на += я таким образом добавляю параметры к массиву
+                          $args += array(
+                            'date_query'    => array(
+                                'column'  => 'post_date',
+                                'after'   => '- '.$dayfilter.' days'
+                              )
+                          );
+                        }
+                        // мониторинг запроса
+                        //print_r($args);
+
+
+
+
+<!-- // вывод текущего названия таксономии -->
+<!-- <?php the_terms( $post->ID, 'rubriki' ); ?> -->
+
+
+
+
+<!-- вывод наименований рубрик -->
+    <!-- <?php 
+    $terms = get_terms( 'rubriki' );
+    if( $terms && ! is_wp_error($terms) ){
+        echo "<ul>";
+        foreach( $terms as $term ){
+        echo "<li>". $term->name ."</li>";                  
+        }
+        echo "</ul>";
+    }
+?>      -->
+
+
+
+если есть метки выводить их
+   <?php
+                if (has_tag()) {
+                    ?>
+                        <div class="tags">            
+                            <div class="tags__title">Теги:</div>
+                            
+                            <?php 
+                                $tag_arr = array();
+                                foreach (get_the_tags() as $tag)  
+                                {  
+                                $tag_arr []= '<a href="'.get_tag_link($tag->term_id).'" class="tags__item">'.$tag->name.'</a>';
+                                }
+                                echo implode('', $tag_arr);
+                            ?>
+                        </div>
+                            <?php
+                }
+            ?>
+
+{
+    "name": "chess",
+    "host": "89.108.85.65",
+    "protocol": "ftp",
+    "port": 21,
+    "username": "julil908",
+    "password": "fLtO74xAuP",
+    "remotePath": "/www/test.chess22barnaul.ru/wp-content/themes/chess",
+    "uploadOnSave": true
+}

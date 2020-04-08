@@ -9,6 +9,7 @@
     &__one {
         display: flex;
         flex-direction: column;
+      
     }
     &__img {
         display: block;
@@ -16,6 +17,11 @@
         margin: 0 auto;
         object-fit: cover;
         height: 350px;
+    }
+    &__descr {
+        background-color: $light-gray;
+        width: 98%;
+        margin: 0 auto;       
     }
     &__name-rating {
         width: 98%;
@@ -33,8 +39,7 @@
         font-weight: 700;
         text-align: center;
         margin-top: 20px;
-        color: $second-color;
-        background-color: $light-gray;
+        color: $second-color;       
     }
     &__men {
             font-size: 16px;
@@ -43,8 +48,7 @@
             color: $main-color;        
             margin-top: 10px;
             margin-bottom: .75rem;  
-            margin-left: 25px;
-            background-color: $light-gray;
+            margin-left: 25px;            
         }    
     &__item {
         margin: 10px 0;

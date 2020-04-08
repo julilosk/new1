@@ -56,7 +56,7 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
   $('ul.tourn-all__tabs').on('click', 'li:not(.tourn-all__tab_active)', function() {
     $(this)
       .addClass('tourn-all__tab_active').siblings().removeClass('tourn-all__tab_active')
-      .closest('div.tourn-all__box').find('div.tourn-all__content').removeClass('tourn-all__content_active').eq($(this).index()).addClass('tourn-all__content_active');
+      .closest('div.tourn-all').find('div.tourn-all__content').removeClass('tourn-all__content_active').eq($(this).index()).addClass('tourn-all__content_active');
   });
   
 

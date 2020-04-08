@@ -6,10 +6,7 @@
     min-height: 112px;
     padding-top: 25px;  
     &__item {
-        width: 135px;
-        // background-color: $gray1;
-        // background-color: rgba(0,0,0,.025);
-        // border: 1px solid $border;
+        width: 135px;        
         text-align: center;
     }
     &__scale {
@@ -17,14 +14,14 @@
         overflow: hidden; /* Скрываем всё за контуром */  
         // border: 1px solid $border;    
         // border-radius: 10px 10px 10px 10px; 
-        // border: none;
     }
     &__scale img {
         width: 63px;
         height: 63px;
         border-radius: 100%;
         display: block;
-        margin: 0 auto;                      
+        margin: 0 auto;        
+        object-fit: cover;              
         transition: opacity 0.35s ease 0s;
         &:hover {
             transform: scale(1.1);/* Увеличиваем масштаб */

@@ -82,7 +82,8 @@
         margin-top: 8px;
         display: flex;
         align-items: center;
-        color: $gray;
+        // color: $gray;
+        color: #424d58;
     }
     &__calendar {
         height: 15px;
@@ -91,13 +92,14 @@
     }
     &__date {
         margin-right: 15px;
+        white-space: nowrap;
     }
     &__place {
         margin-right: 10px;
         height: 15px;
         width: 15px;
     }
-    // &__adress {       
+    // &__address {       
     //     color: $gray;
     // }
     &__record {
