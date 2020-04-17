@@ -159,3 +159,4 @@ $('#ratingTable td.rating__color').each(function() {
   $(this).addClass("lowerthan100");
   }    
 });
+
