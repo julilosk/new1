@@ -59,6 +59,7 @@
             color: $main-color;
             &:hover {
                 text-decoration: none;    
+                color: $third-color; 
                     
             }
         }
@@ -67,7 +68,7 @@
 }
 
 .activelink2 {
-    color: $third-color; 
+    // color: $third-color; 
     color: #0069d2!important;                       
     // border-bottom: 2px solid $third-color;
 }

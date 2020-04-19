@@ -3,16 +3,19 @@ $(document).ready(function(){
 
   var url=document.location.href;
   $.each($(".menu__block a"),function(){
-    if(this.href==url){$(this).addClass('activelink');
-  };
+    if(this.href==url){
+      $(this).addClass('activelink');
+  }
 });
 
 
 var url=document.location.href;
-$.each($(".submenu__block li a"),function(){
-  if(this.href==url){$(this).addClass('activelink2');
-};
-});
+$.each($(".submenu__block li a"),
+  function(){
+    if(this.href==url){
+      $(this).addClass('activelink2');
+    }
+  });
 
 
 

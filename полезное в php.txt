@@ -284,4 +284,13 @@ V3e9N4d1
           query_posts($query_string.'&'.$order); 
           // базовый запрос + свои параметры
           ?>
-                        
+                  
+
+
+//custom_field - file - вывод ссылки на файл и имя файла
+
+<?php
+$file = get_field('proba_file');
+if( $file ): ?>
+    <a href="https://docs.google.com/viewer?url=<?php echo $file['url']; ?>"><?php echo $file['filename']; ?></a>
+<?php endif; ?>      
