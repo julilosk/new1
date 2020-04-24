@@ -3,16 +3,19 @@ $(document).ready(function(){
 
   var url=document.location.href;
   $.each($(".menu__block a"),function(){
-    if(this.href==url){$(this).addClass('activelink');
+    if(this.href==url){
+      $(this).addClass('activelink');
   }
 });
 
 
 var url=document.location.href;
-$.each($(".submenu__block li a"),function(){
-  if(this.href==url){$(this).addClass('activelink2');
-}
-});
+$.each($(".submenu__block li a"),
+  function(){
+    if(this.href==url){
+      $(this).addClass('activelink2');
+    }
+  });
 
 
 
@@ -110,6 +113,62 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
  
 
 
+  // carousel-photo
+  $(document).ready(function(){
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+    
+      prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
+      responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+            // dots: true,
+            arrows: false
+            }
+          }
+      ],        
+      // arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav'
+    });
+
+    
+
+    $('.slider-nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      asNavFor: '.slider-for',
+      dots: true,
+      infinite: true,
+      arrows: false,
+      // centerMode: true,
+      // arrows: false,  
+      // prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
+      // nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
+      responsive: [
+          {
+            breakpoint: 992,
+            settings: {
+            dots: true,
+            // slidesToShow: 5,
+            // slidesToScroll: 5,
+            arrows: false
+            }
+          }
+      ],        
+      focusOnSelect: true
+    });
+    
+  });
+
+
+
+  
+
+
 });
 
 
@@ -160,3 +219,17 @@ $('#ratingTable td.rating__color').each(function() {
   }    
 });
 
+
+
+
+function getName (str){
+  if (str.lastIndexOf('\\')){
+      var i = str.lastIndexOf('\\')+1;
+  }
+  else{
+      var i = str.lastIndexOf('/')+1;
+  }						
+  var filename = str.slice(i);			
+  var uploaded = document.getElementById("fileformlabel");
+  uploaded.innerHTML = filename;
+}

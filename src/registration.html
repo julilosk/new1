@@ -110,10 +110,9 @@
             <div class="home-page-block registration-tourn">
                 <h2> Кубок города турнир В (1 этап)</h2>
                 регистрация открыта до 11.03.2020 до 18.00
+                <br>
                 * Обязательно   
                 <div class="registration indent-top ">
-                   
-                   
                       
                     <form id="registration-form" class="registration-form" action="#">
                         
@@ -159,14 +158,14 @@
                             
                   
 
-                          <label for="card">
+                          <!-- <label for="card">
                             <span>Card type:</span>
                           </label>
                           <select id="card" name="usercard">
                             <option value="visa">Visa</option>
                             <option value="mc">Mastercard</option>
                             <option value="amex">American Express</option>
-                          </select>
+                          </select> -->
                         
                         <label for="registration-date">
                             Дата рождения <span>*</span>
@@ -202,69 +201,28 @@
                             Ваш вопрос <span>*</span>
                         </label>                            
                         <textarea required name="registration-text" id="registration-text"></textarea>
-                        
+<!--                         
                         <label for="registration-file">
                             Файлы
                         </label> 
-                        <input type="file" required id="registration-file" name="registration-file"  >
+                        <input type="file" required id="registration-file" name="registration-file"  > -->
+
+                       
+                        <label for="registration-file">
+                            Файлы
+                        </label> 
+                        <div class="fileform">                            
+                            <div id="fileformlabel"></div>
+                            <div class="selectbutton">Обзор</div>
+                            <input type="file" name="registration-file" id="registration-file" onchange="getName(this.value);" />
+                        </div>
 
 
                         <button class="button button__submit ">Отправить</button>
 
-                        <!-- <div class="button-wpapper">
-                            <a href="../../pages/news/all.html" class="button">
-                                Отправить вопрос
-                            </a>
-                        </div>  -->
-
-
-                        <form action="index.html" method="post">
-          
-                            <h2>Your basic info</h2>
-                            
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="student_name">
-                  
-                            <label for="mail">Email</label>
-                            <input type="email" id="mail" name="student_email">
-                  
-                            <label for="password">Password</label>
-                            <input type="password" id="password" name="student_password">
-                  
-                            
-                            <h2>Your profile</h2>
-                            
-                            <label for="bio">Biography</label>
-                            <textarea id="bio" name="student_bio"></textarea>
-                  
-                            <label for="courses">Select Courses</label>
-                            <select id="courses" name="student_courses">
-                              <optgroup label="Engineering">
-                                <option value="computer_engineering">Computer Science Engineering</option>
-                                <option value="slectrical_engineering">Electrical Engineering</option>
-                                <option value="mechanical_engineering">Mechanical Engineering</option>
-                                <option value="civil_engineering">Civil Engineering</option>
-                                <option value="chemical_engineering">Chemical Engineering</option>
-                              </optgroup>
-                              <optgroup label="Management">
-                                <option value="finance_management">Finance Management</option>
-                                <option value="technology_management">Technology Management</option>
-                                <option value="marketing_management">Marketing Management</option>
-                                <option value="business_administration">Business Administration</option>
-                              </optgroup>
-                            </select>
-                  
-                            <label>Interests:</label>
-                            <input type="checkbox" id="engineering" value="interest_engineering" name="user_interest"><label class="light" for="engineering">Engineering</label><br>
-                            <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label><br>
-                            <input type="checkbox" id="law" value="interest_law" name="user_interest"><label class="light" for="law">Law</label>
-                          
-                          <button type="submit">Submit</button>
-                        </form>
-
                     </form>
-                </div>
 
+                </div>
             </div>
         </div>
     </section>

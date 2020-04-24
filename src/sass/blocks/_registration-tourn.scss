@@ -1,9 +1,16 @@
 .registration-tourn {
-   
+    width: calc(75% - 15px);
+    // border: 1px solid red;
+    // margin: 0 auto;
+    // padding-left: 15px;
+    // padding-right: 15px;
+    h2{
+        text-align-last: left;
+    }
     .registration {
         // border: 1px solid red;
         width: 450px;
-        margin: 0 auto;
+        // margin: 0 auto;
     }
     
     .registration-form {
@@ -35,7 +42,7 @@
             font-weight: 500;
             color: $main-color;
         } 
-        label, span {
+        label {
             display: block;
             font-size: 14px;
             margin-bottom: 8px;
@@ -53,9 +60,11 @@
             background-color: $main-color;
             color: $white;
             margin: 0 auto;
+            margin-top: 35px;
         }
 
         .radio {
+            margin: 15px 0;
             label {
                 display: inline-block;
                 cursor: pointer;
@@ -92,18 +101,25 @@
             }
                 
         }
+        .button__submit {
+            position: relative;
+            // margin: 0 auto;
+        }
+        // input[type=file] {                
+        //     border: none;
+        //     background-color: $white;
+        //     padding: 0;
+        //     margin-bottom: 0;
+        //     height: auto;    
 
-       
+        // }
     
     }
     // #feedname {
     //     background-color: #dbdde8;  
     // }  
     
-    .button__submit {
-        position: relative;
-        margin: 0 auto;
-    }
+   
     
     div.wpcf7-mail-sent-ok {
         border: 2px solid #0069d2;
@@ -114,5 +130,58 @@
     div.wpcf7-response-output {
         margin: 1em 0;
     }
+    
+}
+
+.fileform { 
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 50px;
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+    text-align: left;
+    vertical-align: middle;
+    width: 100%;
+}
+.fileform .selectbutton { 
+    background-color: #A2A3A3;
+    border: 1px solid #939494;
+    border-radius: 2px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 16px;
+    height: 40px;
+    line-height: 35px;
+    overflow: hidden;
+    // padding: 2px 6px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20%;
+}
+.fileform #registration-file{
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:100%; 
+    -moz-opacity: 0; 
+    filter: alpha(opacity=0); 
+    opacity: 0; 
+    font-size: 150px; 
+    height: 50px; 
+    z-index:20;
+}
+.fileform #fileformlabel { 
+    background-color: #FFFFFF;
+    float: left;
+    height: 40px;
+    line-height: 35px;
+    overflow: hidden;
+    padding: 2px;
+    text-align: left;
+    vertical-align: middle;
+    width:80%;
     
 }

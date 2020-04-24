@@ -37,15 +37,40 @@
             &:hover {
                 background-color: #868cad;
                 // cursor: pointer;
-                color: #fff;            
+                color: #fff;       
+                td a {
+                    color: #fff;  ;
+                }     
             }
         }  
         td {
-            padding: 7px 7px;   
+            padding: 7px 15px;   
             &:first-child {
                 font-weight: 700;
+                width: 15%;
+            }
+            &:nth-child(2) {
+                width: 25%;
+                a {
+                    text-decoration: underline;
+                    color: $main-color;
+                    &:hover {
+                        color: #fff;  
+                    }
+                }
+            }
+            
+            &:nth-child(3) {
+                width: 20%;
+            }
+            &:nth-child(4) {
+                width: 15%;
+            }
+            &:nth-child(5) {
+                width: 25%;
             }
         } 
+        
     }
     
     // &__number {
