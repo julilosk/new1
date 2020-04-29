@@ -127,7 +127,7 @@
         // display: block;
         display: flex;
         align-items: center;
-        padding: 25px 0;       
+        padding: 20px 15px;       
         width: 100%;
         // color: $main-color;
         color: $black;
@@ -146,9 +146,9 @@
     }
     &__doc {
         // width: 100%;
-        width: 55px;
-        padding-right: 25px;
-        height: 55px;
+        width: 45px;
+        padding-right: 20px;
+        height: 45px;
         // object-fit: cover;
         float: left;
     }

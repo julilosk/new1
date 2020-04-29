@@ -69,6 +69,126 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
 
 
 
+ //  modal
+ $('[data-modal=registry]').on('click', function() {
+  $('.overlay, #registry').fadeIn('slow');
+});
+$('.modal-chess__close').on('click', function(){
+  $('.overlay, #registry, #user-entry, #feedback').fadeOut('slow');
+});
+$('[data-modal=user-entry]').on('click', function() {
+  $('.overlay, #user-entry').fadeIn('slow');
+});
+$('[data-modal=feedback]').on('click', function() {
+  $('.overlay, #feedback').fadeIn('slow');
+});
+
+
+function validateForms(form){
+  $('#registration-form').validate({
+      rules: {
+          name: {
+            required: true,
+            minlength: 2
+          },
+          
+          IDFIDE: {
+            number: true
+          },
+         
+          IDFSHR: {
+              required: true,
+              number: true
+          },
+          homeaddress: "required",
+          phone: "required",
+          birthday: "required",
+          // feedtext: {
+          //   required: true,
+          //   minlength: 10
+          // },
+          email: {
+              required: true,
+              email: true
+          }
+      },
+      messages: {
+          name: {
+              required: "Пожалуйста, введите свое имя",
+              minlength: jQuery.validator.format("Введите {0} символа!")
+            },
+         
+          IDFSHR: {
+            required: "Пожалуйста, введите свой код ФШР",
+            // number: jQuery.validator.format("Введите {0} символа!")
+          },
+          birthday: {
+            required: "Пожалуйста, введите свою дату рождения",
+            // number: jQuery.validator.format("Введите {0} символа!")
+          },
+          phone: {
+              required: "Пожалуйста, введите свой номер телефона",
+              phone: "Неправильно введен номер телефона"
+          },
+          homeaddress: {
+            required: "Пожалуйста, введите свой домашний адрес",
+          },
+          // feedtext: {
+          //   required: "Пожалуйста, введите ваш вопрос",
+          //   number: jQuery.validator.format("Введите {0} символов!")
+          // },
+          email: {
+            required: "Пожалуйста, введите свою почту",
+            email: "Неправильно введен адрес почты"
+          }
+      }
+  });
+}
+
+function validateForms2(form){
+  $('#feedback-form').validate({
+      rules: {
+          feedname: {
+            required: true,
+            minlength: 2
+          },         
+          phone: "required",
+          feedtext: {
+            required: true,
+            minlength: 10
+          },
+          email: {
+            required: true,
+            email: true
+          }
+      },
+      messages: {
+          feedname: {
+            required: "Пожалуйста, введите свое имя",
+            minlength: jQuery.validator.format("Введите не менее {0} символов!")
+          },
+          phone: {
+              required: "Пожалуйста, введите свой номер телефона",
+              phone: "Неправильно введен номер телефона"
+          },         
+          feedtext: {
+            required: "Пожалуйста, введите ваш вопрос",
+            minlength: jQuery.validator.format("Введите не менее {0} символов!")
+          },
+          email: {
+            required: "Пожалуйста, введите свою почту",
+            email: "Неправильно введен адрес почты"
+          }
+      }
+  });
+}
+
+// validateForms('#consultation-form');
+validateForms('#registry form');
+validateForms2('#feedback form');
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
+
 
   // smooth scroll and pageup    
   $(window).scroll(function(){
@@ -97,8 +217,6 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
 
     
     prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
-
-    
     nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
     responsive: [
         {
@@ -108,18 +226,21 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
           arrows: false
           }
         }
-    ]        
-});
+    ] 
+    
+    
+  });
  
+
+
 
 
   // carousel-photo
   $(document).ready(function(){
     $('.slider-for').slick({
       slidesToShow: 1,
-      slidesToScroll: 1,
-    
-      prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
+      slidesToScroll: 1,    
+      prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"></button>',
       nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
       responsive: [
           {
@@ -135,11 +256,9 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
       asNavFor: '.slider-nav'
     });
 
-    
-
     $('.slider-nav').slick({
       slidesToShow: 5,
-      slidesToScroll: 5,
+      slidesToScroll: 1,
       asNavFor: '.slider-for',
       dots: true,
       infinite: true,

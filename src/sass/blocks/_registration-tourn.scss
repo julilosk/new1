@@ -1,18 +1,6 @@
-.registration-tourn {
-    width: calc(75% - 15px);
-    // border: 1px solid red;
-    // margin: 0 auto;
-    // padding-left: 15px;
-    // padding-right: 15px;
-    h2{
-        text-align-last: left;
-    }
-    .registration {
-        // border: 1px solid red;
-        width: 450px;
-        // margin: 0 auto;
-    }
-    
+.registration {
+    // width: 450px;
+    width: 100%;
     .registration-form {
         // border: 1px solid green;
         margin-top: 36px;    
@@ -21,11 +9,11 @@
         width: 100%;
         input {
             width: 100%;
-            height: 50px;
-            margin-bottom: 15px;
+            height: 45px;
+            margin-bottom: 10px;
             border-radius: 5px;
             border: none;
-            padding: 0 20px;
+            padding: 0 10px;
             color: #4b4b4b;
             font-size: 14px;
             font-weight: 300;       
@@ -33,10 +21,10 @@
             outline: none;
             // background: #dbdde8; 
             background-color: $gray1;
-               
         }  
         p {
             margin-top: 0;
+            margin-bottom: 0;
         }
         label {
             font-weight: 500;
@@ -62,126 +50,126 @@
             margin: 0 auto;
             margin-top: 35px;
         }
-
         .radio {
-            margin: 15px 0;
+            width: 100%;
+            display: flex;
+            margin: 5px 0;
             label {
-                display: inline-block;
-                cursor: pointer;
-                position: relative;
-                padding-left: 25px;
-                margin-right: 15px;
-                font-size: 13px;
+                width: 100%;
+                margin: 0 2px;
+                display: flex;
             }
-            input[type=radio] {                
-                    display: none;
-                }
-            label:before {
-                content: "";
-                display: inline-block;
-                width: 16px;
-                height: 16px;
-                margin-right: 10px;
-                position: absolute;
-                left: 0;
-                bottom: 1px;
-                background-color: #aaa;
-                border-radius: 100%;
-                box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
-                // display: flex;
+            input {
+                height: 25px;
+                width: 20px;
+                margin: 0 5px;                
             }
-            input[type=radio]:checked + label:before {
-                content: "\2022";
-                color: #f3f3f3;
-                font-size: 25px;
-                text-align: center;
-                line-height: 12px;
-                // justify-content: center;
-                // align-items: center;
-            }
-                
+           
         }
         .button__submit {
             position: relative;
             // margin: 0 auto;
         }
-        // input[type=file] {                
-        //     border: none;
-        //     background-color: $white;
-        //     padding: 0;
-        //     margin-bottom: 0;
-        //     height: auto;    
+        input[type=date] {
+            width: 45%;
+        }
 
-        // }
-    
-    }
-    // #feedname {
-    //     background-color: #dbdde8;  
-    // }  
-    
-   
-    
+        
+
+        //выбор разряда
+        .rank {
+            input[type=text] {                
+                display: none;
+            }
+            select {
+                width: 45%;
+                height: 45px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: none;
+                padding: 0 10px;
+                color: #4b4b4b;
+                font-size: 14px;
+                font-weight: 300;       
+                border: 1px solid #7BA7AB;        
+                outline: none;
+                // background: #dbdde8; 
+                background-color: $gray1; 
+            }
+        }
+        .id-block {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .idfshr, .idfide {
+               width: 45%;
+            }            
+        }    
+    }    
     div.wpcf7-mail-sent-ok {
         border: 2px solid #0069d2;
         text-align: center;
         width: 100%;
-    }
-    
+    }    
     div.wpcf7-response-output {
         margin: 1em 0;
-    }
+    } 
     
+    
+    // загрузка файл
+    .fileform { 
+        background-color: #FFFFFF;
+        border: 1px solid #CCCCCC;
+        border-radius: 2px;
+        cursor: pointer;
+        height: 50px;
+        overflow: hidden;
+        padding: 5px;
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+        width: 100%;
+    }
+    .fileform .selectbutton { 
+        background-color: #A2A3A3;
+        border: 1px solid #939494;
+        border-radius: 2px;
+        color: #FFFFFF;
+        float: right;
+        font-size: 16px;
+        height: 40px;
+        line-height: 35px;
+        overflow: hidden;
+        // padding: 2px 6px;
+        text-align: center;
+        vertical-align: middle;
+        width: 20%;
+    }
+    .fileform #registration-file{
+        position:absolute; 
+        top:0; 
+        left:0; 
+        width:100%; 
+        -moz-opacity: 0; 
+        filter: alpha(opacity=0); 
+        opacity: 0; 
+        font-size: 150px; 
+        height: 50px; 
+        z-index:20;
+    }
+    .fileform #fileformlabel { 
+        background-color: #FFFFFF;
+        float: left;
+        height: 40px;
+        line-height: 35px;
+        overflow: hidden;
+        padding: 2px;
+        text-align: left;
+        vertical-align: middle;
+        width:80%;
+    }
 }
 
-.fileform { 
-    background-color: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    border-radius: 2px;
-    cursor: pointer;
-    height: 50px;
-    overflow: hidden;
-    padding: 5px;
-    position: relative;
-    text-align: left;
-    vertical-align: middle;
-    width: 100%;
-}
-.fileform .selectbutton { 
-    background-color: #A2A3A3;
-    border: 1px solid #939494;
-    border-radius: 2px;
-    color: #FFFFFF;
-    float: right;
-    font-size: 16px;
-    height: 40px;
-    line-height: 35px;
-    overflow: hidden;
-    // padding: 2px 6px;
-    text-align: center;
-    vertical-align: middle;
-    width: 20%;
-}
-.fileform #registration-file{
-    position:absolute; 
-    top:0; 
-    left:0; 
-    width:100%; 
-    -moz-opacity: 0; 
-    filter: alpha(opacity=0); 
-    opacity: 0; 
-    font-size: 150px; 
-    height: 50px; 
-    z-index:20;
-}
-.fileform #fileformlabel { 
-    background-color: #FFFFFF;
-    float: left;
-    height: 40px;
-    line-height: 35px;
-    overflow: hidden;
-    padding: 2px;
-    text-align: left;
-    vertical-align: middle;
-    width:80%;
-    
-}
+
