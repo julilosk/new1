@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.4);
   z-index: 99999;
   display: none;
 }
@@ -17,29 +17,36 @@
     // bottom: 40px;
     left: 50%;
     transform: translate(-50%, 0);    
-    border: 2px solid #d0d0d0;
+    // border: 2px solid #d0d0d0;
     // width: 380px;
     // min-height: 400px;
     // height: 100%;
     background-color: #f2f2f2;
-    padding: 38px 40px 40px 40px;  
+    // padding: 38px 40px 40px 40px; 
+    padding: 0 0; 
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
     &__close {
         position: absolute;
         font-size: 41px;
         font-weight: 500;
         line-height: 21px;
-        color: #d0d0d0;
+        // color: #d0d0d0;
+        color: $white;
         top: -5px;
         right: -40px;     
         cursor: pointer;    
         &:hover {
-            color: $light-color;
+            // color: $light-color;
+            color: $gray1;
+            // color: $white;
         } 
     }
-    &__subtitle {
+    &__subtittle {
         font-size: 20px;
-        font-weight: 700;
-        color: $black;
+        font-weight: 500;
+        // color: $black;
+        color: #fff;
         text-align: center;
         margin-bottom: 15px;
     }
@@ -49,10 +56,37 @@
         color: $black;
         text-align: center;
     }
-    &_user {
-        min-height: 120px;        
-        width: 400px;
-        padding: 15px 25px; 
+    // &__user {
+    //     min-height: 120px;        
+    //     width: 350px;
+    //     padding: 0 0; 
+    // }
+    &__caption {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        // background-color: $third-color;
+        background-color: $main-color;
+        text-align: center;        
+        padding: 20px 0;
+        margin-bottom: 5px;
+        color: #fff;
+        font-size: 20px; 
+        font-weight: 500; 
+        text-transform: uppercase;     
+        // padding: 0 30px;        
+    }
+    &__block {
+        padding: 15px 25px 30px 25px;
+        
+    }
+    &__tittle {
+        // color: $main-color;
+        text-align: center; 
+        font-size: 20px; 
+        font-weight: 500; 
+        margin: 5px 0;
     }
     input.error {
         border: 1px solid red!important;     
@@ -61,13 +95,13 @@
         border: none;
         text-align: left;
         color: red;
-        margin-bottom: 15px;
-        
-    }
+        margin-bottom: 15px;        
+    }    
 }
 
+
 // скрытие модальных окон
-#registry, #user-entry, #feedback {
+#registry, #feedback {
     display: none;
 }
 span.wpcf7-not-valid-tip {
@@ -76,3 +110,34 @@ span.wpcf7-not-valid-tip {
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     border: 2px solid red;
 }
+
+
+// .lwa-modal {
+//     width: 400px;
+//     background: #fff;  //new
+//     padding: 30px 40px 34px;
+// }
+
+
+// .lwa table {
+//     width: 100% !important;
+//     margin: 0px !important;
+// }
+// .lwa-enter {
+//    background-color: #19223f;
+//    color: #fff;
+//     margin-top: -30px;
+//     margin-left: -40px;
+//     margin-right: -40px;
+//     margin-bottom: 30px;   
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     font-size: 20px; 
+//     font-weight: 500; 
+//     text-transform: uppercase;   
+//     padding: 25px 0;
+// }
+// .lwa-wp-submit {
+//     width: 100%;
+// }

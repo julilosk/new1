@@ -1,0 +1,75 @@
+.my-account {
+    &__profile {
+        display: flex;
+        // border: 1px solid red;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__chessplayer {
+        .display-none {
+            display: none;
+        }
+    
+    }
+  
+    h1, h2 {
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    &__personal {
+        display: flex;
+        // border: 1px solid red;
+        align-items: center;
+    }
+    // table {
+    //     border: 1px solid $black;
+    // }
+    // table {
+    //     background-color: #e6e6fa;
+    //     width: 50%;
+    //     td {
+    //         width: 50%;
+    //         &:first-child {
+    //             font-weight: 500;
+    //         }
+    //     }
+    //     h2, h3 {
+    //         text-align: left;
+    //         padding: 10px 0;
+    //         margin: 10px 0 0 0 ;
+            
+    //     }
+    // }
+    input, select {
+        width: 100%;
+    }
+    input {
+        // background-color: #efeff6;
+        height: 42px;
+        padding: 10px;
+        border: 1px solid #777;
+        border-radius: 0;
+        font: normal 400 14px/normal Roboto,sans-serif;
+        color: #334166;
+    
+    }
+    select {
+        // background-color: #efeff6;
+        height: 42px;
+        padding: 10px;
+        border: 1px solid #777;
+        border-radius: 0;
+        font: normal 400 14px/normal Roboto,sans-serif;
+        color: #334166;
+    
+    }
+    label {
+        font-size: 14px;
+        color: #767676;
+    }
+
+    
+}

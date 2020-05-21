@@ -74,14 +74,13 @@ $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
   $('.overlay, #registry').fadeIn('slow');
 });
 $('.modal-chess__close').on('click', function(){
-  $('.overlay, #registry, #user-entry, #feedback').fadeOut('slow');
+  $('.overlay, #registry, #feedback').fadeOut('slow');
 });
-$('[data-modal=user-entry]').on('click', function() {
-  $('.overlay, #user-entry').fadeIn('slow');
-});
+
 $('[data-modal=feedback]').on('click', function() {
   $('.overlay, #feedback').fadeIn('slow');
 });
+
 
 
 function validateForms(form){
@@ -352,3 +351,4 @@ function getName (str){
   var uploaded = document.getElementById("fileformlabel");
   uploaded.innerHTML = filename;
 }
+

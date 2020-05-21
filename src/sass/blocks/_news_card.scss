@@ -8,13 +8,16 @@
     }
     &__card {
         border-radius: 10px 10px 10px 10px;
-        // border: solid 0.5px $border;
+        border: solid 0.5px $border;
         background-color: #ffffff;
         height: 400px;   
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);   
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-        }    
+        } 
+        &_project {
+            height: 320px;
+        }
     }
     &__img {
         display: block;

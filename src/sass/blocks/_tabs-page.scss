@@ -24,6 +24,10 @@
         // border: 1px solid red;  
         border-bottom: 1px solid $border;  
         margin: 15px 0;
+        &_tourn {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
     }    
     &__tab {        
         // margin: 15px 0;   
@@ -64,6 +68,15 @@
         &_active {
             display: flex;
             flex-direction: column
+        }
+        &_tourn {
+            border: solid 0.5px $border;
+            // border-top: none;
+            background-color: #ffffff;
+            padding-top: 35px;
+            margin-top: 0;  
+            // box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.20);   
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
         }
     }
     

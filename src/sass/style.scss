@@ -39,7 +39,7 @@ section {
     padding-bottom: 30px;    
 }
 h1 {
-    font-size: 40px;
+    font-size: 35px;
     color: $main-color;
 }
 h2 {
@@ -103,7 +103,7 @@ img {
     // border: 1px solid red;
 }       
 ::-webkit-scrollbar {
-    background: #f3eaea;
+    // background: #f3eaea;
     width: 8px;
 }
 ::-webkit-scrollbar-track {
@@ -141,8 +141,28 @@ nav .menu__block li.current-menu-parent>a{
     visibility: hidden; 
 }
 
+//arrow back
+.arrow-back {
+    display: block;
+    a {
+        color: $third-color;
+        &:hover {
+            text-decoration: none;
+            color: $second-color;
+            // font-weight: 500;
+        }
+    }
+} 
 
+.woocommerce-product-gallery {
+    opacity: 1!important;
+}
 
+.lwa input[type='text'],
+.lwa input[type='password'] {
+    border: 1px solid #9A9A9A;
+    box-shadow: 4px 7px 7px rgba(154,154,154,.7);
+}
 
 
 @import 'blocks/header';
@@ -179,7 +199,12 @@ nav .menu__block li.current-menu-parent>a{
 @import'blocks/feedback';
 @import'blocks/registration-tourn';
 @import'blocks/modal';
-@import'blocks/user';
+@import'blocks/shop-product';
+@import'blocks/shop-products';
+@import'blocks/cart';
+@import'blocks/select-form';
+@import'blocks/account';
+
 
 
 
