@@ -1,0 +1,94 @@
+.checkout-chess {
+
+    h2,
+    h3 {
+        text-align-last: left;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 500;
+        border: 1px solid red;
+        padding: 5px 0;
+    }
+
+    &__block {
+        display: flex;
+        margin-right: -15px;
+        margin-left: -15px;
+
+
+
+        &__order {
+            background-color: $border;
+        }
+
+        input {
+            width: 100%;
+            padding: 3px 0;
+            border: 0;
+            border-bottom: 1px solid gray;
+            color: #333;
+            -webkit-transition: .3s;
+            transition: .3s;
+        }
+
+        .woocommerce-billing-fields__field-wrapper label {
+            display: none;
+        }
+
+        .woocommerce-shipping-fields label {
+            display: none;
+        }
+
+        p {
+            span {
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+
+    .pilot_cafe_custom_show_shipping {
+        table {
+            width: 100%;
+        }
+
+        tr {
+            width: 100%;
+        }
+
+    }
+}
+
+.woocommerce-checkout-review-order {
+    border: 1px solid $border;
+    padding: 15px 15px;
+}
+
+.woocommerce-checkout {
+    margin: 35px 0;
+}
+
+// .woocommerce-shipping-methods {
+//     display: flex;
+//     // li {
+//     //     display: flex;
+//     // }
+// }
+.woocommerce-additional-fields__field-wrapper {
+
+    label,
+    textarea {
+        width: 100%;
+    }
+
+    textarea {
+        border: 1px solid gray;
+    }
+
+}
