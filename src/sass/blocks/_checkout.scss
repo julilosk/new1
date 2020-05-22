@@ -36,13 +36,18 @@
             -webkit-transition: .3s;
             transition: .3s;
         }
-
+        .woocommerce-billing-fields {
+            width: 100%;
+        }
         .woocommerce-billing-fields__field-wrapper label {
             display: none;
         }
 
         .woocommerce-shipping-fields label {
             display: none;
+        }
+        .woocommerce-checkout-review-order {
+            width: 100%;
         }
 
         p {
