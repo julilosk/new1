@@ -104,3 +104,24 @@
         float: right;
     }
 }
+.woocommerce-result-count {
+    display: none;
+}
+
+.woocommerce-ordering
+   select {
+    border: none;
+    border-bottom: 1px solid #737373;
+    font-size: 16.4px;
+    color: #414141;
+    padding-right: 25px;
+    // width: 100%;
+    outline: 0;
+    margin-bottom: 15px;
+}
+.news-all__left {
+    .product  {        
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+}
