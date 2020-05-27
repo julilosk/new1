@@ -1,0 +1,19 @@
+.woocommerce-product-gallery {
+    opacity: 1!important;
+}
+
+.woocommerce-breadcrumb {
+    background-color: $white;
+    font-size: 18px;
+    color: $main-color;
+    margin-bottom: 30px;
+    a {
+        color: $third-color;
+    }
+}
+.woocommerce-product-attributes-item {
+    th {
+       padding-right: 15px;
+    }
+    
+}

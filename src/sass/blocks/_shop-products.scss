@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
+    width: 100%;
     // border: 1px solid red;
     .product  {
         padding: 15px 15px;
@@ -118,10 +119,4 @@
     // width: 100%;
     outline: 0;
     margin-bottom: 15px;
-}
-.news-all__left {
-    .product  {        
-        flex: 0 0 33%;
-        max-width: 33%;
-    }
 }

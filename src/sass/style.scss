@@ -154,9 +154,7 @@ nav .menu__block li.current-menu-parent>a{
     }
 } 
 
-.woocommerce-product-gallery {
-    opacity: 1!important;
-}
+
 
 .lwa input[type='text'],
 .lwa input[type='password'] {
@@ -206,6 +204,7 @@ nav .menu__block li.current-menu-parent>a{
 @import'blocks/account';
 @import'blocks/checkout';
 @import'blocks/goods';
+@import'blocks/woocommerce';
 
 
 

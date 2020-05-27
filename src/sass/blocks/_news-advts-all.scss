@@ -309,30 +309,10 @@
                 // color: $second-color                     
             }
         }
-        // .current-cat    {
-        //     a {
-        //         color: $third-color;               
-        //     }
-        //     ul li a {
-        //         color: $main-color;
-        //     }
-        // }
-        .current-cat-parent  a {
-           
-                color: $third-color;   
-                ul .cat-item a {
-                    color: $main-color;
-                }
-                ul .current-cat a {
-                    color: $third-color; 
-                }
-                       
+        .current-cat  a {
+            color: $third-color;  
         }
-         
-        
-        .children li a {
-            padding-left: 35px;
-        }
+   
     } 
     &__item a {
         padding-top: 15px!important;
