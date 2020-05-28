@@ -87,6 +87,13 @@
             }
         }
     } 
+    .button {
+        margin-top: 40px!important;
+    }
+    .cart {
+        display: block;
+    }
+    
    
 }
 .cart-collaterals {   
@@ -117,6 +124,7 @@
         }
     }
     .button {      
+      
         position: absolute;
         background-color: $main-color;
         color: $white;
@@ -137,3 +145,4 @@
    
     color: $third-color;
 }
+
