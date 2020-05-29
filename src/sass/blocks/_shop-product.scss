@@ -91,18 +91,7 @@
     margin-right: 15px;
     height: 45px;
 
-    &-arrow-minus,
-    &-arrow-plus {
-      height: 100%;
-      // width: 45px;
-      cursor: pointer;
-      font-size: 18px;
-      padding: 5px 12px;
-      width: 35px;
-      box-sizing: border-box;
-      border-radius: 4px;
-      outline: none;
-    }
+   
 
     &-num {
       font-size: 18px;
@@ -113,6 +102,7 @@
 
 
     input {
+      border-radius: 4px;
       // margin: 0 auto;
       text-align: center;
       // padding-right: 25px;
@@ -123,7 +113,7 @@
       //     // border-right: none;
       //     // border-left: none;
       // width: 50%;
-      width: 45px;
+      width: 60px;
       height: 100%;
       //     // border-radius: 3px 0 0 3px;
     }
@@ -159,14 +149,19 @@
     //   }
   }
 }
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+  font-size: 20px;
   margin: 0;
 }
+
+// input[type=number]::-webkit-inner-spin-button,
+// input[type=number]::-webkit-outer-spin-button {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+//   appearance: none;
+//   margin: 0;
+// }
 
 .quantity input:focus {
   outline: 0;
