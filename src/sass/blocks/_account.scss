@@ -6,7 +6,7 @@
         margin-bottom: 20px;
     }
 
-    y &__chessplayer {
+    &__chessplayer {
         .display-none {
             display: none;
         }
@@ -56,17 +56,22 @@
         // background-color: #efeff6;
         height: 42px;
         padding: 10px;
-        border: 1px solid #777;
+        // border: 1px solid #c9d5ec;
+        // border: 1px solid transparent;
+        border: 1px solid #737373;
+        
         border-radius: 0;
         font: normal 400 14px/normal Roboto, sans-serif;
         color: #334166;
+        // background-color: #efeff6;
     }
 
     select {
         // background-color: #efeff6;
         height: 42px;
         padding: 10px;
-        border: 1px solid #777;
+        // border: 1px solid #c9d5ec;
+        border: 1px solid #737373;
         border-radius: 0;
         font: normal 400 14px/normal Roboto, sans-serif;
         color: #334166;
@@ -75,6 +80,20 @@
     label {
         font-size: 14px;
         color: #767676;
+    }
+    &__table {
+        width: 75%;
+        
+        th {
+            width: 50%;
+            padding-right: 15px;
+            padding: 5px 0;
+        }
+        td {
+            width: 50%;
+            padding-left: 15px;
+            padding: 5px 0;
+        }
     }
 
     .shop_table {
@@ -119,4 +138,6 @@
         }
 
     }
+
 }
+

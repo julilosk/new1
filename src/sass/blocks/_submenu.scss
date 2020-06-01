@@ -61,12 +61,32 @@
         } 
         li a {
             color: $main-color;
+            display: flex;
             &:hover {
                 text-decoration: none;    
                 color: $third-color; 
-                    
+                svg #cart {
+                   fill: $third-color; 
+                }
+                span {
+                    color: $third-color; 
+                } 
+            }
+            svg {
+                display: block;
+                height: 17px;
+                margin-right: 10px;
             }
         }
+    }
+    &__idblock{
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__subtittle {
+        padding: 15px 15px 0 15px;
+        font-size: 16px;
+        font-weight: 500;
     }
     
 }
@@ -75,6 +95,9 @@
     // color: $third-color; 
     color: #0069d2!important;                       
     // border-bottom: 2px solid $third-color;
+    svg #cart {
+        fill: #0069d2!important; 
+     }
 }
 
 
