@@ -20,7 +20,10 @@
         padding-left: 0;
         margin-bottom: 0; 
         font-size: 16px;        
-        background: #f4f4f8;       
+        background: #f4f4f8;
+        &_account {
+            width: 33%;
+        }       
     }    
 
     &__tab {
@@ -65,6 +68,11 @@
         // height: 100%;
         width: 75%;
         display: none;
+        &_account {
+            width: 66%;
+            padding-right: 40px;
+            padding-left: 45px;
+        }
         &_active {
             display: block;
         }

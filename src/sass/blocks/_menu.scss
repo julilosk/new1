@@ -118,6 +118,9 @@ nav {
                
             }
         }
+        .current-page-ancestor a {
+            color: $third-color!important;
+        }
     }
 
 
@@ -204,6 +207,7 @@ form {
         height: 20px;
     }
 }
+
 
 
 
