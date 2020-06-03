@@ -1,0 +1,83 @@
+body.login 
+        {  
+            background-color: #fafafa;
+            background-image: linear-gradient( 45deg, #c7c8cc 25%, transparent 25%, transparent 74%, #c7c8cc 75%, #c7c8cc), 
+            linear-gradient( 45deg, #c7c8cc 25%, transparent 25%, transparent 74%, #c7c8cc 75%, #c7c8cc);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+            }
+
+            #wp-auth-check-wrap #wp-auth-check {
+				
+				width: 520px!important;
+			}
+			#login {
+				width: 520px!important;
+				padding-top: 40px;
+			}
+			.row {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				
+				margin: 7px -15px 7px -15px;
+			}
+			.col-md-6 {
+				width: calc(50% - 30px);
+				padding-right: 15px;
+				padding-left: 15px;	
+
+						
+			}
+			.col-md-12 {
+				width: calc(100% - 30px);
+				padding-right: 15px;
+				padding-left: 15px;	
+			}
+
+            /* Устанавливаем новый фон для формы, скругляем углы и увеличиваем тень */
+            .login form{
+				border: 1px solid transparent;
+                
+               
+               
+            }
+            /* Настраиваем label и input'ы */
+            .login label{
+                color: #000000;
+			}
+			.wp-pwd{
+				margin-bottom: 20px;
+			}
+			.login select,
+			.login input[type='date'],
+			.login input[type='number'],
+            .login input[type='text'],
+            .login input[type='password'] {
+				font-size: 16px;
+				width: 100%;
+				margin: 7px auto;
+				padding-right: 15px;
+				padding-left: 15px;	
+				height: 40px;
+                border: 1px solid #9A9A9A;
+                // box-shadow: 4px 7px 7px rgba(154,154,154,.7);
+			}
+			
+            /* Настраиваем внешний вид кнопки */
+            .wp-core-ui .button-primary,
+                        .wp-core-ui .button-primary:active,
+                        .wp-core-ui .button-primary:focus{
+                background-color: #9A9A9A;
+                text-shadow: 0 -1px 1px #7D7D7D, 1px 0 1px #7D7D7D, 0 1px 1px #7D7D7D, -1px 0 1px #7D7D7D;
+                // box-shadow: 0 1px 0 #9A9A9A;
+                border-color: #9A9A9A #9A9A9A #9A9A9A;
+            }
+            .wp-core-ui .button-primary:hover{
+                background-color: #7D7D7D;
+                text-shadow: 0 -1px 1px #6E6E6E, 1px 0 1px #6E6E6E, 0 1px 1px #6E6E6E, -1px 0 1px #6E6E6E;
+                // box-shadow: 0 1px 0 #7D7D7D;
+                border-color: #7D7D7D #7D7D7D #7D7D7D;
+                
+                
+            }
