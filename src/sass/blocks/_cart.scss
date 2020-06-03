@@ -119,12 +119,22 @@
             // margin-bottom: 10px;
             td {
                 padding: 0 15px;
+                input {
+                    margin-right: 10px;
+                }
                 
             }
         }
     }
+    .woocommerce-shipping-totals{
+        // display: flex;
+        // align-items: center;
+        ul {
+            margin-bottom: 0;
+        }
+    }
     .button {      
-      
+        margin-top: 40px;
         position: absolute;
         background-color: $main-color;
         color: $white;
@@ -133,8 +143,12 @@
         //     color: $main-color; 
         // }
     }
+    .woocommerce-shipping-destination {
+        display: none;
+    }
    
 }
+
 .woocommerce-Price-currencySymbol {
     margin-left: 5px;
 }
