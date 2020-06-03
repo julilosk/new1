@@ -5,27 +5,32 @@
         margin-bottom: 25px;
         color: $main-color;
         text-align: center;
-    }    
+    }
+
     &__composition {
         justify-content: center;
     }
+
     &__card {
         background: linear-gradient(to left, #B3C4FF 0%, #FFF, #B3C4FF);
-        height: 270px;
+        min-height: 270px;
         // border: solid 0.5px $border;
         border-radius: 10px 10px 10px 10px;
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
         box-shadow: 0 3px 21px rgba(0, 0, 0, 0.18);
         // background-color: $light-gray;
         margin-bottom: 45px;
+
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+
             .team__member {
                 color: $second-color;
             }
         }
-         
-    }    
+
+    }
+
     &__year {
         font-size: 20px;
         // letter-spacing: 1.5px;
@@ -34,22 +39,25 @@
         margin-top: 10px;
         color: $second-color;
     }
-    &__body {        
+
+    &__body {
         padding: 15px 15px 27px 15px;
     }
+
     &__member {
         font-size: 16px;
         // line-height: 1.2;
         font-weight: 500;
         text-align: left;
-        color: $black;        
+        color: $black;
         margin-top: 20px;
-        margin-bottom: .75rem;  
+        margin-bottom: .75rem;
         position: relative;
-    }    
+    }
+
     &__player {
         margin: 15px 0;
-        
+
         &:before {
             position: absolute;
             padding-right: 10px;
@@ -58,20 +66,24 @@
             color: #77AEDB;
             content: "\2606";
             transition-duration: 0.5s;
-        }  
+        }
+
         &:hover {
             color: $third-color;
+
             &:before {
                 content: "\2605";
             }
         }
+
         a {
             color: $second-color;
             margin-left: 30px;
-            display: block;                     
+            display: block;
+
             &:hover {
-            color: $third-color;
-            } 
+                color: $third-color;
+            }
         }
     }
 }
