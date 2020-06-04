@@ -1,12 +1,15 @@
 
 .tourn-top {
     // background-color: $light-gray;
-    // &__tourn {
-    //     border: solid 2px red;
-    // }
-    // &__top {
+    &__tourn {
+        // border: solid 2px red;
+        width: 100%!important;
+    }
+    &__top {
     //     border: solid 2px green;
-    // }   
+        width: 100%!important;
+    }   
+  
 }
 .tourn {
     background-color: #ffffff;

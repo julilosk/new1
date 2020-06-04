@@ -91,7 +91,8 @@
         }
 
         &__block {
-            align-items: center;
+            align-items: center!important;
+            // align-items: flex-start
             padding: 5px 15px;
         }
 
@@ -144,7 +145,7 @@
 
         &__item {
             margin-top: 15px;
-            margin-bottom: 15px;
+            margin-bottom: 15px!important;
 
             &:nth-child(2) {
                 border-right: none;
@@ -152,6 +153,7 @@
         }
     }
 
+   
     .button-wpapper {
         display: none;
     }
@@ -171,7 +173,9 @@
             margin-bottom: 15px;
         }
     }
-
+    .tourn {
+        padding-right: 0!important;
+    }
     .top {
         margin-top: 25px;
     }
@@ -192,6 +196,8 @@
         }
     }
 }
+
+
 
 
 @media (max-width: 767px) {
@@ -226,6 +232,9 @@
                     height: 12px;
                 }
             }
+            .social__icon_soc {
+                display: none;
+            }
         }
     }
 
@@ -245,6 +254,9 @@
             padding: 20px 15px;
             background-color: $main-color;
             transition: 0.8s all;
+            li {
+                margin: 0 10px!important;
+            }
 
             &_active {
                 left: 0;
@@ -261,7 +273,7 @@
         display: block;
         position: absolute;
         right: 15px;
-        top: 35px;
+        top: 52px;
         transform: translateY(-50%);
         width: 26px;
         height: 15px;
@@ -322,6 +334,7 @@
     }
 
     .tourn {
+        
         &__logo {
             img {
                 width: 55px;
@@ -419,9 +432,9 @@
         }
     }
 
-    .hamburger {
-        top: 30px;
-    }
+    // .hamburger {
+    //     top: 30px;
+    // }
 
     .news {
         &__card {
@@ -548,6 +561,13 @@
             span {
                 background-color: $white;
             }
+        }
+    }
+    .tabs-page {
+        &__tabs {
+           h5 {
+               font-size: 14px;
+           }
         }
     }
 }
