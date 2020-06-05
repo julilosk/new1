@@ -27,10 +27,12 @@ body {
     color: $black;
     font-size: 1em;
     line-height: 1.5;
-    @media (max-width: 991px)  {
+
+    @media (max-width: 991px) {
         font-size: 14px;
     }
-    @media (max-width: 767px)  {
+
+    @media (max-width: 767px) {
         font-size: 12px;
     }
 }
@@ -128,10 +130,11 @@ img {
     margin-top: 40px;
 
     @media (max-width: 575px) {
-        margin-top: 0px;
+        margin-top: 10px;
     }
+
     @media (max-width: 376px) {
-        margin-top: 10px;        
+        margin-top: 0px;
     }
 
 

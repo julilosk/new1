@@ -1,11 +1,22 @@
 .submenu {
     justify-content: space-between;
+    align-items: baseline;
 
     // width: 100%;
     // background: rgba(179, 196, 255, 0.3);
     @media (max-width: 991px) {
         flex-direction: column !important;
+        flex-wrap: nowrap !important;
     }
+
+    .menuWrapper {
+        @media (max-width: 767px) {
+            overflow: hidden;
+
+        }
+    }
+
+
 
     &__title {
         width: 30%;
@@ -35,13 +46,14 @@
     &__block {
         // margin-top: 15px;
         // background: rgba(179, 196, 255, 0.3);
-        max-height: 80px;
-        min-height: 40px;
-        width: 68%;
+        // max-height: 80px;
+        // min-height: 40px;
+        // width: 68%;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-end;
+        // flex-wrap: nowrap;
 
         // margin-right: 15px;
         // margin-bottom: 20px;      
@@ -49,20 +61,39 @@
         @media (max-width: 991px) {
             width: 100%;
             // justify-content: start;
-            margin-top: 15px;
-           
+            // margin-top: 15px;
+            margin-top: 0;
         }
+
+        @media (max-width: 767px) {
+            overflow: hidden;
+            // height: 23px;
+            /* Высота li-элементов */
+            // width: 300px;
+            width: calc(100% - 30px);
+        }
+
         ul {
-            @media (max-width: 991px) {
-                border-bottom: 1px solid $border; 
-                margin: 15px 0; 
-                width: 100%;
+            // @media (max-width: 991px) {
+            //     border-bottom: 1px solid $border;
+            //     margin: 15px 0;
+            //     width: 100%;
+            // }
+
+            @media (max-width: 767px) {
+                white-space: nowrap;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                // height: 49px;
+                padding-bottom: 20px;
+                margin-bottom: -20px;
+
             }
         }
 
         li {
             display: inline-block;
-           
+
             letter-spacing: .01em;
             position: relative;
             // color: $main-color;
@@ -70,7 +101,16 @@
             // color: $gray;
             text-transform: uppercase;
             font-weight: 700;
-           
+
+            @media (max-width: 991px) {
+                border-bottom: 1px solid $border;
+                margin: 15px 0;
+                // width: 100%;
+            }
+
+            @media (max-width: 767px) {
+                display: inline-block;
+            }
 
             @media (max-width: 575px) {
                 font-size: 12px;
@@ -84,28 +124,32 @@
                 content: "";
                 width: 1px;
                 height: 22px;
-                background: $border;  
+                background: $border;
                 position: absolute;
                 right: 0;
                 top: 0;
+
                 @media (max-width: 991px) {
-                  display: none;  
+                    display: none;
                 }
 
             }
 
             &:first-child {
                 padding-left: 15px;
+
                 @media (max-width: 991px) {
-                    padding-left: 10px;  
+                    padding-left: 10px;
                 }
             }
 
             &:last-child {
                 padding-right: 15px;
+
                 @media (max-width: 991px) {
-                    padding-right:  10px;  
+                    padding-right: 10px;
                 }
+
                 &:after {
                     display: none;
                 }
@@ -116,16 +160,19 @@
             padding: 0 20px;
             color: $main-color;
             display: flex;
+
             // &:first-child {
             //     padding-left: 0;
             // }
             @media (max-width: 991px) {
-                color: $gray;  
-                padding: 0 15px; 
+                color: $gray;
+                padding: 0 15px;
             }
+
             @media (max-width: 376px) {
-                padding: 0 5px; 
+                padding: 0 5px;
             }
+
             &:hover {
                 text-decoration: none;
                 color: $third-color;
@@ -167,11 +214,12 @@
 .activelink2 {
     // color: $third-color; 
     color: #0069d2 !important;
+
     @media (max-width: 991px) {
         border-bottom: 3px solid $third-color;
     }
 
-   
+
     svg #cart {
         fill: #0069d2 !important;
     }

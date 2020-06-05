@@ -241,38 +241,78 @@
         }
     }
 
+    nav {
+        background-color: $white;
+
+        // position: absolute;
+
+
+    }
+
+    nav .row {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
     .menu {
-        position: fixed;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+        // position: fixed;
+        // position: absolute;
         top: 0;
         left: -100%;
 
+
+
         &__block {
-            position: fixed;
+            // position: fixed;
+            position: absolute;
+            overflow: hidden;
             flex-direction: column;
             justify-content: flex-start;
             top: 0;
             left: -100%;
-            width: 50%;
-            height: 100vh;
-            padding: 20px 15px;
+            // width: 100%;
+
+            width: calc(100% - 20px) !important;
+            text-align: center;
+            // height: 100vh;
+            height: auto;
+            padding: 10px 0px;
+            margin: 0 auto;
+            box-shadow: 0 1px 15px 0 #8e8e8e;
+            border-radius: 8px;
             background-color: $main-color;
             transition: 0.8s all;
+            // transition: max-height 2s ease-in;
             z-index: 9999999;
+
             li {
                 margin: 0 10px !important;
-                ul  li {
+                // border-bottom: 1px solid $gray;
+
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+
+                ul li {
                     display: none;
                 }
             }
 
             &_active {
-                left: 0;
+                // left: 0;
+                // left: 15px;
+                left: calc(100% - 20px);
+
             }
         }
 
         &__item {
-            padding-top: 10px;
-            padding-right: 0;
+            padding: 5px 0;
+            // padding-right: 0;
         }
     }
 
@@ -300,6 +340,7 @@
 
         &_active {
             span {
+
                 // background-color: $white;
                 margin-bottom: -2px;
 
@@ -607,13 +648,13 @@
         }
     }
 
-    .hamburger {
-        &_active {
-            span {
-                background-color: $white;
-            }
-        }
-    }
+    // .hamburger {
+    //     &_active {
+    //         span {
+    //             background-color: $white;
+    //         }
+    //     }
+    // }
 
     .tabs-page {
         &__tabs {
