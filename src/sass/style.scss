@@ -25,8 +25,14 @@ body {
     flex-direction: column;
     background-color: $white;
     color: $black;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.5;
+    @media (max-width: 991px)  {
+        font-size: 14px;
+    }
+    @media (max-width: 767px)  {
+        font-size: 12px;
+    }
 }
 
 section {
@@ -122,9 +128,12 @@ img {
     margin-top: 40px;
 
     @media (max-width: 575px) {
-        margin-top: 20px;
-        ;
+        margin-top: 0px;
     }
+    @media (max-width: 376px) {
+        margin-top: 10px;        
+    }
+
 
 }
 
@@ -231,7 +240,7 @@ nav .menu__block li.current-menu-parent>a {
 @import'blocks/rating';
 @import'blocks/schools';
 @import'blocks/federation';
-@import'blocks/table';
+@import'blocks/table-fshak';
 @import'blocks/tabs-page';
 @import'blocks/carousel';
 @import'blocks/tags';

@@ -50,44 +50,62 @@
             width: 100%;
             // justify-content: start;
             margin-top: 15px;
+           
+        }
+        ul {
+            @media (max-width: 991px) {
+                border-bottom: 1px solid $border; 
+                margin: 15px 0; 
+                width: 100%;
+            }
         }
 
         li {
             display: inline-block;
-            padding: 0 20px;
+           
             letter-spacing: .01em;
             position: relative;
-            color: $main-color;
+            // color: $main-color;
             font-size: 15px;
-            color: $gray;
+            // color: $gray;
             text-transform: uppercase;
             font-weight: 700;
+           
 
             @media (max-width: 575px) {
                 font-size: 12px;
             }
 
             @media (max-width: 376px) {
-                padding: 0 10px;
+                font-size: 10px;
             }
 
             &:after {
                 content: "";
                 width: 1px;
                 height: 22px;
-                background: $gray;
+                background: $border;  
                 position: absolute;
                 right: 0;
                 top: 0;
+                @media (max-width: 991px) {
+                  display: none;  
+                }
+
             }
 
             &:first-child {
                 padding-left: 15px;
+                @media (max-width: 991px) {
+                    padding-left: 10px;  
+                }
             }
 
             &:last-child {
                 padding-right: 15px;
-
+                @media (max-width: 991px) {
+                    padding-right:  10px;  
+                }
                 &:after {
                     display: none;
                 }
@@ -95,9 +113,19 @@
         }
 
         li a {
+            padding: 0 20px;
             color: $main-color;
             display: flex;
-
+            // &:first-child {
+            //     padding-left: 0;
+            // }
+            @media (max-width: 991px) {
+                color: $gray;  
+                padding: 0 15px; 
+            }
+            @media (max-width: 376px) {
+                padding: 0 5px; 
+            }
             &:hover {
                 text-decoration: none;
                 color: $third-color;
@@ -139,8 +167,11 @@
 .activelink2 {
     // color: $third-color; 
     color: #0069d2 !important;
+    @media (max-width: 991px) {
+        border-bottom: 3px solid $third-color;
+    }
 
-    // border-bottom: 2px solid $third-color;
+   
     svg #cart {
         fill: #0069d2 !important;
     }

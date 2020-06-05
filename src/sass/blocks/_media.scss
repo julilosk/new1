@@ -257,9 +257,12 @@
             padding: 20px 15px;
             background-color: $main-color;
             transition: 0.8s all;
-
+            z-index: 9999999;
             li {
                 margin: 0 10px !important;
+                ul  li {
+                    display: none;
+                }
             }
 
             &_active {

@@ -1,4 +1,5 @@
 .schools {
+    width: 100%;
     table {
         width: 100%;
         border-collapse: collapse;
@@ -15,14 +16,43 @@
             // text-transform: uppercase;
             font-weight: 500!important; ;
             font-size: 16px;
+            @media (max-width: 767px)  {
+                font-size: 14px;
+            }
+            @media (max-width: 575px)  {
+                font-size: 12px; 
+            }
             &:first-child {
-                border-radius: 5px 0px 0px 0px;
+                border-radius: 5px 0px 0px 0px;                
+            }
+            &:nth-child(3) {
+                @media (max-width: 376px)  {
+                    border-radius: 0px 5px 0px 0px;
+                }
+            }
+            &:nth-child(4) {
+                @media (max-width: 575px)  {
+                    border-radius: 0px 5px 0px 0px;
+                }
+                @media (max-width: 376px)  {
+                    display: none;
+                }
             }
             &:last-child {
                 border-radius: 0px 5px 0px 0px;
+                // @media (max-width: 991px)  {
+                //     width: 35%;
+                // }
+                // @media (max-width: 767px)  {
+                //     width: 40%;
+                // }
+                @media (max-width: 575px)  {
+                    display: none;
+                }
             }
         }  
-        tr {           
+        tr { 
+            width: 100%;          
             font-size: 14px;   
             margin: 10px 0;    
             // border-bottom: 0.5px solid $gray2;
@@ -30,6 +60,15 @@
             // background-color: $light-color;
             // &:last-child {
             //     border-bottom: none;
+            // }
+            @media (max-width: 767px)  {
+                font-size: 12px;
+            }
+            @media (max-width: 575px)  {
+                font-size: 10px; 
+            }
+            // @media (max-width: 376px)  {
+            //     font-size: 8px; 
             // }
             &:nth-child(odd) {
                 background-color: #dfdfed;
@@ -45,9 +84,30 @@
         }  
         td {
             padding: 7px 15px;   
+            @media (max-width: 991px)  {
+                padding: 7px 10px;   
+            }
+            @media (max-width: 767px)  {
+                padding: 7px 5px;   
+            }
+            @media (max-width: 575px)  {
+                padding: 7px 3px;   
+            }
             &:first-child {
                 font-weight: 700;
                 width: 15%;
+                // @media (max-width: 991px)  {
+                //     width: 10%;
+                // }
+                // @media (max-width: 767px)  {
+                //     width: 5%;
+                // }
+                // @media (max-width: 575px)  {
+                //     width: 5%; 
+                // }
+                @media (max-width: 376px)  {
+                    width: auto;
+                }
             }
             &:nth-child(2) {
                 width: 25%;
@@ -58,16 +118,40 @@
                         color: #fff;  
                     }
                 }
+                // @media (max-width: 767px)  {
+                //     width: 20%;
+                // }
+                @media (max-width: 376px)  {
+                    width: auto;
+                }
             }
             
             &:nth-child(3) {
                 width: 20%;
+                // @media (max-width: 991px)  {
+                //     width: 15%;
+                // }
+                @media (max-width: 376px)  {
+                    width: auto;
+                }
             }
             &:nth-child(4) {
                 width: 15%;
+                @media (max-width: 376px)  {
+                    display: none;
+                }
             }
             &:nth-child(5) {
                 width: 25%;
+                // @media (max-width: 991px)  {
+                //     width: 35%;
+                // }
+                // @media (max-width: 767px)  {
+                //     width: 40%;
+                // }
+                @media (max-width: 575px)  {
+                   display: none;
+                }
             }
         } 
         
