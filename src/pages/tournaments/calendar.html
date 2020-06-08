@@ -24,80 +24,121 @@
             <div class="row top-header__block">
                 <div class="top-header__headline">
                     <div class="top-header__logo">
-                        <a href="/">  <img src="../../img/logo_white.svg" alt="logo" class="top-header__img"> </a>
-                    </div>    
-                    <div  class="top-header__title ">
+                        <a href="/"> <img src="../../img/logo_white.svg" alt="logo" class="top-header__img"> </a>
+                    </div>
+                    <div class="top-header__title ">
                         <h1> Федерация шахмат Алтайского края</h1>
                         <span class="top-header__subtitle">общественная организация</span>
                     </div>
                 </div>
-            
+
                 <div class="social ">
-                    <a href="#" class="social__icon"><img  src="../../icons/facebook-f-brands.svg" alt="facebook" ></a>
-                    <a  href="#" class="social__icon"><img  src="../../icons/instagram.svg" alt="instagram" ></a>    
-                    <a  href="#" class="social__icon"> <img  src="../../icons/user-alt-solid.svg" alt="private"></a>
+                    <a href="login.html" class="social__icon social__icon_soc" target="_blank"><img
+                            src="../../icons/facebook-f-brands.svg" alt="facebook"></a>
+                    <a href="#" class="social__icon social__icon_soc" target="_blank"><img
+                            src="../../icons/instagram.svg" alt="instagram"></a>
+
+                    <div id="widget-area" class="widget-area" role="complementary">
+                        <div class="chw-widget">
+                            <div class="lwa lwa-template-modal">
+                                <div class="lwa-links-modal social__box">
+                                    <div class=" dropdown">
+                                        <div class="social__icon ">
+                                            <img src="../../icons/user-alt-solid.svg" alt="private" class="dropbtn">
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <a href="my-account.html">
+                                                <img src="../../icons/user-alt-solid.svg" alt="private" class="">
+                                                Профиль
+                                            </a>
+                                            <a href="#">
+                                                <img src="../../icons/shopping-cart-solid.svg" alt="cart" class="">
+                                                Корзина (0)
+                                            </a>
+                                            <a href="#">
+                                                <img src="../../icons/sign-in-alt-solid.svg" alt="выход" class="">
+                                                Выйти
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- <span>Войти</span>  -->
+                                    <!-- Войти -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </header>
 
-    <nav> 
+    <nav>
         <div class="container">
             <div class="menu row">
                 <ul class="menu__block">
 
-                    <li class="menu__item"><a  href="../../pages/news/all.html" class="menu__link"> Новости</a>
+                    <li class="menu__item"><a href="../../pages/news/all.html" class="menu__link"> Новости</a>
                         <ul>
-                            <li><a href="../../pages/news/all.html">Все новости<!-- Последние --></a></li>
+                            <li><a href="../../pages/news/all.html">Все новости
+                                    <!-- Последние --></a></li>
                             <li><a href="../../pages/news/inform.html">Объявления</a></li>
                             <!-- <li><a href="../../pages/news/press.html">Пресса</a></li> -->
                             <li><a href="../../pages/news/photos.html">Фотогалерея</a></li>
-                        </ul>                                       
-                    </li>     
+                        </ul>
+                    </li>
 
-                    <li class="menu__item"><a href="../../pages/tournaments/tournaments.html"  class="menu__link">Турниры</a>
+                    <li class="menu__item"><a href="../../pages/tournaments/tournaments.html"
+                            class="menu__link">Турниры</a>
                         <ul class="menu__sub-menu">
                             <li><a href="../../pages/tournaments/tournaments.html">Все турниры</a></li>
                             <li><a href="../../pages/tournaments/calendar.html">Календарь</a></li>
-                            <li ><a href="../../pages/tournaments/translation.html">Трансляция</a></li>                            
-                        </ul> 
+                            <li><a href="../../pages/tournaments/translation.html">Трансляция</a></li>
+                        </ul>
                     </li>
 
-                    <li class="menu__item"><a href="../../pages/federation/federation.html"  class="menu__link">Федерация</a>
+                    <li class="menu__item"><a href="../../pages/federation/federation.html"
+                            class="menu__link">Федерация</a>
                         <ul class="menu__sub-menu">
                             <li><a href="../../pages/federation/federation.html">Общая информация</a></li>
-                            <li><a href="../../pages/federation/dokumentyi.html">Документы</a></li> 
+                            <li><a href="../../pages/federation/dokumentyi.html">Документы</a></li>
                             <li><a href="../../pages/federation/pravlenie.html">Структура</a></li>
                             <li><a href="../../pages/federation/projects.html">Программы и проекты</a></li>
                             <!-- <li><a href="../../pages/federation/chlenstvo.html">Членство</a></li>    -->
                         </ul>
                     </li>
 
-                    <li class="menu__item"><a href="../../pages/chessplayers/teams.html"  class="menu__link">Шахматисты</a>
-                        <ul class="menu__sub-menu">                             
+                    <li class="menu__item"><a href="../../pages/chessplayers/teams.html"
+                            class="menu__link">Шахматисты</a>
+                        <ul class="menu__sub-menu">
                             <li><a href="../../pages/chessplayers/teams.html">Сборные</a></li>
-                            <li><a href="../../pages/chessplayers/champions_kray.html">Чемпионы <!-- Алтайского края --></a></li>
+                            <li><a href="../../pages/chessplayers/champions_kray.html">Чемпионы
+                                    <!-- Алтайского края --></a></li>
                             <li><a href="../../pages/chessplayers/rating.html">Рейтинг-лист</a></li>
-                        </ul>  
-                    </li> 
-                    
-                    <li class="menu__item"><a href="../../pages/chess_schools/schools.html"  class="menu__link">Клубы и школы</a>
+                        </ul>
+                    </li>
+
+                    <li class="menu__item"><a href="../../pages/chess_schools/schools.html" class="menu__link">Клубы и
+                            школы</a>
                         <ul class="menu__sub-menu">
                             <li><a href="../../pages/chess_schools/schools.html">Секции</a></li>
-                            <li><a href="../../pages/chess_schools/kraevoy-shahmatnyiy-klub.html"> Краевой шахматный клуб</a></li>                               
+                            <li><a href="../../pages/chess_schools/kraevoy-shahmatnyiy-klub.html"> Краевой шахматный
+                                    клуб</a></li>
                             <li><a href="../../pages/chess_schools/akademiya.html">Академия</a></li>
                         </ul>
                     </li>
-                    
-                    <li class="menu__item"><a href="../../pages/shop/shop.html"  class="menu__link">Магазин</a></li>
+
+                    <li class="menu__item"><a href="../../pages/shop/shop.html" class="menu__link">Магазин</a></li>
                 </ul>
                 <div class="form-search">
                     <form>
                         <input type="text" placeholder="">
-                        <button type="submit"><img  src="../../icons/search-solid.svg" alt="фейсбук" ></button>
+                        <button class="button-search" type="submit"><img src="../../icons/search-solid.svg"
+                                alt="фейсбук"></button>
                     </form>
                 </div>
-               
+
             </div>
         </div>
 
@@ -107,24 +148,31 @@
             <span></span>
         </div>
     </nav> 
-    
-    <section > 
-      
-        <div class="indent-top home-page-block">
-            <div class="container">
 
-                <div class="submenu row">
-                    <h2 class="submenu__title">Турниры</h2>
-                    <div class="submenu__block">  
-                        <ul>
-                            <li><a href="../../pages/tournaments/tournaments.html"  class="submenu__link">Все турниры</a></li>
-                            <li><a href="../../pages/tournaments/calendar.html"  class="submenu__link">Календарь</a></li>
-                            <li> <a href="../../pages/tournaments/translation.html"  class="submenu__link">Трансляция</a></li>
-                        </ul>
+    <section > 
+        <div class="submenu">
+            <div class="indent-top home-page-block">
+                <div class="container">
+                    <div class="submenu__row row">
+                        <h2 class="submenu__title">Турниры</h2>
+
+                        <div class="menuWrapper">
+                            <div class="submenu__limiter">
+
+                                <div class="submenu__block">  
+                                    <ul>
+                                        <li><a href="../../pages/tournaments/tournaments.html"  class="submenu__link">Все турниры</a></li>
+                                        <li><a href="../../pages/tournaments/calendar.html"  class="submenu__link">Календарь</a></li>
+                                        <li> <a href="../../pages/tournaments/translation.html"  class="submenu__link">Трансляция</a></li>
+                                    </ul>
+                                </div>  
+                            </div>
+                        </div>
+
+
                     </div>
-                </div> 
-              
-           </div>
+                </div>
+            </div>
         </div>
 
         <div class="container">
@@ -155,6 +203,10 @@
                         
                         <li class="calendar__tab">
                             <h5>Сельские</h5>
+                        </li> 
+
+                        <li class="calendar__tab">
+                            <h5>ОВЗ</h5>
                         </li> 
                     </ul>         
 

@@ -22,6 +22,13 @@
     width: 100%;
     padding: 15px 15px 25px 0;
     // border: solid 2px red;
+    .tabs-page {
+        h5 {
+            @media (max-width: 575px)  {
+                font-size: 16px!important;               
+            }
+        }
+    }
 
     &__list {
         // padding: 0 15px;
@@ -29,6 +36,11 @@
         overflow: hidden;
         overflow-y: scroll;
         width: 100%;
+
+        // @media (max-width: 575px) {
+        //     height: 100%;
+        //     overflow-y: visible;
+        // }
     }
 
     &__item {
@@ -42,9 +54,9 @@
         &:hover {
             background-color: rgba(179, 196, 255, 0.3);
 
-            .tourn__day {
-                color: $third-color;
-            }
+            // .tourn__day {
+            //     color: $third-color;
+            // }
         }
 
         &:first-child {
@@ -100,11 +112,22 @@
         align-items: center;
         // color: $gray;
         color: #424d58;
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
+
+
+
     }
 
     &__flex {
         display: flex;
         align-items: center;
+
+        @media (max-width: 767px) {
+            margin-bottom: 5px;;
+        }
     }
 
     &__calendar {
@@ -154,4 +177,6 @@
             }
         }
     }
+
+
 }

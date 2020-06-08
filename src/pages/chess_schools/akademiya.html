@@ -32,9 +32,42 @@
                 </div>
 
                 <div class="social ">
-                    <a href="#" class="social__icon"><img src="../../icons/facebook-f-brands.svg" alt="facebook"></a>
-                    <a href="#" class="social__icon"><img src="../../icons/instagram.svg" alt="instagram"></a>
-                    <a href="#" class="social__icon"> <img src="../../icons/user-alt-solid.svg" alt="private"></a>
+                    <a href="login.html" class="social__icon social__icon_soc" target="_blank"><img
+                            src="../../icons/facebook-f-brands.svg" alt="facebook"></a>
+                    <a href="#" class="social__icon social__icon_soc" target="_blank"><img
+                            src="../../icons/instagram.svg" alt="instagram"></a>
+
+                    <div id="widget-area" class="widget-area" role="complementary">
+                        <div class="chw-widget">
+                            <div class="lwa lwa-template-modal">
+                                <div class="lwa-links-modal social__box">
+                                    <div class=" dropdown">
+                                        <div class="social__icon ">
+                                            <img src="../../icons/user-alt-solid.svg" alt="private" class="dropbtn">
+                                        </div>
+                                        <div class="dropdown-content">
+                                            <a href="my-account.html">
+                                                <img src="../../icons/user-alt-solid.svg" alt="private" class="">
+                                                Профиль
+                                            </a>
+                                            <a href="#">
+                                                <img src="../../icons/shopping-cart-solid.svg" alt="cart" class="">
+                                                Корзина (0)
+                                            </a>
+                                            <a href="#">
+                                                <img src="../../icons/sign-in-alt-solid.svg" alt="выход" class="">
+                                                Выйти
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- <span>Войти</span>  -->
+                                    <!-- Войти -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -116,21 +149,23 @@
     </nav>
 
     <section class="academy">
-        <div class="indent-top home-page-block">
-            <div class="container">
-                <div class="submenu row">
-                    <h2 class="submenu__title">Клубы и школы</h2>
-
-                    <div class="submenu__block">
-                        <ul>
-                            <li><a href="../../pages/chess_schools/schools.html" class="submenu__link">Секции</a></li>
-                            <li><a href="../../pages/chess_schools/kraevoy-shahmatnyiy-klub.html"
-                                    class="submenu__link">Краевой шахматный клуб</a></li>
-                            <li> <a href="../../pages/chess_schools/akademiya.html" class="submenu__link">Академия</a>
-                            </li>
-                        </ul>
+        <div class="submenu">
+            <div class="indent-top home-page-block">
+                <div class="container">
+                    <div class="submenu__row row">
+                        <h2 class="submenu__title">Клубы и школы</h2>
+                        <div class="menuWrapper">
+                            <div class="submenu__limiter">
+                                <div class="submenu__block">
+                                    <ul>
+                                        <li><a href="../../pages/chess_schools/schools.html"  class="submenu__link">Секции</a></li>
+                                        <li><a href="../../pages/chess_schools/kraevoy-shahmatnyiy-klub.html" class="submenu__link">Краевой шахматный клуб</a></li>
+                                        <li> <a href="../../pages/chess_schools/akademiya.html" class="submenu__link">Академия</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -200,43 +235,52 @@
                 <h2>Услуги</h2>
                 <div class="project__block">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.0s">
+                        <div class="col-lg-3 col-md-6  col-sm-6  col-6 fadeInUp wow" data-wow-duration="2s"
+                            data-wow-delay="0.0s">
                             <div class="project__scale">
-                                <!-- <a class="project__link " href="page/federation/chess_in_shool.html"> -->
+                                <a class="project__link " href="page/federation/chess_in_shool.html">
 
-                                <div class="project__item project__item_school">
-                                    <div class="project__title">Обучение детей шахматам</div>
-                                </div>
-                                <!-- </a> -->
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.16s">
-                            <div class="project__scale">
-                                <!-- <a class="project__link" href="page/federation/chess_in_univer.html"> -->
-                                <div class="project__item project__item_univer">
-                                    <div class="project__title">Обучение взрослых шахматам</div>
-                                </div>
-                                <!-- </a> -->
+                                    <div class="project__item" style=" background-image: linear-gradient(45deg,  rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('./../../img/projects/school.jpg');
+                                            background-size: cover;">
+                                        <div class="project__title">Обучение детей шахматам</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.32s">
+                        <div class="col-lg-3 col-md-6 col-sm-6  col-6 fadeInUp wow" data-wow-duration="2s"
+                            data-wow-delay="0.16s">
                             <div class="project__scale">
-                                <!-- <a class="project__link" href="page/federation/chess_children_house.html"> -->
-                                <div class="project__item project__item_child-house ">
-                                    <div class="project__title"> Индивидуальное обучение шахматам</div>
-                                </div>
-                                <!-- </!-->
+                                <a class="project__link" href="page/federation/chess_in_univer.html">
+                                    <div class="project__item " style=" background-image: linear-gradient(45deg,  rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('./../../img/projects/chess_board.jpg');
+                                            background-size: cover;">
+                                        <div class="project__title"> Обучение взрослых шахматам</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.48s">
+                        <div class="col-lg-3 col-md-6 col-sm-6  col-6 fadeInUp wow" data-wow-duration="2s"
+                            data-wow-delay="0.32s">
                             <div class="project__scale">
-                                <!-- <a class="project__link" href="page/federation/regional_chess_day.html"> -->
-                                <div class="project__item project__item_chess-day ">
-                                    <div class="project__title">Турниры</div>
-                                </div>
-                                <!-- </a>   -->
+                                <a class="project__link" href="page/federation/chess_children_house.html">
+                                    <div class="project__item  " style=" background-image: linear-gradient(45deg,  rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('./../../img/projects/chess_child.jpg');
+                                        background-size: cover;">
+                                        <div class="project__title"> Индивидуальное обучение шахматам</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-6  col-6 fadeInUp wow" data-wow-duration="2s"
+                            data-wow-delay="0.48s">
+                            <div class="project__scale">
+                                <a class="project__link" href="page/federation/regional_chess_day.html">
+                                    <div class="project__item " style=" background-image: linear-gradient(45deg,  rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('./../../img/projects/chess_day.jpg');
+                                        background-size: cover;">
+                                        <div class="project__title">Турниры</div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
 
@@ -244,6 +288,9 @@
                 </div>
             </div>
         </div>
+
+
+        
 
         <!-- advantages -->
         <div class="home-page-block">
@@ -254,19 +301,19 @@
 
                     <div class="academy__advantage">
                         <img src="../../icons/academy/trophy.svg" alt="">
-                        <div class="academy__title1">профессиональные тренеры</div>
+                        <div class="academy__title1">профессиональные <br> тренеры</div>
                     </div>
 
 
                     <div class="academy__advantage">
                         <img src="../../icons/academy/trophy.svg" alt="">
-                        <div class="academy__title1">уникальная проверенная методика</div>
+                        <div class="academy__title1">уникальная <br>проверенная<br> методика</div>
                     </div>
 
 
                     <div class="academy__advantage">
                         <img src="../../icons/academy/trophy.svg" alt="">
-                        <div class="academy__title1">турниры с обсчетом рейтинга</div>
+                        <div class="academy__title1">турниры <br> с обсчетом рейтинга</div>
                     </div>
 
                     <!-- <div class="academy__advantage">
@@ -309,7 +356,7 @@
 
                     <div class="academy__advantage">
                         <img src="../../icons/academy/trophy.svg" alt="">
-                        <div class="academy__title1">программы занятий выходного дня</div>
+                        <div class="academy__title1">программы <br>занятий <br>выходного дня</div>
                     </div>
 
                     <div class="academy__advantage">
@@ -538,27 +585,23 @@
         <div class="home-page-block">
             <div class="container">
                 <h2>Контакты</h2>
-                <div class="academy__flexbox">
-                    <div class="academy__contact">
+                <div class="row ">
+                    <div class="col-lg-3 col-md-6  col-sm-6  col-12 academy__contact">
                         <div class="icon icon_indent"><img src="../../icons/map-marker-alt-solid.svg" alt="phone"></div>
+                       
                         <div class="academy__item">
                             <p class="fat"> Адреса: </p>
-
                             <span>
                                 <!-- КГБУ "Краевой шахматный клуб" — <br> --> &#10004; ул. Гоголя, 42 </span>
                             <span>
                                 <!-- ТЦ «Заря» —  --> &#10004; Власихинская, 166 </span>
-
-
-
-
                             <!-- <span> 1)  КГБУ "Краевой шахматный клуб" — <br> ул. Гоголя, д.42                      
                             </span>
                             <span> 2) ТЦ «Заря» — Власихинская, 166 </span> -->
                         </div>
                     </div>
 
-                    <div class="academy__contact">
+                    <div class="col-lg-3 col-md-6  col-sm-6  col-12 academy__contact">
                         <div class="icon icon_indent"><img src="../../icons/phone-alt-solid.svg" alt="phone"></div>
                         <div class="academy__item">
                             <p class="fat"> Телефон: </p>
@@ -567,7 +610,7 @@
                         </div>
                     </div>
 
-                    <div class="academy__contact ">
+                    <div class="col-lg-3 col-md-6  col-sm-6  col-12 academy__contact ">
                         <div class="icon icon_indent"><img src="../../icons/skype-brands.svg" alt="phone"></div>
                         <div class="academy__item">
                             <p class="fat"> Skype: </p>
@@ -575,7 +618,7 @@
                         </div>
                     </div>
 
-                    <div class="academy__contact ">
+                    <div class="col-lg-3 col-md-6  col-sm-6  col-12 academy__contact ">
                         <div class="icon icon_indent"><img src="../../icons/envelope-solid.svg" alt="mail"></div>
                         <div class="academy__item">
                             <p class="fat"> E-mail: </p>
@@ -613,16 +656,16 @@
         <div class="home-page-block">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 col-6">
                         <img src="../../img/academy/20191229_112754-300x225.jpg" alt="" class="academy__photo">
                     </div>
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 col-6">
                         <img src="../../img/academy/GTerCzJSPBQ-300x225.jpg" alt="" class="academy__photo">
                     </div>
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 col-6">
                         <img src="../../img/academy/IMG-20190807-WA0004-300x225.jpg" alt="" class="academy__photo">
                     </div>
-                    <div class="col-md-3 col-sm-6 ">
+                    <div class="col-md-3 col-sm-6 col-6">
                         <img src="../../img/academy/20191229_112754-300x225.jpg" alt="" class="academy__photo">
                     </div>
                 </div>

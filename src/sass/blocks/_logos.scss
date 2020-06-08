@@ -5,9 +5,19 @@
     flex-wrap: wrap;
     min-height: 112px;
     padding-top: 25px;  
+    @media (max-width: 575px) {
+        padding-top: 10px;  
+    }
+    // @media (max-width: 376px) {
+    //     padding-top: 0;  
+    // }
     &__item {
         width: 135px;        
         text-align: center;
+        @media (max-width: 575px) {
+            width: 80px;
+            margin-bottom: 5px;
+        }
     }
     &__scale {
         display: inline-block; /* Строчно-блочный элемент */
@@ -23,6 +33,10 @@
         margin: 0 auto;        
         object-fit: cover;              
         transition: opacity 0.35s ease 0s;
+        @media (max-width: 575px) {
+            width: 40px;
+            height: 40px;
+        }
         &:hover {
             transform: scale(1.1);/* Увеличиваем масштаб */
         }
@@ -32,7 +46,10 @@
         font-size: 12px;
         text-align: center;   
         margin-bottom: 5px; 
-        line-height: 1.2;       
+        line-height: 1.2;   
+        @media (max-width: 575px) {
+            font-size: 8px;
+        }    
     }
     &__link {
         cursor: pointer;

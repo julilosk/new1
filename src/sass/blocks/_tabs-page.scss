@@ -1,3 +1,5 @@
+
+
 .tabs-page  {          
     width: calc(75% - 15px);
     margin-right: 15px;
@@ -24,11 +26,15 @@
         // border: 1px solid red;  
         border-bottom: 1px solid $border;  
         margin: 15px 0;
+
+        
+
         &_tourn {
             margin-bottom: 0;
             border-bottom: none;
         }
-    }    
+    }   
+
     &__tab {        
         // margin: 15px 0;   
         padding: 0 15px;         
@@ -36,10 +42,23 @@
         // transition: 0.2s all;
         font-weight: 500;    
         // border: 1px solid red;    
-        // border-bottom: 1px solid $border;      
+        // border-bottom: 1px solid $border;     
+        @media (max-width: 376px)  {
+            padding: 0 8px;               
+        } 
         h5 {
             color: $gray;
+
+            @media (max-width: 767px)  {
+                font-size: 14px;               
+            }
+            @media (max-width: 575px)  {
+                font-size: 12px;               
+            }
+           
         }
+
+
         &:hover {                      
             // border-bottom: 2px solid $third-color;   
             h5 {

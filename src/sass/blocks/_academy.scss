@@ -9,8 +9,8 @@
 
 .academy {
     // color: $main-color;
-    line-height: 1.5;
-    font-size: 16px;
+    // line-height: 1.5;
+    // font-size: 16px;
     // display: flex;
     // flex-direction: column;
     // h3 {
@@ -21,6 +21,17 @@
     //         margin-top: 0;
     //     }
     // }
+    h2 {
+        @media (max-width: 575px) {
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+     
+        @media (max-width: 376px) {
+           margin-top: 15px;
+           
+        }
+    }
 
 
     &__video {
@@ -69,12 +80,18 @@
     }
 
     &__advantage {
-        width: 220px;
-        margin: 10px 25px;
+        // width: 220px;
+        width: 28%;
+        // width: auto;
+        margin: 10px 10px;
         // border: 1px solid $border;
         text-align: center;
         margin-bottom: 25px;
         transition: opacity 0.35s ease 0s;
+
+        @media (max-width: 376px) {
+            margin: 5px 5px;
+        }
 
         img {
             width: 63px;
@@ -86,6 +103,20 @@
             // &:hover {
             //     transform: scale(1.1);/* Увеличиваем масштаб */
             // }
+            @media   (max-width: 767px) {
+                width: 53px;
+                height: 53px;
+            }
+    
+            @media (max-width: 575px) {
+                width: 43px;
+                height: 43px;
+            }
+            @media (max-width: 376px) {
+                width: 33px;
+                height: 33px;
+    
+            }
         }
 
         &:hover {
@@ -101,13 +132,32 @@
 
     &__title1 {
         margin-top: 7px;
-        font-size: 16px;
+        font-size: 0.8em;
         font-weight: 500;
         text-align: center;
         margin-bottom: 5px;
         line-height: 1.7;
         color: $second-color;
         text-transform: uppercase;
+        @media   (max-width: 991px) {
+            
+            line-height: 1.5;
+        }
+        @media   (max-width: 767px) {
+            // font-size: 12px;
+            // line-height: 1.2;
+        }
+
+        // @media (max-width: 575px) {
+        //     // font-size: 10px;
+        //     line-height: 1.2;
+
+        // }
+        // @media (max-width: 376px) {
+        //     font-size: 8px;
+           
+
+        // }
     }
 
 
@@ -120,7 +170,10 @@
         // border: solid 0.5px $border;
         border-radius: 10px 10px 10px 10px;
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
-        // margin-bottom: 45px;        
+        // margin-bottom: 45px;  
+        
+        
+
 
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
@@ -147,7 +200,7 @@
     }
 
     &__title {
-        font-size: 20px;
+        font-size: 1.2em;
         line-height: 1.2;
         font-weight: 700;
         text-align: center;
@@ -157,7 +210,7 @@
     }
 
     &__text {
-        font-size: 14px;
+        font-size: 1em;
     }
 
     &__link {
@@ -170,29 +223,17 @@
     }
 
 
-    &__flexbox {
-        display: flex;
-        flex-wrap: wrap;
-        // border: 1px solid red;
-        align-items: flex-start;
-        justify-content: center;
-        // padding: 0 15px;
-    }
+    
 
 
     &__contact {
-        width: 23%;
+        // width: 23%;
         display: flex;
         justify-content: center;
         // margin-bottom: 30px;       
         align-items: flex-start;
-        // border: 1px solid red;
-        // padding-left: 15px;
-        margin-right: 10px;
-
-        &:last-child {
-            margin-right: 0;
-        }
+        margin-top: 5px;
+        
     }
 
     &__item {
@@ -214,11 +255,31 @@
     }
 
     &__photo {
-        height: 200px;
+        height: 20vh;
         width: 100%;
         object-fit: cover;
         // width: 100%;
         // object-fit: cover;
+        // @media   (max-width: 1199px) {
+        //     height: 180px;
+        // }
+        // @media   (max-width: 991px) {
+        //     height: 160px;
+        // }
+        // @media   (max-width: 767px) {
+        //     height: 140px;
+        // }
+        &:first-child{
+            @media (max-width: 575px) {
+                margin-top: 20px;
+            }
+        }
+       
+        // @media (max-width: 376px) {
+        //     height: 100px;
+           
+
+        // }
     }
 
 

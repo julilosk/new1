@@ -5,6 +5,18 @@
     margin: 15px 0;
     // border: solid 2px red;
     height: 33px;
+
+    @media (max-width: 767px) {
+       padding-right: 15px;
+    }
+
+    @media (max-width: 575px) {
+        width: 100%;
+        justify-content: flex-end;
+        margin: 0;
+        padding-right: 0;
+    }
+
     &_academy {
         justify-content: center;
     }
@@ -23,6 +35,9 @@
             // margin-left: 0;
             
         // }
+        @media (max-width: 575px) {
+            margin-right: 0;
+        }
        
         img {
             height: 17px;
@@ -45,7 +60,20 @@
         font-weight: 500;
         font-size: 16px;
         color: $main-color; 
-        margin-left: 15px;       
+        margin-left: 15px;   
+        
+        @media (max-width: 767px) {
+            padding-bottom: 5px;
+            padding-right: 5px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 14px;
+            margin-left: 5px;
+            padding-right: 0;
+        }
+
+
         &:hover {
             text-decoration: none;
             color: $third-color;   
@@ -53,9 +81,16 @@
             //     border: 2px solid $third-color;
             // }
         }
+
+      
     }
     &__footer {
         justify-content: center;
+
+        @media (max-width: 575px) {
+            display: none;
+        }
+
         a {
             background-color: $gray2;
         }
@@ -79,6 +114,12 @@
     width: 45px;
     height: 45px;
     margin-right: 20px; 
+
+    @media (max-width: 575px) {
+        width: 35px;
+        height: 35px;
+    }
+
     &_indent {
         margin: 0 25px;
         &:first-child {
@@ -92,6 +133,12 @@
     img {
         height: 20px;
         display: block;
+
+        @media (max-width: 575px) {
+            height: 18px;
+        }
+
+       
     }
 }
 

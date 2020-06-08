@@ -1,0 +1,9 @@
+.menu-main-container {
+    width: 100%;
+}
+
+.lwa-modal {
+    @media (max-width: 575px) {
+        width: 80%;
+    }
+}

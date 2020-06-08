@@ -2,15 +2,18 @@
     &__text {
         margin: 15px 0;
     }
+
     &__contact {
         display: flex;
         margin-bottom: 30px;       
         align-items: center;
     }
+
     &__item {
         display: flex;
         flex-direction: column;
         color: $main-color;
+        width: calc(100% - 50px);
         p {
             margin-bottom: 2px;
             margin-right: 0;
@@ -29,4 +32,32 @@
         margin-left: 15px;
     }
 
+
+
+    .structure{
+        &__tab{
+            &:last-child {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+.projects-page {
+    width: 100%;
+    .tabs-page {
+        &__tab{
+            &:last-child {
+                @media (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+    }
 }

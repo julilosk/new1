@@ -219,10 +219,10 @@ $('input[name=phone]').mask("+7 (999) 999-99-99");
     nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
     responsive: [
         {
-          breakpoint: 992,
+          breakpoint: 767,
           settings: {
-          dots: true,
-          arrows: false
+            slidesToShow: 1,
+            slidesToScroll: 1,
           }
         }
     ] 
@@ -246,7 +246,7 @@ $('input[name=phone]').mask("+7 (999) 999-99-99");
             breakpoint: 992,
             settings: {
             // dots: true,
-            arrows: false
+            // arrows: false
             }
           }
       ],        
@@ -269,13 +269,18 @@ $('input[name=phone]').mask("+7 (999) 999-99-99");
       responsive: [
           {
             breakpoint: 992,
-            settings: {
-            dots: true,
-            // slidesToShow: 5,
-            // slidesToScroll: 5,
-            arrows: false
+            settings: {           
+              slidesToShow: 3,            
             }
-          }
+          },
+          // {
+          // breakpoint: 750,
+          //   settings: {
+          //       vertical: false,
+          //       dots: false,
+          //       slidesToShow:2
+          //   }
+          // }
       ],        
       focusOnSelect: true
     });
@@ -307,6 +312,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   });
 });
+
 
 
 
