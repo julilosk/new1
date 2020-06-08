@@ -51,18 +51,22 @@ section {
 .home-page-block {
     padding-top: 30px;
     padding-bottom: 30px;
+
     @media (max-width: 991px) {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+
     @media (max-width: 767px) {
         padding-top: 15px;
         padding-bottom: 15px;
     }
+
     @media (max-width: 575px) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
     @media (max-width: 376px) {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -79,22 +83,26 @@ h2 {
     font-size: 35px;
     // margin: 0 auto;
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5em;
     color: $main-color;
     font-weight: 600;
-    
+
     @media (max-width: 1199px) {
         font-size: 30px;
     }
+
     @media (max-width: 991px) {
         font-size: 27px;
     }
+
     @media (max-width: 767px) {
         font-size: 25px;
     }
+
     @media (max-width: 575px) {
         font-size: 20px;
     }
+
     @media (max-width: 376px) {
         font-size: 18px;
     }
@@ -156,18 +164,23 @@ img {
 
 .indent-top {
     margin-top: 40px;
+
     @media (max-width: 1199px) {
         margin-top: 30px;
     }
+
     @media (max-width: 991px) {
         margin-top: 20px;
     }
+
     @media (max-width: 767px) {
         margin-top: 15px;
     }
+
     @media (max-width: 575px) {
         margin-top: 10px;
     }
+
     @media (max-width: 376px) {
         margin-top: 0px;
     }
@@ -236,9 +249,10 @@ nav .menu__block li.current-menu-parent>a {
 .arrow-back {
     display: block;
     margin: 20px 0;
+
     @media (max-width: 575px) {
         margin: 10px 0;
-        
+
     }
 
     a {
