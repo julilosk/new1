@@ -5,6 +5,12 @@
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.18);
     // border: 1px solid red;
 
+    // &_shop {
+    //     height: 100%;
+    //     display: flex!important;
+    //     justify-content: stretch;
+    // }
+
     @media (max-width: 767px) {
         flex-direction: column;
         box-shadow: none;
@@ -221,6 +227,8 @@
             // }
 
         }
+
+       
 
         &_active {
             display: block;

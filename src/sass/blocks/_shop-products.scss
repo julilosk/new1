@@ -121,15 +121,28 @@
 
             .button {
                 // width: calc(100% - 10px);
-                width: auto;
-                margin: 0 auto;
+                width: 50%;
+                // width: auto;
+                // margin: 0 auto;
                 // background-color: $main-color;
                 background-color: $second-color;
                 border: .5px solid $second-color;
                 color: $gray2;
-                padding: 5px 12px;
+                padding: 5px 6px;
                 text-align: center;
                 font-size: 0.7em;
+                @media (max-width: 991px) {
+                    width: 70%;
+                }
+                @media (max-width: 767px) {
+                    width: 75%;
+                }
+                @media (max-width: 430px) {
+                    width: 55%;
+                }
+                @media (max-width: 376px) {
+                    width: 60%;
+                }
 
             }
         }
