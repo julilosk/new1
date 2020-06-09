@@ -9,9 +9,11 @@
         margin-bottom: 25px;
         color: $main-color;
         text-align: center;
-        @media (max-width: 575px)  {
+
+        @media (max-width: 575px) {
             font-size: 20px;
         }
+
         @media (max-width: 376px) {
             font-weight: 700;
             font-size: 16px;
@@ -30,6 +32,10 @@
         margin: 0 auto;
         object-fit: cover;
         height: 250px;
+
+        @media (max-width: 767px) {
+            height: 35vh;
+        }
     }
 
     &__descr {

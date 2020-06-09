@@ -1,130 +1,164 @@
 .registration {
     // width: 450px;
     width: 100%;
+
     .registration-form {
         // border: 1px solid green;
-        margin-top: 10px;    
+        margin-top: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
+
         input {
             width: 100%;
-            height: 45px;
+            height: 2.625em;
             margin-bottom: 10px;
             border-radius: 5px;
             border: none;
             padding: 0 10px;
             color: #4b4b4b;
-            font-size: 14px;
-            font-weight: 300;       
-            border: 1px solid #7BA7AB;        
+            font-size: 0.875em;
+            font-weight: 300;
+            border: 1px solid #7BA7AB;
             outline: none;
             // background: #dbdde8; 
             background-color: $gray1;
-        }  
+        }
+
         p {
             margin-top: 0;
             margin-bottom: 0;
         }
+
         label {
             font-weight: 500;
             color: $main-color;
-        } 
+        }
+
         label {
             display: block;
-            font-size: 14px;
+            font-size: 0.875em;
             margin-bottom: 8px;
-          }
+        }
+
         textarea {
             width: 100%;
             height: 150px;
             margin-bottom: 35px;
             padding: 15px 15px;
         }
+
         button {
             width: 50%;
             padding: 0;
-            height: 42px;
+            height: 2.625em;
             background-color: $main-color;
             color: $white;
             margin: 0 auto;
             margin-top: 35px;
         }
+
         .radio {
-            width: 100%;
+            // width: 100%;
             display: flex;
             margin: 5px 0;
+
+            font-size: .875em;
+            color: $main-color;
+            font-weight: 500;
+            margin-bottom: 8px;
+
+            span {
+                margin-right: 5px;
+                display: block;
+            }
+
             label {
-                width: 100%;
+                font-size: .875em;
+                // width: 100%;
+                padding: 0 10px;
                 margin: 0 2px;
                 display: flex;
+                align-items: center;
             }
+
             input {
-                height: 25px;
-                width: 20px;
-                margin: 0 5px;                
+                height: 15px;
+                width: 15px;
+                margin: 0 5px;
             }
-           
+
         }
+
         .button__submit {
             position: relative;
             // margin: 0 auto;
         }
+
         input[type=date] {
             width: 45%;
+
+            @media (max-width: 376px) {
+                width: 100%;
+            }
         }
 
-        
+
 
         //выбор разряда
         .rank {
-            input[type=text] {                
+            input[type=text] {
                 display: none;
             }
+
             select {
                 width: 45%;
-                height: 45px;
+                height: 2.625em;
                 margin-bottom: 10px;
                 border-radius: 5px;
                 border: none;
                 padding: 0 10px;
                 color: #4b4b4b;
-                font-size: 14px;
-                font-weight: 300;       
-                border: 1px solid #7BA7AB;        
+                font-size: 0.875em;
+                font-weight: 300;
+                border: 1px solid #7BA7AB;
                 outline: none;
                 // background: #dbdde8; 
-                background-color: $gray1; 
+                background-color: $gray1;
             }
         }
+
         .id-block {
             width: 100%;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
 
-            .idfshr, .idfide {
-               width: 45%;
-            }            
-        }    
-    }    
+            .idfshr,
+            .idfide {
+                width: 45%;
+            }
+        }
+    }
+
     div.wpcf7-mail-sent-ok {
         border: 2px solid #0069d2;
         text-align: center;
         width: 100%;
-    }    
+    }
+
     div.wpcf7-response-output {
         margin: 1em 0;
-    } 
-    
-    
+    }
+
+
     // загрузка файл
-    .fileform { 
+    .fileform {
         background-color: #FFFFFF;
         border: 1px solid #CCCCCC;
         border-radius: 2px;
         cursor: pointer;
-        height: 50px;
+        height: 3.125em;
         overflow: hidden;
         padding: 5px;
         position: relative;
@@ -132,34 +166,37 @@
         vertical-align: middle;
         width: 100%;
     }
-    .fileform .selectbutton { 
+
+    .fileform .selectbutton {
         background-color: #A2A3A3;
         border: 1px solid #939494;
         border-radius: 2px;
         color: #FFFFFF;
         float: right;
-        font-size: 16px;
-        height: 40px;
-        line-height: 35px;
+        font-size: 1em;
+        height: 2.0em;
+        line-height: 2em;
         overflow: hidden;
         // padding: 2px 6px;
         text-align: center;
         vertical-align: middle;
         width: 20%;
     }
-    .fileform #registration-file{
-        position:absolute; 
-        top:0; 
-        left:0; 
-        width:100%; 
-        -moz-opacity: 0; 
-        filter: alpha(opacity=0); 
-        opacity: 0; 
-        font-size: 150px; 
-        height: 50px; 
-        z-index:20;
+
+    .fileform #registration-file {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        -moz-opacity: 0;
+        filter: alpha(opacity=0);
+        opacity: 0;
+        font-size: 150px;
+        height: 50px;
+        z-index: 20;
     }
-    .fileform #fileformlabel { 
+
+    .fileform #fileformlabel {
         background-color: #FFFFFF;
         float: left;
         height: 40px;
@@ -168,8 +205,6 @@
         padding: 2px;
         text-align: left;
         vertical-align: middle;
-        width:80%;
+        width: 80%;
     }
 }
-
-

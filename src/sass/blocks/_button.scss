@@ -7,9 +7,9 @@
 .button {
     // display: flex;
     // align-items: center;
-    padding: 0.6em 1.8em;
+    padding: 10px 15px;
     // padding-bottom: 0;
-    font-size: 1em;
+    font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
     // border-top: 0.5px solid $main-color;
@@ -20,6 +20,18 @@
     // clear: both;
     // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out,  box-shadow 0.2s ease-in-out; 
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+
+    }
+
+    @media (max-width: 575px) {
+        font-size: 12px;
+
+    }
 
     &:hover {
         text-decoration: none;
