@@ -18,7 +18,6 @@
             font-size: 20px; 
             // margin-top: 5px;
             margin-bottom: 15px;
-
         }
         @media (max-width: 376px) {
             font-size: 18px;             
@@ -481,6 +480,7 @@
 // for inform.html
 .advts-page {
     width: 66.66667%;
+
     @media (max-width: 991px) {
         width: 100%;
     }
@@ -494,11 +494,19 @@
         width: 100%;
         padding: 0 15px 15px 15px;
         margin-bottom: 35px;
-        @media (max-width: 575px) {           
+
+        &:first-child {
+            @media (max-width: 575px) {
+                border-top: 1px solid $border;
+                margin-top: 15px;
+            }
+        }
+        @media (max-width: 575px) { 
+            border-bottom: 1px solid $border;          
             margin-bottom: 15px;    
         }
-        @media (max-width: 376px) {
-            border-bottom: 1px solid $border;
+
+        @media (max-width: 376px) {           
             margin-bottom: 0;    
         }
 
@@ -515,13 +523,16 @@
         font-size: 17px;
         font-weight: 500;
         color: $gray;
+
         @media (max-width: 767px) {
             font-size: 16px;                
         }
+
         @media (max-width: 575px) {
             font-size: 14px;  
             // padding-top: 5px;       
         }
+
         @media (max-width: 376px) {
             font-size: 12px; 
             // padding-top: 0;

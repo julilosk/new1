@@ -148,49 +148,23 @@
         }
 
     }
-}
 
-.price {
-    font-size: 0.9em;
-    font-weight: bold;
-    display: flex;
-
-    // flex-direction: column;
-    del {
-        margin-right: 15px;
+    .price {
+        font-size: 0.9em;
+        font-weight: bold;
+        display: flex;
+    
+        // flex-direction: column;
+        del {
+            margin-right: 15px;
+        }
+    
+        ins {
+            color: red;
+        }
     }
 
-    ins {
-        color: red;
-    }
 }
 
-.woocommerce-message {
-    margin: 1.5em 0.3em 1.5em 0;
-    color: $third-color;
-    font-weight: 500;
 
-    .button {
-        // display: block;
-        // width: auto;
-        // margin-right: 20px;
-        // position: absolute;
-        float: right;
 
-    }
-}
-
-.woocommerce-result-count {
-    display: none;
-}
-
-.woocommerce-ordering select {
-    border: none;
-    border-bottom: 1px solid #737373;
-    font-size: 1em;
-    color: #414141;
-    padding-right: 25px;
-    // width: 100%;
-    outline: 0;
-    margin-bottom: 15px;
-}

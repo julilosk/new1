@@ -28,17 +28,17 @@ body {
     font-size: 16px;
     line-height: 1.5;
 
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
         font-size: 14px;
     }
 
-    @media (max-width: 767px) {
-        font-size: 12px;
-    }
+    // @media (max-width: 767px) {
+    //     font-size: 12px;
+    // }
 
-    @media (max-width: 376px) {
-        font-size: 10px;
-    }
+    // @media (max-width: 376px) {
+    //     font-size: 10px;
+    // }
 }
 
 
@@ -54,18 +54,18 @@ section {
 // }
 
 .home-page-block {
-    padding-top: 1.875em;
-    padding-bottom: 1.875em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     // @media (max-width: 991px) {
     //     padding-top: 20px;
     //     padding-bottom: 20px;
     // }
 
-    // @media (max-width: 767px) {
-    //     padding-top: 15px;
-    //     padding-bottom: 15px;
-    // }
+    @media (max-width: 767px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
 
     // @media (max-width: 575px) {
     //     padding-top: 10px;
@@ -168,27 +168,27 @@ img {
 }
 
 .indent-top {
-    margin-top: 2.5em;
+    margin-top: 40px;
 
-    // @media (max-width: 1199px) {
-    //     margin-top: 30px;
-    // }
+    @media (max-width: 1199px) {
+        margin-top: 30px;
+    }
 
-    // @media (max-width: 991px) {
-    //     margin-top: 20px;
-    // }
+    @media (max-width: 991px) {
+        margin-top: 20px;
+    }
 
-    // @media (max-width: 767px) {
-    //     margin-top: 15px;
-    // }
+    @media (max-width: 767px) {
+        margin-top: 15px;
+    }
 
-    // @media (max-width: 575px) {
-    //     margin-top: 10px;
-    // }
+    @media (max-width: 575px) {
+        margin-top: 10px;
+    }
 
-    // @media (max-width: 376px) {
-    //     margin-top: 0px;
-    // }
+    @media (max-width: 376px) {
+        margin-top: 0px;
+    }
 
 
 }
@@ -271,6 +271,7 @@ nav .menu__block li.current-menu-parent>a {
     }
 
 }
+
 
 
 

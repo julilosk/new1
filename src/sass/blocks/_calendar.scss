@@ -2,10 +2,12 @@
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
+
     @media (max-width: 575px) {
         padding-right: 0;
         padding-left: 0;
     }
+
     &__tabs {
         display: flex;
         // justify-content: center;
@@ -21,8 +23,7 @@
         @media (max-width: 575px) {
             margin-bottom: 10px;
             flex-flow: wrap;
-            justify-content: center;
-            
+            justify-content: center;            
         }
         
     }    
@@ -52,11 +53,11 @@
             // padding: 10px  10px;
             margin-bottom: 5px;
         }
-        @media (max-width: 376px) {
-            width: auto;
-            margin: 2px;
-            // padding: 7px  10px;
-        }
+        // @media (max-width: 376px) {
+        //     // width: auto;
+        //     margin: 2px;
+        //     // padding: 7px  5px;
+        // }
 
         h5 {
             color: $white;

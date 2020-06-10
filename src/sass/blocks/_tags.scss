@@ -5,14 +5,18 @@
     
     @media (max-width: 575px) {
         margin-top: 15px;
-        font-size: 10px;
-        
+        font-size: 12px;        
     }
+
     &__title {
         font-weight: 500;
         margin-right: 35px;
         vertical-align: middle;
         margin-top: 5px;
+
+        @media (max-width: 575px) {
+            margin-right: 15px;;        
+        }
     }
     &__item {
         border: 1px solid $border;

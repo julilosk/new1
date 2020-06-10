@@ -202,7 +202,7 @@
 
             // margin-top: 10px;
             h1 {
-                font-size: 20px;
+                font-size: 21px;
             }
 
             span {
@@ -308,7 +308,7 @@
         display: block;
         position: absolute;
         right: 15px;
-        top: 52px;
+        top: 45px;
         transform: translateY(-50%);
         width: 26px;
         height: 15px;
@@ -429,7 +429,7 @@
 
 
     .top-header {
-        padding: 0;
+        // padding: 0;
         &__logo {
             img {
                 height: 40px;
@@ -438,7 +438,7 @@
 
         &__title {
             h1 {
-                font-size: 22px;
+                font-size: 23px;
             }
 
             span {
@@ -448,7 +448,7 @@
 
         &__block {
             padding-right: 15px;
-            padding-top: 15px;
+            padding-top: 0;
             padding-bottom: 0;
         }
 
@@ -466,7 +466,7 @@
     }
 
     .hamburger {
-        top: 40px;
+        top: 25px;
     }
 
     .news {
@@ -508,11 +508,7 @@
             font-size: 16px;
         }
 
-        
-
-        // &__day {
-        //     font-size: 14px;
-        // }
+       
 
         &__item {
             font-size: 14px;
@@ -521,27 +517,13 @@
 }
 
 
-// @media (max-width: 560px) {
-//     .top-header {
-//         .social {
-//             &__icon {
-//                 &:nth-child(1) {
-//                     display: none;
-//                 }
 
-//                 &:nth-child(2) {
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media (max-width: 513px) {
     .top-header {
         &__title {
             h1 {
-                font-size: 20px;
+                font-size: 21px;
             }
         }
     }
@@ -551,7 +533,7 @@
     .top-header {
         &__title {
             h1 {
-                font-size: 18px;
+                font-size: 19px;
             }
         }
     }
@@ -561,7 +543,7 @@
     .top-header {
         &__title {
             h1 {
-                font-size: 16px;
+                font-size: 18px;
             }
         }
     }
@@ -584,13 +566,11 @@
     }
 }
 
-
-
-@media (max-width: 410px) {
+@media (max-width: 420px) {
     .top-header {
         &__title {
             h1 {
-                font-size: 14px;
+                font-size: 17   px;
             }
         }
     }
@@ -599,16 +579,34 @@
 
 
 
-@media (max-width: 376px) {
+@media (max-width: 410px) {
     .top-header {
-        // .row {
-        //     flex-wrap: nowrap;
-        // }
-
         &__title {
             h1 {
-                font-size: 12px;
+                font-size: 16px;
             }
+        }
+    }
+}
+
+@media (max-width: 385px) {
+    .top-header {
+        &__title {
+            h1 {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media (max-width: 376px) {
+    .top-header {  
+        &__title {
+           
 
             span {
                 font-size: 10px;
@@ -616,10 +614,7 @@
             }
         }
     }
-
-    // h2 {
-    //     font-size: 25px;
-    // }
+    
 
     .menu {
         &__block {
@@ -627,13 +622,6 @@
         }
     }
 
-    // .hamburger {
-    //     &_active {
-    //         span {
-    //             background-color: $white;
-    //         }
-    //     }
-    // }
 
     .tabs-page {
         &__tabs {
@@ -649,7 +637,6 @@
 
     .tourn {
         padding-top: 0;
-
         &__title {
             font-size: 14px;
         }
@@ -665,23 +652,32 @@
             font-size: 12px;
         }
     }
-
-    // .sponsors {
-
-    //     &__block {
-    //         img {
-    //             width: 70px;
-    //         }
-    //     }
-    // }
-
-    // ///page team
-    // .team {
-    //     &__card {
-    //         min-height: auto!important;
-    //     }
-    // }
+  
 }
+
+
+@media (max-width: 370px) {
+    .top-header {
+        &__title {
+            h1 {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .top-header {
+        &__title {
+            h1 {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+
 
 @media (max-width: 320px) {
     .top-header {      
