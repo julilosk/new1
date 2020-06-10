@@ -34,7 +34,7 @@
         display: none;
     }
 
-    .form-search{
+    .form-search {
         form {
             max-width: 200px;
         }
@@ -129,12 +129,12 @@
         }
     }
 
-    .form-search{
+    .form-search {
         form {
             display: none;
         }
     }
-    
+
 
     .news {
         &__card {
@@ -142,7 +142,7 @@
         }
     }
 
-    
+
 
 
     .button-wpapper {
@@ -183,7 +183,7 @@
         font-size: 14px;
     }
 
-  
+
 }
 
 
@@ -396,7 +396,7 @@
         }
     }
 
-  
+
     .photo {
         display: none;
     }
@@ -409,7 +409,7 @@
 
 // @media (max-width: 605px) {
 //     .top-header {
-        
+
 //         &__logo {
 //             img {
 //                 height: 50px;
@@ -429,6 +429,7 @@
 
 
     .top-header {
+
         // padding: 0;
         &__logo {
             img {
@@ -453,15 +454,15 @@
         }
 
         // .social {
-            // display: none;
-            // &__icon {
-            //     width: 20px;
-            //     height: 20px;
+        // display: none;
+        // &__icon {
+        //     width: 20px;
+        //     height: 20px;
 
-            //     img {
-            //         height: 8px;
-            //     }
-            // }
+        //     img {
+        //         height: 8px;
+        //     }
+        // }
         // }
     }
 
@@ -508,7 +509,7 @@
             font-size: 16px;
         }
 
-       
+
 
         &__item {
             font-size: 14px;
@@ -566,11 +567,11 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 425px) {
     .top-header {
         &__title {
             h1 {
-                font-size: 17   px;
+                font-size: 17 px;
             }
         }
     }
@@ -604,9 +605,9 @@
 
 
 @media (max-width: 376px) {
-    .top-header {  
+    .top-header {
         &__title {
-           
+
 
             span {
                 font-size: 10px;
@@ -614,7 +615,7 @@
             }
         }
     }
-    
+
 
     .menu {
         &__block {
@@ -637,6 +638,7 @@
 
     .tourn {
         padding-top: 0;
+
         &__title {
             font-size: 14px;
         }
@@ -652,7 +654,7 @@
             font-size: 12px;
         }
     }
-  
+
 }
 
 
@@ -680,7 +682,7 @@
 
 
 @media (max-width: 320px) {
-    .top-header {      
+    .top-header {
         &__title {
             display: none;
         }

@@ -36,6 +36,7 @@
                 margin-right: -15px;
                 font-size: 14px;
             }
+
             @media (max-width: 575px) {
                 font-size: 12px;
 
@@ -64,6 +65,7 @@
                 padding-top: 12px;
                 padding-bottom: 12px;
             }
+
             @media (max-width: 430px) {
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -137,17 +139,17 @@
     }
 
     &__structure {
-        @media (max-width: 991px)  {
+        @media (max-width: 991px) {
             // background-color: #f4f4f8!important;
             // zoom: 1;
             // border: solid 1px red;
             border-top: 1px solid $border;
             border-bottom: 1px solid $border;
 
-            [class*=col-]  {
+            [class*=col-] {
                 margin-bottom: 12px;
             }
-            
+
         }
     }
 
@@ -170,7 +172,7 @@
 
         @media (max-width: 430px) {
             padding: 5px;
-            
+
         }
 
         // overflow: hidden;
@@ -185,6 +187,7 @@
                 line-height: 1.2;
 
             }
+
             @media (max-width: 376px) {
                 font-size: 10px;
 
@@ -257,6 +260,7 @@
         @media (max-width: 575px) {
             width: 100%;
         }
+
         .products {
             width: 100%;
             // border: 1px solid red;
@@ -303,7 +307,7 @@
 
         float: left;
 
-        @media (max-width: 575px)  {
+        @media (max-width: 575px) {
             display: none;
         }
 
@@ -395,12 +399,19 @@
         // border-bottom: 0.5px solid $border;
 
     }
+
     &__new {
         @media (max-width: 430px) {
             margin-top: 25px;
-            
         }
     }
+
+
+    .product_cat-chlenskij-vznos,
+    .product_cat-turnirnyj-vznos {
+        display: none;
+    }
+
 }
 
 
