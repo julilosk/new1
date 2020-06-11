@@ -26,6 +26,13 @@
             // font-size: 18px;
             margin-bottom: 20px;
         }
+
+        @media (max-width: 767px) {
+            // font-size: 18px;
+            // margin-bottom: 20px;
+            font-weight: 500;
+
+        }
     }
 
     &__tabs {
@@ -76,6 +83,10 @@
         transition: 0.5s all;
         text-transform: uppercase;
 
+        @media (max-width: 767px) {
+            text-transform: lowercase;
+        }
+
         &:last-child {
             border-bottom: none;
 
@@ -86,14 +97,14 @@
         }
 
         @media (max-width: 991px) {
-            padding: 10px 10px;
+            padding: 10px 12px;
 
         }
 
         @media (max-width: 767px) {
             margin-right: 0;
             border-bottom: none;
-            padding: 12px 10px;
+            padding: 8px 10px;
             text-align: center;
             width: auto;
             border-radius: 5px 5px 5px 5px;
@@ -109,7 +120,7 @@
         }
 
         @media (max-width: 376px) {
-            padding: 5px 5px;
+            padding: 5px 7px;
 
         }
 
@@ -228,7 +239,7 @@
 
         }
 
-       
+
 
         &_active {
             display: block;
@@ -352,6 +363,14 @@
     &__email {
         margin-top: 15px;
         color: $gray;
+
+        @media (max-width: 575px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 376px) {
+            font-size: 10px;
+        }
     }
 
     &__phone {
