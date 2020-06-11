@@ -104,9 +104,11 @@ h2 {
     //     font-size: 25px;
     // }
 
-    // @media (max-width: 575px) {
-    //     font-size: 20px;
-    // }
+    @media (max-width: 575px) {
+        // font-size: 20px;
+        margin-bottom: 1em;
+        font-weight: 500;
+    }
 
     // @media (max-width: 376px) {
     //     font-size: 18px;
