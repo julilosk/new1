@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     // background-color: $light-gray;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.18);
+    // box-shadow: 0 3px 20px rgba(0, 0, 0, 0.18);
     // border: 1px solid red;
 
     // &_shop {
@@ -37,6 +37,7 @@
 
     &__tabs {
         // height: 100%;
+        height: auto;
         width: 25%;
         display: flex;
         flex-direction: column;
@@ -44,7 +45,9 @@
         padding-left: 0;
         margin-bottom: 0;
         font-size: 1em;
-        background: #f4f4f8;
+        // background: #f4f4f8;
+        // background: $light-gray;
+        
 
         &_account {
             width: 33%;
@@ -60,7 +63,7 @@
             flex-direction: row;
             flex-wrap: wrap;
             // justify-content: center;
-            background: $white;
+            // background: $white;
             width: 100%;
             // margin-bottom: 10px;
             padding: 0 10px 10px 10px;
@@ -79,7 +82,11 @@
         padding: 20px 15px;
         margin-right: 5px;
         cursor: pointer;
-        border-bottom: 1px solid #c9d5ec;
+        // border-bottom: 1px solid #c9d5ec;
+        border-bottom: 1px solid $border;  
+        border-left: 5px solid $border;
+        border-right: 1px solid $border;
+
         transition: 0.5s all;
         text-transform: uppercase;
 
@@ -87,14 +94,19 @@
             text-transform: lowercase;
         }
 
-        &:last-child {
-            border-bottom: none;
-
-            @media (max-width: 767px) {
-                border-bottom: 1px solid #c9d5ec;
-            }
-
+        &:first-child {
+            border-top: 1px solid $border;
         }
+
+        // &:last-child {
+        //     border-bottom: none;
+
+        //     @media (max-width: 767px) {
+        //         // border-bottom: 1px solid #c9d5ec;
+        //         border-bottom: 1px solid $border;
+        //     }
+
+        // }
 
         @media (max-width: 991px) {
             padding: 10px 12px;
@@ -142,8 +154,9 @@
 
         &:hover {
             // box-shadow: 3px 3px 20px $main-color;
-            // background-color: #c9d5ec;   
-            background-color: #dbdde8;
+            // background-color: #f1f3f4;
+            // background-color: $gray_bc;
+            border-left: 5px solid $third-color;
 
             @media (max-width: 767px) {
                 background-color: $second-color;
@@ -158,8 +171,11 @@
         }
 
         &_active {
-            // background-color: #c9d5ec;
-            background-color: #dbdde8;
+            // background-color: #f1f3f4;
+            // background-color: $gray_bc;
+            
+            border-left: 5px solid $third-color;
+           
             font-weight: 500;
 
             @media (max-width: 767px) {
@@ -222,7 +238,7 @@
     }
 
     &__content {
-        background-color: $light-gray;
+        // background-color: $light-gray;
         padding: 15px 35px 25px 35px;
         // height: 100%;
         width: 75%;
@@ -384,15 +400,16 @@
         // display: block;
         display: flex;
         align-items: center;
-        padding: 20px 15px;
+        padding: 15px 15px;
         width: 100%;
         // color: $main-color;
         color: $black;
-        border-bottom: 1px solid #c9d5ec;
+        // border-bottom: 1px solid #c9d5ec;
+        
 
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);   
         &:hover {
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+            // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
             text-decoration: none;
         }
 
@@ -405,20 +422,26 @@
         }
 
         @media (max-width: 767px) {
-            padding: 15px 15px;
+            padding: 10px 15px;
         }
+
+       
+    }
+    &__tittle {
+        font-size: 16px;
+        font-weight: 500;
     }
 
     &__doc {
         // width: 100%;
-        width: 45px;
+        // width: 35px;
         padding-right: 20px;
-        height: 45px;
+        height: 25px;
         // object-fit: cover;
         float: left;
 
         @media (max-width: 767px) {
-            width: 25px;
+            // width: 25px;
             height: 25px;
             padding-right: 10px;
         }

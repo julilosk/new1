@@ -123,6 +123,22 @@ h2 {
     }
 }
 
+p a {
+//    padding-top: 15px; 
+//    padding-bottom: 15px;
+   color: $main-color;
+   font-weight: 500;
+   &:hover {
+       // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+        text-decoration: none;
+        color: $third-color;        
+    }
+    // @media (max-width: 767px) {
+    //     // padding-top: 10px; 
+    //     // padding-bottom: 10px;
+    // }
+}
+
 h4 {
     color: $main-color;
 }
