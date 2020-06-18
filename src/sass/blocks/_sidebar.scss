@@ -47,7 +47,7 @@
         font-size: 1em;
         // background: #f4f4f8;
         // background: $light-gray;
-        
+
 
         &_account {
             width: 33%;
@@ -83,7 +83,7 @@
         margin-right: 5px;
         cursor: pointer;
         // border-bottom: 1px solid #c9d5ec;
-        border-bottom: 1px solid $border;  
+        border-bottom: 1px solid $border;
         border-left: 5px solid $border;
         border-right: 1px solid $border;
 
@@ -155,7 +155,7 @@
         &:hover {
             // box-shadow: 3px 3px 20px $main-color;
             // background-color: #f1f3f4;
-            // background-color: $gray_bc;
+            background-color: $gray_bc;
             border-left: 5px solid $third-color;
 
             @media (max-width: 767px) {
@@ -172,10 +172,10 @@
 
         &_active {
             // background-color: #f1f3f4;
-            // background-color: $gray_bc;
-            
+            background-color: $gray_bc;
+
             border-left: 5px solid $third-color;
-           
+
             font-weight: 500;
 
             @media (max-width: 767px) {
@@ -185,7 +185,8 @@
 
             span {
                 font-weight: 500;
-                color: $main-color;
+                // color: $main-color;
+                color: $third-color;
 
                 @media (max-width: 767px) {
                     color: $white;
@@ -239,7 +240,8 @@
 
     &__content {
         // background-color: $light-gray;
-        padding: 15px 35px 25px 35px;
+        // padding: 15px 35px 25px 35px;
+        padding: 0 35px 15px 35px;
         // height: 100%;
         width: 75%;
         display: none;
@@ -286,16 +288,17 @@
         padding-bottom: 20px;
         width: 100%;
         // color: $main-color;
-        border-bottom: 1px solid #c9d5ec;
+        // border-bottom: 1px solid #c9d5ec;
+        border-bottom: 1px solid $border;
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);  
 
         @media (max-width: 767px) {
             padding-left: 0;
         }
 
-        &:hover {
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-        }
+        // &:hover {
+        //     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+        // }
 
         &:first-child {
             padding-top: 0;
@@ -405,7 +408,7 @@
         // color: $main-color;
         color: $black;
         // border-bottom: 1px solid #c9d5ec;
-        
+
 
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);   
         &:hover {
@@ -425,8 +428,9 @@
             padding: 10px 15px;
         }
 
-       
+
     }
+
     &__tittle {
         font-size: 16px;
         font-weight: 500;
