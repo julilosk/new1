@@ -81,7 +81,8 @@ section {
 
 h1 {
     font-size: 35px;
-    color: $main-color;
+    // color: $main-color;
+    color: $black;
 }
 
 h2 {
@@ -137,6 +138,48 @@ p a {
     //     // padding-top: 10px; 
     //     // padding-bottom: 10px;
     // }
+}
+
+// img.alignleft,
+// .alignleft img,
+// img.aligncenter,
+// .aligncenter img,
+// img.alignright,
+// .alignright img,
+// img.alignnone,
+// .alignnone img {
+// margin: auto;
+// }
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin: 15px 0 15px 15px;
+    max-width: 100%;
+    height: auto;
+}
+.alignleft {
+    float: left;
+    // margin-right: 15px;
+    margin: 15px 15px 15px 0;
+    max-width: 100%;
+    height: auto;
+}
+.aligncenter {
+    display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+}
+.mtli_png, .mtli_jpg {
+    background-image: none!important;
+    margin: 15px auto;
+}
+.mtli_attachment {
+    // padding-left: 0!important;
+    display: block!important;
 }
 
 h4 {

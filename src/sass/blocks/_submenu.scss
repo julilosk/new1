@@ -150,7 +150,7 @@
 
         ul {
             @media (max-width: 991px) {
-                border-bottom: 3px solid $border;
+                border-bottom: 1px solid $border;
                 width: 100%;
             }
 
@@ -179,18 +179,20 @@
             @media (max-width: 991px) {
                 font-weight: 500;
                 margin-top: 15px;
+                font-size: 13px;
             }
 
             @media (max-width: 767px) {
-                font-size: 14px;
+                // font-size: 14px;
                 display: inline-block;
                 // font-size: 12px;
                 // border-bottom: 1px solid $border;                
             }
 
-            // @media (max-width: 575px) {
-            //     font-size: 12px;
-            // }
+            @media (max-width: 575px) {
+                font-size: 14px;
+                text-transform: none;
+            }
 
             @media (max-width: 376px) {
                 font-size: 12px;

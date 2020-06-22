@@ -54,6 +54,11 @@
             height: 80px;
             max-width: 100px;
 
+             @media (max-width: 767px) {
+                height: 60px;
+                width: auto;                
+            }
+
             @media (max-width: 575px) {
                 width: 35px!important;
             }
@@ -61,12 +66,16 @@
         }
     }
     &__title {
-        color: $main-color;
+        // color: $main-color;
+        // color: $black;
+       
         letter-spacing: 1.5px;
         margin-left: 55px;
         line-height: 0.5;
         h1 {
             margin-right: -2px;
+            // color: $black;
+            color: #000000;
         }
         span {
             width: 100%;

@@ -28,8 +28,10 @@
         // border: 1px solid red;  
         border-bottom: 1px solid $border;
         margin: 15px -15px;
-
-
+        &_main {
+            margin-left: 0;
+            margin-right: 0;
+        }
 
         &_tourn {
             margin-bottom: 0;
@@ -48,6 +50,12 @@
         // border-bottom: 1px solid $border;     
         @media (max-width: 376px) {
             padding: 0 8px;
+
+        }
+        &:first-child {
+            @media (max-width: 376px) {
+                padding-left: 15px;    
+            }
         }
 
         h5 {
