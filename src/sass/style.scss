@@ -46,12 +46,12 @@ section {
     flex: 1 0 auto;
 }
 
-// .container {
+.container {
 // border: solid 0.5px black; /* убрать пgit озже */
 //     // background-color: #f2f2f2;
 //     // background-color: $white;   
-// max-width: 1230px;
-// }
+max-width: 1200px;
+}
 
 .home-page-block {
     padding-top: 30px;
@@ -180,6 +180,9 @@ p a {
 .mtli_attachment {
     // padding-left: 0!important;
     display: block!important;
+}
+.ya-share2 ul {
+    padding-left: 0!important;
 }
 
 h4 {
