@@ -43,15 +43,14 @@
         // margin: 15px 0;   
         padding: 0 15px;
         cursor: pointer;
-        // transition: 0.2s all;
+        transition: 0.2s all;
         font-weight: 500;
-
         // border: 1px solid red;    
         // border-bottom: 1px solid $border;     
         @media (max-width: 376px) {
             padding: 0 8px;
-
         }
+
         &:first-child {
             @media (max-width: 376px) {
                 padding-left: 15px;    

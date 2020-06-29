@@ -98,12 +98,13 @@
     &__content {
         // height: 100%;
         width: 100%;
-        display: none;
+        // display: none;
+        display: block;
 
-        &_active {
-            display: block;
-            // display: flex;
-        }
+        // &_active {
+        //     display: block;
+        //     // display: flex;
+        // }
     }
 
     &__box {
@@ -145,9 +146,11 @@
         }
 
         &_single {
-            margin-left: 90px;
-            margin-right: 90px;
-            width: calc(75% - 180px);
+            // margin-left: 90px;
+            // margin-right: 90px;
+            // width: calc(75% - 180px);         
+            margin: 0 auto;
+            width: 660px;
 
             @media (max-width: 1199px) {               
                 margin-left: 45px;

@@ -9,10 +9,10 @@ $(document).ready(function(){
 });
 
 
-var url=document.location.href;
+var url1=document.location.href;
 $.each($(".submenu__block li a"),
   function(){
-    if(this.href==url){
+    if(this.href==url1){
       $(this).addClass('activelink2');
     }
   });
