@@ -196,9 +196,13 @@ p a {
 
 blockquote  {
     border-left: 3px solid $third-color;
+    // background: #f2f5f9;
+    background: $light-gray2;
+    padding: 20px 20px;
     p {
-        margin: 5px 0 5px 10px;
-        font-style: italic;
+        // margin: 5px 0 5px 10px;
+        margin: .75em 0;
+        // font-style: italic;
     }
 }
 
@@ -271,7 +275,6 @@ img {
         margin-top: 0px;
     }
 
-
 }
 
 .fat {
@@ -280,12 +283,8 @@ img {
     display: inline;
 }
 
-.padding-block {
-    // padding: 0 155px;
-    // background-color: $white;
-    width: 66.66%;
-    // margin: 0 auto;
-    // border: 1px solid red;
+.padding-block {    
+    width: 66.66%;   
 }
 
 ::-webkit-scrollbar {
@@ -372,7 +371,6 @@ nav .menu__block li.current-menu-parent>a {
 @import 'blocks/tournaments';
 @import 'blocks/project';
 @import 'blocks/sponsors';
-@import'blocks/photo';
 @import 'blocks/footer';
 @import'blocks/pageup';
 @import'blocks/media';

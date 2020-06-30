@@ -153,13 +153,7 @@
         &__item {
             margin-bottom: 15px;
         }
-    }
-
-    .photo {
-        &__card {
-            margin-bottom: 15px;
-        }
-    }
+    }   
 
     .tourn {
         padding-right: 0 !important;
@@ -384,41 +378,14 @@
         }
     }
 
-
-    .photo {
-        display: none;
-    }
-
     .footer__menu {
         display: none;
     }
 }
 
 
-// @media (max-width: 605px) {
-//     .top-header {
-
-//         &__logo {
-//             img {
-//                 height: 50px;
-//             }
-//         }
-
-//         &__block {
-//             padding-right: 30px;
-//         }
-//     }
-// }
-
-@media (max-width: 575px) {
-    // h2 {
-    //     font-size: 25px;
-    // }
-
-
+@media (max-width: 575px) {  
     .top-header {
-
-        // padding: 0;
         &__logo {
             img {
                 height: 40px;
@@ -440,18 +407,6 @@
             padding-top: 0;
             padding-bottom: 0;
         }
-
-        // .social {
-        // display: none;
-        // &__icon {
-        //     width: 20px;
-        //     height: 20px;
-
-        //     img {
-        //         height: 8px;
-        //     }
-        // }
-        // }
     }
 
     .hamburger {
@@ -467,23 +422,10 @@
         &__img {
             // border-radius: 0 0 0 0;
             height: 150px;
-        }
-
-        // &__img_3 {
-        //     display: none;
-        // }
-        // &__img_4 {
-        //     display: none;
-        // }
+        }       
     }
 
     .tourn {
-        // .tabs-page {
-        //     &__tab {
-        //         padding: 0 10px;
-        //     }
-        // }
-
         h5 {
             font-size: 14px;
         }
@@ -557,13 +499,11 @@
     .top-header {
         &__title {
             h1 {
-                font-size: 17 px;
+                font-size: 17px;
             }
         }
     }
 }
-
-
 
 
 @media (max-width: 410px) {
@@ -586,15 +526,9 @@
     }
 }
 
-
-
-
-
 @media (max-width: 376px) {
     .top-header {
         &__title {
-
-
             span {
                 font-size: 10px;
                 text-align: left;
@@ -602,13 +536,11 @@
         }
     }
 
-
     .menu {
         &__block {
             width: 100%;
         }
     }
-
 
     .tabs-page {
         &__tabs {
@@ -624,19 +556,10 @@
 
     .tourn {
         padding-top: 0;
-
         &__title {
             font-size: 14px;
-        }
-
-        // .tabs-page {
-        //     &__tab {
-        //         padding: 0 8px;
-        //     }
-        // }
-    }
-    
-        
+        }      
+    } 
 
     .project {
         &__item {
