@@ -1,63 +1,11 @@
 .tourn-all {
-    // background-color: $light-gray;
     padding-left: 15px;
+    padding-right: 15px;
     width: 100%;
-    margin-right: 15px;
-
-    // &__tabs {
-    //     // width: 100%;
-    //     display: flex;
-    //     padding-left: 0;
-    //     font-size: 14px;
-    //     border-bottom: 1px solid $border;
-    //     margin: 15px 0;
-    // }
-
-    // &__tab {
-    //     padding: 0 15px;
-    //     cursor: pointer;
-    //     // transition: 0.2s all;
-    //     font-weight: 500;
-
-    //     // border: 1px solid red;    
-    //     // border-bottom: 1px solid $border;      
-    //     h5 {
-    //         color: $gray;
-    //     }
-
-    //     &:hover {
-
-    //         // border-bottom: 2px solid $third-color;   
-    //         h5 {
-    //             color: $third-color;
-    //         }
-    //     }
-
-    //     &_active {
-    //         border-bottom: 3px solid $third-color;
-
-    //         h5 {
-    //             color: $third-color;
-    //         }
-    //     }
-
-    //     &:first-child {
-    //         margin-left: 0;
-    //     }
-
-    //     &:last-child {
-    //         margin-right: 0;
-    //     }
-    // }
 
     &__content {
-        // height: 100%;
-        width: 100%;        
+        width: 100%;
         display: block;
-        // &_active {
-        //     display: block;
-        //     // display: flex;
-        // }
     }
 
     &__box {
@@ -80,7 +28,6 @@
         @media (max-width: 376px) {
             margin: 0;
         }
-
     }
 
     &__left {
@@ -129,10 +76,6 @@
                 margin-top: 0;
             }
         }
-
-        // &:last-child {
-        //     border-bottom: none;
-        // } 
     }
 
     &__img {
@@ -185,13 +128,11 @@
         @media (max-width: 575px) {
             font-size: 16px;
             margin-bottom: 15px;
-
         }
 
         @media (max-width: 575px) {
             font-size: 12px;
             margin-bottom: 5px;
-
         }
 
         a {
@@ -269,7 +210,6 @@
 
 
 
-
 .tourn-all-side {
     height: 100%;
     width: calc(25% - 15px);
@@ -288,20 +228,12 @@
         margin-bottom: 0;
 
         li a {
-
             display: block;
             padding: 10px 15px;
             display: block;
             color: $second-color;
             text-decoration: none;
 
-            // &:first-child {
-            //     padding-top: 15px;
-            //     // color: $third-color;
-            // }
-            // &:last-child {
-            //     padding-bottom: 15px;
-            // }
             &:hover {
                 background-color: $gray_bc;
                 color: $third-color;
@@ -330,7 +262,6 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
-
 
     h1 {
         font-size: 30px;
