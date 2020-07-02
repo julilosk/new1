@@ -15,7 +15,7 @@
 
         @media (max-width: 575px) {
             font-size: 2em;
-            margin-bottom: 1.5em;
+            margin-bottom: 1em;
             font-weight: 600;
         }
     }
@@ -32,7 +32,18 @@
     width: 100%;
     padding: 0 15px 25px 0;
 
-    // border: solid 2px red;
+
+    @media (max-width: 991px) {
+        padding-right: 0 !important;
+    }
+    @media (max-width: 575px) {
+        padding-bottom: 15px;
+    }
+    @media (max-width: 575px) {
+        padding-bottom: 10px;
+    }
+
+
     .tabs-page {
         h5 {
             @media (max-width: 575px) {

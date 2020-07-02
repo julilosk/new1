@@ -67,4 +67,17 @@
             }
         }
     }
+    &__news {
+        display: flex;
+        flex-direction: row;
+        color: $black;
+        &:hover {
+            text-decoration: none;
+            color: $third-color;
+        }
+    }
+    &__date {
+        margin-right: 15px;
+        // color: $gray;
+    }
 }

@@ -1,5 +1,12 @@
 .schools {
     width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media (max-width: 575px) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
     table {
         width: 100%;
@@ -128,9 +135,9 @@
                 // @media (max-width: 767px)  {
                 //     width: 5%;
                 // }
-                // @media (max-width: 575px)  {
-                //     width: 5%; 
-                // }
+                @media (max-width: 575px)  {
+                    padding-left: 8px;; 
+                }
                 @media (max-width: 376px) {
                     width: auto;
                 }
@@ -192,6 +199,7 @@
                 // }
                 @media (max-width: 575px) {
                     display: none;
+                    padding-right: 8px;
                 }
             }
         }
