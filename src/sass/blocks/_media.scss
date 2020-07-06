@@ -3,44 +3,44 @@
 // }
 
 @media (max-width: 1199px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 30px;
-            }
-        }
-    }
+    // .top-header {
+    //     &__title {
+    //         h1 {
+    //             font-size: 30px;
+    //         }
+    //     }
+    // }
 
-    nav {
-        .menu {
-            &__block {
-                font-size: 14px;
-                font-weight: 500;
+    // nav {
+    //     .menu {
+    //         &__block {
+    //             font-size: 14px;
+    //             font-weight: 500;
 
-                li {
-                    padding-right: 0;
-                    margin-right: 10px;
-                }
+    //             li {
+    //                 padding-right: 0;
+    //                 margin-right: 10px;
+    //             }
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 
-    .menu>ul>li>a:before {
-        display: none;
-    }
+    // .menu>ul>li>a:before {
+    //     display: none;
+    // }
 
-    .menu>ul>li>a:after {
-        display: none;
-    }
+    // .menu>ul>li>a:after {
+    //     display: none;
+    // }
 
-    .form-search {
-        form {
-            max-width: 200px;
-        }
-    }
+    // .form-search {
+    //     form {
+    //         max-width: 200px;
+    //     }
+    // }
 
-  
+
 
 
     // http://localhost:3000/pages/chessplayers/teams.html
@@ -70,33 +70,31 @@
 
 
 @media (max-width: 991px) {
-    .top-header {
-        &__headline {
-            align-items: center;
-        }
+    // .top-header {
 
-        &__block {
-            align-items: center !important;
-            // align-items: flex-start
-            padding: 5px 15px;
-        }
 
-        &__title {
-            letter-spacing: normal;
-            // margin-right: auto;
-            line-height: 0.5;
-            margin-left: 15px;
+    // &__block {
+    //     align-items: center !important;
+    //     // align-items: flex-start
+    //     padding: 5px 15px;
+    // }
 
-            h1 {
-                font-size: 25px;
-            }
+    // &__title {
+    //     letter-spacing: normal;
+    //     // margin-right: auto;
+    //     line-height: 0.5;
+    //     margin-left: 15px;
 
-            span {
-                font-size: 12px;
-                letter-spacing: normal;
-            }
-        }
-    }
+    // h1 {
+    //     font-size: 25px;
+    // }
+
+    // span {
+    //     font-size: 12px;
+    //     letter-spacing: normal;
+    // }
+    // }
+    // }
 
     .social {
         &__icon {
@@ -122,7 +120,7 @@
         &__item {
             margin-bottom: 15px;
         }
-    } 
+    }
 
     .top {
         margin-top: 25px;
@@ -145,17 +143,8 @@
 
 
 @media (max-width: 767px) {
-    .top-header {  
-        &__title {
-            margin-left: 10px;
-            // margin-top: 10px;
-            h1 {
-                font-size: 21px;
-            }
-            span {
-                font-size: 12px;
-            }
-        }
+    .top-header {
+       
 
         .social {
             &__icon {
@@ -175,18 +164,9 @@
         }
     }
 
-    nav {
-        background-color: $white;
+  
 
-        // position: absolute;
-
-
-    }
-
-    nav .row {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
+   
 
     .menu {
         padding-top: 0 !important;
@@ -328,28 +308,12 @@
 }
 
 
-@media (max-width: 575px) {  
+@media (max-width: 575px) {
     .top-header {
         &__logo {
             img {
                 height: 40px;
             }
-        }
-
-        &__title {
-            h1 {
-                font-size: 23px;
-            }
-
-            span {
-                font-size: 10px;
-            }
-        }
-
-        &__block {
-            padding-right: 15px;
-            padding-top: 0;
-            padding-bottom: 0;
         }
     }
 
@@ -357,7 +321,7 @@
         top: 18px;
     }
 
-   
+
 
     .tourn {
         h5 {
@@ -382,34 +346,10 @@
 
 
 
-@media (max-width: 513px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 21px;
-            }
-        }
-    }
-}
 
-@media (max-width: 479px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 19px;
-            }
-        }
-    }
-}
 
 @media (max-width: 444px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 18px;
-            }
-        }
-    }
+   
 
     .tourn {
         &__block {
@@ -429,46 +369,12 @@
     }
 }
 
-@media (max-width: 425px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 17px;
-            }
-        }
-    }
-}
 
 
-@media (max-width: 410px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 16px;
-            }
-        }
-    }
-}
 
-@media (max-width: 385px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 15px;
-            }
-        }
-    }
-}
 
 @media (max-width: 376px) {
-    .top-header {
-        &__title {
-            span {
-                font-size: 10px;
-                text-align: left;
-            }
-        }
-    }
+   
 
     .menu {
         &__block {
@@ -490,10 +396,11 @@
 
     .tourn {
         padding-top: 0;
+
         &__title {
             font-size: 14px;
-        }      
-    } 
+        }
+    }
 
     .project {
         &__item {
@@ -509,33 +416,9 @@
 }
 
 
-@media (max-width: 370px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 14px;
-            }
-        }
-    }
-}
-
-@media (max-width: 350px) {
-    .top-header {
-        &__title {
-            h1 {
-                font-size: 12px;
-            }
-        }
-    }
-}
 
 
 
 
-@media (max-width: 320px) {
-    .top-header {
-        &__title {
-            display: none;
-        }
-    }
-}
+
+
