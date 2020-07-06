@@ -15,7 +15,7 @@ nav {
             display: flex;
             // flex-wrap: wrap;
             font-size: 16px;
-            font-weight: 500;
+            font-weight: 600;
             margin-bottom: 0;
             a  {
                 text-decoration: none;
@@ -24,7 +24,8 @@ nav {
                 // color: $main-color;               
                 &:hover {
                     color: $third-color;
-                    // color: $accent-color;
+                    // color: $light-gray2;
+                  
                     text-decoration: none;
                 }
                 &:not(:last-child):hover::after {

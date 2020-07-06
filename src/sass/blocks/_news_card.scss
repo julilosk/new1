@@ -1,5 +1,10 @@
 .news {
     background-color: $light-gray;
+
+    @media (max-width: 575px) {
+       background-color: $white;
+    } 
+
     &__link {
         text-decoration: none;
         &:hover {
@@ -29,7 +34,7 @@
             height: 200px;
         }    
         @media (max-width: 575px) {
-            height: 35vh;
+            height: 30vh;
         }    
     }
     &__body{

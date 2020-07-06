@@ -128,11 +128,14 @@ h2 {
 p a {
 //    padding-top: 15px; 
 //    padding-bottom: 15px;
-   color: $main-color;
-   font-weight: 500;
+        // color: $black
+        color: $second-color;
+//    font-weight: 500;
+        text-decoration: underline;
+        // color: $third-color;
    &:hover {
        // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-        text-decoration: none;
+        // text-decoration: none;
         color: $third-color;        
     }
     // @media (max-width: 767px) {
@@ -351,7 +354,9 @@ nav .menu__block li.current-menu-parent>a {
 
 }
 
-
+iframe {
+    width: 100%; 
+}
 
 
 
@@ -386,7 +391,7 @@ nav .menu__block li.current-menu-parent>a {
 @import'blocks/tabs-page';
 @import'blocks/carousel';
 @import'blocks/tags';
-@import'blocks/feedback';
+// @import'blocks/feedback';
 @import'blocks/registration-tourn';
 @import'blocks/modal';
 @import'blocks/shop-product';

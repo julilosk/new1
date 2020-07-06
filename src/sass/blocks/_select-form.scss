@@ -52,13 +52,16 @@
     display: flex;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    @media (max-width: 390px) {
-        justify-content: space-between;
-    }
-    
 
     @media (max-width: 767px)  {
         margin-left: -8px;
+        margin-bottom: 25px;
+    }
+    // @media (max-width: 575px) {
+        // margin-top: 10px;
+    // }
+    @media (max-width: 390px) {
+        justify-content: space-between;
     }
 
     #btnAll {
@@ -92,7 +95,9 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        color: #414141;
+        // color: #414141;
+        font-weight: 600;
+ 
         background-color: $white;
 
         @media (max-width: 575px) {
@@ -152,5 +157,6 @@
     .dropdown-menu {
         max-height: 240px;
         overflow-y: scroll;
+       
     }
 }

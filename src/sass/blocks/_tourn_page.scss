@@ -53,11 +53,12 @@
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
 
         @media (max-width: 767px) {
-            min-height: 150px;
+            min-height: auto;
         }
 
         @media (max-width: 575px) {
-            min-height: 130px;
+            // min-height: 130px;
+            margin: 10px 0;
         }
 
         &:hover {
@@ -110,7 +111,7 @@
         padding: 15px 15px;
 
         @media (max-width: 575px) {
-            padding: 10px 10px;
+            padding: 10px 5px;
         }
     }
 
@@ -130,8 +131,8 @@
             margin-bottom: 15px;
         }
 
-        @media (max-width: 575px) {
-            font-size: 12px;
+        @media (max-width: 376px) {
+            font-size: 14px;
             margin-bottom: 5px;
         }
 
@@ -159,14 +160,12 @@
             // justify-content: start;
             align-items: flex-start;
         }
-
         @media (max-width: 575px) {
             font-size: 12px;
+            margin-top: 5px;
         }
 
-        @media (max-width: 376px) {
-            font-size: 10px;
-        }
+       
     }
 
     &__flex {
@@ -176,6 +175,9 @@
         &:first-child {
             @media (max-width: 767px) {
                 margin-bottom: 10px;
+            }
+            @media (max-width: 575px) {
+                margin-bottom: 5px;
             }
         }
 
@@ -262,6 +264,34 @@
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+
+    &__document {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        width: 100%;
+        &:hover {              
+            text-decoration: none;
+        }
+    }
+    &__doc {
+        // padding-right: 20px;
+        // height: 20px;          
+        // float: left;    
+        height: 1.1em;
+        width: auto;
+        margin-right: 8px;
+        // @media (max-width: 767px) {              
+        //     height: 17px;
+        //     padding-right: 10px;
+        // }
+    }
+    &__name {
+        color: $main-color;
+        &:hover {
+            color: $third-color;
+        }
+    }
 
     h1 {
         font-size: 30px;
@@ -449,6 +479,7 @@
         // &__item a {
         //     padding-top: 15px!important;
         // }
+       
     }
 
     &__lastnews,

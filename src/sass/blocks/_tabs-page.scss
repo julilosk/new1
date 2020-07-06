@@ -17,15 +17,10 @@
         padding-left: 0;
     }
 
-    &__tabs {
-        // width: 20%;
-        display: flex;
-        // flex-direction: column;
-        // justify-content: center;
+    &__tabs {        
+        display: flex;      
         padding-left: 0;
-        font-size: 14px;
-        // line-height: 36px;   
-        // border: 1px solid red;  
+        font-size: 14px;        
         border-bottom: 1px solid $border;
         margin: 15px -15px;
         &_main {
@@ -39,14 +34,11 @@
         }
     }
 
-    &__tab {
-        // margin: 15px 0;   
+    &__tab {        
         padding: 0 15px;
         cursor: pointer;
         transition: 0.2s all;
-        font-weight: 500;
-        // border: 1px solid red;    
-        // border-bottom: 1px solid $border;     
+        font-weight: 500;        
         @media (max-width: 376px) {
             padding: 0 8px;
         }
@@ -59,21 +51,17 @@
 
         h5 {
             color: $gray;
-
             @media (max-width: 767px) {
                 font-size: 14px;
             }
-
             @media (max-width: 575px) {
-                font-size: 12px;
+                font-size: 13px;
             }
 
         }
 
 
         &:hover {
-
-            // border-bottom: 2px solid $third-color;   
             h5 {
                 color: $third-color;
             }
@@ -97,9 +85,7 @@
     }
 
     &__content {
-        margin-top: 35px;
-        // border: 1px solid green;    
-        // height: 100%;
+        margin-top: 35px;       
         width: 100%;
         display: none;
 
@@ -109,12 +95,10 @@
         }
 
         &_tourn {
-            border: solid 0.5px $border;
-            // border-top: none;
-            background-color: #ffffff;
+            border: solid 0.5px $border;           
+            // background-color: #ffffff;
             padding-top: 35px;
-            margin-top: 0;
-            // box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.20);   
+            margin-top: 0;             
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
             @media (max-width: 767px) {
                 margin-bottom: 30px;
@@ -125,13 +109,11 @@
     &__block {
         margin: 35px 0;
         height: 220px;
-        padding-right: 15px;
-        // border-bottom: 1px solid #c9d5ec; 
+        padding-right: 15px;       
         background-color: $light-gray;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
 
-        &_advts {
-            // height: auto;
+        &_advts {            
             padding-left: 25px;
             padding-right: 25px;
         }
@@ -149,9 +131,7 @@
         }
     }
 
-    &__img {
-        // border: 1px solid red;
-        // width: 100%;        
+    &__img {         
         width: 400px;
         padding-right: 25px;
         height: 220px;
@@ -161,8 +141,7 @@
 
     &__data {
         padding-top: 15px;
-        font-size: 16px;
-        // letter-spacing: 1.5px;
+        font-size: 16px;        
         font-weight: 500;
         color: $gray;
     }
