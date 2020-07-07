@@ -280,9 +280,9 @@ img {
     background: $gray;
 }
 
-nav .menu__block a.menu__item_active {
-    color: $third-color;
-}
+// nav .menu__block a.menu__item_active {
+//     color: $third-color;
+// }
 
 // nav .menu__block li.current-menu-parent>a {
 //     color: $third-color;
@@ -291,9 +291,9 @@ nav .menu__block a.menu__item_active {
 //     // margin-bottom: -10px;
 // }
 
-.current-page-ancestor>a {
-    color: $third-color !important;
-}
+// .current-page-ancestor>a {
+//     color: $third-color !important;
+// }
 
 .pagination {
     background-color: $white;

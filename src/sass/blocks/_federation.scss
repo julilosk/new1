@@ -62,24 +62,20 @@
 
     .tabs-page {
         &__tabs {
-            @media (max-width: 575px) {
-                white-space: nowrap;
+            @media (max-width: 575px) {                
                 overflow-x: scroll;
                 overflow-y: hidden;
-                // height: 49px;
-                padding-bottom: 20px !important;
-                margin-bottom: -20px;
+                flex-wrap: nowrap;  
+                // // height: 49px;
+                // padding-bottom: 20px !important;
+                // margin-bottom: -20px;
             }
         }
-
-        //     &__tab{
-        //         &:last-child {
-        //             @media (max-width: 767px) {
-        //                 display: none;
-        //             }
-        //         }
-        //     }
     }
+    .tabs-page__tabs::-webkit-scrollbar {
+        display: none;
+    }
+    
 
     &__news {
         display: flex;
@@ -113,11 +109,12 @@
 
 }
 
+
+
 .projects-page .tabs-page__content,
 .structure__content .federation__text {
     ul {
         margin-left: 15px;
-
         li::before {
             content: "\2714";
             margin-right: 5px;

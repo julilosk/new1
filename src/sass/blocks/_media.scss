@@ -65,10 +65,6 @@
     }
 }
 
-
-
-
-
 @media (max-width: 991px) {
     // .top-header {
 
@@ -139,12 +135,8 @@
 
 }
 
-
-
-
 @media (max-width: 767px) {
-    .top-header {
-       
+    .top-header {      
 
         .social {
             &__icon {
@@ -152,7 +144,6 @@
                 width: 25px;
                 height: 25px;
                 margin-left: 5px;
-
                 img {
                     height: 12px;
                 }
@@ -164,30 +155,18 @@
         }
     }
 
-  
-
-   
-
     .menu {
         padding-top: 0 !important;
-        padding-bottom: 0 !important;
-        // position: fixed;
-        // position: absolute;
+        padding-bottom: 0 !important;       
         top: 0;
         left: -100%;
-
-
-
-        &__block {
-            // position: fixed;
+        &__block {          
             position: absolute;
             overflow: hidden;
             flex-direction: column;
             justify-content: flex-start;
             top: 0;
-            left: -100%;
-            // width: 100%;
-
+            left: -100%;          
             width: calc(100% - 20px) !important;
             text-align: center;
             // height: 100vh;

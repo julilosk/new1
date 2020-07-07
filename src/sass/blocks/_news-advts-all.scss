@@ -145,12 +145,10 @@
     &__block {
         margin: 35px 0;
         width: 100%;
-        height: 220px;
-        padding-right: 15px;
-        // border-bottom: 1px solid #c9d5ec; 
+        height: 180px;
+        padding-right: 15px;       
         border: 0.5px solid $border;
-        cursor: pointer;
-        // background-color: $light-gray;
+        cursor: pointer;       
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
 
         @media (max-width: 575px) {
@@ -159,8 +157,7 @@
         }
 
         @media (max-width: 376px) {
-            height: 120px;
-            // margin: 10px 0;       
+            height: 120px;                
         }
 
         &_advts {
@@ -177,6 +174,10 @@
             padding-top: 0;
             margin-top: 0;
         }
+        .news-all__data {
+            padding-top: 15px;
+            font-size: 14px;
+        }
     }
 
     &__wrapper-img {
@@ -188,12 +189,14 @@
     }
 
     &__img {
-        width: 400px;
+        width: 250px;
         padding-right: 25px;
         height: 100%;
         // height: auto;
         object-fit: cover;
-        background-position: center;
+        // background-position: center;
+        // object-position: center top;
+        object-position: center;
         float: left;
 
         @media (max-width: 1199px) {
@@ -215,6 +218,7 @@
             // margin-top: 25px;
             padding-right: 0;
             margin-bottom: 30px;
+            // object-position: center top;
 
             @media (max-width: 991px) {
                 height: 35vh;
@@ -227,7 +231,7 @@
     }
 
     &__data {
-        // padding-top: 15px;
+        
         font-size: 16px;
         font-weight: 500;
         color: $gray;
@@ -236,14 +240,11 @@
             font-size: 14px;
         }
 
-        @media (max-width: 575px) {
-            // font-size: 12px;
+        @media (max-width: 575px) {           
             padding-top: 5px;
         }
 
-        // @media (max-width: 376px) {
-        //     font-size: 10px;          
-        // }
+       
     }
 
     &__title {
@@ -381,7 +382,7 @@
         font-weight: 400;
 
         div {            
-            background-color: rgba( 219, 221, 232, 0.7);
+            background-color: rgba( 219, 221, 232, 0.9);
             border-bottom: 1px solid #e0e0e0;
             // background-color: $light-gray2;
             color: #828e99;
@@ -441,6 +442,7 @@
 
         .current-cat a {
             color: $third-color;
+            background-color: $gray_bc;
         }
     }
 

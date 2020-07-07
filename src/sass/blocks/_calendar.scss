@@ -194,7 +194,8 @@
                 }
 
                 &:nth-child(odd) {
-                    background-color: #dfdfed;
+                    // background-color: #dfdfed;
+                    background-color: $gray_bc;
                 }
                 &:hover {
                     background-color: #868cad;

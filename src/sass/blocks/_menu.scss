@@ -1,29 +1,25 @@
 nav {
     background-color: $main-color;
-
     // background-color: $second-color;
     // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
     // .row {
     //     justify-content: space-between;
     //     align-items: center;
     // }
+    .row {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
 
     @media (max-width: 767px) {
         background-color: $white;
-
-        .row {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-        }
     }
 
 
     .menu {
         position: relative;
         // background-color: $main-color;
-        // background-color: $second-color;
-        // padding: 3px 15px;
-        // padding: 7px 0;
+        // background-color: $second-color;       
         height: 55px;
         display: flex;
         justify-content: space-between;
@@ -39,6 +35,8 @@ nav {
             font-size: 16px;
             font-weight: 600;
             margin-bottom: 0;
+            padding-right: 15px;
+            padding-left: 15px;
 
             @media (max-width: 1199px) {
                 font-size: 14px;
@@ -48,56 +46,13 @@ nav {
             a {
                 text-decoration: none;
                 text-transform: uppercase;
-                color: $white;
-
+                // color: $white;
+                color: $gray2;
                 &:hover {
                     color: $third-color;
                     // color: $light-gray2;
                     text-decoration: none;
-                }
-
-                // &:not(:last-child):hover::after {
-                //     right: -16px;
-                //     transform: rotate(-45deg);
-                //     content: '';
-                //     height: 6px;
-                //     width: 2px;
-                //     background-color: $white;
-                //     position: absolute;
-                //     top: 9px;
-                //     transition-property: all;
-                //     transition-duration: .5s, .5s, .5s;
-                //     transition-delay: .5s, .5s, .5s;
-                // }
-
-                // &:not(:last-child):hover::before {
-                //     content: '';
-                //     right: -19px;
-                //     height: 6px;
-                //     width: 2px;
-                //     background-color: $white;
-                //     position: absolute;
-                //     top: 9px;
-                //     transition-property: all;
-                //     transition-duration: .5s, .5s, .5s;
-                //     transition-delay: .5s, .5s, .5s;
-                //     right: -13px;
-                //     transform: rotate(45deg);
-                // }
-
-                // &:hover::after {          
-                //     // background-color: #ff003d;
-                //     background-color: $third-color;
-                //     display: block;
-                //     content: "";
-                //     height: 5px;
-                //     width: 100%;
-                //     left: 50%;
-                //     bottom: -19px;
-                //     position: absolute;
-                //     -webkit-transform: translateX(-50%);
-                //     transform: translateX(-50%);
-                // }
+                }                
             }
 
             li {
@@ -152,18 +107,19 @@ nav {
             }
         }
 
-        &__item {
-            a {
-                color: $white;
-            }
+        // &__item {
+        //     // a {
+        //     //     // color: $white;
+                
+        //     // }
 
-            &_active {
-                a {
-                    color: $third-color;
-                }
+        //     &_active {
+        //         a {
+        //             color: $third-color;
+        //         }
 
-            }
-        }
+        //     }
+        // }
 
         // .current-page-ancestor a {
         //     color: $third-color!important;
@@ -215,6 +171,7 @@ nav {
 
 .form-search {
     max-width: 300px;
+    padding-right: 15px;
 
     @media (max-width: 1199px) {
         max-width: 200px;
