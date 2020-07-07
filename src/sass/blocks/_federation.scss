@@ -1,5 +1,12 @@
 .federation {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     &__text {
         margin: 15px 0;
@@ -59,23 +66,31 @@
 
 .projects-page {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .tabs-page {
         &__tabs {
-            @media (max-width: 575px) {                
+            @media (max-width: 575px) {
                 overflow-x: scroll;
                 overflow-y: hidden;
-                flex-wrap: nowrap;  
+                flex-wrap: nowrap;
                 // // height: 49px;
                 // padding-bottom: 20px !important;
                 // margin-bottom: -20px;
             }
         }
     }
+
     .tabs-page__tabs::-webkit-scrollbar {
         display: none;
     }
-    
+
 
     &__news {
         display: flex;
@@ -115,6 +130,7 @@
 .structure__content .federation__text {
     ul {
         margin-left: 15px;
+
         li::before {
             content: "\2714";
             margin-right: 5px;

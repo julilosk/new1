@@ -1,25 +1,27 @@
 .submenu {
     padding-top: 35px;
     padding-bottom: 10px;
+
     @media (max-width: 1199px) {
         padding-top: 30px;
         // padding-bottom: 15px;
     }
 
     @media (max-width: 991px) {
-       padding-top: 0;
+        padding-top: 0;
     }
 
     @media (max-width: 767px) {
-       padding-top: 10px;
-    //    padding-bottom: 10px;
+        padding-top: 10px;
+        //    padding-bottom: 10px;
     }
+
     @media (max-width: 575px) {
         padding-top: 5px;
         padding-bottom: 5px;
     }
 
-    
+
 
     &__row {
         justify-content: space-between;
@@ -343,7 +345,7 @@
 
 }
 
-.activelink2 {    
+.activelink2 {
     color: #0069d2 !important;
 
     @media (max-width: 991px) {

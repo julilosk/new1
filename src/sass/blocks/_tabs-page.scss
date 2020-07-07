@@ -24,7 +24,7 @@
         border-bottom: 1px solid $border;
         margin: 15px -15px;
 
-        
+
 
         &_main {
             margin-left: 0;
@@ -109,6 +109,11 @@
 
             @media (max-width: 767px) {
                 margin-bottom: 30px;
+
+            }
+
+            @media (max-width: 575px) {
+                padding-top: 0px;
             }
         }
     }

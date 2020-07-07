@@ -42,6 +42,9 @@
         }
     }
 
+
+
+
     &__block {
         display: flex;
         align-items: center;
@@ -52,23 +55,25 @@
         border: 0.5px solid $border;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
 
+        &:hover {
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+            text-decoration: none;
+
+            h2 {
+                color: $third-color;
+            }
+
+        }
+
         @media (max-width: 767px) {
             min-height: auto;
         }
 
         @media (max-width: 575px) {
-            // min-height: 130px;
             margin: 10px 0;
         }
 
-        &:hover {
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
 
-            a {
-                color: $third-color;
-                text-decoration: none;
-            }
-        }
 
         &:first-child {
             padding-top: 0;
@@ -116,10 +121,11 @@
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 22px;
         line-height: 1.3;
         font-weight: 500;
         margin-bottom: 25px;
+        text-align: left;
 
         @media (max-width: 767px) {
             font-size: 18px;
@@ -160,12 +166,13 @@
             // justify-content: start;
             align-items: flex-start;
         }
+
         @media (max-width: 575px) {
             font-size: 12px;
             margin-top: 5px;
         }
 
-       
+
     }
 
     &__flex {
@@ -176,6 +183,7 @@
             @media (max-width: 767px) {
                 margin-bottom: 10px;
             }
+
             @media (max-width: 575px) {
                 margin-bottom: 5px;
             }
@@ -238,25 +246,24 @@
 
             &:hover {
                 background-color: $gray_bc;
-                color: $third-color;
+                // color: $third-color;
+                // border-left: 1px solid $third-color;
             }
         }
 
         .current-cat a {
-            color: $third-color;
+            // color: $third-color;
             background-color: $gray_bc;
+            border-left: 3px solid $third-color;
+            font-weight: 700;
         }
-        
+
     }
 
     &__item a {
         padding-top: 15px !important;
     }
 }
-
-
-
-
 
 
 // for one tourn
@@ -270,10 +277,12 @@
         align-items: center;
         padding: 10px 0;
         width: 100%;
-        &:hover {              
+
+        &:hover {
             text-decoration: none;
         }
     }
+
     &__doc {
         // padding-right: 20px;
         // height: 20px;          
@@ -286,8 +295,10 @@
         //     padding-right: 10px;
         // }
     }
+
     &__name {
         color: $main-color;
+
         &:hover {
             color: $third-color;
         }
@@ -479,7 +490,7 @@
         // &__item a {
         //     padding-top: 15px!important;
         // }
-       
+
     }
 
     &__lastnews,
@@ -494,10 +505,10 @@
 
         // line-height: 20px;
         // margin-top: 20px;
-        div {           
-            background-color: rgba( 219, 221, 232, 0.8);
+        div {
+            background-color: rgba(219, 221, 232, 0.8);
             // background-color: $gray_bc;
-            color: #828e99;          
+            color: #828e99;
             padding: 12px 15px;
             font-size: 14px;
             font-weight: 500;

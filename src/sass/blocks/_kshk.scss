@@ -1,5 +1,13 @@
 .kshk {
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (max-width: 767px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     // span {
     //     line-height: 1.7; 
     //     display: block;

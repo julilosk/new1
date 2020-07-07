@@ -14,8 +14,8 @@
     @media (max-width: 767px) {
         flex-direction: column;
         box-shadow: none;
-        margin-right: -15px;
-        margin-left: -15px;
+        // margin-right: -15px;
+        // margin-left: -15px;
     }
 
     h4 {
@@ -491,6 +491,7 @@
     &__descr {
         display: flex;
         flex-direction: column;
+
         p {
             color: $gray;
             margin-top: 15px;
