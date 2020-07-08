@@ -148,44 +148,141 @@
     </nav>
 
     <section>
-        <div class="submenu indent-top home-page-block">
-            <!-- <div class="indent-top home-page-block"> -->
+        <div class="submenu">
             <div class="container">
                 <div class="submenu__row row">
                     <h2 class="submenu__title">Турниры</h2>
-
-                    <div class="menuWrapper">
-                        <div class="submenu__limiter">
-
-                            <div class="submenu__block">
-                                <ul>
-                                    <li><a href="../../pages/tournaments/tournaments.html" class="submenu__link">Все
-                                            турниры</a></li>
-                                    <li><a href="../../pages/tournaments/icon.html" class="submenu__link">Календарь</a>
-                                    </li>
-                                    <li> <a href="../../pages/tournaments/translation.html"
-                                            class="submenu__link">Трансляция</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                    <div class="submenu__block">
+                        <ul>
+                            <li><a href="../../pages/tournaments/tournaments.html" class="submenu__link">Все
+                                    турниры</a></li>
+                            <li><a href="../../pages/tournaments/icon.html" class="submenu__link">Календарь</a>
+                            </li>
+                            <li> <a href="../../pages/tournaments/translation.html" class="submenu__link">Трансляция</a>
+                            </li>
+                        </ul>
                     </div>
-
-
                 </div>
             </div>
-            <!-- </div> -->
         </div>
 
 
         <div class="container">
             <div class="row">
+                <div class="page-block tourn-all">
+                    <div class="page-block__content">
+                        <div class="filter" data-base="/news/">
+                            <div class="btn-group btn-group">
+                                <button id="btnDay" type="button" class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" data-value="">
+                                    День </button>
 
-                <div class="tourn-all">
-                    <div class="tourn-all__content">
-                        <div class="tourn-all__box">
-                            <div class="tourn-all__left">
+                                <div class="dropdown-menu" aria-labelledby="btnDay">
+                                    <a href="#" class="dropdown-item">День</a>
+                                    <a href="#" data-value="1" class="dropdown-item ">1</a>
+                                    <a href="#" data-value="2" class="dropdown-item ">2</a>
+                                    <a href="#" data-value="3" class="dropdown-item ">3</a>
+                                    <a href="#" data-value="4" class="dropdown-item ">4</a>
+                                    <a href="#" data-value="5" class="dropdown-item ">5</a>
+                                    <a href="#" data-value="6" class="dropdown-item ">6</a>
+                                    <a href="#" data-value="7" class="dropdown-item ">7</a>
+                                    <a href="#" data-value="8" class="dropdown-item ">8</a>
+                                    <a href="#" data-value="9" class="dropdown-item ">9</a>
+                                    <a href="#" data-value="10" class="dropdown-item ">10</a>
+                                    <a href="#" data-value="11" class="dropdown-item ">11</a>
+                                    <a href="#" data-value="12" class="dropdown-item ">12</a>
+                                    <a href="#" data-value="13" class="dropdown-item ">13</a>
+                                    <a href="#" data-value="14" class="dropdown-item ">14</a>
+                                    <a href="#" data-value="15" class="dropdown-item ">15</a>
+                                    <a href="#" data-value="16" class="dropdown-item ">16</a>
+                                    <a href="#" data-value="17" class="dropdown-item ">17</a>
+                                    <a href="#" data-value="18" class="dropdown-item ">18</a>
+                                    <a href="#" data-value="19" class="dropdown-item ">19</a>
+                                    <a href="#" data-value="20" class="dropdown-item ">20</a>
+                                    <a href="#" data-value="21" class="dropdown-item ">21</a>
+                                    <a href="#" data-value="22" class="dropdown-item ">22</a>
+                                    <a href="#" data-value="23" class="dropdown-item ">23</a>
+                                    <a href="#" data-value="24" class="dropdown-item ">24</a>
+                                    <a href="#" data-value="25" class="dropdown-item ">25</a>
+                                    <a href="#" data-value="26" class="dropdown-item ">26</a>
+                                    <a href="#" data-value="27" class="dropdown-item ">27</a>
+                                    <a href="#" data-value="28" class="dropdown-item ">28</a>
+                                    <a href="#" data-value="29" class="dropdown-item ">29</a>
+                                    <a href="#" data-value="30" class="dropdown-item ">30</a>
+                                    <a href="#" data-value="31" class="dropdown-item ">31</a>
+                                </div>
+                            </div>
 
+                            <div class="btn-group btn-group">
+                                <button id="btnMonth" type="button" class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" data-value="">
+                                    Месяц </button>
 
+                                <div class=" dropdown-menu" aria-labelledby="btnMonth">
+                                    <a href="#" class="dropdown-item">Месяц</a>
+                                    <a href="#" data-value="01" class="dropdown-item ">Январь</a>
+                                    <a href="#" data-value="02" class="dropdown-item ">Февраль</a>
+                                    <a href="#" data-value="03" class="dropdown-item ">Март</a>
+                                    <a href="#" data-value="04" class="dropdown-item ">Апрель</a>
+                                    <a href="#" data-value="05" class="dropdown-item ">Май</a>
+                                    <a href="#" data-value="06" class="dropdown-item ">Июнь</a>
+                                    <a href="#" data-value="07" class="dropdown-item ">Июль</a>
+                                    <a href="#" data-value="08" class="dropdown-item ">Август</a>
+                                    <a href="#" data-value="09" class="dropdown-item ">Сентябрь</a>
+                                    <a href="#" data-value="10" class="dropdown-item ">Октябрь</a>
+                                    <a href="#" data-value="11" class="dropdown-item ">Ноябрь</a>
+                                    <a href="#" data-value="12" class="dropdown-item ">Декабрь</a>
+                                </div>
+                            </div>
+
+                            <div class=" btn-group btn-group">
+                                <button id="btnYear" type="button" class="dropdown-toggle" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" data-value="">
+                                    Год </button>
+
+                                <div class="dropdown-menu" aria-labelledby="btnYear">
+                                    <a href="#" class="dropdown-item">Год</a>
+                                    <a href="#" data-value="2021" class="dropdown-item ">2021</a>
+                                    <a href="#" data-value="2020" class="dropdown-item ">2020</a>
+                                    <a href="#" data-value="2019" class="dropdown-item ">2019</a>
+                                    <a href="#" data-value="2018" class="dropdown-item ">2018</a>
+                                    <a href="#" data-value="2017" class="dropdown-item ">2017</a>
+                                    <a href="#" data-value="2016" class="dropdown-item ">2016</a>
+                                    <a href="#" data-value="2015" class="dropdown-item ">2015</a>
+                                    <a href="#" data-value="2014" class="dropdown-item ">2014</a>
+                                    <a href="#" data-value="2013" class="dropdown-item ">2013</a>
+                                    <a href="#" data-value="2012" class="dropdown-item ">2012</a>
+                                    <a href="#" data-value="2011" class="dropdown-item ">2011</a>
+                                    <a href="#" data-value="2010" class="dropdown-item ">2010</a>
+                                </div>
+                            </div>
+
+                            <button class="" id="btnAll">
+                                За все время
+                            </button>
+
+                        </div>
+                        <div class="page-block__box">
+                            <div class="page-block__left">
+                                <a href="single-tourn.html" class="tourn-all__block">
+                                    <img src="../../img/logos/chessboard.jpg" alt="" class="tourn-all__img">
+                                    <div class="tourn-all__descr">
+                                        <h2 class="tourn-all__title">«Moscow-Опен»</h2>
+                                        <div class="tourn-all__case">
+                                            <div class="tourn-all__flex">
+                                                <img class="tourn-all__icon" src="../../icons/icon-alt-regular.svg"
+                                                    alt="">
+                                                <div class="tourn-all__date">02.05.2019 - 09.05.2019</div>
+                                            </div>
+
+                                            <div class="tourn-all__flex">
+                                                <img class="tourn-all__icon" src="../../icons/geo.svg" alt="">
+                                                <div class="tourn-all__address">г. Барнаул, краевой шахматный клуб г.
+                                                    Барнаул, краевой шахматный клуб</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
                                 <a href="single-tourn.html" class="tourn-all__block">
                                     <img src="../../img/logos/chessboard.jpg" alt="" class="tourn-all__img">
                                     <div class="tourn-all__descr">
@@ -209,90 +306,34 @@
 
                                     </div>
                                 </a>
-
-
-
-
-                                <!-- <div class="tourn-all__block">
-                                    <a href=""> <img src="../../img/logos/beauty_Altay.jpg" alt=""
-                                            class="tourn-all__img"></a>
-
+                                <a href="single-tourn.html" class="tourn-all__block">
+                                    <img src="../../img/logos/chessboard.jpg" alt="" class="tourn-all__img">
                                     <div class="tourn-all__descr">
 
-                                        <div class="tourn-all__title"><a href="">Аэрофлот-Опен</a></div>
+                                        <h2 class="tourn-all__title">«Moscow-Опен»</h2>
 
                                         <div class="tourn-all__case">
+
                                             <div class="tourn-all__flex">
                                                 <img class="tourn-all__icon" src="../../icons/icon-alt-regular.svg"
                                                     alt="">
-                                                <div class="tourn-all__date">31.05.2019 - 09.05.2019</div>
+                                                <div class="tourn-all__date">02.05.2019 - 09.05.2019</div>
                                             </div>
+
                                             <div class="tourn-all__flex">
                                                 <img class="tourn-all__icon" src="../../icons/geo.svg" alt="">
-                                                <div class="tourn-all__address">г. Барнаул, краевой шахматный клуб</div>
+                                                <div class="tourn-all__address">г. Барнаул, краевой шахматный клуб г.
+                                                    Барнаул, краевой шахматный клуб</div>
                                             </div>
                                         </div>
 
                                     </div>
-                                </div>
-
-                                <div class="tourn-all__block">
-                                    <a href=""> <img src="../../img/logos/queen-300x225.png" alt=""
-                                            class="tourn-all__img"></a>
-
-                                    <div class="tourn-all__descr">
-
-                                        <div class="tourn-all__title"><a href="">Этап всероссийских соревнований по
-                                                быстрым шахматам «РАПИД Гран-При России – Кубок Губернатора Алтайского
-                                                края»</a></div>
-
-                                        <div class="tourn-all__case">
-                                            <div class="tourn-all__flex">
-                                                <img class="tourn-all__icon" src="../../icons/icon-alt-regular.svg"
-                                                    alt="">
-                                                <div class="tourn-all__date">16 января 2020</div>
-                                            </div>
-                                            <div class="tourn-all__flex">
-                                                <img class="tourn-all__icon" src="../../icons/geo.svg" alt="">
-                                                <div class="tourn-all__address">г. Барнаул, краевой шахматный клуб</div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="tourn-all__block">
-                                    <a href=""><img src="../../img/logos/chess-blitz.jpg" alt=""
-                                            class="tourn-all__img"></a>
-
-                                    <div class="tourn-all__descr">
-
-                                        <div class="tourn-all__title">
-                                            <h2>Краевые соревнования «Белая Ладья»
-                                                среди команд общеобразовательных организаций Алтайского края.</h2>
-                                        </div>
-
-                                        <div class="tourn-all__case">
-                                            <div class="tourn-all__flex">
-                                                <img class="tourn-all__icon" src="../../icons/icon-alt-regular.svg"
-                                                    alt="">
-                                                <div class="tourn-all__date">16-20 января 2020</div>
-                                            </div>
-                                            <div class="tourn-all__flex">
-                                                <img class="tourn-all__icon" src="../../icons/geo.svg" alt="">
-                                                <div class="tourn-all__address">г. Барнаул, краевой шахматный клуб</div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div> -->
+                                </a>
                             </div>
-                            <div class="tourn-all-side">
+                            <div class="sidebar">
                                 <ul>
-                                    <li class="tourn-all-side__item">
+                                    <li class="sidebar__item">
                                         <a href="" class="tourn-all-side__active">Все турниры</a>
-
                                     </li>
                                     <li>
                                         <a href="">Турниры Алтайского края</a>
@@ -313,20 +354,6 @@
                                         <a href="">Рапид</a>
                                     </li>
                                 </ul>
-                                <!-- <a href="" class="tourn-all-side__item  tourn-all-side__item_active "></a>
-                                    <a href="" class="tourn-all-side__item">Турниры Алтайского края</a>
-                                    <a href="" class="tourn-all-side__item">Турниры СФО</a>
-                                    <a href="" class="tourn-all-side__item">Классика</a>
-                                    <a href="" class="tourn-all-side__item">Рапид</a>
-                                    <a href="" class="tourn-all-side__item">Блиц</a>
-                                    <a href="" class="tourn-all-side__item">Ветераны</a>
-                                    <a href="" class="tourn-all-side__item">Дети</a>
-                                    <a href="" class="tourn-all-side__item">Сельские</a>
-                                    <a href="" class="tourn-all-side__item">Мужчины</a>
-                                    <a href="" class="tourn-all-side__item">Женщины</a>
-                                    <a href="" class="tourn-all-side__item">Детский кубок России</a>
-                                    <a href="" class="tourn-all-side__item">Кубок России</a>
-                                    <a href="" class="tourn-all-side__item">Рапид Гран-при</a> -->
                             </div>
                         </div>
                         здесь пагинация

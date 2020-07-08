@@ -1,0 +1,137 @@
+//side bar for tags
+.sidebar {
+    height: 100%;
+    width: calc(25% - 15px);
+    margin-left: 15px;
+    // border: 0.5px solid $border;
+    font-weight: 500;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+
+    ul {
+        margin-bottom: 0;
+        border: 0.5px solid $border;
+        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+
+        li a {
+            padding: 10px 15px;
+            display: block;
+            color: $black;
+            text-decoration: none;
+
+            &:hover {
+                background-color: $gray_bc;
+            }
+        }
+
+        .current-cat a {
+            background-color: $gray_bc;
+            border-left: 3px solid $third-color;
+            // font-weight: 600;
+            color: $second-color;
+        }
+    }
+
+    &__item a {
+        padding-top: 15px !important;
+        color: $second-color !important;
+    }
+
+    &__btn {
+        width: 100%;
+        margin-top: 30px;
+        display: block;
+        cursor: pointer;
+        border: 1px solid $border;
+        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+        // background-color: $light-gray2;
+        background-color: $gray_bc;
+        color: $second-color !important;
+
+        &:hover {
+            color: $gray_bc !important;
+            background-color: $second-color;
+        }
+    }
+}
+
+
+
+.sidebar-single {
+    line-height: 20px;
+    font-size: 16px;
+    height: 100%;
+    width: calc(25% - 15px);
+    margin-left: 15px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+    font-weight: 500;
+    float: left;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+
+    ul {
+        padding: 0 9px;
+        margin-bottom: 0;
+
+        li {
+            border-top: 1px solid $border;
+
+            &:first-child {
+                border-top: none;
+            }
+
+            a {
+                padding: 10px 6px;
+                display: block;
+                // color: #222c37;
+                color: $black;
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover {
+                    // background-color: $gray2;
+                    color: $third-color;
+                }
+            }
+        }
+    }
+
+
+    &__lastnews,
+    &__lastadvts,
+    &__lasttourn {
+        border: 1px solid #e0e0e0;
+        border-radius: 2px 2px 0px 0px;
+        font-size: 14px;
+        font-weight: 400;
+
+        div {
+            background-color: rgba(219, 221, 232, 0.9);
+            border-bottom: 1px solid #e0e0e0;
+            // background-color: $light-gray2;
+            color: #828e99;
+            padding: 12px 15px;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        span {
+            display: block;
+            color: $gray;
+            font-size: 13px;
+            margin-top: 3px;
+            margin-bottom: 10px;
+            // font-weight: 300;
+        }
+    }
+
+    &__lastadvts,
+    &__lasttourn {
+        margin-top: 30px;
+    }
+}

@@ -68,7 +68,7 @@ section {
 
 h1 {
     font-size: 35px;
-    color: $black; 
+    color: $black;
 }
 
 h2 {
@@ -385,4 +385,7 @@ iframe {
 @import'blocks/goods';
 @import'blocks/woocommerce';
 @import'blocks/login';
+@import'blocks/single';
+@import'blocks/sidebar';
+@import'blocks/page-block';
 @import'blocks/wp';
