@@ -73,14 +73,9 @@
             margin: 10px 0;
         }
 
-
-
         &:first-child {
             padding-top: 0;
-
-            @media (max-width: 575px) {
-                margin-top: 0;
-            }
+            margin-top: 0;
         }
     }
 
@@ -223,7 +218,7 @@
 .tourn-all-side {
     height: 100%;
     width: calc(25% - 15px);
-    margin-top: 20px;
+    // margin-top: 20px;
     margin-left: 15px;
     // background-color: $light-gray;
     border: 0.5px solid $border;
