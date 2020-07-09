@@ -1,53 +1,56 @@
-
-.project {   
+.project {
     &__block {
         @media (max-width: 575px) {
             // margin-left: -10px;
             // margin-right: -10px;
             padding-left: 10px;
             padding-right: 10px;
-        }   
+        }
     }
+
     &__scale {
-        overflow: hidden;        
+        overflow: hidden;
     }
+
     &__link {
         &:hover {
             text-decoration: none;
         }
     }
+
     &__item {
         position: relative;
         padding-top: 100px;
         height: 220px;
-        // border: solid 1px $border;
         color: $black;
         transition: opacity 0.35s ease 0s;
-       
-        // &_school {
-        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/school.jpg') center (center / cover) no-repeat;
-           
-        // }
-        // &_univer {
-        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_board.jpg') center (center / cover) no-repeat;
-        // }
-        // &_child-house {
-        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_child.jpg') center (center / cover) no-repeat;
-        // }
-        // &_chess-day {
-        //     background: linear-gradient(45deg, rgba(36, 36, 36, .4), rgba(36, 36, 36, .9)), url('../../img/projects/chess_day.jpg') center (center / cover) no-repeat;
-        // }
+
+
         &:hover {
-            transform: scale(1.1);/* Увеличиваем масштаб */
+            transform: scale(1.1);
+            /* Увеличиваем масштаб */
+        }
+
+        @media (max-width: 991px) {
+            margin-bottom: 15px;
         }
 
         @media (max-width: 575px) {
-            
-            margin-bottom: 0!important;
+            margin-bottom: 0 !important;
         }
-    
+
+        @media (max-width: 444px) {
+            padding-top: 80px;
+            height: 180px;
+        }
+        @media (max-width: 376px) {
+            padding-top: 50px;
+            height: 120px;
+        }
+
+
     }
- 
+
     &__title {
         color: $white;
         font-size: 20px;
@@ -55,12 +58,19 @@
         // line-height: 31px;
         text-transform: uppercase;
         text-align: center;
+
+        @media (max-width: 444px) {
+            font-size: 14px;
+        }
+        @media (max-width: 376px) {
+            font-size: 12px;
+        }
     }
 
     .project__img {
         @media (max-width: 575px) {
-            padding: 5px!important;
-            margin-bottom: 0!important;
+            padding: 5px !important;
+            margin-bottom: 0 !important;
         }
 
     }

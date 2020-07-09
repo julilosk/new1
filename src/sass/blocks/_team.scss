@@ -29,13 +29,14 @@
     &__card {
         // background: linear-gradient(to left, #B3C4FF 0%, #FFF, #B3C4FF);
         background: linear-gradient(to left, #dbdde8 0%, #FFF, #dbdde8);
-        min-height: 270px;
+        min-height: 250px;
         // border: solid 0.5px $border;
         border-radius: 10px 10px 10px 10px;
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
         box-shadow: 0 3px 21px rgba(0, 0, 0, 0.18);
         // background-color: $light-gray;
-        margin-bottom: 45px;
+        margin-bottom: 30px;
+        padding: 15px 15px 15px 15px;
 
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
@@ -46,15 +47,15 @@
         }
 
         @media (max-width: 991px) {
-            min-height: 240px !important;
+            min-height: 230px !important;
         }
 
         @media (max-width: 575px) {
-            min-height: auto !important;
+            // min-height: auto !important;
             margin-bottom: 25px;
         }
 
-        
+
     }
 
     &__year {
@@ -64,11 +65,15 @@
         text-align: center;
         margin-top: 10px;
         color: $second-color;
+
+        @media (max-width: 1199px) {
+            font-size: 16px;
+        }
     }
 
-    &__body {
-        padding: 15px 15px 27px 15px;
-    }
+    // &__body {
+    //     padding: 15px 15px 15px 15px;
+    // }
 
     &__member {
         font-size: 16px;
@@ -79,6 +84,22 @@
         margin-top: 20px;
         margin-bottom: .75rem;
         position: relative;
+
+        @media (max-width: 1199px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 16px;
+        }
     }
 
     &__player {

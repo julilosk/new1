@@ -1,5 +1,6 @@
 nav {
     background-color: $main-color;
+
     // background-color: $second-color;
     // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
     // .row {
@@ -43,16 +44,22 @@ nav {
                 font-weight: 500;
             }
 
+            @media (max-width: 991px) {
+                font-size: 13px;
+            }
+
+
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 // color: $white;
                 color: $gray2;
+
                 &:hover {
                     color: $third-color;
                     // color: $light-gray2;
                     text-decoration: none;
-                }                
+                }
             }
 
             li {
@@ -110,7 +117,7 @@ nav {
         // &__item {
         //     // a {
         //     //     // color: $white;
-                
+
         //     // }
 
         //     &_active {
@@ -175,6 +182,10 @@ nav {
 
     @media (max-width: 1199px) {
         max-width: 200px;
+    }
+
+    @media (max-width: 991px) {
+        display: none;
     }
 
 

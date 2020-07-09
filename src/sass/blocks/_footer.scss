@@ -26,18 +26,22 @@ footer {
         li {
             display: block;
         }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     li {
         font-size: 14px;
         // color: $gray2;
-        color: $white;
+        // color: $white;
         padding: 0 16px;
         margin-bottom: 10px;
 
         a {
             text-transform: uppercase;
-            color: $white;
+            color: $gray2;
 
             &:hover {
                 color: $third-color;

@@ -1,13 +1,13 @@
 .social {
-    display: flex;      
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin: 15px 0;
     // border: solid 2px red;
     height: 33px;
 
     @media (max-width: 767px) {
-       padding-right: 15px;
+        padding-right: 15px;
     }
 
     @media (max-width: 575px) {
@@ -22,6 +22,7 @@
     &_academy {
         justify-content: center;
     }
+
     &__icon {
         display: flex;
         justify-content: center;
@@ -34,36 +35,60 @@
         margin-right: 7px;
         // transition: all 0.5s;
         // &:first-child {
-            // margin-left: 0;
-            
+        // margin-left: 0;
+
         // }
+
+        @media (max-width: 991px) {
+            margin-left: 15px;
+        }
+
+        @media (max-width: 767px) {
+            margin-left: 5px;
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+
         @media (max-width: 575px) {
             margin-right: 0;
         }
-       
+
         img {
             height: 17px;
             display: block;
+
+            @media (max-width: 767px) {
+                height: 12px;
+            }
         }
+
         &_account {
-            border: none; 
+            border: none;
             margin-left: 0;
-            
+
             img {
                 height: 18px;
             }
         }
+
+        &_soc {
+            @media (max-width: 767px) {
+                display: none;
+            }
+        }
+
     }
 
     &__box {
-        display: flex;    
-        align-items: center;    
+        display: flex;
+        align-items: center;
         // margin-left: 5px;        
         font-weight: 500;
         font-size: 16px;
-        color: $main-color; 
-        margin-left: 15px;   
-        
+        color: $main-color;
+        margin-left: 15px;
+
         @media (max-width: 767px) {
             padding-bottom: 5px;
             padding-right: 5px;
@@ -79,14 +104,15 @@
 
         &:hover {
             text-decoration: none;
-            color: $third-color;   
+            color: $third-color;
             // .social__icon {
             //     border: 2px solid $third-color;
             // }
         }
 
-      
+
     }
+
     &__footer {
         justify-content: center;
 
@@ -98,6 +124,7 @@
             background-color: $gray2;
         }
     }
+
     // фильтр на иконки
     // &__icon:not(:hover) {
     //     filter:  contrast(.5);
@@ -116,7 +143,7 @@
     border: 2px solid $main-color;
     width: 45px;
     height: 45px;
-    margin-right: 20px; 
+    margin-right: 20px;
 
     @media (max-width: 575px) {
         width: 35px;
@@ -125,13 +152,16 @@
 
     &_indent {
         margin: 0 25px;
+
         &:first-child {
             margin-left: 0;
         }
+
         // &:last-child {
         //     margin-right: 0;
         // }
     }
+
     // background-color: $gray;
     img {
         height: 20px;
@@ -141,7 +171,7 @@
             height: 18px;
         }
 
-       
+
     }
 }
 
@@ -171,7 +201,7 @@
     background-color: #f9f9f9;
     // border: 1px solid red;
     min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     left: -150px;
 }
@@ -185,6 +215,7 @@
     // display: block;
     display: flex;
     align-items: center;
+
     // border: 1px solid green;
     img {
         height: 15px;
@@ -196,6 +227,7 @@
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: $main-color;
+
     span {
         color: $main-color;
     }
@@ -210,4 +242,3 @@
 // .dropdown:hover .dropbtn {
 //     background-color: #3e8e41;
 // }
-

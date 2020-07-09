@@ -81,6 +81,12 @@
                 position: relative;
 
                 @media (max-width: 991px) {
+                    margin: 10px auto;
+                    width: 150px !important;
+                    height: 150px !important;
+                }
+
+                @media (max-width: 991px) {
                     width: 90px !important;
                     height: 90px !important;
                     margin: 5px auto;
@@ -131,15 +137,19 @@
                 padding: 5px 6px;
                 text-align: center;
                 font-size: 0.7em;
+
                 @media (max-width: 991px) {
                     width: 70%;
                 }
+
                 @media (max-width: 767px) {
                     width: 75%;
                 }
+
                 @media (max-width: 430px) {
                     width: 55%;
                 }
+
                 @media (max-width: 376px) {
                     width: 60%;
                 }
@@ -153,18 +163,15 @@
         font-size: 0.9em;
         font-weight: bold;
         display: flex;
-    
+
         // flex-direction: column;
         del {
             margin-right: 15px;
         }
-    
+
         ins {
             color: red;
         }
     }
 
 }
-
-
-
