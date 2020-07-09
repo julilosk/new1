@@ -9,11 +9,15 @@
     @media (max-width: 991px) {
         display: none;
     }
+    &__tags {
+        width: 100%;
+        border: 0.5px solid $border;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+    }
 
     ul {
         margin-bottom: 0;
-        border: 0.5px solid $border;
-        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
+        
 
         li a {
             padding: 10px 15px;
@@ -37,6 +41,8 @@
     &__item a {
         padding-top: 15px !important;
         color: $second-color !important;
+        background-color: $gray_bc;
+        border-left: 3px solid $third-color;
     }
 
     &__btn {
