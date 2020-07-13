@@ -45,8 +45,12 @@
     }
 
     &__caption {
-        color: $gray;
-        margin-top: 13px;
+        // color: $gray;
+        color: #5e5e5e;
+        padding-top: 5px;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: "NotoSans",Arial,sans-serif;
     }
 
 

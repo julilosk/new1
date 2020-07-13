@@ -78,6 +78,14 @@
             margin-inline-end: 0px;
             padding-inline-start: 40px;
         }
+        ol {
+            display: block;           
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
 
         // p a {
         //     color: $third-color;
@@ -111,7 +119,8 @@
             font-size: 1.5em;
             margin: 15px 0;
             text-align: left;
-            color: $black;
+            // color: $black;
+            color: $second-color;
         }
 
         h3 {

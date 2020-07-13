@@ -53,17 +53,7 @@ section {
     @media (max-width: 767px) {
         padding-top: 15px;
         padding-bottom: 25px;
-    }
-
-    // @media (max-width: 575px) {
-    //     padding-top: 10px;
-    //     padding-bottom: 10px;
-    // }
-
-    // @media (max-width: 376px) {
-    //     padding-top: 5px;
-    //     padding-bottom: 5px;
-    // }
+    }    
 }
 
 h1 {
@@ -137,8 +127,20 @@ h2 {
     // margin-left: auto;
     // margin-right: auto;
     margin: 15px auto;
-    max-width: 100%;
+    // max-width: 100%;
+   
+    width: 450px;
     height: auto;
+
+    @media (max-width: 575px) {
+        // width: 45%;
+        height: 35vh;
+        max-width: 100%;
+        // width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
 }
 
 .mtli_png,
@@ -312,12 +314,11 @@ img {
 
     }
 
-    a {
-        color: $third-color;
-
+    a {     
+        color: $second-color;
         &:hover {
             text-decoration: none;
-            color: $second-color;
+            color: $third-color;
             // font-weight: 500;
         }
     }
