@@ -1,15 +1,20 @@
-$black: #383838;
-$main-color:#19223f;  /* rgb(25, 34, 63) */
+$white: #fefefe;
+$black: #333333;
+
+$main-color:#19223f;
+/* rgb(25, 34, 63) */
+
 $second-color: #334580;
 $third-color: #0069d2;
-// $accent-color: #B38C24; 
-$border: rgba(0,0,0,.125);
-$light-color: #B3C4FF;
-$light-color2: #f4f4f8;    
-$light-gray: #fafafa;
-$light-gray2: #e6e6fa; /*Лаванда, лавандово-синий */ /* rgb(230, 230, 250)*/
-$gray:   #9b9b9b;
-$gray1: #e5e5e5;
+
+$border: rgba(0, 0, 0, .125);
+// $border: #dddfe0;
+
+
+$light-gray: #f4f4f8;
+$gray: #9b9b9b;
 $gray2: #c7c8cc;
-$white: #fefefe;
-$gray_bc: #dbdde8; /*rgba( 219, 221, 232)*/
+
+$gray_bc: #dbdde8;
+/*rgba( 219, 221, 232)*/
+// $gray_bc: #cfcfe1;

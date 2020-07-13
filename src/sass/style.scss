@@ -53,7 +53,7 @@ section {
     @media (max-width: 767px) {
         padding-top: 15px;
         padding-bottom: 25px;
-    }    
+    }
 }
 
 h1 {
@@ -128,7 +128,7 @@ h2 {
     // margin-right: auto;
     margin: 15px auto;
     // max-width: 100%;
-   
+
     width: 450px;
     height: auto;
 
@@ -163,8 +163,10 @@ h2 {
 blockquote {
     border-left: 3px solid $third-color;
     // background: #f2f5f9;
-    background: $light-gray2;
+    // background: $light-gray2;
+    background: $light-gray;
     padding: 20px 20px;
+    margin: .75em 0;
 
     p {
         // margin: 5px 0 5px 10px;
@@ -314,8 +316,9 @@ img {
 
     }
 
-    a {     
+    a {
         color: $second-color;
+
         &:hover {
             text-decoration: none;
             color: $third-color;

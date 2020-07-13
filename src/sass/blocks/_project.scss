@@ -1,4 +1,6 @@
 .project {
+    // background-color: $light-gray;
+
     &__block {
         @media (max-width: 575px) {
             // margin-left: -10px;
@@ -43,6 +45,7 @@
             padding-top: 80px;
             height: 180px;
         }
+
         @media (max-width: 376px) {
             padding-top: 50px;
             height: 120px;
@@ -62,6 +65,7 @@
         @media (max-width: 444px) {
             font-size: 14px;
         }
+
         @media (max-width: 376px) {
             font-size: 12px;
         }

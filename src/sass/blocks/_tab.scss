@@ -232,7 +232,8 @@
         display: block;
         padding: 10px 15px;
         background-color: $second-color;
-        color: $light-color;
+        // color: $light-color;
+        color: $gray;
         font-size: 1rem;
 
         @media (max-width: 575px) {
@@ -240,8 +241,8 @@
         }
 
         &:hover {
-            // color: $accent-color;
-            color: $third-color;
+            //     // color: $accent-color;
+            color: $gray2;
         }
     }
 

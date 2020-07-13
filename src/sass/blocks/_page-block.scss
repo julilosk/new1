@@ -6,6 +6,7 @@
     &__content {
         width: 100%;
         display: block;
+
     }
 
     &__box {
@@ -78,8 +79,9 @@
             margin-inline-end: 0px;
             padding-inline-start: 40px;
         }
+
         ol {
-            display: block;           
+            display: block;
             margin-block-start: 1em;
             margin-block-end: 1em;
             margin-inline-start: 0px;
@@ -137,7 +139,9 @@
         }
     }
 
-    &__content {
+   
+
+    .content {
         margin-top: 15px;
         margin-bottom: 20px;
         line-height: 1.5em;
@@ -147,12 +151,22 @@
             //     // color: $third-color;
 
             color: $second-color;
-            text-decoration: underline;
+            // text-decoration: underline;
+            text-decoration: none;
+
+
+            // background-image: linear-gradient(rgba(4, 85, 119, .13), rgba(4, 85, 119, .13));
+            background-image: linear-gradient(rgba(51, 69, 128, .5), rgba(51, 69, 128, .5));
+            background-repeat: repeat-x;
+            background-size: 100% 1px;
+            background-position: 0 100%;
+            padding-bottom: 2px;
 
             //     // display: block;   
             //     // text-decoration: none;
             &:hover {
                 color: $third-color;
+                background-image: linear-gradient(rgba(0, 105, 210, .5), rgba(0, 105, 210, .5));
                 //         text-decoration: underline !important;
             }
         }

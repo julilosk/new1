@@ -1,6 +1,7 @@
 .tourn-top {
 
     // background-color: $light-gray;
+
     &__tourn {
         // border: solid 2px red;
         width: 100% !important;
@@ -45,8 +46,8 @@
     @media (max-width: 575px) {
         padding-bottom: 10px;
     }
-    
-    
+
+
 
 
     .tabs-page {
@@ -138,6 +139,7 @@
         @media (max-width: 767px) {
             margin-left: 25px;
         }
+
         @media (max-width: 444px) {
             margin-left: 0;
         }
@@ -165,6 +167,7 @@
             margin-top: 10px;
             font-size: 16px;
         }
+
         @media (max-width: 376px) {
             font-size: 14px;
         }

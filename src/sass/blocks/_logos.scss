@@ -26,25 +26,26 @@
     // }
 }
 
-.logos {    
+.logos {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 112px;
-    padding-top: 25px;
+    padding-top: 15px;
     width: 100%;
 
-    @media (max-width: 991px)  {   
+    @media (max-width: 991px) {
         overflow-x: scroll;
         overflow-y: hidden;
-        flex-wrap: nowrap;   
+        flex-wrap: nowrap;
         justify-content: start;
     }
-    @media (max-width: 575px) {       
+
+    @media (max-width: 575px) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-  
+
     &__item {
         min-width: 135px;
         max-width: 135px;
@@ -53,18 +54,20 @@
         @media (max-width: 1199px) {
             min-width: 120px;
         }
+
         @media (max-width: 767px) {
             min-width: 100px;
             margin: 0 5px 0 5px;
         }
+
         @media (max-width: 575px) {
-            min-width: 80px;            
+            min-width: 80px;
         }
     }
 
     &__scale {
-        display: inline-block;        
-        overflow: hidden;      
+        display: inline-block;
+        overflow: hidden;
     }
 
     &__scale img {
@@ -82,7 +85,8 @@
         }
 
         &:hover {
-            transform: scale(1.1); /* Увеличиваем масштаб */
+            transform: scale(1.1);
+            /* Увеличиваем масштаб */
         }
     }
 
@@ -112,4 +116,4 @@
 
 .logos::-webkit-scrollbar {
     display: none;
-  }
+}

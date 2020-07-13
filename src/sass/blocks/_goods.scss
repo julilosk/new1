@@ -80,14 +80,14 @@
             &:hover {
                 // box-shadow: 3px 3px 20px $main-color;
                 background-color: $third-color;
-                color: $gray1;
+                color: $light-gray;
             }
 
             &_active {
                 background-color: $third-color;
 
                 span {
-                    color: $gray1;
+                    color: $light-gray;
                 }
             }
 
@@ -108,7 +108,7 @@
                     text-decoration: none;
 
                     span {
-                        color: $gray1;
+                        color: $light-gray;
                     }
                 }
             }
