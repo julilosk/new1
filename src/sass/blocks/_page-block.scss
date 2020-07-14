@@ -99,8 +99,10 @@
 
         h1 {
             font-size: 30px;
-            font-weight: 700;
+            font-weight: 500;
+            letter-spacing: .8px;
             // margin-top: 10px;
+            font-family: "NotoSans", Arial, sans-serif;
             margin-bottom: 10px;
             color: $main-color;
 
@@ -138,37 +140,39 @@
             color: $black;
         }
     }
-
-   
-
     .content {
         margin-top: 15px;
         margin-bottom: 20px;
         line-height: 1.5em;
+    }
+
+   
+
+   
+}
+
+.content {
+    a {
+        //     // color: $third-color;
+
+        color: $second-color;
+        // text-decoration: underline;
+        text-decoration: none;
 
 
-        a {
-            //     // color: $third-color;
+        // background-image: linear-gradient(rgba(4, 85, 119, .13), rgba(4, 85, 119, .13));
+        background-image: linear-gradient(rgba(51, 69, 128, .7), rgba(51, 69, 128, .7));
+        background-repeat: repeat-x;
+        background-size: 100% 1px;
+        background-position: 0 100%;
+        padding-bottom: 2px;
 
-            color: $second-color;
-            // text-decoration: underline;
-            text-decoration: none;
-
-
-            // background-image: linear-gradient(rgba(4, 85, 119, .13), rgba(4, 85, 119, .13));
-            background-image: linear-gradient(rgba(51, 69, 128, .5), rgba(51, 69, 128, .5));
-            background-repeat: repeat-x;
-            background-size: 100% 1px;
-            background-position: 0 100%;
-            padding-bottom: 2px;
-
-            //     // display: block;   
-            //     // text-decoration: none;
-            &:hover {
-                color: $third-color;
-                background-image: linear-gradient(rgba(0, 105, 210, .5), rgba(0, 105, 210, .5));
-                //         text-decoration: underline !important;
-            }
+        //     // display: block;   
+        //     // text-decoration: none;
+        &:hover {
+            color: $third-color;
+            background-image: linear-gradient(rgba(0, 105, 210, .7), rgba(0, 105, 210, .7));
+            //         text-decoration: underline !important;
         }
     }
 }

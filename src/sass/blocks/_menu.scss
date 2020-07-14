@@ -2,7 +2,7 @@ nav {
     background-color: $main-color;
 
     // background-color: $second-color;
-    // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
+    box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
     // .row {
     //     justify-content: space-between;
     //     align-items: center;
@@ -16,11 +16,8 @@ nav {
         background-color: $white;
     }
 
-
     .menu {
-        position: relative;
-        // background-color: $main-color;
-        // background-color: $second-color;       
+        position: relative;     
         height: 55px;
         display: flex;
         justify-content: space-between;
@@ -34,7 +31,7 @@ nav {
             display: flex;
             // flex-wrap: wrap;
             font-size: 16px;
-            font-weight: 600;
+            // font-weight: 500;
             margin-bottom: 0;
             padding-right: 15px;
             padding-left: 15px;
@@ -54,6 +51,7 @@ nav {
                 text-transform: uppercase;
                 // color: $white;
                 color: $gray2;
+                // color: $black;
 
                 &:hover {
                     color: $third-color;
@@ -87,10 +85,8 @@ nav {
                     display: none;
                     width: 300px;
                     left: -15px;
-                    // top: 43px;
+                    // top: 38px;                    
                 }
-
-
             }
 
             li:hover ul {
@@ -101,11 +97,11 @@ nav {
                 padding-left: 5px;
                 background-color: $main-color;
                 font-size: 14px;
-                font-weight: 500;
+                // font-weight: 500;
                 padding-top: 12px;
+                // border: 1px solid red;
 
                 li {
-
                     width: 100%;
                     white-space: nowrap;
                     margin: 10px 10px;
@@ -117,14 +113,12 @@ nav {
         // &__item {
         //     // a {
         //     //     // color: $white;
-
         //     // }
 
         //     &_active {
         //         a {
         //             color: $third-color;
         //         }
-
         //     }
         // }
 
@@ -198,7 +192,7 @@ nav {
         background: $gray_bc;
 
         &:hover {
-            background: $white;
+            background: $light-gray;
         }
     }
 }

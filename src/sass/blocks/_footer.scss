@@ -7,12 +7,9 @@ footer {
         margin-top: 20px;
         background-color: $white;
     }
-
 }
 
-.footer {
-
-    // background-color: $main-color;
+.footer {    
     padding-top: 20px;
     padding-bottom: 10px;
 
@@ -56,17 +53,9 @@ footer {
         justify-content: center;
         flex-wrap: wrap;
         color: $gray2;
-
-        // @media (max-width: 575px) {
-        //     color: $main-color;
-        // }
-
+        
         a {
-            color: $gray2;
-            // color: $white;
-            // @media (max-width: 575px) {
-            //     color: $main-color;
-            // }
+            color: $gray2;            
         }
     }
 
@@ -93,12 +82,5 @@ footer {
             // color: $main-color;
             margin-top: 5px;
         }
-    }
-
-    // .current-menu-item a {
-    //     color: $white;
-    //     &:hover {
-    //         color: $third-color;          
-    //     }
-    // }
+    }    
 }

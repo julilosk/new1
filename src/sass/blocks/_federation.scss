@@ -96,10 +96,13 @@
         display: flex;
         flex-direction: row;
         color: $black;
-
+        margin: 15px;
         &:hover {
             text-decoration: none;
             color: $third-color;
+        }
+        &:first-child {
+            margin-top: 0;
         }
     }
 
