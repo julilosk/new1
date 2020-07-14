@@ -45,30 +45,37 @@
         }
     }
 
-    &__logo {
-        // margin-right: 15px;
-        display: block;
-        margin: 0 auto;
-        // margin-bottom: 30px;
-        // width: 180px;
-    }
-
+    // &__logo {
+    //     // margin-right: 15px;
+    //     display: block;
+    //     margin: 0 auto;
+    //     // margin-bottom: 30px;
+    //     // width: 180px;
+    // }
 
     &__goal {
-        // list-style-type: disc;
-        margin-left: 20px;
+        ul {
+            margin-left: 15px;
 
-        li {
-            margin: 5px 0;
-            transition: opacity 0.35s ease 0s;
+            li {
+                margin: 5px 0;
+                transition: opacity 0.35s ease 0s;
 
-            &:hover {
-                font-weight: 700;
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+
+            li::before {
+                content: "\2714";
+                margin-right: 5px;
+                color: $second-color;
+                display: inline-block;
+                /* Расстояние между точкой и текстом */
+                width: 1em;
             }
         }
-
     }
-
 
     &__plus {
         display: flex;
@@ -118,7 +125,6 @@
             @media (max-width: 376px) {
                 width: 33px;
                 height: 33px;
-
             }
         }
 
@@ -158,6 +164,7 @@
             // font-size: 10px;
             line-height: 1.2;
         }
+
         @media (max-width: 430px) {
             font-size: 10px;
         }
@@ -167,27 +174,16 @@
         }
     }
 
-
-
-
     &__card {
-        // padding: 0 15px;
         // height: 100%;
-        height: 510px;
+        height: 530px;
+        // width: 100%;
+        margin-right: 30px;
+        margin-left: 30px;
         // border: solid 0.5px $border;
         border-radius: 10px 10px 10px 10px;
-        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
-        // margin-bottom: 45px;  
-
-
-
-
-        &:hover {
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-        }
+        background-color: $white;
     }
-
-
 
     &__data {
         font-size: 12px;
@@ -199,7 +195,7 @@
     }
 
     &__body {
-        padding: 15px 15px 15px 15px;
+        padding: 15px;
     }
 
     &__title {
@@ -207,13 +203,12 @@
         line-height: 1.2;
         font-weight: 700;
         text-align: center;
-        color: $black;
-        margin-top: 10px;
+        color: $second-color;
         margin-bottom: .75rem;
     }
 
     &__text {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     &__link {
@@ -225,8 +220,9 @@
         }
     }
 
-
-
+    &__coaches {
+        background-color: $light-gray;
+    }
 
 
     &__contact {
@@ -236,7 +232,6 @@
         // margin-bottom: 30px;       
         align-items: flex-start;
         margin-top: 5px;
-
     }
 
     &__item {
@@ -244,34 +239,32 @@
         width: 70%;
         display: flex;
         flex-direction: column;
-        color: $main-color;
+        color: $gray;
 
         p {
             margin-bottom: 2px;
             margin-right: 0;
+            color: $main-color;
         }
 
-        span {
-            margin-bottom: 2px;
-            color: $gray;
-        }
-
-
+        // span {
+        //     margin-bottom: 2px;
+        //     color: $gray;
+        // }
     }
 
     &__photo-block {
         @media (max-width: 575px) {
-            // margin-left: -10px;
-            // margin-right: -10px;
             padding-left: 10px;
             padding-right: 10px;
         }
     }
 
     &__img {
-        height: 20vh;
+        height: 22vh;
         width: 100%;
         object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
 
         @media (max-width: 575px) {
             padding: 5px !important;
