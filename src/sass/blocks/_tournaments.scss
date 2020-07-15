@@ -20,17 +20,15 @@
     }
 }
 
-
 .tourn {
     // background-color: #ffffff;
-
     // box-shadow: 0 3px 21px rgba(0, 0, 0, 0.18);
     // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20); 
     // border-radius: 10px 10px 0px 0px;
     // border: solid 0.5px $border;
     width: 100%;
-    padding: 0 15px 25px 0;
-
+    // padding: 0 15px 25px 0;
+    padding-right: 15px;
 
     @media (max-width: 991px) {
         padding-right: 0 !important;
@@ -43,9 +41,6 @@
     @media (max-width: 575px) {
         padding-bottom: 10px;
     }
-
-
-
 
     .tabs-page {
         h5 {
@@ -69,7 +64,7 @@
 
     &__list {
         // padding: 0 15px;
-        height: 283px;
+        height: 333px;
         overflow: hidden;
         overflow-y: scroll;
         width: 100%;

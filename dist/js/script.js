@@ -211,8 +211,8 @@ $('input[name=phone]').mask("+7 (999) 999-99-99");
   $('.carousel__inner').slick({
     speed: 1200,
     adaptiveHeight: true,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
 
     
     prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
