@@ -212,9 +212,7 @@ $('input[name=phone]').mask("+7 (999) 999-99-99");
     speed: 1200,
     adaptiveHeight: true,
     slidesToShow: 1,
-    slidesToScroll: 1,
-
-    
+    slidesToScroll: 1,    
     prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
     nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
     responsive: [
@@ -225,13 +223,9 @@ $('input[name=phone]').mask("+7 (999) 999-99-99");
             slidesToScroll: 1,
           }
         }
-    ] 
-    
+    ]    
     
   });
- 
-
-
 
 
   // carousel-photo
