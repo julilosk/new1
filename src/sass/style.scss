@@ -353,7 +353,21 @@ iframe {
     width: 100%;
 }
 
-.error {color: red;}
+.error {
+    color: red;
+}
+.modal-center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.modal-center .text {
+    margin:10px 0 15px 0;
+    font-size:16px;
+    font-weight:bold;
+}
 
 
 
@@ -404,3 +418,10 @@ iframe {
 @import'blocks/sidebar';
 @import'blocks/page-block';
 @import'blocks/wp';
+
+
+.ya-share2__container_size_m .ya-share2__icon {
+    height: 32px!important;
+    width: 32px!important;
+    background-size: 32px 32px!important;
+}

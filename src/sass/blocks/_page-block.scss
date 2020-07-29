@@ -57,6 +57,11 @@
         // float: left;
         margin: 0 auto;
         width: 660px;
+        
+        &_advts {
+            width: 66.66667%;
+            // margin: 0;
+        }
 
         @media (max-width: 1199px) {
             margin-left: 45px;
@@ -87,6 +92,7 @@
             margin-inline-start: 0px;
             margin-inline-end: 0px;
             padding-inline-start: 40px;
+            padding-left: 1em;
         }
 
         // p a {
