@@ -202,10 +202,16 @@
             border-bottom: none;
         }
 
-        &:hover {
+        // &:hover {
+        //     background-color: #868cad;
+        //     // cursor: pointer;
+        //     color: $white;
+        // }
+
+        &:not(:nth-child(1)):hover {
             background-color: #868cad;
             // cursor: pointer;
-            color: #fff;
+            color: $white;
         }
     }
 
