@@ -78,7 +78,6 @@
         border-bottom: 1px solid $border;
         border-left: 5px solid $border;
         border-right: 1px solid $border;
-
         transition: 0.5s all;
         text-transform: uppercase;
 
@@ -129,7 +128,6 @@
 
         @media (max-width: 376px) {
             padding: 5px 7px;
-
         }
 
         span {
@@ -155,7 +153,7 @@
         &_active {           
             background-color: $gray_bc;
             border-left: 5px solid $third-color;
-            font-weight: 500;
+            // font-weight: 500;
 
             @media (max-width: 767px) {
                 background-color: $second-color;
@@ -163,13 +161,12 @@
             }
 
             span {
-                font-weight: 500;
+                // font-weight: 500;
                 // color: $main-color;
                 color: $third-color;
 
                 @media (max-width: 767px) {
                     color: $white;
-
                 }
             }
         }

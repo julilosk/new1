@@ -1,7 +1,6 @@
 .my-account {
     &__profile {
-        display: flex;
-        // border: 1px solid red;
+        display: flex;       
         align-items: center;
         margin-bottom: 20px;
     }
@@ -21,12 +20,13 @@
         // border: 1px solid red;
         align-items: center;
     }
+
     input,
     select {
         width: 100%;
     }
+
     input {
-        // background-color: #efeff6;
         height: 42px;
         padding: 10px;
         // border: 1px solid #c9d5ec;
@@ -43,16 +43,12 @@
         // @media (max-width: 575px)  {
         //     font-size: 14px;
         // } 
-
-
     }
 
     [class*=col-] {
         @media (max-width: 991px) {
-            margin-bottom: 10px;
-            ;
+            margin-bottom: 10px;           
         }
-
     }
 
 

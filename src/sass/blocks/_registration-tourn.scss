@@ -1,28 +1,28 @@
 .registration {
     // width: 450px;
     width: 100%;
+    input,
+    select {
+        width: 100%;
+    }
 
-    .registration-form {
-        // border: 1px solid green;
+    .registration-form {        
         margin-top: 10px;
         display: flex;
         flex-direction: column;
         width: 100%;
 
+        [class*=col-] {           
+            margin-bottom: 7px;   
+        }
+
         input {
-            width: 100%;
-            height: 2.625em;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: none;
-            padding: 0 10px;
-            color: #4b4b4b;
-            font-size: 0.875em;
-            font-weight: 300;
-            border: 1px solid #7BA7AB;
-            outline: none;
-            // background: #dbdde8; 
-            background-color: $light-gray;
+            // width: 100%;
+            border: 1px solid #737373;
+            border-radius: 0;
+            height: 42px;
+            padding: 10px;
+            font: normal 400 1em/normal Roboto, sans-serif;
         }
 
         p {
@@ -30,16 +30,21 @@
             margin-bottom: 0;
         }
 
-        label {
-            font-weight: 500;
-            color: $main-color;
+        label, .message {
+            font-size: 14px;
+            color: #767676;
+            line-height: 1.1;
+
+            @media (max-width: 991px) {
+                font-size: 12px;
+            }
         }
 
-        label {
-            display: block;
-            font-size: 0.875em;
-            margin-bottom: 8px;
-        }
+        // label {
+            // display: block;
+            // font-size: 0.875em;
+            // margin-bottom: 8px;
+        // }
 
         textarea {
             width: 100%;
@@ -58,37 +63,68 @@
             margin-top: 35px;
         }
 
-        .radio {
-            // width: 100%;
+        .user_gender {
             display: flex;
-            margin: 5px 0;
-
-            font-size: .875em;
-            color: $main-color;
-            font-weight: 500;
-            margin-bottom: 8px;
-
-            span {
-                margin-right: 5px;
-                display: block;
-            }
-
-            label {
-                font-size: .875em;
-                // width: 100%;
-                padding: 0 10px;
-                margin: 0 2px;
-                display: flex;
-                align-items: center;
-            }
-
+            flex-direction: row;
+            align-items: center;
+    
             input {
                 height: 15px;
                 width: 15px;
-                margin: 0 5px;
+                margin: 0 5px 0 5px;
+    
             }
-
+    
+            label {
+                margin-bottom: 0;
+                // padding-right: 15px;
+                font: normal 400 1em/normal Roboto, sans-serif;
+                color: $black;
+    
+            //     @media (max-width: 991px) {
+            //         // font-size: 14px;
+            //         padding-right: 5px;
+            //     }
+            }
         }
+
+        // .radio {
+        //     // width: 100%;
+        //     display: flex;
+        //     // margin: 5px 0;
+        //     // font-size: .875em;
+        //     // color: $main-color;
+        //     // font-weight: 500;
+        //     margin-bottom: 8px;
+        //     font-size: 14px;
+        //     color: #767676;
+        //     line-height: 1.1;
+
+        //     @media (max-width: 991px) {
+        //         font-size: 12px;
+        //     }
+
+        //     span {
+        //         margin-right: 5px;
+        //         display: block;
+        //     }
+
+        //     label {
+        //         font-size: .875em;
+        //         // width: 100%;
+        //         padding: 0 10px;
+        //         margin: 0 2px;
+        //         display: flex;
+        //         align-items: center;
+        //     }
+
+        //     input {
+        //         height: 15px;
+        //         width: 15px;
+        //         margin: 0 5px;
+        //     }
+
+        // }
 
         .button__submit {
             position: relative;
@@ -96,7 +132,7 @@
         }
 
         input[type=date] {
-            width: 45%;
+            // width: 45%;
 
             @media (max-width: 376px) {
                 width: 100%;
@@ -111,21 +147,27 @@
                 display: none;
             }
 
-            select {
-                width: 45%;
-                height: 2.625em;
-                margin-bottom: 10px;
-                border-radius: 5px;
-                border: none;
-                padding: 0 10px;
-                color: #4b4b4b;
-                font-size: 0.875em;
-                font-weight: 300;
-                border: 1px solid #7BA7AB;
-                outline: none;
-                // background: #dbdde8; 
-                background-color: $light-gray;
-            }
+            // select {
+            //     width: 100%;
+            //     height: 42px;
+            //     padding: 10px;
+            //     // border: 1px solid #c9d5ec;
+            //     border: 1px solid #737373;
+            //     border-radius: 0;
+            //     font: normal 400 1em/normal Roboto, sans-serif;
+            // }
+        }
+
+        
+
+        select {
+            // width: 100%;
+            height: 42px;
+            padding: 10px;
+            // border: 1px solid #c9d5ec;
+            border: 1px solid #737373;
+            border-radius: 0;
+            font: normal 400 1em/normal Roboto, sans-serif;
         }
 
         .id-block {
@@ -153,58 +195,58 @@
 
 
     // загрузка файл
-    .fileform {
-        background-color: #FFFFFF;
-        border: 1px solid #CCCCCC;
-        border-radius: 2px;
-        cursor: pointer;
-        height: 3.125em;
-        overflow: hidden;
-        padding: 5px;
-        position: relative;
-        text-align: left;
-        vertical-align: middle;
-        width: 100%;
-    }
+    // .fileform {
+    //     background-color: #FFFFFF;
+    //     border: 1px solid #CCCCCC;
+    //     border-radius: 2px;
+    //     cursor: pointer;
+    //     height: 3.125em;
+    //     overflow: hidden;
+    //     padding: 5px;
+    //     position: relative;
+    //     text-align: left;
+    //     vertical-align: middle;
+    //     width: 100%;
+    // }
 
-    .fileform .selectbutton {
-        background-color: #A2A3A3;
-        border: 1px solid #939494;
-        border-radius: 2px;
-        color: #FFFFFF;
-        float: right;
-        font-size: 1em;
-        height: 2.0em;
-        line-height: 2em;
-        overflow: hidden;
-        // padding: 2px 6px;
-        text-align: center;
-        vertical-align: middle;
-        width: 20%;
-    }
+    // .fileform .selectbutton {
+    //     background-color: #A2A3A3;
+    //     border: 1px solid #939494;
+    //     border-radius: 2px;
+    //     color: #FFFFFF;
+    //     float: right;
+    //     font-size: 1em;
+    //     height: 2.0em;
+    //     line-height: 2em;
+    //     overflow: hidden;
+    //     // padding: 2px 6px;
+    //     text-align: center;
+    //     vertical-align: middle;
+    //     width: 20%;
+    // }
 
-    .fileform #registration-file {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        -moz-opacity: 0;
-        filter: alpha(opacity=0);
-        opacity: 0;
-        font-size: 150px;
-        height: 50px;
-        z-index: 20;
-    }
+    // .fileform #registration-file {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     -moz-opacity: 0;
+    //     filter: alpha(opacity=0);
+    //     opacity: 0;
+    //     font-size: 150px;
+    //     height: 50px;
+    //     z-index: 20;
+    // }
 
-    .fileform #fileformlabel {
-        background-color: #FFFFFF;
-        float: left;
-        height: 40px;
-        line-height: 35px;
-        overflow: hidden;
-        padding: 2px;
-        text-align: left;
-        vertical-align: middle;
-        width: 80%;
-    }
+    // .fileform #fileformlabel {
+    //     background-color: #FFFFFF;
+    //     float: left;
+    //     height: 40px;
+    //     line-height: 35px;
+    //     overflow: hidden;
+    //     padding: 2px;
+    //     text-align: left;
+    //     vertical-align: middle;
+    //     width: 80%;
+    // }
 }

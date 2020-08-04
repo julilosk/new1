@@ -1432,65 +1432,104 @@
                     <form id="registration-form" class="registration-form" action="#">
 
                         <label for="registration-name">Фамилия Имя Отчество <span>*</span></label>
-                        <input type="text" id="registration-name" placeholder="Ваш ответ" name="name">
-
-                        <div class="radio">
-                            Пол <span>*</span>
-                            <input id="male" type="radio" name="gender" value="male">
-                            <label for="male">Мужской</label>
-                            <input id="female" type="radio" name="gender" value="female">
-                            <label for="female">Женский</label>
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" id="registration-name" placeholder="Ваш ответ" name="name">
+                            </div>
                         </div>
 
-                        <label for="registration-date">Дата рождения <span>*</span></label>
-                        <input type="date" id="registration-date" name="birthday">
+                        <div class="row ">
+                            <div class="col-6" >
+                                <label for="registration-date">Дата рождения <span>*</span></label>                               
+                                <input type="date" id="registration-date" name="birthday">                                    
+                            </div>
+                            <div class="col-6" >
+                                <label for="gender">Пол *</label>
+                                <div class="user_gender">
+                                    <input class="radio" type="radio" name="user_gender" value="Мужской" checked="checked">
+                                    <label for="user_gender_m">Мужской</label>
+                                    <input class="radio" type="radio" name="user_gender" value="Женский" >
+                                    <label  for="user_gender_f">Женский</label>                               
+                                </div>
+
+                                <!-- <div class="radio">
+                                    Пол <span>*</span>
+                                    <input id="male" type="radio" name="gender" value="male">
+                                    <label for="male">Мужской</label>
+                                    <input id="female" type="radio" name="gender" value="female">
+                                    <label for="female">Женский</label>
+                                </div> -->
+                            </div>
+                        </div>
+
+                           
 
                         <div class="id-block">
                             <div class="idfshr">
                                 <label for="IDFSHR">Код ФШР <span>*</span></label>
-                                <input type="number" placeholder="Ваш код ФШР" id="IDFSHR" name="IDFSHR">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="number" placeholder="Ваш код ФШР" id="IDFSHR" name="IDFSHR">
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="idfide">
                                 <label for="IDFIDE"> Код ФИДЕ </label>
-                                <input type="number" placeholder="Ваш код ФИДЕ" id="IDFIDE" name="IDFIDE">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <input type="number" placeholder="Ваш код ФИДЕ" id="IDFIDE" name="IDFIDE">
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <label for="registration-phone">Телефон </label>
-                        <input id="registration-phone" placeholder="Ваш телефон" name="phone">
+                        <div class="row">
+                            <div class="col-12">
+                                <input id="registration-phone" placeholder="Ваш телефон" name="phone">
+                            </div>
+                        </div>
 
                         <label for="registration-mail">E-mail <span>*</span></label>
-                        <input id="registration-mail" placeholder="Ваш E-mail" name="email" type="email">
+                        <div class="row">
+                            <div class="col-12">
+                                <input id="registration-mail" placeholder="Ваш E-mail" name="email" type="email">
+                            </div>
+                        </div>
 
-                        <label for="homeAddress"> Домашний адрес <span>*</span></label>
-                        <input type="text" id="homeAddress" placeholder="Ваш адрес" name="homeAddress">
+                        <!-- <label for="homeAddress"> Домашний адрес <span>*</span></label> -->
+                        <!-- <input type="text" id="homeAddress" placeholder="Ваш адрес" name="homeAddress"> -->
 
                         <div class="rank">
                             <label for="rank"> Разряд ЕВСК </label>
                             <!-- <input type="text" id="homeAddress" placeholder="Ваш адрес" name="homeAddress"> -->
-                            <input type="text" name="rank" />
-                            <select id="rank">
-                                <option value="0">Ваш разряд</option>
-                                <option value="3y">3 юношеский</option>
-                                <option value="2y">2 юношеский</option>
-                                <option value="1y">1 юношеский</option>
-                                <option value="3">3 разряд</option>
-                                <option value="2">2 разряд</option>
-                                <option value="1">1 разряд</option>
-                                <option value="KMS">КМС</option>
-                                <option value="MS">МС</option>
-                                <option value="GS">ГС</option>
-                            </select>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="text" name="rank" />
+                                    <select id="rank">
+                                        <option value="0">Ваш разряд</option>
+                                        <option value="3y">3 юношеский</option>
+                                        <option value="2y">2 юношеский</option>
+                                        <option value="1y">1 юношеский</option>
+                                        <option value="3">3 разряд</option>
+                                        <option value="2">2 разряд</option>
+                                        <option value="1">1 разряд</option>
+                                        <option value="KMS">КМС</option>
+                                        <option value="MS">МС</option>
+                                        <option value="GS">ГС</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
 
-                        <label for="registration-file"> Файлы</label>
+                        <!-- <label for="registration-file"> Файлы</label>
                         <div class="fileform">
                             <div id="fileformlabel"></div>
                             <div class="selectbutton">Обзор</div>
                             <input type="file" name="registration-file" id="registration-file"
                                 onchange="getName(this.value);" />
-                        </div>
+                        </div> -->
 
 
                         <button class="button button__submit ">Отправить</button>
