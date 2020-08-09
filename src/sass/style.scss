@@ -313,7 +313,8 @@ img {
     display: block;
     margin: 40px;
     text-align: center;
-    box-shadow: none;box-shadow: none
+    box-shadow: none;
+    box-shadow: none
 }
 
 .page-numbers {
@@ -357,17 +358,39 @@ iframe {
 .error {
     color: red;
 }
+
 .modal-center {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align:center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
 .modal-center .text {
-    margin:10px 0 15px 0;
-    font-size:16px;
-    font-weight:bold;
+    margin: 10px 0 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+//красные бордер для формы регистрации
+input[type="checkbox"].error+label {
+    width: 100%;
+    position: relative;
+}
+
+input[type="checkbox"].error+label:after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 2px;
+    border: 2px solid red;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -53px;
+    pointer-events: none;
 }
 
 
@@ -422,7 +445,7 @@ iframe {
 
 
 .ya-share2__container_size_m .ya-share2__icon {
-    height: 32px!important;
-    width: 32px!important;
-    background-size: 32px 32px!important;
+    height: 32px !important;
+    width: 32px !important;
+    background-size: 32px 32px !important;
 }
