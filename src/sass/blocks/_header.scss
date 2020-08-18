@@ -67,7 +67,7 @@
 
     &__title {
         letter-spacing: 1.5px;
-        margin-left: 15px;
+        margin-left: 5px;
         line-height: 0.5;
 
         @media (max-width: 991px) {
@@ -87,10 +87,11 @@
         h1 {
             margin-right: -2px;
             color: #000000;
+            font-weight: 300;
 
-            @media (max-width: 1199px) {
-                font-size: 30px;
-            }
+            // @media (max-width: 1199px) {
+                // font-size: 30px;
+            // }
 
             @media (max-width: 991px) {
                 font-size: 25px;
