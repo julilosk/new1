@@ -11,6 +11,8 @@
     margin-bottom: 10px;
     padding-left: 20px;
     margin-bottom: 30px;
+    box-shadow: none;
+
     a {
         // color: $third-color;
         color: #828e99;
@@ -72,10 +74,10 @@
     margin: 24px 15px;
     color: $third-color;
     font-weight: 500;
-    
+
     @media (max-width: 575px) {
         font-size: 14px;
-      }
+    }
 
     .button {
         // display: block;

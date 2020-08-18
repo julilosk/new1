@@ -1,8 +1,9 @@
 nav {
     background-color: $main-color;
-
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
     // background-color: $second-color;
-    box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
+
+    // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
     // .row {
     //     justify-content: space-between;
     //     align-items: center;
@@ -17,7 +18,7 @@ nav {
     }
 
     .menu {
-        position: relative;     
+        position: relative;
         height: 55px;
         display: flex;
         justify-content: space-between;

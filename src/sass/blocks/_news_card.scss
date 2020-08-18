@@ -15,10 +15,10 @@
 
     &__card {
         // border-radius: 10px 10px 10px 10px;
-        border: solid 0.5px $border;
+        // border: solid 0.5px $border;
         background-color: #ffffff;
         height: auto;
-        // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20); 
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
         padding-bottom: 5px;
 
         &:hover {
