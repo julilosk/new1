@@ -327,16 +327,16 @@
     }
 
     &__img {      
-        width: 200px;       
-        padding-right: 25px;
-        height: 170px;
+        width: 140px;       
+        margin-right: 25px;
+        height: 140px;
         object-fit: cover;
         float: left;
 
         @media (max-width: 767px) {
-            width: 150px;            
-            padding-right: 15px;
-            height: 130px;
+            // width: 150px;            
+            margin-right: 15px;
+            // height: 130px;
         }
 
         @media (max-width: 575px) {
@@ -346,11 +346,10 @@
 
         @media (max-width: 376px) {
             width: 100px;           
-            padding-right: 5px;
-           height: 90px;
+            margin-right: 5px;
+            height: 90px;
         }
     }
-
 
     &__email {
         margin-top: 15px;
