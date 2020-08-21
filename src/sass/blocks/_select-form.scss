@@ -3,6 +3,10 @@
     margin-bottom: 40px;
     flex-wrap: wrap;
 
+    background-color: $light-gray;
+    ;
+    padding: 10px;
+
     @media (max-width: 767px) {
         margin-left: -8px;
         margin-bottom: 25px;
