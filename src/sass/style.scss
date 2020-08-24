@@ -305,6 +305,11 @@ img {
     }
 }
 
+.footer {
+    .current-menu-item a {
+     color: $gray2;
+}
+
 .activelink2 {
     color: #0069d2 !important;
 
