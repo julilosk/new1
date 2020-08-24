@@ -39,12 +39,12 @@ section {
     flex: 1 0 auto;
 }
 
-.container {
+// .container {
 // border: solid 0.5px black; /* убрать пgit озже */
 //     // background-color: #f2f2f2;
 //     // background-color: $white;   
-max-width: 1200px;
-}
+// max-width: 1200px;
+// }
 
 .home-page-block {
     padding-top: 30px;
@@ -394,25 +394,7 @@ iframe {
     font-weight: bold;
 }
 
-//красные бордер для формы регистрации
-input[type="checkbox"].error+label {
-    width: 100%;
-    position: relative;
-}
 
-input[type="checkbox"].error+label:after {
-    display: block;
-    content: ' ';
-    position: absolute;
-    width: 42px;
-    height: 42px;
-    border-radius: 2px;
-    border: 2px solid red;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -53px;
-    pointer-events: none;
-}
 
 
 
@@ -468,10 +450,10 @@ input[type="checkbox"].error+label:after {
 .ya-share2__container_size_m .ya-share2__icon {
     height: 40px !important;
     width: 40px !important;
-    background-size: 40px 40px !important;   
+    background-size: 40px 40px !important;
 }
 
 .ya-share2__badge {
     margin-right: 10px;
-    border-radius: 0!important;   
+    border-radius: 0 !important;
 }
