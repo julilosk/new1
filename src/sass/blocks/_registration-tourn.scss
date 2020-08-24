@@ -70,11 +70,15 @@
             flex-direction: row;
             align-items: center;
 
+            // @media (max-width: 575px) {
+            //     flex-direction: column;
+            //     align-items: start;
+            // }
+
             input {
                 height: 15px;
                 width: 15px;
                 margin: 0 5px 0 5px;
-
             }
 
             label {

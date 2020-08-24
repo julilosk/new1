@@ -104,11 +104,14 @@
 
     &__link {
         cursor: pointer;
-        color: $second-color;
+        // color: $second-color;
+        // color: $black;
+        color: #686868;
 
         &:hover {
             text-decoration: none;
-            color: $third-color;
+            // color: $third-color;
+            color: $main-color;
         }
     }
 }

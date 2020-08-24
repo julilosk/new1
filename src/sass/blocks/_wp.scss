@@ -4,6 +4,15 @@
 
 .lwa-modal {
     @media (max-width: 575px) {
-        width: 80%;
+        width: 100%;
+        padding: 20px;
     }
+
+    [class*=col-md-6] {
+        @media (max-width: 376px) {
+            width: 100%;        
+        }
+    }
+   
+    
 }

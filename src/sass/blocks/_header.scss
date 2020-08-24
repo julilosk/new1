@@ -12,8 +12,8 @@
 
         @media (max-width: 575px) {
             // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
-            margin-top: 0;
-            margin-bottom: 0;
+            // margin-top: 0;
+            // margin-bottom: 0;
         }
     }
 
@@ -21,13 +21,14 @@
         padding-right: 15px;
         padding-left: 15px;
 
-        @media (max-width: 991px) {
-            align-items: center !important;
-        }
+        // @media (max-width: 991px) {
+            // align-items: center !important;
+        // }
 
         @media (max-width: 575px) {
             display: flex;
-            flex-direction: column;
+            align-items: start;
+            // flex-direction: column;
             padding-right: 15px;
             padding-top: 0;
             padding-bottom: 0;
@@ -35,23 +36,24 @@
     }
 
     &__headline {
-        display: flex;
-
-        @media (max-width: 991px) {
-            align-items: center;
-        }
+        display: flex;       
 
         @media (max-width: 575px) {
-            width: 100%;
+        //     width: 100%;         
+            margin-bottom: 5px;
         }
     }
 
     &__logo {
+        margin-right: 15px;
+        @media (max-width: 991px) {
+            margin-right: 0;
+        }
         img {
             display: block;
             height: 80px;
             max-width: 100px;
-
+           
             @media (max-width: 767px) {
                 height: 60px;
                 width: auto;
@@ -61,7 +63,6 @@
                 height: 40px;
                 width: 35px !important;
             }
-
         }
     }
 
@@ -76,64 +77,73 @@
             // margin-left: 15px;
         }
 
-        @media (max-width: 767px) {
-            margin-left: 10px;
-        }
-
-        @media (max-width: 320px) {
+        @media (max-width: 323px) {
             display: none;
         }
 
         h1 {
             margin-right: -2px;
             color: #000000;
-            font-weight: 300;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 25px;
+
+            br {
+                display: none;
+                @media (max-width: 575px) {
+                    display: block;
+                }
+
+            }
 
             // @media (max-width: 1199px) {
             // font-size: 30px;
             // }
 
             @media (max-width: 991px) {
-                font-size: 25px;
+                font-size: 22px;
             }
 
             @media (max-width: 767px) {
-                font-size: 21px;
-            }
-
-            @media (max-width: 575px) {
-                font-size: 23px;
-            }
-
-            @media (max-width: 513px) {
-                font-size: 21px;
-            }
-
-            @media (max-width: 479px) {
                 font-size: 19px;
             }
 
-            @media (max-width: 444px) {
+            @media (max-width: 575px) {
                 font-size: 18px;
+                line-height: 1.2;
+                letter-spacing: 1.5px;
             }
 
-            @media (max-width: 425px) {
+            // @media (max-width: 513px) {
+            //     font-size: 21px;
+            // }
+
+            @media (max-width: 475px) {
                 font-size: 17px;
             }
 
-            @media (max-width: 410px) {
+            @media (max-width: 460px) {
                 font-size: 16px;
             }
 
-            @media (max-width: 385px) {
+            // @media (max-width: 425px) {
+            //     font-size: 17px;
+            // }
+
+            @media (max-width: 435px) {
                 font-size: 15px;
             }
 
-            @media (max-width: 370px) {
+            @media (max-width: 410px) {
                 font-size: 14px;
             }
 
-            @media (max-width: 350px) {
+            @media (max-width: 395px) {
+                font-size: 13px;
+            }
+
+            @media (max-width: 376px) {
                 font-size: 12px;
             }
         }
@@ -144,15 +154,22 @@
             text-align: right;
             letter-spacing: 1.0px;
             // color: $gray;
+            color: #686868;
 
-            @media (max-width: 991px) {
+            // @media (max-width: 991px) {
+                // font-size: 12px;
+                // letter-spacing: normal;
+            // }
+            @media (max-width: 575px) {
                 font-size: 12px;
-                letter-spacing: normal;
+                text-align: left;
             }
-
+            @media (max-width: 460px) {
+                font-size: 11px;
+            }
             @media (max-width: 376px) {
                 font-size: 10px;
-                text-align: left;
+                // text-align: left;
             }
 
         }

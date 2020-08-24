@@ -11,9 +11,10 @@
 
     &__title {
         font-weight: 500;
-        margin-right: 35px;
+        margin-right: 25px;
         vertical-align: middle;
         margin-top: 5px;
+        // color: #686868;
 
         @media (max-width: 575px) {
             margin-right: 15px;;        
@@ -21,7 +22,7 @@
     }
     &__item {
         border: 1px solid $border;
-        border-radius: .2rem;
+        // border-radius: .2rem;
         margin-right: 15px;
         padding: 5px 5px;
         color: $gray;
