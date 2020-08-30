@@ -175,12 +175,13 @@ nav {
 }
 
 .form-search {
-    max-width: 300px;
+    // max-width: 300px;
+    width: 200px;
     padding-right: 15px;
 
-    @media (max-width: 1199px) {
-        max-width: 200px;
-    }
+    // @media (max-width: 1199px) {
+    //     max-width: 200px;
+    // }
 
     @media (max-width: 991px) {
         display: none;

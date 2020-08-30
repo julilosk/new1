@@ -7,6 +7,8 @@
     font-weight: 400;
     // background-color: #f8f8f8;
 
+    
+
     @media (max-width: 991px) {
         display: none;
     }
@@ -68,13 +70,19 @@
 
 
 .sidebar-single {
-    line-height: 20px;
+    // line-height: 20px;
+    line-height: 1.25;  
     font-size: 16px;
     height: 100%;
     width: calc(25% - 15px);
     margin-left: 15px;
     font-weight: 500;
     float: left;
+
+    // position: fixed;
+    // z-index: 1;
+    // top: 20px;
+    // left: 10px;
 
     @media (max-width: 991px) {
         display: none;
@@ -95,7 +103,8 @@
                 padding: 10px 6px;
                 display: block;
                 // color: #222c37;
-                color: $black;
+                // color: $black;
+                color: #686868;
                 font-weight: 400;
                 text-decoration: none;
 

@@ -3,6 +3,10 @@
     padding-right: 15px;
     width: 100%;
 
+    p {
+        font-size: 14px;
+    }
+
     &__content {
         width: 100%;
         display: block;
@@ -107,7 +111,7 @@
         // }
 
         h1 {
-            font-size: 30px;
+            font-size: 28px;
             font-weight: 500;
             letter-spacing: .8px;
             // margin-top: 10px;
@@ -116,15 +120,15 @@
             color: $main-color;
 
             @media (max-width: 767px) {
-                font-size: 28px;
-            }
-
-            @media (max-width: 575px) {
                 font-size: 26px;
             }
 
-            @media (max-width: 376px) {
+            @media (max-width: 575px) {
                 font-size: 24px;
+            }
+
+            @media (max-width: 376px) {
+                font-size: 22px;
             }
         }
 
@@ -152,7 +156,7 @@
 
     .content {
         margin-top: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         line-height: 1.5em;
     }
 }

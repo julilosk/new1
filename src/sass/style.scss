@@ -25,9 +25,8 @@ body {
     flex-direction: column;
     background-color: $white;
     color: $black;
-    font-size: 16px;
-    line-height: 1.5;
-    // line-height: 1.75;
+    font-size: 14px;
+    line-height: 1.25;        
 
     @media (max-width: 767px) {
         font-size: 14px;
@@ -93,9 +92,10 @@ h2 {
     }
 }
 
+p {
+    text-align: justify;
+}
 
-
-// p a {
 a {
     color: $second-color;
     // text-decoration: underline;
@@ -355,6 +355,10 @@ img {
     }
 }
 
+nav .menu__block li.current-menu-parent>a {
+    color: $gray2!important;    
+}
+
 .footer {
     .current-menu-item a {
         color: $gray2 !important;
@@ -512,4 +516,37 @@ iframe {
 .ya-share2__badge {
     margin-right: 10px;
     border-radius: 0 !important;
+}
+
+//стили для вложенных документов
+.download-attachments {
+    width: 100%;
+    border-top: 1px solid #dedede;
+    margin-top: 30px;
+    font-size: 16px;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 10px 0;
+        li {
+            padding: 5px 0;
+            a {
+                color: $second-color;
+                // text-decoration: none;
+                background-image: none;
+            
+                &:hover {
+                    color: $third-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .attachment-link {
+        margin-left: 5px;
+    }
+    // .attachment-icon {
+    //     height: 20px;
+    //     width: auto;
+    // }
 }

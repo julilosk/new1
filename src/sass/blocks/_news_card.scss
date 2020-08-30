@@ -20,6 +20,7 @@
         height: auto;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
         padding-bottom: 5px;
+       
 
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
@@ -72,8 +73,9 @@
             color: #888888;
             // height: 65px;
             // overflow: hidden;  
-            margin-bottom: 5px;
-            line-height: 1.5;
+            // margin-bottom: 5px;
+            line-height: 1.4;
+            // text-align: left;
 
             @media (max-width: 1199px) {
                 display: none;
