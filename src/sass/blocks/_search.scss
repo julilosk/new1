@@ -1,0 +1,29 @@
+.search {
+    font-size: 16px;
+
+    &__block {
+        margin: 25px 0;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    &__division {
+        margin: 10px 0;
+    }
+
+    &__date {
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    span {
+        font-weight: 500;
+        color: $main-color;
+    }
+}

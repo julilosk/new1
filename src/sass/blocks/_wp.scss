@@ -10,9 +10,60 @@
 
     [class*=col-md-6] {
         @media (max-width: 376px) {
-            width: 100%;        
+            width: 100%;
         }
     }
-   
-    
+
+
+}
+
+.tablepress tbody td {
+    border-top-style: none !important;
+    vertical-align: middle !important;
+}
+
+
+.ya-share2__container_size_m .ya-share2__icon {
+    height: 40px !important;
+    width: 40px !important;
+    background-size: 40px 40px !important;
+}
+
+.ya-share2__badge {
+    margin-right: 10px;
+    border-radius: 0 !important;
+}
+
+
+//стили для вложенных документов
+.download-attachments {
+    width: 100%;
+    border-top: 1px solid #dedede;
+    margin-top: 30px;
+    font-size: 16px;
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin: 10px 0;
+        li {
+            padding: 5px 0;
+            a {
+                color: $second-color;
+                // text-decoration: none;
+                background-image: none;
+            
+                &:hover {
+                    color: $third-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .attachment-link {
+        margin-left: 5px;
+    }
+    // .attachment-icon {
+    //     height: 20px;
+    //     width: auto;
+    // }
 }
