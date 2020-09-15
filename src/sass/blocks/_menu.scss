@@ -50,12 +50,14 @@ nav {
             }
 
 
+
             a {
                 text-decoration: none;
                 text-transform: uppercase;
                 // color: $white;
                 color: $gray2;
                 // color: $black;
+
 
                 &:hover {
                     color: $third-color;
@@ -85,11 +87,26 @@ nav {
                 }
 
                 ul {
-                    position: absolute;
+                    // position: absolute;
                     display: none;
                     width: 300px;
                     left: -15px;
-                    // top: 38px;                    
+                    // top: 38px;   
+
+                    @media (max-width: 767px) {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+
+                        li a {
+                            text-transform: none;
+                            // position: relative; text-transform: capitalize;
+                            // position: relative;
+                        }
+
+                    }
+
+
                 }
             }
 
