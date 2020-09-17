@@ -19,8 +19,7 @@
         background-color: #ffffff;
         height: auto;
         box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
-        padding-bottom: 5px;
-       
+        padding-bottom: 5px;       
 
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
@@ -29,6 +28,7 @@
         @media (max-width: 991px) {
             margin-bottom: 15px;
         }
+
         @media (max-width: 575px) {
             margin-bottom: 10px;
         }
@@ -112,11 +112,5 @@
             margin: 5px 0;
         }
     }
-
-    // &__read {  
-    //     // position:absolute; 
-    //     // bottom: 0;      
-    //     color: $gray;
-    //     margin-top: 10px;       
-    // }
+    
 }

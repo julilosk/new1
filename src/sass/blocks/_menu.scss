@@ -1,10 +1,7 @@
 nav {
-    background-color: $main-color;
-    // background-color: $second-color;
+    background-color: $main-color;    
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .15);
-    // background-color: $second-color;
-
-    // box-shadow: 0 0 11px 1px rgba(0,0,0,0.21);
+   
     // .row {
     //     justify-content: space-between;
     //     align-items: center;
@@ -16,6 +13,16 @@ nav {
 
     @media (max-width: 767px) {
         background-color: $white;
+
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+        }
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
     }
 
     .menu {
@@ -24,11 +31,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        @media (max-width: 767px) {
-            height: 0;
-        }
-
+        
         &__block {
             display: flex;
             // flex-wrap: wrap;
@@ -44,24 +47,18 @@ nav {
             }
 
             @media (max-width: 991px) {
-                font-size: 13px;
+                // font-size: 13px;
                 width: 100%;
                 justify-content: space-between;
             }
 
-
-
             a {
                 text-decoration: none;
-                text-transform: uppercase;
-                // color: $white;
-                color: $gray2;
-                // color: $black;
-
+                text-transform: uppercase;               
+                color: $gray2;    
 
                 &:hover {
-                    color: $third-color;
-                    // color: $light-gray2;
+                    color: $third-color;                  
                     text-decoration: none;
                 }
             }
@@ -71,7 +68,7 @@ nav {
                 position: relative;
                 float: left;
                 margin: 0 30px;
-                height: 100%;
+                // height: 100%;
 
                 &:first-child {
                     margin-left: 0;
@@ -91,19 +88,20 @@ nav {
                     display: none;
                     width: 300px;
                     left: -15px;
-                    // top: 38px;   
+                    padding-left: 10px;
+                    padding-bottom: 10px;                    
 
                     @media (max-width: 767px) {
                         display: flex;
                         flex-direction: column;
                         text-align: left;
-
+                        // padding-left: 15px;
+                        padding-bottom: 0;
+                        
                         li a {
-                            text-transform: none;
-                            // position: relative; text-transform: capitalize;
-                            // position: relative;
+                            text-transform: none;                            
+                            color:  $gray;
                         }
-
                     }
 
 
@@ -115,7 +113,7 @@ nav {
                 position: absolute;
                 z-index: 100;
                 transition: all 0.5s;
-                padding-left: 5px;
+                // padding-left: 5px;
                 background-color: $main-color;
                 font-size: 14px;
                 // font-weight: 500;
@@ -127,7 +125,18 @@ nav {
                     white-space: nowrap;
                     margin: 10px 10px;
                     margin-right: 25px;
+
+                    // @media (max-width: 767px) {
+                    //   margin: 0;
+                    // }
                 }
+
+                @media (max-width: 767px) {
+                   position: static;
+                   padding-top: 0;
+                   font-size: inherit;
+                }
+
             }
         }
 
@@ -147,37 +156,6 @@ nav {
         //     color: $third-color!important;
         // }
     }
-
-
-    // .menu>ul>li>a:before {
-    //     right: -13px;
-    //     transform: rotate(-45deg);
-    // }
-
-    // .menu>ul>li>a:after {
-    //     right: -16px;
-    //     transform: rotate(45deg);
-    // }
-
-    // .menu>ul>li>a:not(:last-child):before,
-    // .menu>ul>li>a:not(:last-child):after {
-    //     content: '';
-    //     height: 6px;
-    //     width: 2px;
-    //     background-color: $white;
-    //     position: absolute;
-    //     top: 9px;
-    //     transition-property: all;
-    //     transition-duration: .5s, .5s, .5s;
-    //     transition-delay: .5s, .5s, .5s;
-
-    // }
-
-    // .activelink {
-    //     // background: #ecc653;
-    //     border-bottom: 5px solid #fe4817
-    //     }
-
 }
 
 
@@ -203,6 +181,8 @@ nav {
     @media (max-width: 991px) {
         display: none;
     }
+
+   
 
 
     input {

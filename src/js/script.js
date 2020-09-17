@@ -288,10 +288,8 @@ $(document).ready(function () {
 
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.menu__block'),
-    menuItem = document.querySelectorAll('.menu__item'),
-    menuSubmenu = document.querySelectorAll('.menu__sub-menu'),
+    menuItem = document.querySelectorAll('.menu__item'),   
     hamburger = document.querySelector('.hamburger');
-
 
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger_active');
@@ -306,22 +304,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
 
-  });
-
-  menuSubmenu.forEach(item => {
-    item.addEventListener('click', () => {
-      hamburger.classList.toggle('hamburger_active');
-      menu.classList.toggle('menu__block_active');
-    });
-
-
-  });
-
-
-
-
-
-
+  }); 
 
 });
 

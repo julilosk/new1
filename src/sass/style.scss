@@ -25,8 +25,8 @@ body {
     flex-direction: column;
     background-color: $white;
     color: $black;
-    font-size: 14px;
-    line-height: 1.25;
+    font-size: 16px;
+    line-height: 1.5;
 
     @media (max-width: 767px) {
         font-size: 14px;
@@ -92,9 +92,9 @@ h2 {
     }
 }
 
-p {
-    text-align: justify;
-}
+// p {
+//     text-align: justify;
+// }
 
 a {
     color: $second-color;
@@ -347,17 +347,21 @@ img {
 //     color: $third-color !important;
 // }
 
-.current-menu-item a {
-    color: $third-color !important;
-
-    @media (max-width: 991px) {
-        border-bottom: 3px solid $third-color;
-    }
-}
-
 nav .menu__block li.current-menu-parent>a {
-    color: $gray2 !important;
+    color: $third-color !important;
 }
+
+// .current-menu-item a {
+//     color: $third-color !important;
+
+//     @media (max-width: 991px) {
+//         border-bottom: 3px solid $third-color;
+//     }
+// }
+
+// nav .menu__block li.current-menu-parent>a {
+//     color: $gray2 !important;
+// }
 
 .footer {
     .current-menu-item a {
