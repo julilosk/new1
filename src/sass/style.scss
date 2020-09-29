@@ -4,7 +4,9 @@
 @import'libs/animate';
 @import'libs/font';
 @import'libs/slick';
+@import'libs/owl.carousel';
 @import 'base/variables';
+
 
 .clear {
     clear: both;
@@ -510,3 +512,4 @@ iframe {
 @import'blocks/page-block';
 @import'blocks/wp';
 @import'blocks/search';
+@import'blocks/owl';
