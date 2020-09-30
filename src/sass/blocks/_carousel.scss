@@ -66,9 +66,10 @@
 
 //carousel-photo
 .slider-wrap {
+    background-color: $light-gray;
     // margin: 0 auto;
     position: relative;
-    // width: 100%;  
+    width: 100%;
     margin-bottom: 25px;
     margin-top: 15px;
 
@@ -85,15 +86,23 @@
         margin-bottom: 15px;
         border-radius: 21px;
 
+        padding: 15px 10px;
+
         &_img {
-            width: 100%;
-            object-fit: cover;
-            background-position: center;
-            border-radius: 10px;
-            border: 1px solid #bfbfbf;
-            height: 420px;
-            margin-bottom: 15px;
-            box-shadow: 0 0 10px 1px #b8b8b8;
+            // width: 100%;
+            // object-fit: cover;
+            // background-position: center;
+            // border-radius: 10px;
+            // border: 1px solid #bfbfbf;
+            // height: 420px;
+            // margin-bottom: 15px;
+            // box-shadow: 0 0 10px 1px #b8b8b8;
+
+            width: auto !important;
+            max-height: 400px;
+            object-fit: contain;
+            max-width: 100%;
+            margin: 0 auto;
 
             @media (max-width: 991px) {
                 height: 40vh;
@@ -167,8 +176,8 @@
         img {
             width: 50px;
             height: 150px;
-            padding-right: 5px;
-            padding-left: 5px;
+            padding-right: 15px;
+            padding-left: 15px;
 
             @media (max-width: 991px) {
                 width: 40px;
