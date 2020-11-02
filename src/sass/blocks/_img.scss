@@ -1,0 +1,113 @@
+//подпись под изображением
+.img-content {
+    max-height: 380px;
+    max-width: 500px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    // object-fit: cover;
+    object-position: center;
+    @media (max-width: 575px) {
+        display: block;
+        margin: 5px;
+        height: 35vh;
+        max-width: 100%;
+        // object-fit: cover;
+        // object-fit: contain;
+        margin: 5px auto;
+    }
+}
+
+.alignright {
+    float: right;
+    margin: 15px 0 15px 15px;
+    @media (max-width: 575px) {
+        float: none;
+        display: flex;
+        // justify-content: center;
+        margin: 5px auto;
+    }
+}
+
+.alignleft {
+    float: left;
+    display: flex;
+    justify-content: left;
+    margin: 15px 15px 15px 0;
+    @media (max-width: 575px) {
+        float: none;
+        // justify-content: center;
+        margin: 5px auto;
+    }
+}
+
+.alignnone,
+.aligncenter {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.wp-caption {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 500px!important;
+    height: auto!important;
+    @media (max-width: 575px) {
+        margin: 5px auto;
+        max-width: 100%!important;
+    }
+    a {
+        background-image: none;
+    }
+    p {
+        font-size: 14px;
+        color: #686868;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        @media (max-width: 575px) {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+    }
+    img {
+        object-fit: contain;
+        // object-fit: cover;
+        // object-position: center;
+        // max-width: 500px;
+        height: 350px!important;
+        width: 100%!important;
+        @media (max-width: 575px) {
+            height: auto!important;
+            max-height: 35vh!important;
+            max-width: 100%!important;
+            // object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.mtli_png,
+.mtli_jpg {
+    background-image: none !important;
+    margin: 15px auto;
+}
+
+.mtli_attachment {
+    // padding-left: 0!important;
+    display: block !important;
+}
+
+.structure {
+    .mtli_jpg {
+        text-align: center;
+    }
+    .mtli_attachment {
+        padding-left: 0 !important;
+    }
+}

@@ -7,21 +7,17 @@
         width: 100%;
         padding: 20px;
     }
-
     [class*=col-md-6] {
         @media (max-width: 376px) {
             width: 100%;
         }
     }
-
-
 }
 
 .tablepress tbody td {
     border-top-style: none !important;
     vertical-align: middle !important;
 }
-
 
 .ya-share2__container_size_m .ya-share2__icon {
     height: 40px !important;
@@ -34,13 +30,12 @@
     border-radius: 0 !important;
 }
 
-
 //стили для вложенных документов
 .download-attachments {
     width: 100%;
     border-top: 1px solid #dedede;
     margin-top: 30px;
-    font-size: 16px;
+    // font-size: 16px;
     ul {
         list-style-type: none;
         padding-left: 0;
@@ -51,7 +46,6 @@
                 color: $second-color;
                 // text-decoration: none;
                 background-image: none;
-            
                 &:hover {
                     color: $third-color;
                     text-decoration: none;
@@ -66,4 +60,12 @@
     //     height: 20px;
     //     width: auto;
     // }
+}
+
+.login.login-action-register input.error {
+    border-color: red;
+}
+
+.login input[type=checkbox].error+label:after {
+    border: unset;
 }

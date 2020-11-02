@@ -1,12 +1,10 @@
 .logo-block {
     width: 100%;
-
+    // margin-top: 10px;
     @media (max-width: 575px) {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
-
     }
-
     // &__box {
     //     @media (max-width: 1199px)  {
     //         overflow: hidden;
@@ -18,10 +16,8 @@
     //         width: 100%;
     //         overflow: hidden;
     //     }
-
     //     @media (max-width: 767px) {
     //         overflow: hidden;
-
     //     }
     // }
 }
@@ -33,81 +29,69 @@
     min-height: 112px;
     // padding-top: 15px;
     width: 100%;
-
     @media (max-width: 991px) {
         overflow-x: scroll;
         overflow-y: hidden;
         flex-wrap: nowrap;
         // justify-content: start;
     }
-
     @media (max-width: 575px) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
     &__item {
         min-width: 135px;
         max-width: 135px;
         text-align: center;
-
         @media (max-width: 1199px) {
             min-width: 120px;
         }
-
         @media (max-width: 767px) {
             min-width: 100px;
             margin: 0 5px 0 5px;
         }
-
         @media (max-width: 575px) {
             min-width: 80px;
         }
     }
-
     &__scale {
         display: inline-block;
         overflow: hidden;
     }
-
     &__scale img {
-        width: 63px;
-        height: 63px;
-        border-radius: 100%;
+        // width: 75px;
+        height: 70px;
+        width: auto;
+        // border-radius: 100%;
         display: block;
         margin: 0 auto;
         object-fit: cover;
+        object-position: center;
         transition: opacity 0.35s ease 0s;
-
         @media (max-width: 575px) {
             width: 40px;
             height: 40px;
         }
-
         &:hover {
             transform: scale(1.1);
             /* Увеличиваем масштаб */
         }
     }
-
     &__title {
         margin-top: 7px;
         font-size: 12px;
         text-align: center;
         margin-bottom: 5px;
         line-height: 1.2;
-
         @media (max-width: 376px) {
             font-size: 10px;
         }
     }
-
     &__link {
         cursor: pointer;
         // color: $second-color;
         // color: $black;
         color: #686868;
-
         &:hover {
             text-decoration: none;
             // color: $third-color;
@@ -115,7 +99,6 @@
         }
     }
 }
-
 
 .logos::-webkit-scrollbar {
     display: none;
