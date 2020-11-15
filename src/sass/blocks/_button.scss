@@ -3,7 +3,6 @@
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
-
     @media (max-width: 767px) {
         margin-top: 15px;
         margin-bottom: 15px;
@@ -17,6 +16,7 @@
 .button {
     // display: flex;
     // align-items: center;
+    background-color: $white;
     text-decoration: none;
     padding: 10px 15px;
     // padding-bottom: 0;
@@ -25,14 +25,12 @@
     text-transform: uppercase;
     // border-top: 0.5px solid $main-color;
     // border-bottom: 0.5px solid  $main-color;
-    border: 0.5px solid $main-color;
+    border: 0.5px solid $main-color!important;
     color: $main-color;
     // overflow: hidden;
     // clear: both;
     // transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out,  box-shadow 0.2s ease-in-out; 
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-
-
     &:hover {
         text-decoration: none;
         // background-color: $third-color;
@@ -40,12 +38,10 @@
         color: $white;
         box-shadow: 3px 3px 10px $main-color;
     }
-
     &__registry {
         margin-top: 4px;
         margin-bottom: 20px;
     }
-
     // span {
     //     display: block;
     // }

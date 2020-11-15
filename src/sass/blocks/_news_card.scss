@@ -15,8 +15,6 @@
         }
     }
     &__card {
-        // border-radius: 4px;
-        // border: solid 0.5px $border;
         background-color: #ffffff;
         height: auto;
         // box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.20);
@@ -34,12 +32,11 @@
     &__img {
         display: block;
         height: 180px;
-        // border-radius: 4px 4px 0px 0px;
         @media (max-width: 767px) {
             height: 200px;
         }
         @media (max-width: 575px) {
-            height: 25vh;
+            height: 30vh;
         }
     }
     &__body {

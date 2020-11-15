@@ -31,10 +31,8 @@
                 </div>
 
                 <div class="social ">
-                    <a href="#" class="social__icon" target="_blank"><img src="../../icons/facebook-f-brands.svg"
-                            alt="facebook"></a>
-                    <a href="#" class="social__icon" target="_blank"><img src="../../icons/instagram.svg"
-                            alt="instagram"></a>
+                    <a href="#" class="social__icon" target="_blank"><img src="../../icons/facebook-f-brands.svg" alt="facebook"></a>
+                    <a href="#" class="social__icon" target="_blank"><img src="../../icons/instagram.svg" alt="instagram"></a>
 
                     <div id="widget-area" class="widget-area" role="complementary">
                         <div class="chw-widget">
@@ -46,16 +44,13 @@
                                         </div>
                                         <div class="dropdown-content">
                                             <a href="my-account.html">
-                                                <img src="../../icons/user-alt-solid.svg" alt="private" class="">
-                                                Профиль
+                                                <img src="../../icons/user-alt-solid.svg" alt="private" class=""> Профиль
                                             </a>
                                             <a href="#">
-                                                <img src="../../icons/shopping-cart-solid.svg" alt="cart" class="">
-                                                Корзина (0)
+                                                <img src="../../icons/shopping-cart-solid.svg" alt="cart" class=""> Корзина (0)
                                             </a>
                                             <a href="#">
-                                                <img src="../../icons/sign-in-alt-solid.svg" alt="выход" class="">
-                                                Выйти
+                                                <img src="../../icons/sign-in-alt-solid.svg" alt="выход" class=""> Выйти
                                             </a>
                                         </div>
                                     </div>
@@ -87,8 +82,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu__item"><a href="../../pages/tournaments/tournaments.html"
-                            class="menu__link">Турниры</a>
+                    <li class="menu__item"><a href="../../pages/tournaments/tournaments.html" class="menu__link">Турниры</a>
                         <ul class="menu__sub-menu">
                             <li><a href="../../pages/tournaments/tournaments.html">Все турниры</a></li>
                             <li><a href="../../pages/tournaments/calendar.html">Календарь</a></li>
@@ -96,8 +90,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu__item"><a href="../../pages/federation/federation.html"
-                            class="menu__link">Федерация</a>
+                    <li class="menu__item"><a href="../../pages/federation/federation.html" class="menu__link">Федерация</a>
                         <ul class="menu__sub-menu">
                             <li><a href="../../pages/federation/federation.html">Общая информация</a></li>
                             <li><a href="../../pages/federation/dokumentyi.html">Документы</a></li>
@@ -107,8 +100,7 @@
                         </ul>
                     </li>
 
-                    <li class="menu__item"><a href="../../pages/chessplayers/teams.html"
-                            class="menu__link">Шахматисты</a>
+                    <li class="menu__item"><a href="../../pages/chessplayers/teams.html" class="menu__link">Шахматисты</a>
                         <ul class="menu__sub-menu">
                             <li><a href="../../pages/chessplayers/teams.html">Сборные</a></li>
                             <li><a href="../../pages/chessplayers/champions_kray.html">Чемпионы
@@ -148,13 +140,15 @@
     </nav>
 
     <section>
-        <div class="indent-top home-page-block">
+        <div class="submenu">
             <div class="container">
-                <div class="submenu row">
+                <div class="submenu__row row">
                     <h2 class="submenu__title submenu__title_user">Лоскутова Юлия Марсельевна</h2>
                 </div>
             </div>
         </div>
+
+
 
         <div class="container">
             <!-- <div class="row"> -->
@@ -188,31 +182,30 @@
 
 
                 <!-- Мой профиль -->
-                <div class="structure__content structure__content_active">
-                    <h4>Личные данные</h4>
-                    <form method="post" id="adduser"
-                        action="https://test.chess22barnaul.ru/lichnyj-kabinet-redaktirovanie/">
+                <div class="structure__content structure__content_account structure__content_active">
+                    <!-- <h4>Личные данные</h4> -->
+                    <form method="post" id="adduser" action="https://test.chess22barnaul.ru/lichnyj-kabinet-redaktirovanie/">
                         <div class="row ">
-                            <div class="col-md-6">
+                            <div class="col-12 my-account__descr">
+                                Личные данные
+                            </div>
+                            <div class="col-md-4">
                                 <label for="last-name">Фамилия</label>
                                 <br>
                                 <input class="text-input" name="last-name" type="text" id="last-name" value="Лоскутова">
                             </div>
-                        </div>
-                        <div class="row ">
 
-                            <div class="col-md-6">
+
+                            <div class="col-md-4">
                                 <label for="first-name">Имя</label>
                                 <br>
                                 <input class="text-input" name="first-name" type="text" id="first-name" value="Юлия">
                             </div>
-                        </div>
-                        <div class="row ">
-                            <div class="col-md-6">
+
+                            <div class="col-md-4">
                                 <label for="third-name">Отчество</label>
                                 <br>
-                                <input class="text-input" name="third-name" type="text" id="third-name"
-                                    value="Марсельевна">
+                                <input class="text-input" name="third-name" type="text" id="third-name" value="Марсельевна">
                             </div>
                         </div>
 
@@ -227,50 +220,64 @@
                                 <label>Пол </label>
                                 <br>
                                 <div class="user_gender">
-                                    <input class="radio" id="user_gender_m" type="radio" name="user_gender"
-                                        value="Мужской" checked="checked">
+                                    <input class="radio" id="user_gender_m" type="radio" name="user_gender" value="Мужской" checked="checked">
                                     <label for="user_gender_m">Мужской</label><br>
-                                    <input class="radio" type="radio" id="user_gender_f" name="user_gender"
-                                        value="Женский">
+                                    <input class="radio" type="radio" id="user_gender_f" name="user_gender" value="Женский">
                                     <label for="user_gender_f">Женский</label>
                                     <br>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row ">
+                        <div class="row my-account__block">
                             <div class="col-md-6">
                                 <label for="email">E-mail *</label>
                                 <br>
-                                <input class="text-input" name="email" type="text" id="email"
-                                    value="loskutovajm@mail.ru">
+                                <input class="text-input" name="email" type="text" id="email" value="loskutovajm@mail.ru" disabled>
                                 <br>
                             </div>
-                        </div>
 
-                        <div class="row ">
                             <div class="col-md-6">
                                 <label for="user_cell">Номер телефона </label>
                                 <br>
-                                <input type="text" name="user_cell" id="user_cell" value="89132533673"
-                                    class="regular-text">
+                                <input type="text" name="user_cell" id="user_cell" value="89132533673" class="regular-text">
                                 <br>
                             </div>
                         </div>
 
-                        <!-- <div class="row ">
-                                        <div class="col-md-3">
-                                            <label for="user_FIDEID">ФИДЕ ID</label>      
-                                            <br>              
-                                            <input type="number" name="user_FIDEID" id="user_FIDEID" value="123" class=""><br> 
-                                        </div>
-    
-                                        <div class="col-md-3">
-                                            <label for="user_FSHRID">ФШР ID</label>     
-                                            <br>              
-                                            <input type="number" name="user_FSHRID" id="user_FSHRIDD" value="321" class=""><br> 
-                                        </div>
-                                    </div> -->
+                        <div class="row my-account__block">
+                            <div class="col-12 my-account__descr">
+                                Даннные ФИДЕ
+                            </div>
+                            <div class="col-md-3">
+                                <label for="user_FIDEID">ФИДЕ ID</label>
+                                <br>
+                                <input type="number" name="user_FIDEID" id="user_FIDEID" value="123" class=""><br>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="user_FSHRID">ФШР ID</label>
+                                <br>
+                                <input type="number" name="user_FSHRID" id="user_FSHRIDD" value="321" class=""><br>
+                            </div>
+                        </div>
+
+                        <div class="row my-account__block">
+                            <div class="col-12 my-account__descr">
+                                Даннные ФШР
+                            </div>
+                            <div class="col-md-3">
+                                <label for="user_FIDEID">ФИДЕ ID</label>
+                                <br>
+                                <input type="number" name="user_FIDEID" id="user_FIDEID" value="123" class=""><br>
+                            </div>
+
+                            <div class="col-md-3">
+                                <label for="user_FSHRID">ФШР ID</label>
+                                <br>
+                                <input type="number" name="user_FSHRID" id="user_FSHRIDD" value="321" class=""><br>
+                            </div>
+                        </div>
 
                         <!-- <div class="row ">
                                         <div class="col-md-6">
@@ -345,43 +352,9 @@
                                         </div>
                                     </div> -->
 
-                        <!-- <div class="row ">
-                                        <div class="col-md-6">
-                                            <label for="user_address">Домашний адрес</label>    
-                                            <br>              
-                                            <input type="text" name="user_address" id="user_address" value="-" class="regular-text"><br>
-                                        </div>
-                                    
-                                    </div> -->
 
-                        <!-- <div class="row ">
-                                        <div class="col-md-6">
-                                            <label for="user_coach">ФИО тренера</label>   
-                                            <br>              
-                                            <input type="text" name="user_coach" id="user_coach" value="-" class="regular-text"><br> 
-                                        </div>
-                                    
-                                    </div> -->
 
-                        <!-- <div class="row ">
-                                        <div class="col-md-6">
-                                            <label for="user_emailcoach">Электронная почта тренера 					</label>
-                                            <br>              
-                                            <input type="text" name="user_emailcoach" id="user_emailcoach" value="-" class="regular-text">
-                                            <br>                                       
-                                        </div>
-                                    </div> -->
 
-                        <!-- <div class="row ">
-                                        <div class="col-md-6">
-                                            <label for="user_cellcoach">Телефон тренера 					</label>    
-                                            <br>              
-                                            <input type="text" name="user_cellcoach" id="user_cellcoach" value="-" class="regular-text">
-                                            <br>
-                                        </div>
-    
-                                    
-                                    </div> -->
 
                         <!-- <div class="row ">
                                         <div class="col-md-12">
@@ -407,15 +380,24 @@
                                     
                                     </div> -->
 
-                        <!-- <div class="row ">
-                                        <div class="col-md-6">
-                                            <label for="user_school">Место учебы (для школьников)					</label> 
-                                            <br>              
-                                            <input type="text" name="user_school" id="user_school" value="-" class="regular-text">
-                                            <br>
-                                        </div>
-                                    
-                                    </div> -->
+                        <div class="row ">
+                            <div class="col-12">
+                                <label for="user_school">Место учебы (для школьников)					</label>
+                                <br>
+                                <input type="text" name="user_school" id="user_school" value="-" class="regular-text">
+                                <br>
+                            </div>
+
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-4 col-sm-6 col-6 offset-md-4">
+                                <p class="form-submit indent-top indent-bottom">
+                                    <input name="updateuser" type="submit" id="updateuser" class="submit button" value="Обновить" />
+
+
+                                </p>
+                            </div>
+                        </div>
 
                     </form>
                 </div>
@@ -460,12 +442,10 @@
                                 </td>
                                 <td class="order-total" data-title="Итого">
                                     <span class="woocommerce-Price-amount amount">390<span
-                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 2
-                                    единицы
+                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 2 единицы
                                 </td>
                                 <td class="order-actions" data-title="&nbsp;">
-                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1450/"
-                                        class="button view">Просмотр</a> </td>
+                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1450/" class="button view">Просмотр</a> </td>
                             </tr>
                             <tr class="order">
                                 <td class="order-number" data-title="Заказ">
@@ -482,12 +462,10 @@
                                 </td>
                                 <td class="order-total" data-title="Итого">
                                     <span class="woocommerce-Price-amount amount">970<span
-                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 5
-                                    единиц
+                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 5 единиц
                                 </td>
                                 <td class="order-actions" data-title="&nbsp;">
-                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1446/"
-                                        class="button view">Просмотр</a> </td>
+                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1446/" class="button view">Просмотр</a> </td>
                             </tr>
                             <tr class="order">
                                 <td class="order-number" data-title="Заказ">
@@ -504,12 +482,10 @@
                                 </td>
                                 <td class="order-total" data-title="Итого">
                                     <span class="woocommerce-Price-amount amount">190<span
-                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 1
-                                    единицу
+                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 1 единицу
                                 </td>
                                 <td class="order-actions" data-title="&nbsp;">
-                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1352/"
-                                        class="button view">Просмотр</a> </td>
+                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1352/" class="button view">Просмотр</a> </td>
                             </tr>
                             <tr class="order">
                                 <td class="order-number" data-title="Заказ">
@@ -526,12 +502,10 @@
                                 </td>
                                 <td class="order-total" data-title="Итого">
                                     <span class="woocommerce-Price-amount amount">190<span
-                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 1
-                                    единицу
+                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 1 единицу
                                 </td>
                                 <td class="order-actions" data-title="&nbsp;">
-                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1351/"
-                                        class="button view">Просмотр</a> </td>
+                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1351/" class="button view">Просмотр</a> </td>
                             </tr>
                             <tr class="order">
                                 <td class="order-number" data-title="Заказ">
@@ -548,12 +522,10 @@
                                 </td>
                                 <td class="order-total" data-title="Итого">
                                     <span class="woocommerce-Price-amount amount">190<span
-                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 1
-                                    единицу
+                                            class="woocommerce-Price-currencySymbol"> руб.</span></span> за 1 единицу
                                 </td>
                                 <td class="order-actions" data-title="&nbsp;">
-                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1350/"
-                                        class="button view">Просмотр</a> </td>
+                                    <a href="https://test.chess22barnaul.ru/shop/my-account/view-order/1350/" class="button view">Просмотр</a> </td>
                             </tr>
                         </tbody>
                     </table>
@@ -609,8 +581,8 @@
                 </div>
             </div>
             <div class="modal-chess__block">
-                <div class="modal-chess__descr">Если у вас есть предложения или другие вопросы, пожалуйста заполните
-                    форму</div>
+                <div class="modal-chess__descr">Если у вас есть предложения или другие вопросы, пожалуйста заполните форму
+                </div>
                 <div class="feedback">
                     <form id="feedback-form" class="feed-form" action="#">
 
@@ -708,8 +680,7 @@
                         <div class="fileform">
                             <div id="fileformlabel"></div>
                             <div class="selectbutton">Обзор</div>
-                            <input type="file" name="registration-file" id="registration-file"
-                                onchange="getName(this.value);" />
+                            <input type="file" name="registration-file" id="registration-file" onchange="getName(this.value);" />
                         </div>
 
 

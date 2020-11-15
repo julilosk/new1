@@ -1,12 +1,13 @@
 .overlay {
     overflow: auto;
-    position: fixed;
+    // position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    z-index: 99999;
+    z-index: 9999999;
     display: none;
 }
 
@@ -27,11 +28,9 @@
     padding: 0 0;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     // border-radius: 5px;
-
     @media (max-width: 575px) {
-        width: calc(100% - 80px);
+        width: calc(100% - 40px);
     }
-
     &__close {
         position: absolute;
         font-size: 41px;
@@ -42,14 +41,17 @@
         top: -5px;
         right: -40px;
         cursor: pointer;
-
         &:hover {
             // color: $light-color;
             color: $light-gray;
             // color: $white;
         }
+        @media (max-width: 575px) {
+            top: 5px;
+            right: 5px;
+            font-size: 35px;
+        }
     }
-
     &__subtittle {
         font-size: 1.25em;
         font-weight: 500;
@@ -57,8 +59,14 @@
         color: #fff;
         text-align: center;
         margin-bottom: 15px;
+        @media (max-width: 575px) {
+            font-size: 1.1em;
+        }
+        @media (max-width: 376px) {
+            font-size: 1em;
+            margin-top: 5px;
+        }
     }
-
     &__descr {
         font-size: 1.1em;
         // font-weight: 500;
@@ -66,8 +74,10 @@
         color: $second-color;
         text-align: center;
         margin-bottom: 10px;
+        @media (max-width: 575px) {
+            font-size: 1em;
+        }
     }
-
     // &__user {
     //     min-height: 120px;        
     //     width: 350px;
@@ -89,11 +99,9 @@
         text-transform: uppercase;
         // padding: 0 30px;        
     }
-
     &__block {
         padding: 5px 25px 30px 25px;
     }
-
     &__tittle {
         // color: $main-color;
         color: $second-color;
@@ -101,20 +109,26 @@
         font-size: 1.5em;
         font-weight: 500;
         margin: 5px 0;
+        @media (max-width: 575px) {
+            font-size: 1.2em;
+        }
     }
-
     input.error {
         border: 1px solid red !important;
     }
-
     label.error {
         border: none;
         text-align: left;
         color: red;
         margin-bottom: 15px;
     }
+    .row {
+        @media (max-width: 575px) {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
 }
-
 
 // скрытие модальных окон
 #registry,
@@ -122,23 +136,18 @@
     display: none;
 }
 
-span.wpcf7-not-valid-tip {
-    display: none;
-}
-
-div.wpcf7-validation-errors,
-div.wpcf7-acceptance-missing {
-    border: 2px solid red;
-}
-
-
+// span.wpcf7-not-valid-tip {
+//     display: none;
+// }
+// div.wpcf7-validation-errors,
+// div.wpcf7-acceptance-missing {
+//     border: 2px solid red;
+// }
 // .lwa-modal {
 //     width: 400px;
 //     background: #fff;  //new
 //     padding: 30px 40px 34px;
 // }
-
-
 // .lwa table {
 //     width: 100% !important;
 //     margin: 0px !important;

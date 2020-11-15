@@ -35,7 +35,9 @@
         // background: #f4f4f8;
         // background: $light-gray;
         &_account {
-            width: 33%;
+            // width: 33%;
+            // box-shadow: 0 2px 10px rgba(58, 58, 58, .1);
+            // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
             @media (max-width: 767px) {
                 justify-content: space-between !important;
             }
@@ -176,9 +178,13 @@
         width: calc(75% - 45px);
         margin-left: 45px;
         &_account {
-            width: 66%;
-            padding-right: 40px;
-            padding-left: 45px;
+            // width: 66%;
+            // padding-right: 40px;
+            // padding-left: 45px;
+            box-shadow: 0 2px 10px rgba(58, 58, 58, .1);
+            // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+            background-color: #efeff6;
+            padding-top: 15px;
         }
         &_active {
             display: block;
