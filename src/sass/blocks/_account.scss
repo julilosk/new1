@@ -165,12 +165,10 @@
     }
 }
 
-input[disabled] {
-    // background: $light-gray;
-    // border: 1px solid $gray;
-    color: #888888;
-    background-color: #f3f3f3;
-    border-color: #f3f3f3;
+input[disabled] {    
+    color: $gray;
+    background-color: #f2f3f4;    
+    border: none;
     cursor: default;
 }
 
