@@ -130,7 +130,12 @@
     .selectize-input {
         border: 1px solid #737373;
     }
+    input:focus {
+        border-color: $second-color;
+    }
 }
+
+
 
 //красные бордер для формы регистрации
 input[type="checkbox"].error+label {
