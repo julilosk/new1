@@ -4,6 +4,7 @@
     padding-bottom: 20px;
     @media (max-width: 575px) {
         width: 100%;
+        padding-bottom: 0;
     }
     &__inner {
         position: relative;
@@ -11,41 +12,197 @@
         margin: 0 auto;
         // border: 1px solid red;
     }
-    .slick-prev,
-    .slick-next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: -66px;
-        border: none;
-        background-color: $white;
-        // border: 1px solid red;
-        height: 55px;
-        @media (max-width: 575px) {
-            left: -28px;
-        }
-        @media (max-width: 376px) {
-            left: -20px;
-        }
+    .slick-arrow {
         img {
-            width: 31px;
             height: 50px;
-            @media (max-width: 575px) {
-                width: 20px;
+            width: 50px;
+        }
+        &:hover {
+            img {
+                border-radius: 100%;
+                background-color: rgba(238, 238, 238, 0.2);
+                text-align: center;
             }
         }
     }
-    .slick-next {
-        // transform: translateY(50%);
-        right: -66px;
-        left: auto;
+    .slick-prev {
+        left: -66px;
+        @media (max-width: 767px) {
+            left: -45px;
+        }
         @media (max-width: 575px) {
-            right: -28px;
+            left: -30px;
         }
         @media (max-width: 376px) {
-            right: -20px;
+            left: -35px;
         }
     }
+    .slick-next {
+        right: -66px;
+        left: auto;
+        @media (max-width: 767px) {
+            right: -45px;
+        }
+        @media (max-width: 575px) {
+            right: -30px;
+        }
+        @media (max-width: 376px) {
+            right: -35px;
+        }
+    }
+}
+
+//carousel-photo 2
+.slider-wrap {
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    .slider-photo {
+        width: 100%;
+        .slick-slide {
+            width: 100%;
+        }
+        .slick-disabled {
+            display: none!important;
+        }
+        .img-wrap {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: 991px) {
+                height: 40vh;
+            }
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                width: auto!important;
+                max-height: 450px;
+                height: 450px;
+                @media (max-width: 991px) {
+                    height: 40vh;
+                }
+            }
+        }
+        h3 {
+            font-size: 18px;
+            font-weight: 300;
+            margin: 5px 20px 0 20px;
+            height: 22px;
+            @media (max-width: 575px) {
+                font-size: 14px;
+                margin: 5px 5px 0 5px;
+            }
+        }
+    }
+    .slick-arrow {
+        margin-top: -23px;
+        height: calc(100% - 47px);
+    }
+}
+
+.slick-slider button {
+    // outline: none;
+    &:focus {
+        outline: none;
+    }
+}
+
+.slick-active {
+    outline: none;
+}
+
+.slick-dots button {
+    display: none;
+}
+
+.slick-dots {
+    margin-top: 0!important;
+    padding-left: 0!important;
+    text-align: center;
+    display: flex!important; // поставить кнопки в ряд
+    justify-content: center; // выровнять по центру
+    list-style: none!important; // убираем черные маркеры
+    li {
+        margin: 5px;
+        height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background: $gray2;
+        cursor: pointer;
+        @media (max-width: 767px) {
+            height: 5px;
+            width: 5px;
+            margin: 5px;
+        }
+    }
+}
+
+.slick-dots li[class="slick-active"] {
+    background: $third-color;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 50;
+    // margin-top: -23px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.0);
+    // height: calc(100% - 47px);
+    height: 100%;
+    img {
+        width: 50px;
+        height: 150px;
+        display: block;
+        padding-right: 15px;
+        padding-left: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.0);
+        // display: none;
+        // @media (max-width: 991px) {
+        //     width: 40px;
+        //     // height: 120px;
+        // }
+        @media (max-width: 575px) {
+            width: 50px;
+            height: 70px;
+        }
+    }
+    &:hover {
+        img {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+    }
+}
+
+.slick-prev {
+    left: 0;
+    padding-right: 50px;
+    img {
+        border-radius: 0px 25px 25px 0px;
+        // padding-right: 10px;
+        // padding-left: 15px;       
+    }
+}
+
+.slick-next {
+    right: 0;
+    padding-left: 50px;
+    img {
+        border-radius: 25px 0px 0px 25px;
+        // padding-right: 15px;
+        // padding-left: 10px;
+    }
+}
+
+.slick-disabled {
+    display: none!important;
+    // &:hover {
+    //     display: none;
+    // }
 }
 
 // //carousel-photo
@@ -243,146 +400,3 @@
 //         background: $third-color;
 //     }
 // }
-//carousel-photo 2
-.slider-wrap {
-    // border: 1px solid red;
-    // background-color: $light-gray;
-    position: relative;
-    width: 100%;
-    margin-top: 15px;
-    // height: 450px;
-    // @media (max-width: 575px) {       
-    //     margin-bottom: 15px;
-    // }
-    .slider-photo {
-        width: 100%;
-        // overflow: hidden;
-        .slick-slide {
-            width: 100%;
-        }
-        .slick-disabled {
-            display: none!important;
-        }
-        .img-wrap {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            // height: 380px;
-            @media (max-width: 991px) {
-                height: 40vh;
-            }
-            img {
-                object-fit: cover;
-                max-width: 100%;
-                width: auto!important;
-                max-height: 450px;
-                height: 450px;
-                @media (max-width: 991px) {
-                    height: 40vh;
-                }
-            }
-        }
-        h3 {
-            font-size: 18px;
-            font-weight: 300;
-            margin: 5px 20px 0 20px;
-            height: 22px;
-            @media (max-width: 575px) {
-                font-size: 14px;
-                margin: 5px 5px 0 5px;
-            }
-        }
-    }
-    .slick-slider button {
-        // outline: none;
-        &:focus {
-            outline: none;
-        }
-    }
-    .slick-active {
-        outline: none;
-    }
-    .slick-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        z-index: 50;
-        margin-top: -12px;
-        border: none;
-        background-color: rgba(255, 255, 255, 0.0);
-        height: 100%;
-        img {
-            width: 50px;
-            height: 150px;
-            display: block;
-            // display: none;
-            // @media (max-width: 991px) {
-            //     width: 40px;
-            //     // height: 120px;
-            // }
-            @media (max-width: 575px) {
-                width: 40px;
-                height: 50px;
-            }
-        }
-        &:hover {
-            img {
-                display: block;
-                background-color: rgba(255, 255, 255, 0.2);
-                border: 1px solid rgba(255, 255, 255, 0.4);
-            }
-        }
-    }
-    .slick-prev {
-        left: 0;
-        padding-right: 50px;
-        img {
-            border-radius: 0px 25px 25px 0px;
-            padding-right: 10px;
-            padding-left: 15px;
-            @media (max-width: 575px) {
-                padding-left: 15px;
-            }
-        }
-    }
-    .slick-next {
-        right: 0;
-        padding-left: 50px;
-        img {
-            border-radius: 25px 0px 0px 25px;
-            padding-right: 15px;
-            padding-left: 10px;
-            @media (max-width: 575px) {
-                padding-right: 15px;
-            }
-        }
-    }
-    .slick-dots button {
-        display: none;
-    }
-    .slick-dots {
-        margin-top: 0;
-        padding-left: 0;
-        text-align: center;
-        display: flex; // поставить кнопки в ряд
-        justify-content: center; // выровнять по центру
-        list-style: none; // убираем черные маркеры
-        li {
-            margin: 5px;
-            height: 10px;
-            width: 10px;
-            border-radius: 100%;
-            background: $gray2;
-            cursor: pointer;
-            @media (max-width: 767px) {
-                height: 5px;
-                width: 5px;
-                margin: 5px;
-            }
-        }
-    }
-    .slick-dots li[class="slick-active"] {
-        background: $third-color;
-    }
-}

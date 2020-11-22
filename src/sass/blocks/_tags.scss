@@ -3,21 +3,19 @@
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
-    
     @media (max-width: 575px) {
         margin-top: 15px;
-        font-size: 12px;        
+        font-size: 12px;
     }
-
     &__title {
         font-weight: 500;
         margin-right: 25px;
         vertical-align: middle;
         margin-top: 5px;
         // color: #686868;
-
         @media (max-width: 575px) {
-            margin-right: 15px;;        
+            margin-right: 15px;
+            ;
         }
     }
     &__item {
@@ -33,7 +31,12 @@
             border: 1px solid #8d9aa6;
             // background-color: $border;
             color: #8d9aa6;
-
         }
+    }
+}
+
+.cat-title {
+    @media (min-width: 992px) {
+        display: none;
     }
 }

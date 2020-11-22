@@ -51,10 +51,18 @@ section {
 .home-page-block {
     padding-top: 30px;
     padding-bottom: 30px;
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
         padding-top: 15px;
         padding-bottom: 25px;
     }
+    @media (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+    // @media (max-width: 575px) {
+    // padding-top: 10px;
+    // padding-bottom: 15px;
+    // }
     h2 {
         font-size: 1.6em;
         // margin: 0 auto;      
@@ -329,11 +337,11 @@ blockquote {
 @import 'blocks/project';
 @import 'blocks/sponsors';
 @import 'blocks/footer';
-@import'blocks/pageup';
-@import'blocks/media';
+@import 'blocks/pageup';
+@import 'blocks/media';
 @import 'blocks/top-tabs';
 @import 'blocks/calendar';
-@import'blocks/structure';
+@import 'blocks/structure';
 @import'blocks/news-advts-all';
 @import'blocks/advts-page';
 @import'blocks/team';
@@ -354,7 +362,7 @@ blockquote {
 @import'blocks/shop-product';
 @import'blocks/shop-products';
 @import'blocks/cart';
-@import'blocks/select-form';
+@import'blocks/filter';
 @import'blocks/account';
 @import'blocks/checkout';
 @import'blocks/goods';
