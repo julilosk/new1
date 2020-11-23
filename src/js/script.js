@@ -214,6 +214,52 @@ $(document).ready(function() {
     });
 
 
+    // carousel academi
+    $('.academy__carousel').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        prevArrow: '<button type="button" class="slick-prev"> <img src="../../icons/left.svg" alt="slide"> </button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../../icons/right.svg" alt="slide"></button>',
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+    $(function() {
+        $('.academy__img').height($('.academy__img').width() * 0.8);
+
+        $(window).resize(function() {
+            $('.academy__img').height($('.academy__img').width() * 0.8);
+        });
+    });
+
 
 
     // carousel
@@ -326,9 +372,19 @@ $(document).ready(function() {
     // });
 
 
+   
 
 });
 
+// установка значения left
+let dropdownBlock = document.getElementById('dropdown-content'),
+widthLoginName = document.getElementById('login-name').offsetWidth,
+widthIconDropdown = document.getElementById('dropdown').offsetWidth;
+leftDropdownBlock =  widthLoginName -  widthIconDropdown;
+leftDropdownBlock  = -leftDropdownBlock;
+dropdownBlock.style.left = leftDropdownBlock + "px";
+// dropdownBlock.style.left = "-150px";
+dropdownBlock.style.color = "red"; 
 
 
 

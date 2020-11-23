@@ -3,6 +3,12 @@
     @media (max-width: 575px) {
         background-color: $white;
     }
+    h2 {
+        display: none;
+        @media (max-width: 575px) {
+            display: block;
+        }
+    }
     .col-md-6 {
         // width: calc(50% - 16px);
         padding-right: 10px!important;

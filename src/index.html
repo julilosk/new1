@@ -38,11 +38,15 @@
                         <div class="chw-widget">
                             <div class="lwa lwa-template-modal">
                                 <div class="lwa-links-modal social__box">
-                                    <div class=" dropdown">
+                                    <div class=" dropdown" id="dropdown">
                                         <div class="social__icon ">
                                             <img src="../../icons/user-alt-solid.svg" alt="private" class="dropbtn">
                                         </div>
-                                        <div class="dropdown-content">
+                                        <div class="dropdown-content" id="dropdown-content">
+                                            <div id="login-name" class="login-name" >
+                                                loskutovajmsdafsdfasdf@mail.ru <br>
+                                                <!-- Юлия -->
+                                            </div>
                                             <a href="my-account.html">
                                                 <img src="../../icons/user-alt-solid.svg" alt="private" class=""> Профиль
                                             </a>
@@ -227,7 +231,7 @@
         <!-- news block -->
         <div class="news home-page-block">
             <div class="container">
-                <!-- <h2>Новости</h2> -->
+                <h2>Новости</h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-6  col-12">
                         <a class="news__link" href="">
@@ -293,7 +297,7 @@
                     </div>
                 </div>
 
-                <div class="button-wpapper">
+                <div class="button-wrapper">
                     <a href="../../pages/news/all.html" class="button">
                         Все новости
                     </a>
@@ -307,8 +311,7 @@
             <div class="container">
                 <h2><a class="advt__title" href="inform.html">Объявления</a></h2>
                 <div class="advt__block">
-
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 advt__item ">
+                    <div class="advt__item ">
                         <a href="" class="advt__link">
                             <div class="advt__box">
                                 <div class="advt__data">04.02.2020</div>
@@ -316,8 +319,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class=" col-lg-3 col-md-6 col-sm-12 col-12 advt__item">
+                    <div class="advt__item">
                         <a href="" class="advt__link">
                             <div class="advt__box">
                                 <div class="advt__data">12.01.2020</div>
@@ -325,7 +327,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12 col-12 advt__item ">
+                    <div class="advt__item ">
                         <a href="" class="advt__link">
                             <div class="advt__box">
                                 <div class="advt__data">04.02.2020</div>
@@ -333,8 +335,7 @@
                             </div>
                         </a>
                     </div>
-
-                    <div class=" col-lg-3 col-md-6 col-sm-12 col-12 advt__item">
+                    <div class="advt__item">
                         <a href="" class="advt__link">
                             <div class="advt__box">
                                 <div class="advt__data">12.01.2020</div>
@@ -342,6 +343,11 @@
                             </div>
                         </a>
                     </div>
+                </div>
+                <div class="button-wrapper">
+                    <a href="../../pages/news/all.html" class="button">
+                        Все объявления
+                    </a>
                 </div>
             </div>
         </div>
@@ -469,7 +475,7 @@
                                                 <a class="tourn__link" href="">
                                                     <div class="tourn__title">Кубок Алтайского края-2020 по рапиду. 1 отборочный этап </div>
                                                     <div class="tourn__record">
-                                                        <a class="" href="#">Идёт регистрация</a>
+                                                        <div class="">Идёт регистрация</div>
 
                                                     </div>
                                                 </a>
@@ -638,7 +644,7 @@
 
                             </div>
 
-                            <div class="button-wpapper">
+                            <div class="button-wrapper">
                                 <a href="../../pages/tournaments/tournaments.html" class="button">
                                     <span>Все турниры</span>
                                 </a>
@@ -1295,7 +1301,7 @@
                     </div>
                     
                                 
-                    <div class="button-wpapper">
+                    <div class="button-wrapper">
                         <a href="pages/news/photos.html" class="button">
                             <span>Все фото</span>
                           
@@ -1403,18 +1409,18 @@
 
                         <div class="row ">
                             <div class="col-md-6 col-sm-6 col-12">
-                                <label for="registration-date">Дата рождения <span>*</span></label>
+                                <label for="registration-date" >Дата рождения <span>*</span></label>
                                 <input type="date" id="registration-date" name="birthday">
                             </div>
                             <div class="col-md-6 col-sm-6 col-12">
-                                <label for="gender">Пол *</label>
+                                <label>Пол *</label>
                                 <div class="user_gender">
                                     <!-- <div> -->
-                                    <input class="radio" type="radio" name="user_gender" value="Мужской" checked="checked">
+                                    <input class="radio" type="radio" name="user_gender" value="Мужской" checked="checked" id="user_gender_m">
                                     <label for="user_gender_m">Мужской</label>
                                     <!-- </div> -->
                                     <!-- <div> -->
-                                    <input class="radio" type="radio" name="user_gender" value="Женский">
+                                    <input class="radio" type="radio" name="user_gender" value="Женский" id="user_gender_f">
                                     <label for="user_gender_f">Женский</label>
                                     <!-- </div> -->
 

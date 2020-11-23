@@ -4,23 +4,20 @@
     flex-wrap: wrap;
     // background-color: $light-gray;    
     padding: 10px;
-
     @media (max-width: 767px) {
         margin-left: -8px;
         margin-bottom: 25px;
     }
-
     @media (max-width: 575px) {
-    // margin-top: 10px;
+        // margin-top: 10px;
         margin-bottom: 15px;
     }
     @media (max-width: 376px) {
-            margin-bottom: 10px;
-        }
-    @media (max-width: 390px) {
+        margin-bottom: 10px;
+    }
+    @media (max-width: 455px) {
         justify-content: space-between;
     }
-
     #btnAll {
         display: block;
         border: 1px solid $border;
@@ -29,19 +26,15 @@
         border-radius: 0;
         margin: 0 5px;
         padding: 5px 15px;
-
         &:hover {
             color: $third-color;
             border: 1px solid $third-color;
         }
-
-        @media (max-width: 390px) {
+        @media (max-width: 455px) {
             margin-top: 15px;
             margin-left: auto;
-
         }
     }
-
     .dropdown-toggle {
         border-radius: 0;
         // min-width: 120px;
@@ -52,19 +45,15 @@
         border-top: none;
         border-left: none;
         border-right: none;
-        // color: #414141;
+        // color: $third-color;
         font-weight: 600;
-
         background-color: $white;
-
         @media (max-width: 575px) {
             padding: 5px 5px;
         }
-
-        @media (max-width: 390px) {
+        @media (max-width: 455px) {
             width: 100%;
         }
-
         &:hover {
             background-color: $white;
             border-bottom: 1px solid #737373;
@@ -74,56 +63,43 @@
             color: #414141;
         }
     }
-
     .dropdown-toggle::after {
         margin-left: 30px;
-
         @media (max-width: 575px) {
             margin-left: 10px;
         }
     }
-
     button:active,
     button:focus {
         outline: none;
     }
-
     .dropdown-menu.show,
     .dropdown-toggle,
     #btnAll {
         min-width: 100px;
-
         @media (max-width: 575px) {
             min-width: 80px;
         }
-
         @media (max-width: 420px) {
             min-width: 70px;
         }
-
-        @media (max-width: 390px) {
+        @media (max-width: 455px) {
             min-width: initial;
         }
-
         // @media (max-width: 365px) {
         //     min-width: 50px;
         // }
     }
-
     .btn-group {
-        @media (max-width: 390px) {
+        @media (max-width: 455px) {
             width: 33%;
         }
     }
-
-
     .dropdown-item.active {
         background-color: $third-color;
     }
-
     .dropdown-menu {
         max-height: 240px;
         overflow-y: scroll;
-
     }
 }

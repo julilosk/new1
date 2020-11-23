@@ -5,13 +5,11 @@
     margin: 15px 0;
     // border: solid 2px red;
     height: 33px;
-
     @media (max-width: 767px) {
         // padding-right: 15px;
         margin-right: 30px;
         margin-top: 0;
     }
-
     @media (max-width: 575px) {
         // width: 100%;
         justify-content: flex-end;
@@ -21,11 +19,11 @@
         height: auto;
         // margin-bottom: 5px;
     }
-
-    // &_academy {
-    //     justify-content: center;
-    // }
-
+    &_academy {
+        justify-content: center;
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
     &__icon {
         display: flex;
         justify-content: center;
@@ -39,50 +37,39 @@
         // transition: all 0.5s;
         // &:first-child {
         // margin-left: 0;
-
         // }
-
         // @media (max-width: 991px) {
-            // margin-left: 15px;
+        // margin-left: 15px;
         // }
-
         @media (max-width: 767px) {
             margin-left: 5px;
             width: 25px;
             height: 25px;
             margin-right: 5px;
         }
-
         @media (max-width: 575px) {
             margin-right: 0;
         }
-
         img {
             height: 17px;
             display: block;
-
             @media (max-width: 767px) {
                 height: 12px;
             }
         }
-
         &_account {
             border: none;
             margin-left: 0;
-
             img {
                 height: 18px;
             }
         }
-
         &_soc {
             @media (max-width: 767px) {
                 display: none;
             }
         }
-
     }
-
     &__box {
         display: flex;
         align-items: center;
@@ -91,21 +78,17 @@
         font-size: 16px;
         color: $main-color;
         margin-left: 15px;
-
         @media (max-width: 767px) {
             padding-bottom: 5px;
             padding-right: 5px;
             margin-left: 0;
         }
-
         @media (max-width: 575px) {
             font-size: 14px;
             margin-left: 5px;
             padding-right: 0;
             padding-bottom: 0;
         }
-
-
         &:hover {
             text-decoration: none;
             color: $third-color;
@@ -113,22 +96,16 @@
             //     border: 2px solid $third-color;
             // }
         }
-
-
     }
-
     &__footer {
         justify-content: center;
-
         @media (max-width: 575px) {
             display: none;
         }
-
         a {
             background-color: $gray2;
         }
     }
-
     // фильтр на иконки
     // &__icon:not(:hover) {
     //     filter:  contrast(.5);
@@ -137,7 +114,6 @@
     //     transition: .5s;
     // }
 }
-
 
 .icon {
     display: flex;
@@ -148,38 +124,28 @@
     width: 45px;
     height: 45px;
     margin-right: 20px;
-
     @media (max-width: 575px) {
         width: 35px;
         height: 35px;
     }
-
     &_indent {
         margin: 0 25px;
-
         &:first-child {
             margin-left: 0;
         }
-
         // &:last-child {
         //     margin-right: 0;
         // }
     }
-
     // background-color: $gray;
     img {
         height: 20px;
         display: block;
-
         @media (max-width: 575px) {
             height: 18px;
         }
-
     }
 }
-
-
-
 
 // .dropbtn {
 //     // background-color: #4CAF50;
@@ -191,63 +157,80 @@
 // }
 
 /* контейнер <div> - необходим для размещения выпадающего содержимого */
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+
 /* Выпадающей контент (по умолчанию скрыт) */
+
 .dropdown-content {
-    display: none;
-    // display: block;
+    
+    display: block;
+    // display: none;
     position: absolute;
     background-color: $white;
     // border: 1px solid red;
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left: -150px;
-
-    // @media (max-width: 767px) {
-    //     width: 100%;
-    // }
-
-
+    // left: -150px;
+    left: 0;   
 }
 
-/* Ссылки внутри выпадающего списка */
-.dropdown-content a {
-    // color: black;
-    color: $main-color;
-    padding: 12px 25px;
-    text-decoration: none;
-    // display: block;
-    display: flex;
-    align-items: center;
 
-    // border: 1px solid green;
-    img {
-        height: 15px;
-        margin-right: 15px;
+/* Ссылки внутри выпадающего списка */
+
+.dropdown-content {
+    .login-name {
+        color: $main-color;
+        padding: 20px 15px;
+        text-align: center;
+        // text-decoration: none;
+        // display: block;
+        // display: flex;
+        // align-items: center;
+        background-color: $light-gray;
+    }
+    a {
+        // color: black;
+        color: $main-color;
+        padding: 12px 25px;
+        text-decoration: none;
+        // display: block;
+        display: flex;
+        align-items: center;
+        // border: 1px solid green;
+        img {
+            height: 15px;
+            margin-right: 15px;
+        }
     }
 }
 
+
 /* Изменить цвет выпадающих ссылок при наведении */
+
 .dropdown-content a:hover {
     background-color: #f1f1f1;
     color: $main-color;
-
     span {
         color: $main-color;
     }
 }
 
+
 /* Показать выпадающее меню при наведении */
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
+
 /* Изменить цвет фона выпадающего кнопка при отображении выпадающего списка */
+
 // .dropdown:hover .dropbtn {
 //     background-color: #3e8e41;
 // }
