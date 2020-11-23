@@ -252,13 +252,13 @@ $(document).ready(function() {
         ]
     });
 
-    $(function() {
-        $('.academy__img').height($('.academy__img').width() * 0.8);
+    // $(function() {
+    //     $('.academy__img').height($('.academy__img').width() * 0.8);
 
-        $(window).resize(function() {
-            $('.academy__img').height($('.academy__img').width() * 0.8);
-        });
-    });
+    //     $(window).resize(function() {
+    //         $('.academy__img').height($('.academy__img').width() * 0.8);
+    //     });
+    // });
 
 
 
@@ -372,19 +372,22 @@ $(document).ready(function() {
     // });
 
 
-   
+
 
 });
 
 // установка значения left
 let dropdownBlock = document.getElementById('dropdown-content'),
-widthLoginName = document.getElementById('login-name').offsetWidth,
-widthIconDropdown = document.getElementById('dropdown').offsetWidth;
-leftDropdownBlock =  widthLoginName -  widthIconDropdown;
-leftDropdownBlock  = -leftDropdownBlock;
+    widthLoginName = document.getElementById('login-name').offsetWidth,
+    widthIconDropdown = document.getElementById('dropdown').offsetWidth;
+leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
+leftDropdownBlock = -leftDropdownBlock;
 dropdownBlock.style.left = leftDropdownBlock + "px";
 // dropdownBlock.style.left = "-150px";
-dropdownBlock.style.color = "red"; 
+dropdownBlock.style.display = 'none';
+// $('#dropdown-content').hover.addClass('show');
+dropdownBlock.style.color = "red";
+
 
 
 
