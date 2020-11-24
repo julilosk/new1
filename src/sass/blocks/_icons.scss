@@ -167,7 +167,7 @@
 /* Выпадающей контент (по умолчанию скрыт) */
 
 .dropdown-content {
-    display: block;
+    // display: block;
     // display: none;
     position: absolute;
     background-color: $white;
@@ -177,11 +177,9 @@
     z-index: 1;
     // left: -150px;
     left: 0;
+    opacity: 0;
 }
 
-// .show {
-//     display: block!important;
-// }
 
 /* Ссылки внутри выпадающего списка */
 
@@ -191,7 +189,7 @@
         padding: 20px 15px;
         text-align: center;
         // text-decoration: none;
-        display: block;
+        // display: block;
         // display: flex;
         // align-items: center;
         background-color: $light-gray;
@@ -228,6 +226,7 @@
 
 .dropdown:hover .dropdown-content {
     display: block!important;
+    opacity: 1;
 }
 
 

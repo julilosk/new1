@@ -385,8 +385,7 @@ leftDropdownBlock = -leftDropdownBlock;
 dropdownBlock.style.left = leftDropdownBlock + "px";
 // dropdownBlock.style.left = "-150px";
 dropdownBlock.style.display = 'none';
-// $('#dropdown-content').hover.addClass('show');
-dropdownBlock.style.color = "red";
+// dropdownBlock.style.color = "red";
 
 
 
