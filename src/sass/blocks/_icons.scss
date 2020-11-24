@@ -175,7 +175,7 @@
     min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    // left: -150px;
+    // left: -150px;  /*значение left устанавливается скриптом, зависит от ширины блока login-name*/
     left: 0;
     opacity: 0;
 }
