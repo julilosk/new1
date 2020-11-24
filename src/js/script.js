@@ -18,6 +18,24 @@ $(document).ready(function() {
 
 
 
+    // Табы на топ-лист
+    $('.tabs__nav li').click(function(e) {
+        var a = $(this),
+            parent = a.parents('.tabs'),
+            nav = parent.children('.tabs__nav').children('li'),
+            box = parent.children('.tabs__box').children('div');
+
+        if (!a.hasClass('active')) {
+            a.addClass('active')
+                .siblings().removeClass('active');
+
+            box.eq(a.index()).addClass('active')
+                .siblings().removeClass('active');
+        }
+        e.preventDefault();
+    });
+
+
 
     //tabs calendar
     $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
@@ -45,7 +63,7 @@ $(document).ready(function() {
     // });
 
 
-    //tabs news-all  
+    //Табы на блок "Турниры" на главной странице
     $('ul.tabs-page__tabs').on('click', 'li:not(.tabs-page__tab_active)', function() {
         $(this)
             .addClass('tabs-page__tab_active').siblings().removeClass('tabs-page__tab_active')
@@ -214,7 +232,7 @@ $(document).ready(function() {
     });
 
 
-    // carousel academi
+    // carousel academi, для фотогаллерии внизу страницы
     $('.academy__carousel').slick({
         dots: true,
         infinite: false,
@@ -252,17 +270,8 @@ $(document).ready(function() {
         ]
     });
 
-    // $(function() {
-    //     $('.academy__img').height($('.academy__img').width() * 0.8);
-
-    //     $(window).resize(function() {
-    //         $('.academy__img').height($('.academy__img').width() * 0.8);
-    //     });
-    // });
-
-
-
-    // carousel
+ 
+    // carousel для страницы "Академия", для тренеров
     $('.carousel__inner').slick({
         speed: 1200,
         adaptiveHeight: true,
@@ -281,8 +290,7 @@ $(document).ready(function() {
     });
 
 
-
-    // carousel-photo №2
+    // carousel-photo для блока новости
     $('.slider-photo').slick({
         // speed: 1200,
         adaptiveHeight: true,
@@ -294,8 +302,7 @@ $(document).ready(function() {
     });
 
 
-
-    // carousel-photo
+    // carousel-photo - карусель с эскизами
     $(document).ready(function() {
         $('.slider-for').slick({
             slidesToShow: 1,
@@ -349,8 +356,6 @@ $(document).ready(function() {
 
 
     //   $('.owl-carousel').owlCarousel();
-
-
     //   $('#carouselOne').owlCarousel({
     //     loop:true, //Зацикливаем слайдер
     //     margin:50, //Отступ от элемента справа в 50px
@@ -372,20 +377,19 @@ $(document).ready(function() {
     // });
 
 
+     //добавление класс на положительные и отрицательные изменения рейтинга
+     $('#ratingTable td.rating__change').each(function() {
+        if (parseInt($(this).html()) > 0) {
+            $(this).addClass("higherthan0");
+        } else if (parseInt($(this).html()) < 0) {
+            $(this).addClass("lowerthan0");
+        }
+    });
+    
 
+   
 
 });
-
-// установка значения left
-let dropdownBlock = document.getElementById('dropdown-content'),
-    widthLoginName = document.getElementById('login-name').offsetWidth,
-    widthIconDropdown = document.getElementById('dropdown').offsetWidth;
-leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
-leftDropdownBlock = -leftDropdownBlock;
-dropdownBlock.style.left = leftDropdownBlock + "px";
-// dropdownBlock.style.left = "-150px";
-dropdownBlock.style.display = 'none';
-// dropdownBlock.style.color = "red";
 
 
 
@@ -407,45 +411,13 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu__block_active');
         });
-
-
     });
 
 });
 
 
 
-
-
-// tabs nuber two
-$('.tabs__nav li').click(function(e) {
-    var a = $(this),
-        parent = a.parents('.tabs'),
-        nav = parent.children('.tabs__nav').children('li'),
-        box = parent.children('.tabs__box').children('div');
-
-    if (!a.hasClass('active')) {
-        a.addClass('active')
-            .siblings().removeClass('active');
-
-        box.eq(a.index()).addClass('active')
-            .siblings().removeClass('active');
-    }
-    e.preventDefault();
-});
-
-
-$('#ratingTable td.rating__color').each(function() {
-    if (parseInt($(this).html()) > 0) {
-        $(this).addClass("higherthan100");
-    } else if (parseInt($(this).html()) < 0) {
-        $(this).addClass("lowerthan100");
-    }
-});
-
-
-
-
+// 24.11.20 - не работает
 function getName(str) {
     if (str.lastIndexOf('\\')) {
         var i = str.lastIndexOf('\\') + 1;
@@ -456,3 +428,90 @@ function getName(str) {
     var uploaded = document.getElementById("fileformlabel");
     uploaded.innerHTML = filename;
 }
+
+
+ // установка значения left для выпадающего меню авторизованного пользователя
+window.addEventListener('DOMContentLoaded', () => {
+    let dropdownBlock = document.getElementById('dropdown-content'),
+        widthLoginName = document.getElementById('login-name').offsetWidth,
+        widthIconDropdown = document.getElementById('dropdown').offsetWidth;
+    leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
+    leftDropdownBlock = -leftDropdownBlock;
+    dropdownBlock.style.left = leftDropdownBlock + "px";
+    // dropdownBlock.style.left = "-150px";
+    dropdownBlock.style.display = 'none';
+    // dropdownBlock.style.color = "red";
+});
+
+
+   // $(function() {
+    //     $('.academy__img').height($('.academy__img').width() * 0.8);
+
+    //     $(window).resize(function() {
+    //         $('.academy__img').height($('.academy__img').width() * 0.8);
+    //     });
+    // });
+
+
+
+
+
+
+// function getWindowWidth() {
+//     return window.innerWidth || document.body.clientWidth;
+//   }
+  
+//   if (getWindowWidth() <= 575) {
+   
+//   }
+   
+
+        // window.addEventListener('DOMContentLoaded', () => {
+        //     let 
+        //     // academyCard       = document.querySelector('.academy__card'),
+        //         // widthAcademyCard  = academyCard.offsetWidth,
+        //         // heightAcademyCard = academyCard.offsetHeight,
+        //         // academyBody       = document.querySelectorAll('.academy__body'),
+        //         academyImg        = document.querySelectorAll('.academy__img');
+        //     // academyImg.style.color = "red";
+        //     // academyImg.style.width = heightAcademyCard + "px";
+        
+        //     // 2) изменение стилией для всех элементов
+        //     academyImg.forEach(function(item, i, academyimg) {
+        //         item.style.backgroundColor = 'blue';
+        //         // item.style.width = heightAcademyCard + "px";
+        //         item.style.height =  item.offsetWidth + "px";        
+        //     });
+        //     // academyBody.forEach(function(item, i, academyimg) {
+        //     //     // item.style.backgroundColor = 'blue';
+        //     //     item.style.height = heightAcademyCard + "px";              
+        //     // });
+        // });
+    
+
+        window.addEventListener('DOMContentLoaded', () => {
+            if (window.matchMedia("(max-width: 575px)").matches) {
+                // console.log("Screen width is at least 500px");
+                let 
+            // academyCard       = document.querySelector('.academy__card'),
+                // widthAcademyCard  = academyCard.offsetWidth,
+                // heightAcademyCard = academyCard.offsetHeight,
+                // academyBody       = document.querySelectorAll('.academy__body'),
+                academyImg        = document.querySelectorAll('.academy__img');
+            // academyImg.style.color = "red";
+            // academyImg.style.width = heightAcademyCard + "px";
+        
+            // 2) изменение стилией для всех элементов
+            academyImg.forEach(function(item, i, academyimg) {
+                // item.style.backgroundColor = 'blue';
+                // item.style.width = heightAcademyCard + "px";
+                item.style.height =  item.offsetWidth + "px";        
+            });
+            // academyBody.forEach(function(item, i, academyimg) {
+            //     // item.style.backgroundColor = 'blue';
+            //     item.style.height = heightAcademyCard + "px";              
+            // });
+            } else {
+                console.log("Screen less than 500px");
+            }
+        });

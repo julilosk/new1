@@ -20,7 +20,7 @@
         &:hover {
             img {
                 border-radius: 100%;
-                background-color: rgba(238, 238, 238, 0.2);
+                background-color: rgba(3, 1, 1, 0.2);
                 text-align: center;
             }
         }
@@ -31,7 +31,7 @@
             left: -45px;
         }
         @media (max-width: 575px) {
-            left: -30px;
+            left: -40px;
         }
         @media (max-width: 376px) {
             left: -35px;
@@ -44,7 +44,7 @@
             right: -45px;
         }
         @media (max-width: 575px) {
-            right: -30px;
+            right: -40px;
         }
         @media (max-width: 376px) {
             right: -35px;
