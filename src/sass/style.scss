@@ -6,48 +6,10 @@
 @import'libs/slick';
 // @import'libs/owl.carousel';
 @import 'base/variables';
-.clear {
-    clear: both;
-}
+@import 'base/base';
 
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0 !important; //убрать рамку при фокусе
-}
 
-html {
-    height: 100%;
-}
 
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: $white;
-    color: $black;
-    font-size: 16px;
-    line-height: 1.5;
-    @media (max-width: 767px) {
-        font-size: 14px;
-    }
-}
-
-section {
-    flex: 1 0 auto;
-}
-
-// .col-md-6 {
-//     // width: calc(50% - 16px);
-//     padding-right: 10px!important;
-//     padding-left: 10px!important;
-// }
-// .container {
-// border: solid 0.5px black; /* убрать пgit озже */
-//     // background-color: #f2f2f2;
-//     // background-color: $white;   
-// max-width: 1200px;
-// }
 .home-page-block {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -325,54 +287,81 @@ blockquote {
     font-weight: bold;
 }
 
-@import 'blocks/header';
-@import 'blocks/icons';
+
+
+
+@import 'layout/header';
+@import 'layout/footer';
 @import 'blocks/menu';
 @import 'blocks/submenu';
+@import'blocks/sidebar';
+@import 'blocks/structure';
+
+
+
+
 @import 'blocks/news_card';
-@import 'blocks/button';
 @import 'blocks/logos';
 @import 'blocks/advts';
 @import 'blocks/tournaments';
 @import 'blocks/project';
 @import 'blocks/sponsors';
-@import 'blocks/footer';
-@import 'blocks/pageup';
-@import 'blocks/media';
 @import 'blocks/top-tabs';
-@import 'blocks/calendar';
-@import 'blocks/structure';
-@import'blocks/news-advts-all';
-@import'blocks/advts-page';
-@import'blocks/team';
-@import'blocks/tourn_page';
-@import'blocks/kshk';
-@import'blocks/academy';
-@import'blocks/champ';
-@import'blocks/rating';
-@import'blocks/schools';
-@import'blocks/federation';
 @import'blocks/table-fshak';
 @import'blocks/tabs-page';
-@import'blocks/carousel';
 @import'blocks/tags';
 // @import'blocks/feedback';
-@import'blocks/registration-tourn';
-@import'blocks/modal';
+
+/*shop*/
 @import'blocks/shop-product';
 @import'blocks/shop-products';
 @import'blocks/cart';
-@import'blocks/filter';
-@import'blocks/account';
-@import'blocks/checkout';
 @import'blocks/goods';
 @import'blocks/woocommerce';
+
+
+@import'blocks/checkout';
 @import'blocks/login';
-@import'blocks/single';
-@import'blocks/sidebar';
-@import'blocks/page-block';
 @import'blocks/wp';
-@import'blocks/search';
-// @import'blocks/owl';
-@import'blocks/map';
+
+
 @import'blocks/img';
+
+
+
+
+
+@import'pages/page-block';
+@import'pages/academy';
+
+
+@import'blocks/tourn_page';
+@import'blocks/account';
+@import'blocks/schools';
+@import'blocks/federation';
+@import 'blocks/calendar';
+@import'blocks/news-advts-all';
+@import'blocks/advts-page';
+@import'blocks/team';
+@import'blocks/champ';
+@import'blocks/rating';
+@import'blocks/kshk';
+
+
+
+
+
+@import 'components/button';
+@import'blocks/filter';
+@import'blocks/registration-tourn';
+@import'blocks/modal';
+@import 'blocks/pageup';
+@import'blocks/search';
+@import'blocks/carousel';
+
+@import 'blocks/icons';
+// @import'blocks/owl';
+
+
+
+@import 'blocks/media';
