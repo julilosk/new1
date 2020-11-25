@@ -28,6 +28,7 @@
         &:hover {
             transform: scale(1.1);
             /* Увеличиваем масштаб */
+            // opacity: 0.95;
         }
         @media (max-width: 991px) {
             margin-bottom: 15px;
