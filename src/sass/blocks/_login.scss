@@ -21,34 +21,31 @@
 	padding-top: 40px;
 }
 
-.row {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+// .row {
+// 	display: flex;
+// 	flex-direction: row;
+// 	flex-wrap: wrap;
 
-	margin: 7px -15px 7px -15px;
-}
+// 	margin: 7px -15px 7px -15px;
+// }
 
-.col-md-6 {
-	width: calc(50% - 30px);
-	padding-right: 15px;
-	padding-left: 15px;
+// .col-md-6 {
+// 	width: calc(50% - 30px);
+// 	padding-right: 15px;
+// 	padding-left: 15px;
 
 
-}
+// }
 
-.col-md-12 {
-	width: calc(100% - 30px);
-	padding-right: 15px;
-	padding-left: 15px;
-}
+// .col-md-12 {
+// 	width: calc(100% - 30px);
+// 	padding-right: 15px;
+// 	padding-left: 15px;
+// }
 
 /* Устанавливаем новый фон для формы, скругляем углы и увеличиваем тень */
 .login form {
 	border: 1px solid transparent;
-
-
-
 }
 
 /* Настраиваем label и input'ы */

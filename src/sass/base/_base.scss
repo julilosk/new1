@@ -1,0 +1,117 @@
+.clear {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 !important; //убрать рамку при фокусе
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    color: $black;
+    font-size: 16px;
+    line-height: 1.5;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+}
+
+section {
+    flex: 1 0 auto;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /*убирает прокрутку по горизонтале*/
+}
+
+h1 {
+    font-size: 28px;
+    color: $black;
+}
+
+h2 {
+    font-size: 2.0em;
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: $main-color;
+    font-weight: 600;
+    @media (max-width: 575px) {
+        margin-bottom: 1em;
+        font-weight: 500;
+    }
+    a {
+        color: $main-color;
+    }
+}
+
+// p {
+//     text-align: justify;
+// }
+a {
+    color: $second-color;
+    // text-decoration: underline;
+    &:hover {
+        color: $third-color;
+        text-decoration: none;
+    }
+}
+
+h4 {
+    color: $main-color;
+}
+
+h5,
+h3 {
+    text-align: center;
+    color: $main-color;
+}
+
+h6 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5625em;
+    margin-top: 12px;
+    margin-bottom: 1.5em;
+}
+
+h5 {
+    font-size: 1.125em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+::-webkit-scrollbar {
+    // background: #f3eaea;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 10px rgba(12, 12, 12, 0.4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    // background: linear-gradient(125deg, $third-color, $second-color);
+    border-radius: 12px;
+    background: $gray;
+}
