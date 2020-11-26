@@ -445,29 +445,29 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 window.addEventListener('DOMContentLoaded', () => {
-    // if (window.matchMedia("(max-width: 575px)").matches) {
-    // console.log("Screen width is at least 500px");
-    let
-    // academyCard       = document.querySelector('.academy__card'),
-    // widthAcademyCard  = academyCard.offsetWidth,
-    // heightAcademyCard = academyCard.offsetHeight,
-    // academyBody       = document.querySelectorAll('.academy__body'),
-        widthAcademyImg = document.querySelectorAll('.academy__img').offsetWidth,
-        heightAcademyImg = document.querySelectorAll('.academy__img').offsetHeight,
-        academyImg = document.querySelectorAll('.academy__img');
-    // academyImg.style.color = "red";
-    // academyImg.style.width = heightAcademyCard + "px";
+    if (window.matchMedia("(max-width: 575px)").matches) {
+        // console.log("Screen width is at least 500px");
+        let
+        // academyCard       = document.querySelector('.academy__card'),
+        // widthAcademyCard  = academyCard.offsetWidth,
+        // heightAcademyCard = academyCard.offsetHeight,
+        // academyBody       = document.querySelectorAll('.academy__body'),
+            widthAcademyImg = document.querySelectorAll('.academy__img').offsetWidth,
+            heightAcademyImg = document.querySelectorAll('.academy__img').offsetHeight,
+            academyImg = document.querySelectorAll('.academy__img');
+        // academyImg.style.color = "red";
+        // academyImg.style.width = heightAcademyCard + "px";
 
-    // 2) изменение стилией для всех элементов
-    academyImg.forEach(function(item, i, academyimg) {
-        item.style.backgroundColor = 'blue';
-        // let b = item.offsetWidth;
-        // item.style.width = heightAcademyCard + "px";
-        item.style.height = item.offsetWidth + "px";
-    });
-    // academyBody.forEach(function(item, i, academyimg) {
-    //     // item.style.backgroundColor = 'blue';
-    //     item.style.height = heightAcademyCard + "px";              
-    // });
-    // }
+        // 2) изменение стилией для всех элементов
+        academyImg.forEach(function(item, i, academyimg) {
+            item.style.backgroundColor = 'blue';
+            // let b = item.offsetWidth;
+            // item.style.width = heightAcademyCard + "px";
+            item.style.height = item.offsetWidth + "px";
+        });
+        // academyBody.forEach(function(item, i, academyimg) {
+        //     // item.style.backgroundColor = 'blue';
+        //     item.style.height = heightAcademyCard + "px";              
+        // });
+    }
 });
