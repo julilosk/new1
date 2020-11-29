@@ -396,6 +396,7 @@ $(document).ready(function() {
 
 
 window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
     const menu = document.querySelector('.menu__block'),
         menuItem = document.querySelectorAll('.menu__item'),
         hamburger = document.querySelector('.hamburger');
@@ -412,6 +413,38 @@ window.addEventListener('DOMContentLoaded', () => {
             menu.classList.toggle('menu__block_active');
         });
     });
+
+
+
+
+});
+
+
+// установка значения left для выпадающего меню авторизованного пользователя
+window.addEventListener('DOMContentLoaded', () => {
+    let dropdownUser = document.getElementById('dropdown'),
+        dropdownBlock = document.getElementById('dropdown-content'),
+        widthLoginName = document.getElementById('login-name').offsetWidth,
+        widthIconDropdown = document.getElementById('dropdown').offsetWidth;
+    leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
+    leftDropdownBlock = -leftDropdownBlock;
+    dropdownBlock.style.left = leftDropdownBlock + "px";
+    // dropdownBlock.style.left = "-150px";
+    dropdownBlock.style.display = 'none';
+    // dropdownBlock.style.color = "red";
+
+
+
+
+    dropdownUser.addEventListener('click', function(event) {
+        dropdownBlock.classList.toggle('dropdown-content_active');
+
+
+    });
+
+
+
+
 
 });
 
@@ -430,18 +463,7 @@ function getName(str) {
 }
 
 
-// установка значения left для выпадающего меню авторизованного пользователя
-window.addEventListener('DOMContentLoaded', () => {
-    let dropdownBlock = document.getElementById('dropdown-content'),
-        widthLoginName = document.getElementById('login-name').offsetWidth,
-        widthIconDropdown = document.getElementById('dropdown').offsetWidth;
-    leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
-    leftDropdownBlock = -leftDropdownBlock;
-    dropdownBlock.style.left = leftDropdownBlock + "px";
-    // dropdownBlock.style.left = "-150px";
-    dropdownBlock.style.display = 'none';
-    // dropdownBlock.style.color = "red";
-});
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -470,4 +492,8 @@ window.addEventListener('DOMContentLoaded', () => {
         //     item.style.height = heightAcademyCard + "px";              
         // });
     }
+
+
+
+
 });
