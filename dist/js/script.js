@@ -422,8 +422,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // установка значения left для выпадающего меню авторизованного пользователя
 window.addEventListener('DOMContentLoaded', () => {
-    let dropdownUser = document.getElementById('dropdown'),
-        dropdownBlock = document.getElementById('dropdown-content'),
+    let dropdownUser = document.getElementById('dropdown'), //hanburger
+        dropdownBlock = document.getElementById('dropdown-content'), //menu
         widthLoginName = document.getElementById('login-name').offsetWidth,
         widthIconDropdown = document.getElementById('dropdown').offsetWidth;
     leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
@@ -434,15 +434,33 @@ window.addEventListener('DOMContentLoaded', () => {
     // dropdownBlock.style.color = "red";
 
 
+    // dropdownUser.addEventListener('click', function(event) {
+    //     dropdownBlock.classList.toggle('dropdown-content_active');
+    // });
 
 
-    dropdownUser.addEventListener('click', function(event) {
+
+
+    const toggleMenu = () => {
         dropdownBlock.classList.toggle('dropdown-content_active');
+    };
 
+    dropdownUser.addEventListener('click', e => {
+        e.stopPropagation();
 
+        toggleMenu();
     });
 
+    document.addEventListener('click', e => {
+        let target = e.target;
+        let its_menu = target == dropdownBlock || dropdownBlock.contains(target);
+        let its_hamburger = target == dropdownUser;
+        let menu_is_active = dropdownBlock.classList.contains('dropdown-content_active');
 
+        if (!its_menu && !its_hamburger && menu_is_active) {
+            toggleMenu();
+        }
+    });
 
 
 
