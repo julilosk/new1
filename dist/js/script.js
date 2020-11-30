@@ -437,6 +437,7 @@ window.addEventListener('DOMContentLoaded', () => {
     leftDropdownBlock = -leftDropdownBlock;
     dropdownBlock.style.left = leftDropdownBlock + "px";   
     dropdownBlock.style.display = 'none';
+    // dropdownBlock.style.color = "red";
 
 
     // dropdownUser.addEventListener('click', function(event) {
