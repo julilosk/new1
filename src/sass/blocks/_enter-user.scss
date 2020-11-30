@@ -12,11 +12,6 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    .social__icon {
-        @media (max-width: 767px){
-            border: none;
-        }
-    }
 }
 
 
@@ -39,7 +34,7 @@
         display: block!important;
         opacity: 1!important;
     }
-    @media (max-width: 767px)  {
+    @media (max-width: 767px) {
         top: 47px;
     }
 }

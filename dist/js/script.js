@@ -426,16 +426,10 @@ window.addEventListener('DOMContentLoaded', () => {
         dropdownBlock = document.getElementById('dropdown-content'), //menu
         widthLoginName = document.getElementById('login-name').offsetWidth,
         widthIconDropdown = document.getElementById('dropdown').offsetWidth;
-    
-    // dropdownBlock.style.color = "red";
-    if (window.matchMedia("(max-width: 767px)").matches) {
-        leftDropdownBlock = widthLoginName - widthIconDropdown - 5 + 26;
-      
-    } else {
-        leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
-    }
+    leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
     leftDropdownBlock = -leftDropdownBlock;
-    dropdownBlock.style.left = leftDropdownBlock + "px";   
+    dropdownBlock.style.left = leftDropdownBlock + "px";
+    // dropdownBlock.style.left = "-150px";
     dropdownBlock.style.display = 'none';
     // dropdownBlock.style.color = "red";
 
