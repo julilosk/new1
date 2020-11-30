@@ -65,14 +65,14 @@
         display: block;
         position: absolute;
         right: 15px;
-        top: 22px;
+        top: 32px;
         transform: translateY(-50%);
         width: 26px;
         height: 15px;
         z-index: 9999999;
         span {
             display: block;
-            height: 3px;
+            height: 2px;
             width: 100%;
             background-color: $main-color;
             transition: 0.9s all;
@@ -103,10 +103,34 @@
 
 @media (max-width: 575px) {
     .hamburger {
-        top: 18px;
+        top: 34px;
     }
 }
-
+@media (max-width: 460px) {
+    .hamburger {
+        top: 32px;
+    }
+}
+@media (max-width: 435px) {
+    .hamburger {
+        top: 30px;
+    }
+}
+@media (max-width: 410px) {
+    .hamburger {
+        top: 28px;
+    }
+}
+@media (max-width: 395px) {
+    .hamburger {
+        top: 27px;
+    }
+}
+@media (max-width: 376px) {
+    .hamburger {
+        top: 26px;
+    }
+}
 // @media (max-width: 376px) {
 // .menu {
 //     &__block {
