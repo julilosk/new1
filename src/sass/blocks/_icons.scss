@@ -29,7 +29,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 100%;
+        // border-radius: 100%;
+        @include border-radius(100%);
         border: 1px solid $main-color;
         width: 30px;
         height: 30px;
@@ -114,6 +115,7 @@
     }
     &__footer {
         justify-content: center;
+        margin-bottom: 10px;
         @media (max-width: 575px) {
             display: none;
         }
@@ -134,7 +136,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    // border-radius: 100%;
+    @include border-radius(100%);
     border: 1px solid $main-color;
     width: 45px;
     height: 45px;
@@ -144,10 +147,10 @@
         height: 35px;
     }
     &_indent {
-        margin: 0 25px;
-        &:first-child {
-            margin-left: 0;
-        }
+        margin: 0 15px;
+        // &:first-child {
+        //     margin-left: 0;
+        // }
         // &:last-child {
         //     margin-right: 0;
         // }

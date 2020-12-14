@@ -54,6 +54,14 @@ $(document).ready(function() {
     });
 
 
+    $('ul.chess-tabs-vertical__tabs').on('click', 'li:not(.chess-tabs-vertical__tab_active)', function() {
+        $(this)
+            .addClass('chess-tabs-vertical__tab_active').siblings().removeClass('chess-tabs-vertical__tab_active')
+            .closest('div.chess-tabs-vertical').find('div.chess-tabs-vertical__content').removeClass('chess-tabs-vertical__content_active').eq($(this).index()).addClass('chess-tabs-vertical__content_active');
+    });
+
+
+
 
     //tabs news-all  
     // $('ul.news-all__tabs').on('click', 'li:not(.news-all__tab_active)', function() {
@@ -62,15 +70,20 @@ $(document).ready(function() {
     //     .closest('div.news-all').find('div.news-all__content').removeClass('news-all__content_active').eq($(this).index()).addClass('news-all__content_active');
     // });
 
+    //Табы на блок "Турниры" на главной странице
+    //   $('ul.tabs-page__tabs').on('click', 'li:not(.tabs-page__tab_active)', function() {
+    //     $(this)
+    //         .addClass('tabs-page__tab_active').siblings().removeClass('tabs-page__tab_active')
+    //         .closest('div.tabs-page').find('div.tabs-page__content').removeClass('tabs-page__content_active').eq($(this).index()).addClass('tabs-page__content_active');
+    // });
+
 
     //Табы на блок "Турниры" на главной странице
-    $('ul.tabs-page__tabs').on('click', 'li:not(.tabs-page__tab_active)', function() {
+    $('ul.chess-tabs__tabs').on('click', 'li:not(.chess-tabs__tab_active)', function() {
         $(this)
-            .addClass('tabs-page__tab_active').siblings().removeClass('tabs-page__tab_active')
-            .closest('div.tabs-page').find('div.tabs-page__content').removeClass('tabs-page__content_active').eq($(this).index()).addClass('tabs-page__content_active');
+            .addClass('chess-tabs__tab_active').siblings().removeClass('chess-tabs__tab_active')
+            .closest('div.chess-tabs').find('div.chess-tabs__content').removeClass('chess-tabs__content_active').eq($(this).index()).addClass('chess-tabs__content_active');
     });
-
-
 
     //tabs tourn-all  
     // $('ul.tourn-all__tabs').on('click', 'li:not(.tourn-all__tab_active)', function() {
@@ -422,96 +435,111 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // установка значения left для выпадающего меню авторизованного пользователя
 window.addEventListener('DOMContentLoaded', () => {
-    let dropdownUser = document.getElementById('dropdown'), //hanburger
-        dropdownBlock = document.getElementById('dropdown-content'), //menu
-        widthLoginName = document.getElementById('login-name').offsetWidth,
-        widthIconDropdown = document.getElementById('dropdown').offsetWidth;
-    leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
-    leftDropdownBlock = -leftDropdownBlock;
-    dropdownBlock.style.left = leftDropdownBlock + "px";
-    // dropdownBlock.style.left = "-150px";
-    dropdownBlock.style.display = 'none';
-    // dropdownBlock.style.color = "red";
 
 
-    // dropdownUser.addEventListener('click', function(event) {
-    //     dropdownBlock.classList.toggle('dropdown-content_active');
-    // });
+    function setUserEnter() {
+        let dropdownUser = document.getElementById('dropdown'), //hanburger
+            dropdownBlock = document.getElementById('dropdown-content'), //menu
+            widthLoginName = document.getElementById('login-name').offsetWidth,
+            widthIconDropdown = document.getElementById('dropdown').offsetWidth;
+        leftDropdownBlock = widthLoginName - widthIconDropdown - 5;
+        leftDropdownBlock = -leftDropdownBlock;
+        dropdownBlock.style.left = leftDropdownBlock + "px";
+        // dropdownBlock.style.left = "-150px";
+        dropdownBlock.style.display = 'none';
+        // dropdownBlock.style.color = "red";
+
+
+        // dropdownUser.addEventListener('click', function(event) {
+        //     dropdownBlock.classList.toggle('dropdown-content_active');
+        // });
 
 
 
-    //открытие по клику меню юзера и закрытие меню по клику вне области меню
-    // https://ru.stackoverflow.com/questions/140922/%D0%9A%D0%B0%D0%BA-%D0%B2-javascript-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-div-%D0%BF%D1%80%D0%B8-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B5-%D0%B2%D0%BD%D0%B5-%D1%8D%D1%82%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B8%D0%B2%D0%B0
-    const toggleDropdownBlock = () => {
-        dropdownBlock.classList.toggle('dropdown-content_active');
-    };
+        //открытие по клику меню юзера и закрытие меню по клику вне области меню
+        // https://ru.stackoverflow.com/questions/140922/%D0%9A%D0%B0%D0%BA-%D0%B2-javascript-%D0%B7%D0%B0%D0%BA%D1%80%D1%8B%D0%B2%D0%B0%D1%82%D1%8C-div-%D0%BF%D1%80%D0%B8-%D0%BA%D0%BB%D0%B8%D0%BA%D0%B5-%D0%B2%D0%BD%D0%B5-%D1%8D%D1%82%D0%BE%D0%B3%D0%BE-%D0%B4%D0%B8%D0%B2%D0%B0
+        const toggleDropdownBlock = () => {
+            dropdownBlock.classList.toggle('dropdown-content_active');
+        };
 
-    dropdownUser.addEventListener('click', e => {
-        e.stopPropagation();
-        toggleDropdownBlock();
-    });
-
-    document.addEventListener('click', e => {
-        let target = e.target;
-        let its_dropdownBlock = target == dropdownBlock || dropdownBlock.contains(target);
-        let its_dropdownUser = target == dropdownUser;
-        let dropdownBlock_is_active = dropdownBlock.classList.contains('dropdown-content_active');
-
-        if (!its_dropdownBlock && !its_dropdownUser && dropdownBlock_is_active) {
+        dropdownUser.addEventListener('click', e => {
+            e.stopPropagation();
             toggleDropdownBlock();
-        }
-    });
+        });
+
+        document.addEventListener('click', e => {
+            let target = e.target,
+                its_dropdownBlock = target == dropdownBlock || dropdownBlock.contains(target),
+                its_dropdownUser = target == dropdownUser,
+                dropdownBlock_is_active = dropdownBlock.classList.contains('dropdown-content_active');
+
+            if (!its_dropdownBlock && !its_dropdownUser && dropdownBlock_is_active) {
+                toggleDropdownBlock();
+            }
+        });
+    }
+    setUserEnter();
+
+
+
+    // function setSizeImgCoach() {
+    //     let academyImg = document.querySelectorAll('.academy__img');
+
+    //     // высота картинки равна ширине картинке
+    //     academyImg.forEach(function(item, i, academyimg) {
+    //         item.style.height = item.offsetWidth + "px";
+    //     });
+    // }
+
+    // //запускасть функцию только при определенном разрешении экрана
+    // if (window.matchMedia("(max-width: 575px)").matches) {
+    //     setSizeImgCoach();
+    // }
+
 
 
 
 });
+
+
+
+// // if (window.matchMedia("(max-width: 575px)").matches) {
+//     // console.log("Screen width is at least 500px");
+//     let
+//     // academyCard       = document.querySelector('.academy__card'),
+//     // widthAcademyCard  = academyCard.offsetWidth,
+//     // heightAcademyCard = academyCard.offsetHeight,
+//     // academyBody       = document.querySelectorAll('.academy__body'),
+//         widthAcademyImg = document.querySelectorAll('.academy__img').offsetWidth,
+//         heightAcademyImg = document.querySelectorAll('.academy__img').offsetHeight,
+//         academyImg = document.querySelectorAll('.academy__img');
+//     // academyImg.style.color = "red";
+//     // academyImg.style.width = heightAcademyCard + "px";
+
+//     // 2) изменение стилией для всех элементов
+//     academyImg.forEach(function(item, i, academyimg) {
+//         item.style.backgroundColor = 'blue';
+//         // let b = item.offsetWidth;
+//         // item.style.width = heightAcademyCard + "px";
+//         item.style.height = item.offsetWidth + "px";
+//     });
+//     // academyBody.forEach(function(item, i, academyimg) {
+//     //     // item.style.backgroundColor = 'blue';
+//     //     item.style.height = heightAcademyCard + "px";              
+//     // });
+// // }
+
 
 
 
 // 24.11.20 - не работает
-function getName(str) {
-    if (str.lastIndexOf('\\')) {
-        var i = str.lastIndexOf('\\') + 1;
-    } else {
-        var i = str.lastIndexOf('/') + 1;
-    }
-    var filename = str.slice(i);
-    var uploaded = document.getElementById("fileformlabel");
-    uploaded.innerHTML = filename;
-}
-
-
-
-
-
-window.addEventListener('DOMContentLoaded', () => {
-    if (window.matchMedia("(max-width: 575px)").matches) {
-        // console.log("Screen width is at least 500px");
-        let
-        // academyCard       = document.querySelector('.academy__card'),
-        // widthAcademyCard  = academyCard.offsetWidth,
-        // heightAcademyCard = academyCard.offsetHeight,
-        // academyBody       = document.querySelectorAll('.academy__body'),
-            widthAcademyImg = document.querySelectorAll('.academy__img').offsetWidth,
-            heightAcademyImg = document.querySelectorAll('.academy__img').offsetHeight,
-            academyImg = document.querySelectorAll('.academy__img');
-        // academyImg.style.color = "red";
-        // academyImg.style.width = heightAcademyCard + "px";
-
-        // 2) изменение стилией для всех элементов
-        academyImg.forEach(function(item, i, academyimg) {
-            item.style.backgroundColor = 'blue';
-            // let b = item.offsetWidth;
-            // item.style.width = heightAcademyCard + "px";
-            item.style.height = item.offsetWidth + "px";
-        });
-        // academyBody.forEach(function(item, i, academyimg) {
-        //     // item.style.backgroundColor = 'blue';
-        //     item.style.height = heightAcademyCard + "px";              
-        // });
-    }
-
-
-
-
-});
+// function getName(str) {
+//     if (str.lastIndexOf('\\')) {
+//         var i = str.lastIndexOf('\\') + 1;
+//     } else {
+//         var i = str.lastIndexOf('/') + 1;
+//     }
+//     var filename = str.slice(i);
+//     var uploaded = document.getElementById("fileformlabel");
+//     uploaded.innerHTML = filename;
+// }

@@ -1,48 +1,41 @@
 .goods-chess {
-    .structure {
+    .chess-tabs-vertical {
         // padding: 15px 0;
         padding-top: 1em;
         display: flex;
         width: 100%;
         box-shadow: none;
-
         @media (max-width: 767px) {
-            flex-direction: row;
+            @include flex-direction(row);
         }
-
         &__tabs {
             // height: 100%;
             // width: 25%;
             width: 100%;
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            @include flexbox;
+            // flex-direction: column;
+            @include flex-direction(column);
             // justify-content: center;
             padding-left: 0;
             margin-bottom: 0;
             font-size: 16px;
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-
             // padding-right: 15px;
-
             // @media (max-width: 991) {
             //     box-shadow: none;
             //     background-color: #f4f4f8;
-
             // }
-
             @media (max-width: 767px) {
                 padding: 0;
                 // padding-right: -15px;
                 margin-right: -15px;
                 font-size: 14px;
             }
-
             @media (max-width: 575px) {
                 font-size: 12px;
-
             }
         }
-
         &__tab {
             width: 100%;
             padding: 1.6em 1em;
@@ -54,43 +47,34 @@
             background: #f4f4f8;
             font-weight: 500;
             border-bottom: none;
-
             @media (max-width: 767px) {
                 border-radius: 0;
                 margin: 0;
-
             }
-
             @media (max-width: 575px) {
                 padding-top: 12px;
                 padding-bottom: 12px;
             }
-
             @media (max-width: 430px) {
                 padding-top: 10px;
                 padding-bottom: 10px;
                 padding-left: 5px;
                 padding-right: 5px;
             }
-
             &:last-child {
                 border-bottom: 1px solid #c9d5ec;
             }
-
             &:hover {
                 // box-shadow: 3px 3px 20px $main-color;
                 background-color: $third-color;
                 color: $light-gray;
             }
-
             &_active {
                 background-color: $third-color;
-
                 span {
                     color: $light-gray;
                 }
             }
-
             a {
                 display: block;
                 // border: 1px solid red;
@@ -99,71 +83,52 @@
                 margin-left: -1em;
                 margin-right: -1em;
                 padding: 1.6em 1em;
-
                 span {
                     color: $main-color;
                 }
-
                 &:hover {
                     text-decoration: none;
-
                     span {
                         color: $light-gray;
                     }
                 }
             }
         }
-
         &__content {
             background-color: $white;
             padding: 0;
             // height: 100%;
             width: 100%;
             display: none;
-
             &_active {
                 display: block;
             }
         }
-
         // .col-6,
         // .col-4 {
-
         //     @media (max-width: 575px) {
         //         padding-right: 5px;
         //         padding-left: 5px;
         //         // margin-bottom: 5px;
-
         //     }
         // }
     }
-
     &__structure {
-
-
         @media (max-width: 991px) {
             // background-color: #f4f4f8!important;
             // zoom: 1;
             // border: solid 1px red;
             border-top: 1px solid $border;
             border-bottom: 1px solid $border;
-
             [class*=col-] {
                 margin-bottom: 12px;
             }
-
         }
-
         @media (max-width: 767px) {
             margin-right: 0;
             margin-left: 0;
         }
-
-
-
     }
-
-
     &__cat {
         display: inline-block;
         background: white;
@@ -179,131 +144,96 @@
         vertical-align: middle;
         color: $main-color;
         height: 90%;
-
         @media (max-width: 430px) {
             padding: 5px;
-
         }
-
         // overflow: hidden;
         &:hover {
             box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
             text-decoration: none;
         }
-
-
         span {
             @media (max-width: 767px) {
                 font-size: 10px;
             }
-
             @media (max-width: 575px) {
                 font-size: 12px;
                 // line-height: 0.9;
-
             }
-
             @media (max-width: 376px) {
                 font-size: 10px;
-
             }
         }
     }
-
     &__cat-img {
         width: 4.5em;
         height: 5.0em;
         margin: 0 auto;
         margin-bottom: 3px;
-
         @media (max-width: 767px) {
             width: 4.0em;
             height: 4.0em;
-
         }
-
         // @media (max-width: 575px) {
         //     display: none;
         // }
     }
-
-
-
-
     h2 {
         text-align: left;
         font-size: 23px;
         margin-bottom: 15px;
     }
-
     &__block {
         // margin-top: 15px;
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-
         // [class*=col-] {
         //     border: 1px solid red;
         // }
-
     }
-
-
-
     &__page {
         width: 100%;
         // border: 0.5px solid red;
     }
-
     &__box {
         width: 100%;
         display: flex;
         // margin: 35px 15px;
     }
-
     &__right {
         display: flex;
         flex-direction: column;
         width: calc(75% + 3px);
         // width: 75%;
-
         // margin-left: 15px;
         // padding-right: -30px;
         float: right;
-
         // border: 1px solid green;
         @media (max-width: 575px) {
             width: 100%;
         }
-
         .products {
             width: 100%;
             // border: 1px solid red;
             margin-left: 0;
             margin-right: 0;
         }
-
         .products {
             margin-top: 0;
-
             .product {
                 flex: 0 0 33%;
                 max-width: 33%;
-
                 @media (max-width: 430px) {
                     flex: 0 0 50%;
                     max-width: 50%;
                 }
             }
-
         }
-
-
         .woocommerce-ordering {
             display: none;
         }
     }
-
     &__side {
         // background: #f4f4f8;
         height: 100%;
@@ -319,27 +249,20 @@
         font-weight: 500;
         // border: 1px solid green;
         // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-
         float: left;
-
         @media (max-width: 575px) {
             display: none;
         }
-
         ul {
             margin-bottom: 0;
-
             li {
                 border-bottom: 0.5px solid $border;
-
                 &:first-child {
                     border-top: 0.5px solid $border;
                 }
-
                 &:last-child {
                     border-bottom: none;
                 }
-
                 a {
                     // display: block;   
                     padding: 10px 15px;
@@ -347,7 +270,6 @@
                     // color: $second-color;
                     color: $black;
                     text-decoration: none;
-
                     // &:first-child {
                     //     padding-top: 15px;
                     //     // color: $third-color;
@@ -363,46 +285,33 @@
                     }
                 }
             }
-
-
             .current-cat {
                 a {
                     color: $third-color;
                 }
-
                 ul li a {
                     color: $main-color;
                 }
             }
-
             .current-cat-parent {
                 &:first-child {
                     color: $third-color;
                 }
-
-
-
                 // ul .cat-item a {
                 //     color: $main-color;
                 // }
-
                 // ul .current-cat a {
                 //     color: $third-color;
                 // }
-
             }
-
-
             .children li a {
                 padding-left: 2em;
             }
         }
-
         &__item a {
             padding-top: 15px !important;
         }
     }
-
     &__catalog {
         // margin-left: 15px;
         // margin-right: 15px;
@@ -412,30 +321,23 @@
         font-weight: 500;
         text-transform: uppercase;
         // border-bottom: 0.5px solid $border;
-
     }
-
     &__new {
         @media (max-width: 430px) {
             margin-top: 25px;
         }
     }
-
-
     .product_cat-chlenskij-vznos,
     .product_cat-turnirnyj-vznos {
         display: none;
     }
-
 }
-
 
 .woocommerce-breadcrumb {
     background-color: $white;
     font-size: 18px;
     color: $main-color;
     margin-bottom: 30px;
-
     a {
         color: $third-color;
     }
@@ -445,5 +347,4 @@
     th {
         padding-right: 15px;
     }
-
 }

@@ -1,8 +1,10 @@
 .my-account {
     font-size: 14px;
     &__profile {
-        display: flex;
-        align-items: center;
+        // display: flex;
+        @include flexbox;
+        // align-items: center;
+        @include align-items(center);
         margin-bottom: 20px;
     }
     h1,
@@ -17,9 +19,8 @@
         margin-bottom: 20px;
     }
     &__personal {
-        display: flex;
-        // border: 1px solid red;
-        align-items: center;
+        @include flexbox;
+        @include align-items(center);
     }
     input,
     select {
@@ -97,7 +98,7 @@
             padding: 25px 7px;
         }
     }
-    .structure__tab {
+    .chess-tabs-vertical__tab {
         a {
             display: block;
             // border: 1px solid red;
@@ -115,9 +116,12 @@
         }
     }
     .user_gender {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flexbox;
+        @include align-items(center);
+        @include flex-direction(row);
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
         input {
             height: 15px;
             width: 15px;
@@ -146,8 +150,10 @@
         font: normal 700 1.2em/normal Roboto, sans-serif;
     }
     .woocommerce-shipping-methods li {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        @include flexbox;
+        // justify-content: center;
+        @include justify-content(center);
         input {
             width: 15px;
         }
@@ -165,9 +171,9 @@
     }
 }
 
-input[disabled] {    
+input[disabled] {
     color: $gray;
-    background-color: #f2f3f4;    
+    background-color: #f2f3f4;
     border: none;
     cursor: default;
 }

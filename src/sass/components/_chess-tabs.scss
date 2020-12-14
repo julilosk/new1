@@ -1,0 +1,94 @@
+.chess-tabs {
+    width: calc(75% - 15px);
+    margin-right: 15px;
+    &_wide {
+        width: 100%;
+    }
+    &_indent {
+        padding-left: 0;
+    }
+    &__tabs {
+        display: flex;
+        padding-left: 0;
+        font-size: 14px;
+        border-bottom: 1px solid $border;
+        margin: 15px -15px;
+        &_main {
+            margin-left: 0;
+            margin-right: 0;
+            // margin: 0; 
+        }
+        &_tourn {
+            margin-top: 0;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+    &__tab {
+        padding: 0 15px;
+        cursor: pointer;
+        transition: 0.2s all;
+        font-weight: 500;
+        border-bottom: 3px solid transparent;
+        @media (max-width: 376px) {
+            padding: 0 8px;
+        }
+        &:first-child {
+            @media (max-width: 376px) {
+                padding-left: 15px;
+            }
+        }
+        h5 {
+            color: $gray;
+            @media (max-width: 767px) {
+                font-size: 14px;
+            }
+        }
+        &:hover {
+            h5 {
+                color: $third-color;
+            }
+        }
+        &_active {
+            border-bottom: 3px solid $third-color;
+            h5 {
+                color: $third-color;
+            }
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        // &::before,
+        // &::after {
+        //     display: none!important;
+        //     // margin: 0!important;
+        // }
+    }
+    &__content {
+        margin-top: 35px;
+        width: 100%;
+        display: none;
+        &_active {
+            display: flex;
+            flex-direction: column
+        }
+        &_tourn {
+            border: solid 0.5px $border;
+            // background-color: #ffffff;
+            // padding-top: 15px;
+            margin-top: 0;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
+            // @include box-shadow-main;
+            @media (max-width: 767px) {
+                margin-bottom: 30px;
+            }
+            @media (max-width: 575px) {
+                padding-top: 0px;
+            }
+        }
+        // @extend %link-item-before;
+    }
+}

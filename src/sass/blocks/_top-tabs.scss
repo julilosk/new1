@@ -49,9 +49,12 @@
             }
         }
         .type {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            // display: flex;
+            @include flexbox;
+            // align-items: center;
+            @include align-items(center);
+            // justify-content: center;
+            @include justify-content(center);
             width: 33.3%;
             margin-right: 0px;
             // margin: 0 auto;
@@ -178,14 +181,9 @@
         &:last-child {
             border-bottom: none;
         }
-        // &:hover {
-        //     background-color: #868cad;
-        //     // cursor: pointer;
-        //     color: $white;
-        // }
-        &:not(:nth-child(1)):hover {
+        // &:not(:nth-child(1)):hover {
+        &:hover {
             background-color: #868cad;
-            // cursor: pointer;
             color: $white;
         }
     }

@@ -2,73 +2,69 @@ footer {
     background-color: $main-color;
     flex: 0 0 auto;
     margin-top: 55px;
-
-    @media (max-width: 575px) {
+    @media (max-width: 767px) {
         margin-top: 20px;
+    }
+    @media (max-width: 575px) {
+        margin-bottom: 0;
+        margin-top: 0;
         background-color: $white;
     }
 }
 
-.footer {    
+.footer {
     padding-top: 20px;
     padding-bottom: 10px;
-
+    @media (max-width: 376px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
     &__menu {
         padding-top: 10px;
         width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
         li {
             display: block;
         }
-
         @media (max-width: 767px) {
             display: none;
         }
     }
-
     li {
         font-size: 14px;
         // color: $gray2;
         // color: $white;
         padding: 0 16px;
         margin-bottom: 10px;
-
         a {
             text-transform: uppercase;
             color: $gray2;
-
             &:hover {
                 color: $third-color;
                 text-decoration: none;
             }
         }
     }
-
     &__contacts {
         margin: 0 auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         color: $gray2;
-        
         a {
-            color: $gray2;            
+            color: $gray2;
         }
     }
-
     &__contact {
         padding: 0 16px;
-
         @media (max-width: 575px) {
             // display: none;
             font-size: 12px;
             padding: 0 7px;
         }
     }
-
     &__title {
         display: block;
         // margin: 0 auto;
@@ -77,10 +73,9 @@ footer {
         font-size: 12px;
         padding-bottom: 10px;
         margin-top: 15px;
-
         @media (max-width: 575px) {
             // color: $main-color;
             margin-top: 5px;
         }
-    }    
+    }
 }

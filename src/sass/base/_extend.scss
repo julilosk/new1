@@ -1,0 +1,13 @@
+%link-item-before {
+    ul {
+        margin-left: 15px;
+        li::before {
+            content: "\2714";
+            margin-right: 5px;
+            color: $second-color;
+            display: inline-block;
+            /* Расстояние между точкой и текстом */
+            width: 1em;
+        }
+    }
+}

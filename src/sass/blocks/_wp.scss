@@ -19,10 +19,16 @@
     vertical-align: middle !important;
 }
 
+//поделиться
+.ya-share2 ul {
+    padding-left: 0 !important;
+    margin-top: 20px!important;
+}
+
 .ya-share2__container_size_m .ya-share2__icon {
-    height: 40px !important;
-    width: 40px !important;
-    background-size: 40px 40px !important;
+    height: 30px !important;
+    width: 30px !important;
+    background-size: 30px 30px !important;
 }
 
 .ya-share2__badge {
@@ -37,9 +43,9 @@
     margin-top: 30px;
     // font-size: 16px;
     ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin: 10px 0;
+        list-style-type: none!important;
+        padding-left: 0!important;
+        margin: 10px 0!important;
         li {
             padding: 5px 0;
             a {

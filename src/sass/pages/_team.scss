@@ -5,30 +5,27 @@
         margin-bottom: 25px;
         color: $main-color;
         text-align: center;
-
         @media (max-width: 575px) {
             font-size: 20px;
         }
-
         @media (max-width: 376px) {
             font-weight: 700;
             font-size: 16px;
         }
-
         br {
             @media (max-width: 575px) {
                 display: none;
             }
         }
     }
-
     &__composition {
         justify-content: center;
     }
-
     &__card {
-        // background: linear-gradient(to left, #B3C4FF 0%, #FFF, #B3C4FF);
         background: linear-gradient(to left, #dbdde8 0%, #FFF, #dbdde8);
+        // background-image: linear-gradient(45deg, rgba(219, 221, 232, .4), rgba(255, 255, 255, .9)), url('./../../img/Logo1.png');
+        // background-position: center;
+        // background-repeat: no-repeat;
         min-height: 250px;
         // border: solid 0.5px $border;
         // border-radius: 10px;
@@ -37,27 +34,20 @@
         // background-color: $light-gray;
         margin-bottom: 30px;
         padding: 15px 15px 15px 15px;
-
         &:hover {
-            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
-
+            // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
             .team__member {
                 color: $second-color;
             }
         }
-
         @media (max-width: 991px) {
             min-height: 230px !important;
         }
-
         @media (max-width: 575px) {
             // min-height: auto !important;
             margin-bottom: 25px;
         }
-
-
     }
-
     &__year {
         font-size: 20px;
         // letter-spacing: 1.5px;
@@ -65,16 +55,13 @@
         text-align: center;
         margin-top: 10px;
         color: $second-color;
-
         @media (max-width: 1199px) {
             font-size: 16px;
         }
     }
-
     // &__body {
     //     padding: 15px 15px 15px 15px;
     // }
-
     &__member {
         font-size: 16px;
         // line-height: 1.2;
@@ -84,50 +71,41 @@
         margin-top: 20px;
         margin-bottom: .75rem;
         position: relative;
-
         @media (max-width: 1199px) {
             font-size: 14px;
         }
-
         @media (max-width: 991px) {
             font-size: 16px;
         }
-
         @media (max-width: 767px) {
             font-size: 14px;
         }
-
         @media (max-width: 575px) {
             font-size: 16px;
         }
     }
-
     &__player {
         margin: 15px 0;
-
         &:before {
             position: absolute;
             padding-right: 10px;
             padding-left: 10px;
             font-weight: bold;
-            color: #77AEDB;
+            // color: #77AEDB;
+            color: $third-color;
             content: "\2606";
             transition-duration: 0.5s;
         }
-
         &:hover {
             color: $third-color;
-
             &:before {
                 content: "\2605";
             }
         }
-
         a {
             color: $second-color;
             margin-left: 30px;
             display: block;
-
             &:hover {
                 color: $third-color;
             }

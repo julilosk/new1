@@ -49,10 +49,11 @@
 }
 
 .wp-caption {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: block;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flex-center ();
     flex-direction: column;
     margin: 0 auto;
     max-width: 500px!important;

@@ -17,14 +17,14 @@
             height: 50px;
             width: 50px;
         }
-        &:hover {
-            img {
-                border-radius: 100%;
-                background-color: $light-gray;
-                transition: all 0.1s;
-                text-align: center;
-            }
-        }
+        // &:hover {
+        //     img {
+        //         border-radius: 100%;
+        //         // background-color: $light-gray;
+        //         transition: all 0.1s;
+        //         text-align: center;
+        //     }
+        // }
     }
     .slick-prev {
         left: -66px;

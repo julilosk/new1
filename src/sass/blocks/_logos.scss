@@ -5,6 +5,12 @@
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
+    .container {
+        @media (max-width: 767px) {
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+    }
 }
 
 .logos {
@@ -14,26 +20,33 @@
     min-height: 112px;
     // padding-top: 15px;
     width: 100%;
+    // border: 1px solid red;
     @media (max-width: 991px) {
         overflow-x: scroll;
         overflow-y: hidden;
         flex-wrap: nowrap;
         // justify-content: start;
     }
+    // @media (max-width: 767px) {
+    //     //     justify-content: flex-start;
+    //     margin-right: 5px;
+    // margin-left: -10px;
+    // margin-right: -10px;
+    //     // padding-left: 5px;
+    // }
     @media (max-width: 575px) {
         padding-top: 10px;
         padding-bottom: 10px;
     }
     &__item {
-        min-width: 135px;
-        max-width: 135px;
+        min-width: 105px;
+        max-width: 105px;
         text-align: center;
-        @media (max-width: 1199px) {
-            min-width: 120px;
-        }
+        // border: 1px solid green;
         @media (max-width: 767px) {
             min-width: 100px;
-            margin: 0 5px 0 5px;
+            // margin: 0 2px;
+            padding: 0 2px;
         }
         @media (max-width: 575px) {
             min-width: 80px;

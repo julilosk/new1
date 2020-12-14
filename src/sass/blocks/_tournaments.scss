@@ -36,7 +36,7 @@
     @media (max-width: 376px) {
         padding-bottom: 30px;
     }
-    .tabs-page {
+    .chess-tabs {
         h5 {
             @media (max-width: 575px) {
                 font-size: 16px !important;
@@ -91,22 +91,6 @@
         //         // color: $main-color;
         //     }
         // }
-    }
-    &__logo {
-        // margin-left: 5px;
-        display: block;
-        img {
-            display: block;
-            width: 95px;
-            // width: auto;
-            height: 95px;
-            object-fit: cover;
-            object-position: center;
-            @media (max-width: 767px) {
-                width: 55px;
-                height: 55px;
-            }
-        }
     }
     &__block {
         display: flex;
