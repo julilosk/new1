@@ -1,4 +1,4 @@
-.advt {
+.chess-advt {
     width: 100%;
     .container {
         @media (max-width: 767px) {
@@ -100,6 +100,6 @@
     }
 }
 
-.advt__block::-webkit-scrollbar {
+.chess-advt__block::-webkit-scrollbar {
     display: none;
 }
