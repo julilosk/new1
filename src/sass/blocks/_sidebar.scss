@@ -81,9 +81,10 @@
             a {
                 padding: 10px 6px;
                 display: block;
-                // color: #222c37;
-                // color: $black;
-                color: #686868;
+                color: $gray-caption-dark;
+                // color: #5e5e5e;
+                // color: #686868;
+
                 font-weight: 400;
                 text-decoration: none;
                 &:hover {
@@ -106,7 +107,7 @@
             // background-color: $light-gray;
             border-bottom: 1px solid #e0e0e0;
             // background-color: $light-gray2;
-            color: #828e99;
+            color: $gray-caption;
             padding: 12px 15px;
             font-size: 14px;
             font-weight: 500;
@@ -114,7 +115,8 @@
         }
         span {
             display: block;
-            color: $gray;
+            // color: $gray;
+            color: $gray-caption-light;
             font-size: 13px;
             margin-top: 3px;
             margin-bottom: 10px;
