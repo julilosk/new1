@@ -1,0 +1,27 @@
+.pagination {
+    background-color: $white;
+    display: block;
+    margin-top: 50px;
+    text-align: center;
+    box-shadow: none;
+    box-shadow: none
+}
+
+.page-numbers {
+    // padding: 1% 2%;
+    color: #888888;
+    padding: 0 .7rem .2rem;
+    // box-shadow: 0 0 10px #ccc;
+    // margin: 0 1% 0 0;
+    // background: #fff;
+    // border-radius: 3px;
+}
+
+.pagination .current {
+    display: inline-flex;
+    color: #686868;
+    background-color: #fff;
+    font-weight: 700;
+    border-bottom: 4px solid $third-color;
+    // padding: 0 .7rem .2rem;
+}

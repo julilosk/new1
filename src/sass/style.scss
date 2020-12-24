@@ -1,116 +1,18 @@
-@import'components/grid';
+@import'base/grid';
 // @import'libs/bootstrap-reboot.min';
 // @import'libs/bootstrap-grid.min';
-@import'libs/bootstrap.min';
+// @import'libs/bootstrap.min';
 @import'libs/animate';
 @import'libs/font';
 @import'libs/slick';
 // @import'libs/owl.carousel';
 @import 'base/variables';
-@import 'base/base';
 @import 'base/mixin';
 @import 'base/mixin-flex';
-// @import 'base/extend';
+@import 'base/base';
+@import 'base/dropdown';
 // @import 'base/chess-content';
-.italic {
-    font-style: italic;
-}
-
-.indent-bottom {
-    margin-bottom: 1.875em;
-    // @media (max-width: 575px) {
-    //     margin-top: 15px;
-    //     ;
-    // }
-}
-
-.indent-top {
-    margin-top: 20px;
-    // @media (max-width: 1199px) {
-    //     margin-top: 20px;
-    // }
-    @media (max-width: 991px) {
-        margin-top: 15px;
-    }
-    @media (max-width: 767px) {
-        margin-top: 10px;
-    }
-    @media (max-width: 575px) {
-        margin-top: 5px;
-    }
-    @media (max-width: 376px) {
-        margin-top: 0px;
-    }
-}
-
-.fat {
-    font-weight: 700;
-    margin-right: 5px;
-    display: inline;
-}
-
-// .padding-block {
-//     width: 66.66%;
-// }
-// nav .menu__block a.menu__item_active {
-//     color: $third-color;
-// }
-// nav .menu__block li.current-menu-parent>a {
-//     color: $third-color;
-//     // background-color: $third-color;
-//     // margin-top: -10px;
-//     // margin-bottom: -10px;
-// }
-// .current-page-ancestor>a {
-//     color: $third-color !important;
-// }
-nav .menu__block li.current-menu-parent>a {
-    color: $third-color !important;
-}
-
-// .current-menu-item a {
-//     color: $third-color !important;
-//     @media (max-width: 991px) {
-//         border-bottom: 3px solid $third-color;
-//     }
-// }
-// nav .menu__block li.current-menu-parent>a {
-//     color: $gray2 !important;
-// }
-.footer {
-    .current-menu-item a {
-        color: $gray2 !important;
-    }
-}
-
-.activelink2 {
-    color: #0069d2 !important;
-    @media (max-width: 991px) {
-        border-bottom: 3px solid $third-color;
-    }
-    svg #cart {
-        fill: #0069d2 !important;
-    }
-}
-
-.error {
-    color: red;
-}
-
-.modal-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.modal-center .text {
-    margin: 10px 0 15px 0;
-    font-size: 16px;
-    font-weight: bold;
-}
-
+// @import 'base/extend';
 
 /**/
 
@@ -168,7 +70,8 @@ nav .menu__block li.current-menu-parent>a {
 @import'pages/kshk';
 
 /*components*/
-
+@import 'components/arrow-back';
+@import 'components/pagination';
 @import'components/button';
 @import'components/tourn-logo';
 @import'components/filter';

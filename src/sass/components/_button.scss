@@ -1,6 +1,5 @@
-// удалить когда все исправлю wpapper on wrappery
-.button-wpapper {
-    // border: solid 2px green;
+// удалить когда все исправлю wpapper on wrapper
+.button-wpapper {  
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
@@ -31,17 +30,15 @@
 
 .button {    
     background-color: $white;
-    text-decoration: none;
-    padding: 10px 15px;   
-    font-size: 16px;
+    // text-decoration: none;
+    padding: 10px 15px;
     font-weight: 500;
     text-transform: uppercase;    
     border: 0.5px solid $main-color!important;
     color: $main-color;   
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     &:hover {
-        text-decoration: none;
-        // background-color: $third-color;
+        text-decoration: none;       
         background-color: $main-color;
         color: $white;
         box-shadow: 3px 3px 10px $main-color;

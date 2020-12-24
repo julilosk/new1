@@ -1,202 +1,372 @@
-    .clear {
-        clear: both;
+.clear {
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 !important; //убрать рамку при фокусе
+}
+*,
+::after,
+::before {
+    box-sizing: border-box
+}
+
+html {
+    height: 100%;
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    min-height: 100vh;
+    // display: flex;
+    @include flexbox;
+    // flex-direction: column;
+    @include flex-direction(column);
+    background-color: $white;
+    color: $black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    // padding-top: 5px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    @media (max-width: 767px) {
+        font-size: 14px;
     }
+}
+
+section {
+    flex: 1 0 auto;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    /*убирает прокрутку по горизонтале*/
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 28px;        
+}
+
+h2 {
+    font-size: 2.0em;
+}
     
-    * {
-        margin: 0;
-        padding: 0;
-        outline: 0 !important; //убрать рамку при фокусе
+h3 {
+    font-size: 1.5625em;    
+}
+h4 {
+    font-size: 1.5rem
+}    
+h5 {
+    font-size: 1.125em;
+}
+h6 {
+    font-size: 1rem
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+
+
+
+h1 {        
+    color: $black;
+}
+
+h2 {       
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: $main-color;
+    font-weight: 600;
+    @media (max-width: 575px) {
+        margin-bottom: 1em;
+        font-weight: 500;
     }
-    
-    html {
-        height: 100%;
-    }
-    
-    body {
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        background-color: $white;
-        color: $black;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-        text-align: left;
-        // padding-top: 5px;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        @media (max-width: 767px) {
-            font-size: 14px;
-        }
-    }
-    
-    section {
-        flex: 1 0 auto;
-    }
-    
-    html,
-    body {
-        overflow-x: hidden;
-        /*убирает прокрутку по горизонтале*/
-    }
-    
-    h1 {
-        font-size: 28px;
-        color: $black;
-    }
-    
-    h2 {
-        font-size: 2.0em;
-        text-align: center;
-        margin-bottom: 1.5em;
-        color: $main-color;
-        font-weight: 600;
-        @media (max-width: 575px) {
-            margin-bottom: 1em;
-            font-weight: 500;
-        }
-        a {
-            color: $main-color;
-        }
-    }
-    
-    // p {
-    //     text-align: justify;
-    // }
     a {
-        color: $second-color;
-        // text-decoration: underline;
-        &:hover {
-            color: $third-color;
-            text-decoration: none;
-        }
-    }
-    
-    h4 {
         color: $main-color;
     }
-    
-    h5,
-    h3 {
-        text-align: center;
-        color: $main-color;
+}
+
+// p {
+//     text-align: justify;
+// }
+a {
+    color: $second-color;
+    text-decoration: none;
+    background-color: transparent;        
+    &:hover {
+        color: $third-color;
+        text-decoration: none;
     }
-    
-    h6 {
-        text-align: center;
+}
+
+// ссылки, которые не имеют класса
+// a[href]:not([class]) {
+//     color: $third-color;
+//     &:hover {
+//         // color: #0056b3;
+//         text-decoration: underline
+//     }
+// }
+// Отображаем ссылки, когда a-элемент не имеет текстового значения, но при этом атрибут href содержит ссылку:
+a[href^="http"]:empty::before {
+    content: attr(href);
+}
+
+h4 {
+    color: $main-color;
+}
+
+h5,
+h3 {
+    text-align: center;
+    color: $main-color;
+}
+
+h6 {
+    text-align: center;
+}
+
+h3 {
+    // font-size: 1.5625em;
+    margin-top: 12px;
+    margin-bottom: 1.5em;
+}
+
+ol,
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem
+}
+
+ul {
+    list-style-type: none;
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+
+img {
+    vertical-align: middle;
+    // border-style: none;
+}
+
+svg {
+    overflow: hidden;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem
+}
+
+button {
+    border-radius: 0
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+select {
+    word-wrap: normal
+}
+
+[type=button],
+[type=reset],
+[type=submit],
+button {
+    -webkit-appearance: button
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding: 0;
+    border-style: none
+}
+
+input[type=checkbox],
+input[type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=month],
+input[type=time] {
+    -webkit-appearance: listbox
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical
+}
+
+[hidden] {
+    display: none!important
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1)
+}
+
+.fat {
+    font-weight: 700;
+    margin-right: 5px;
+    display: inline;
+}
+
+::-webkit-scrollbar {
+    // background: #f3eaea;
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    // box-shadow: inset 0 0 10px rgba(12, 12, 12, 0.4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    // background: linear-gradient(125deg, $third-color, $second-color);
+    border-radius: 12px;
+    background: $gray;
+}
+
+
+
+blockquote {
+    border-left: 3px solid $third-color;
+    background: #eee;
+    // background: #f5f5f6;
+    padding: 20px;
+    p {
+        margin: 0;
+        // font-style: italic;
     }
-    
-    h3 {
-        font-size: 1.5625em;
-        margin-top: 12px;
-        margin-bottom: 1.5em;
+}
+
+
+.home-page-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media (max-width: 991px) {
+        padding-top: 15px;
+        padding-bottom: 25px;
     }
-    
-    h5 {
-        font-size: 1.125em;
+    @media (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
-    
-    ul {
-        list-style-type: none;
+    // @media (max-width: 575px) {
+    // padding-top: 10px;
+    // padding-bottom: 15px;
+    // }
+    h2 {
+        font-size: 1.6em;
+        // margin: 0 auto;      
+        font-weight: 600;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
     }
-    
-     ::-webkit-scrollbar {
-        // background: #f3eaea;
-        width: 8px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.indent-bottom {
+    margin-bottom: 1.875em;    
+}
+
+.indent-top {
+    margin-top: 20px;   
+    @media (max-width: 991px) {
+        margin-top: 15px;
     }
-    
-     ::-webkit-scrollbar-track {
-        // box-shadow: inset 0 0 10px rgba(12, 12, 12, 0.4);
-        border-radius: 10px;
+    @media (max-width: 767px) {
+        margin-top: 10px;
     }
-    
-     ::-webkit-scrollbar-thumb {
-        // background: linear-gradient(125deg, $third-color, $second-color);
-        border-radius: 12px;
-        background: $gray;
+    @media (max-width: 575px) {
+        margin-top: 5px;
     }
-    
-    .home-page-block {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        @media (max-width: 991px) {
-            padding-top: 15px;
-            padding-bottom: 25px;
-        }
-        @media (max-width: 767px) {
-            padding-top: 10px;
-            padding-bottom: 20px;
-        }
-        // @media (max-width: 575px) {
-        // padding-top: 10px;
-        // padding-bottom: 15px;
-        // }
-        h2 {
-            font-size: 1.6em;
-            // margin: 0 auto;      
-            font-weight: 600;
-            letter-spacing: 2.5px;
-            text-transform: uppercase;
-        }
+    @media (max-width: 376px) {
+        margin-top: 0px;
     }
-    
-    .pagination {
-        background-color: $white;
-        display: block;
-        margin-top: 50px;
-        text-align: center;
-        box-shadow: none;
-        box-shadow: none
-    }
-    
-    .page-numbers {
-        // padding: 1% 2%;
-        color: #888888;
-        padding: 0 .7rem .2rem;
-        // box-shadow: 0 0 10px #ccc;
-        // margin: 0 1% 0 0;
-        // background: #fff;
-        // border-radius: 3px;
-    }
-    
-    .pagination .current {
-        display: inline-flex;
-        color: #686868;
-        background-color: #fff;
-        font-weight: 700;
-        border-bottom: 4px solid $third-color;
-        // padding: 0 .7rem .2rem;
-    }
-    
-    blockquote {
-        border-left: 5px solid $third-color;
-        background: #eee;
-        // background: #f5f5f6;
-        padding: 20px 20px;
-        p {
-            margin: 0;
-            // font-style: italic;
-        }
-    }
-    
-    .grecaptcha-badge {
-        visibility: hidden;
-    }
-    
-    //arrow back
-    .arrow-back {
-        display: block;
-        margin: 20px 0;
-        padding-bottom: 30px;
-        @media (max-width: 575px) {
-            margin: 10px 0;
-        }
-        a {
-            color: $second-color;
-            &:hover {
-                text-decoration: none;
-                color: $third-color;
-                // font-weight: 500;
-            }
-        }
-    }
+}
+
+
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+
+.error {
+    color: red;
+}

@@ -1,6 +1,5 @@
 .logo-block {
-    width: 100%;
-    // margin-top: 10px;
+    width: 100%;    
     @media (max-width: 575px) {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
@@ -14,26 +13,20 @@
 }
 
 .logos {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    min-height: 112px;
-    // padding-top: 15px;
-    width: 100%;
-    // border: 1px solid red;
+    // display: flex;
+    @include flexbox;   
+    // justify-content: space-between;
+    @include justify-content(space-between);
+    // flex-wrap: wrap;
+    @include flex-wrap(wrap);
+    min-height: 112px;   
+    width: 100%; 
     @media (max-width: 991px) {
         overflow-x: scroll;
         overflow-y: hidden;
-        flex-wrap: nowrap;
-        // justify-content: start;
-    }
-    // @media (max-width: 767px) {
-    //     //     justify-content: flex-start;
-    //     margin-right: 5px;
-    // margin-left: -10px;
-    // margin-right: -10px;
-    //     // padding-left: 5px;
-    // }
+        // flex-wrap: nowrap;
+        @include flex-wrap(nowrap);        
+    } 
     @media (max-width: 575px) {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -41,11 +34,9 @@
     &__item {
         min-width: 105px;
         max-width: 105px;
-        text-align: center;
-        // border: 1px solid green;
+        text-align: center;      
         @media (max-width: 767px) {
-            min-width: 100px;
-            // margin: 0 2px;
+            min-width: 100px;         
             padding: 0 2px;
         }
         @media (max-width: 575px) {
@@ -86,14 +77,12 @@
         }
     }
     &__link {
-        cursor: pointer;
-        // color: $second-color;
-        color: $gray-caption;
-        // color: #686868;
+        cursor: pointer;       
+        color: $gray-caption;       
         &:hover {
             text-decoration: none;
-            // color: $third-color;
-            color: $main-color;
+            color: $gray-caption-dark;
+            // color: $main-color;
         }
     }
 }

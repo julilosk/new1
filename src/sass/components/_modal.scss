@@ -131,9 +131,24 @@
 }
 
 // скрытие модальных окон
-#registry,
-#feedback {
+#registry
+// #feedback 
+{
     display: none;
+}
+
+.modal-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.modal-center .text {
+    margin: 10px 0 15px 0;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 // span.wpcf7-not-valid-tip {
@@ -170,3 +185,4 @@
 // .lwa-wp-submit {
 //     width: 100%;
 // }
+

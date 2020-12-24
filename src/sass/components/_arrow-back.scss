@@ -1,0 +1,17 @@
+//arrow back
+.arrow-back {
+    display: block;
+    margin: 20px 0;
+    padding-bottom: 30px;
+    @media (max-width: 575px) {
+        margin: 10px 0;
+    }
+    a {
+        color: $second-color;
+        &:hover {
+            text-decoration: none;
+            color: $third-color;
+            // font-weight: 500;
+        }
+    }
+}
