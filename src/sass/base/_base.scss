@@ -7,6 +7,7 @@
     padding: 0;
     outline: 0 !important; //убрать рамку при фокусе
 }
+
 *,
 ::after,
 ::before {
@@ -64,40 +65,39 @@ h6 {
 }
 
 h1 {
-    font-size: 28px;        
+    font-size: 28px;
 }
 
 h2 {
     font-size: 2.0em;
 }
-    
+
 h3 {
-    font-size: 1.5625em;    
+    font-size: 1.5625em;
 }
+
 h4 {
     font-size: 1.5rem
-}    
+}
+
 h5 {
     font-size: 1.125em;
 }
+
 h6 {
     font-size: 1rem
 }
-
 
 p {
     margin-top: 0;
     margin-bottom: 1rem
 }
 
-
-
-
-h1 {        
+h1 {
     color: $black;
 }
 
-h2 {       
+h2 {
     text-align: center;
     margin-bottom: 1.5em;
     color: $main-color;
@@ -117,7 +117,7 @@ h2 {
 a {
     color: $second-color;
     text-decoration: none;
-    background-color: transparent;        
+    background-color: transparent;
     &:hover {
         color: $third-color;
         // text-decoration: none;
@@ -163,6 +163,13 @@ ul {
     margin-bottom: 1rem
 }
 
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+    margin-bottom: 0
+}
+
 ul {
     list-style-type: none;
 }
@@ -171,7 +178,6 @@ b,
 strong {
     font-weight: bolder
 }
-
 
 img {
     vertical-align: middle;
@@ -299,8 +305,6 @@ hr {
     background: $gray;
 }
 
-
-
 blockquote {
     border-left: 3px solid $third-color;
     background: #eee;
@@ -311,7 +315,6 @@ blockquote {
         // font-style: italic;
     }
 }
-
 
 .home-page-block {
     padding-top: 30px;
@@ -342,11 +345,11 @@ blockquote {
 }
 
 .indent-bottom {
-    margin-bottom: 1.875em;    
+    margin-bottom: 1.875em;
 }
 
 .indent-top {
-    margin-top: 20px;   
+    margin-top: 20px;
     @media (max-width: 991px) {
         margin-top: 15px;
     }
@@ -361,11 +364,9 @@ blockquote {
     }
 }
 
-
 .grecaptcha-badge {
     visibility: hidden;
 }
-
 
 .error {
     color: red;
