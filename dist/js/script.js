@@ -400,6 +400,10 @@ $(document).ready(function() {
     });
 
 
+    //ленивая загрузка 
+    $(function() {
+        $('.lazy').lazy();
+    });
 
 
 });

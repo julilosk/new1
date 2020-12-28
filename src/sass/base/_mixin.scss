@@ -12,16 +12,14 @@
 
 @mixin box-shadow-main {
     // box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.20);
-    // -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.20);
-    // -moz-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.20);
+    // -webkit-box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.20);   
     @include box-shadow(3px, 3px, 5px, 0, rgba(0, 0, 0, 0.20));
 }
 
 // тень блока
 // пример: @include bsh(1px,1px,3px,0,$gray,inset);
 @mixin box-shadow($top, $left, $blur, $size, $color) {
-    -webkit-box-shadow: $top $left $blur $size $color;
-    -moz-box-shadow: $top $left $blur $size $color;
+    -webkit-box-shadow: $top $left $blur $size $color;   
     box-shadow: $top $left $blur $size $color;
 }
 
@@ -44,12 +42,7 @@
 /**/
 
 // скругление универсальное
-@mixin border-radius($radius) {
-    // Префиксы для:
-    -webkit-border-radius: $radius; // Chrome и Safari
-    -moz-border-radius: $radius; // Firefox
-    // -ms-border-radius: $radius; // Internet Explorer
-    // -o-border-radius: $radius; // Opera
+@mixin border-radius($radius) {    
     border-radius: $radius; // Стандартный CSS
 }
 
@@ -102,8 +95,27 @@
 
 // Сброс параметров списка
 // пример: @include rul;
-@mixin rul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+// @mixin rul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null){
+    -o-object-fit: $fit;
+       object-fit: $fit;
+    @if $position {
+        -o-object-position: $position;
+           object-position: $position;
+        font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    } @else {
+        font-family: 'object-fit: #{$fit}';
+    }
+  }
