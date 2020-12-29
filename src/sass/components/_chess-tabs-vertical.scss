@@ -96,10 +96,11 @@
             padding: 8px 10px;
             text-align: center;
             width: auto;
-            border-radius: 5px 5px 5px 5px;
-            border: 1px solid #c9d5ec;
+            border-radius: 5px;
+            // border: 1px solid #c9d5ec;
+            border: none;
             background-color: #c9d5ec;
-            margin: 5px 5px;
+            margin: 5px;
         }
         @media (max-width: 575px) {
             padding: 7px 7px;

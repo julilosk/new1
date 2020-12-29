@@ -81,20 +81,21 @@
         ul {
             display: block;
             list-style-type: disc;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
+            // margin-block-start: 1em;
+            // margin-block-end: 1em;
+            // margin-inline-start: 0px;
+            // margin-inline-end: 0px;
+            // padding-inline-start: 40px;
+            padding-left: 40px;
         }
         ol {
             display: block;
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            padding-inline-start: 40px;
-            padding-left: 1em;
+            // margin-block-start: 1em;
+            // margin-block-end: 1em;
+            // margin-inline-start: 0px;
+            // margin-inline-end: 0px;
+            // padding-inline-start: 40px;
+            padding-left: 40px;
         }
         // p a {
         //     color: $third-color;
