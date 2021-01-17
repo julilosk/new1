@@ -1,6 +1,7 @@
 nav .menu__block li.current-menu-parent>a {
     color: $third-color !important;
 }
+
 .footer {
     .current-menu-item a {
         color: $gray2 !important;
@@ -17,6 +18,11 @@ nav .menu__block li.current-menu-parent>a {
     }
 }
 
+.submenu {
+    .current-menu-item a {
+        color: $third-color !important;
+    }
+}
 
 // nav .menu__block a.menu__item_active {
 //     color: $third-color;
@@ -33,7 +39,6 @@ nav .menu__block li.current-menu-parent>a {
 // nav .menu__block li.current-menu-parent>a {
 //     color: $third-color !important;
 // }
-
 // .current-menu-item a {
 //     color: $third-color !important;
 //     @media (max-width: 991px) {
@@ -48,7 +53,6 @@ nav .menu__block li.current-menu-parent>a {
 //         color: $gray2 !important;
 //     }
 // }
-
 // .activelink2 {
 //     color: #0069d2 !important;
 //     @media (max-width: 991px) {
