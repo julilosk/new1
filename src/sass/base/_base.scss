@@ -101,7 +101,7 @@ h1 {
 h2 {
     text-align: center;
     margin-bottom: 1.5em;
-    color: $main-color;
+    // color: $main-color;
     font-weight: 600;
     @media (max-width: 575px) {
         margin-bottom: 1em;
@@ -138,10 +138,9 @@ a[href^="http"]:empty::before {
     content: attr(href);
 }
 
-h4 {
-    color: $main-color;
-}
-
+// h4 {
+//     color: $main-color;
+// }
 h5,
 h3 {
     text-align: center;

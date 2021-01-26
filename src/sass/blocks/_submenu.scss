@@ -185,7 +185,8 @@
         }
         li a {
             padding: 0 20px;
-            color: $main-color;
+            // color: $main-color;
+            color: $black;
             display: flex;
             @media (max-width: 991px) {
                 color: $gray;
