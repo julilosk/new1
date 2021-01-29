@@ -317,8 +317,10 @@ blockquote {
 }
 
 .home-page-block {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    // padding-top: 30px;
+    // padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     @media (max-width: 991px) {
         padding-top: 15px;
         padding-bottom: 25px;
