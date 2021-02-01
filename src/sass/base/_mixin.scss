@@ -52,13 +52,14 @@
 @mixin link-item-before () {
     margin-left: 15px;
     li::before {
-        content: "\2714";
+        content: "\2713";
         margin-right: 5px;
-        color: $second-color;
+        // color: $second-color;
         display: inline-block;
         /* Расстояние между точкой и текстом */
         width: 1em;
     }
+
 }
 
 

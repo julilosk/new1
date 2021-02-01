@@ -144,7 +144,7 @@ a[href^="http"]:empty::before {
 h5,
 h3 {
     text-align: center;
-    color: $main-color;
+    // color: $main-color;
 }
 
 h6 {
@@ -319,7 +319,7 @@ blockquote {
 .home-page-block {
     // padding-top: 30px;
     // padding-bottom: 30px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 20px;
     @media (max-width: 991px) {
         padding-top: 15px;

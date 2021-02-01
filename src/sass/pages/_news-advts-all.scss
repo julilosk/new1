@@ -57,6 +57,9 @@
             font-size: 12px;
         }
     }
+    &__title {
+        color: $black;
+    }
     &__caption {
         // color: $gray;
         color: $gray-caption-dark;
