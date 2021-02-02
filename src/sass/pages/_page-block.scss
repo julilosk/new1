@@ -7,7 +7,7 @@
         text-align: justify;
         // margin-bottom: 0.5rem;
         margin-bottom: 20px;
-        line-height: 20px;
+        line-height: 22px;
     }
     &__content {
         width: 100%;
@@ -35,6 +35,7 @@
         display: flex;
         margin: 0 0;
         // color: $black;
+        justify-content: space-between; //020221 - присмотреться, может быть надо удалить
     }
     &__left {
         display: flex;
