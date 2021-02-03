@@ -2,6 +2,9 @@
     @media (max-width: 575px) {
         padding: 0 25px;
     }
+    .row {
+        @include justify-content(center);
+    }
     &__title {
         font-size: 25px;
         font-weight: 500;
