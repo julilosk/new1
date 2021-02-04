@@ -2,6 +2,8 @@
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
+    line-height: 1.2em;
+    // color: $black;
 
     @media (max-width: 575px) {
         padding-right: 0;
@@ -32,10 +34,13 @@
         width: 10%;
         padding: 9px 0;
         margin-right: 5px;
-        background-color: $third-color;
-        // background-color: #455ead;
-        // background-color: $light-color;
-        // background-color: $gray1; 
+        // background-color: $third-color;
+        background-color: #f4f5f6;
+     
+        // background-color: $gray_bc;
+        // @include box-shadow-main;
+        @include box-shadow(3px, 3px, 5px, 3px, rgba(0, 0, 0, 0.20));
+            
         cursor: pointer;
         // transform: skewX(-25deg);
         // border: solid 0.7px gray; 
@@ -62,9 +67,11 @@
         // }
 
         h5 {
-            color: $white;
+            // color: $white;
+
             font-size: 16px;
             margin-bottom: 0;
+            font-weight: 400;
             // margin:  0;
 
             @media (max-width: 991px) {
@@ -99,8 +106,9 @@
             // background-color: $main-color;
             background-color: $second-color;
             border: none;
-            font-weight: 500;
-
+            // font-weight: 500;
+            box-shadow: none;
+            // @include box-shadow(3px, 3px, 5px, 3px, rgba(0, 0, 0, 0.20));
             h5 {
                 color: $gray2;
             }
@@ -122,7 +130,7 @@
             color: $gray2;
             padding: 10px 5px;
             // text-transform: uppercase;
-            font-weight: 500 !important;
+            font-weight: 300 !important;
             font-size: 16px;
 
             @media (max-width: 991px) {
@@ -138,7 +146,7 @@
             }
 
             &:first-child {
-                border-radius: 0px 0px 0px 5px;
+                border-radius: 0px 0px 0px 0px;
 
                 @media (max-width: 575px) {
                     border-radius: 5px 0px 0px 0px;
@@ -147,7 +155,7 @@
             }
 
             &:last-child {
-                border-radius: 0px 0px 5px 0px;
+                border-radius: 0px 5px 0px 0px;
             }
 
             &:nth-child(3) {
@@ -175,7 +183,6 @@
                 @media (max-width: 575px) {
                     border-radius: 0px 5px 0px 0px;
                     padding-right: 10px;
-
                 }
 
             }
@@ -185,7 +192,6 @@
                 @media (max-width: 767px) {
                     display: none;
                 }
-
             }
         }
 
@@ -193,7 +199,7 @@
             // height: 28px;
             font-size: 14px;
             // border-bottom: 0.5px solid $gray2;
-            color: $main-color;
+            // color: $main-color;
             // background-color: $light-color;
             // &:last-child {
             //     border-bottom: none;
@@ -244,6 +250,14 @@
                 width: 34%;
                 text-align: left;
                 padding: 7px 7px;
+                a {
+                    text-decoration: underline;
+                    // color: $main-color;
+
+                    &:hover {
+                        color: #fff;
+                    }
+                }
 
                 @media (max-width: 767px) {
                     width: auto;

@@ -19,9 +19,8 @@
         @include justify-content(space-between);
         @include flex-wrap(wrap);
         // flex-wrap: wrap;
-        // background-color: rgba(179, 196, 255, 0.3);
-        background-color: #e8f0fe;
-        // background-color: rgba(0, 0, 0, .1);
+        // background-color: #e8f0fe;
+        background-color: #f4f5f6;
         // box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.20);
         @include box-shadow-main;
         padding-top: 20px;
@@ -80,6 +79,8 @@
         margin-bottom: 10px;
         display: block;
         color: $black;
+        line-height: 1.2em;
+        font-weight: 500;
         @media (max-width: 575px) {
             margin-top: 15px;
         }

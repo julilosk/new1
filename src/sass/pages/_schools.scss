@@ -2,6 +2,7 @@
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+    line-height: 1.2em;
 
     @media (max-width: 575px) {
         padding-right: 0;
@@ -16,16 +17,14 @@
         th {
             // vertical-align: top!important; 
             text-align: center;
-            line-height: 1.1;
+            // line-height: 1.1;
             padding-bottom: 10px;
-            background-color: $second-color !important;
-            ;
+            background-color: $second-color !important;            
             // background-color: $main-color;
             color: $gray2;
             padding: 10px 5px;
             // text-transform: uppercase;
-            font-weight: 500 !important;
-            ;
+            font-weight: 400 !important;
             font-size: 16px;
 
             @media (max-width: 767px) {
@@ -76,7 +75,7 @@
             font-size: 14px;
             margin: 10px 0;
             // border-bottom: 0.5px solid $gray2;
-            color: $main-color;
+            // color: $main-color;
 
             // background-color: $light-color;
             // &:last-child {
