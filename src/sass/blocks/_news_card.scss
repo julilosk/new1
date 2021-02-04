@@ -62,9 +62,10 @@
         // }
     }
     &__body {
-        padding: 8px;
+        // padding: 10px;
+        margin: 10px 12px 10px 12px;
         text-align: left;
-        height: 235px;
+        height: 230px;
         overflow: hidden;
         // position:relative; 
         @media (max-width: 1199px) {
