@@ -186,10 +186,13 @@
         li a {
             padding: 0 20px;
             // color: $main-color;
-            color: $black;
+            // color: $black;
+            // color: $gray;
+            // color: #4c4c51;
+            color: #86889a;
             display: flex;
             @media (max-width: 991px) {
-                color: $gray;
+                // color: $gray;
                 padding: 0 15px;
                 padding-bottom: 0.5rem;
             }

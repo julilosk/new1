@@ -21,11 +21,13 @@
             color: $black;
             text-decoration: none;
             &:hover {
-                background-color: $gray_bc;
+                // background-color: $gray_bc;
+                background-color: rgba(219,221,232,.7);
             }
         }
         .current-cat a {
-            background-color: $gray_bc;
+            // background-color: $gray_bc;
+            background-color: rgba(219,221,232,.7);
             border-left: 3px solid $third-color;
             // font-weight: 600;
             color: $second-color;
