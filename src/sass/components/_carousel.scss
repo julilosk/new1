@@ -172,7 +172,7 @@
     }
     &:hover {
         img {
-            display: block;
+            display: block!important;
             background-color: rgba(255, 255, 255, 0.2);
             border: 1px solid rgba(255, 255, 255, 0.4);
         }

@@ -211,7 +211,7 @@
     &__photo-block {
         // height: 220px;
         margin-bottom: 30px;
-        .col-md-6 {
+        .col-md-4 {
             // width: calc(50% - 16px);
             padding-right: 10px!important;
             padding-left: 10px!important;
@@ -243,7 +243,15 @@
             img {
                 display: none;
             }
+            // &:hover {
+            //     img {
+            //         display: block!important;
+            //         background-color: rgba(255, 255, 255, 0.2);
+            //         border: 1px solid rgba(255, 255, 255, 0.4);
+            //     }
+            // }
         }
+       
     }
     .slick-dots {
         margin-top: 15px!important;
