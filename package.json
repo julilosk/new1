@@ -8,18 +8,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nodelib/fs.stat": "^2.0.4",
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-real-favicon": "^0.3.2",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "nodelib": "^1.0.0"
   },
   "dependencies": {
-    "bootstrap-icons": "^1.0.0-alpha2"
+    "autoprefixer": "^10.2.4",
+    "bootstrap-icons": "^1.0.0-alpha2",
+    "common": "^0.2.5",
+    "webp-converter": "2.2.3"
   },
   "repository": {
     "type": "git",
