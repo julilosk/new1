@@ -24,13 +24,13 @@ nav {
     .menu {
         position: relative;
         height: 55px;
-        display: flex;
-        justify-content: space-between;
+        @include flexbox;
+        @include justify-content(space-between);
         align-items: center;
         &__block {
-            display: flex;
+            @include flexbox;
             // flex-wrap: wrap;
-            font-size: 16px;
+            // font-size: 16px;
             // font-weight: 500;
             margin-bottom: 0;
             padding-right: 15px;
@@ -42,7 +42,7 @@ nav {
             @media (max-width: 991px) {
                 // font-size: 13px;
                 width: 100%;
-                justify-content: space-between;
+                @include justify-content(space-between);
             }
             a {
                 text-decoration: none;
