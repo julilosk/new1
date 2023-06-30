@@ -1,8 +1,0 @@
-File from: [src/img/logos/сhess.png]
-
-File to: [adist/imglogos/сhess.png]
-
-Compression algorithm: [pngquant]
-
-Description: Error: Command failed: C:\Users\Юлия\Desktop\my\WEB-разработка\home\ijustdoit\2023\04.2023\learn_js\node_modules\pngquant-bin\vendor\pngquant.exe --quality=75-100 -o adist/imglogos/сhess.png src/img/logos/сhess.png
-  error: cannot open src\img\logos\сhess.png for reading
