@@ -31,6 +31,7 @@
     @media (max-width: 575px) {
         width: calc(100% - 40px);
     }
+   
     &__close {
         position: absolute;
         font-size: 41px;
@@ -73,9 +74,10 @@
         // color: $black;
         color: $second-color;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         @media (max-width: 575px) {
             font-size: 1em;
+            margin-bottom: 10px;
         }
     }
     // &__user {
@@ -128,6 +130,20 @@
             margin-bottom: 5px;
         }
     }
+    label, textarea {
+        display: block;      
+    }
+    input, textarea {
+        width: 100%;  
+        margin-bottom: 20px;    
+    }
+    textarea {
+        height: 120px;      
+    }
+    button {
+        text-align: center;
+    }
+   
 }
 
 // скрытие модальных окон

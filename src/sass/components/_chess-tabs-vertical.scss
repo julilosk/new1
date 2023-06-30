@@ -31,6 +31,7 @@
         padding-left: 0;
         margin-bottom: 0;
         font-size: 1em;
+        margin-left: 0!important;
         // background: #f4f4f8;
         // background: $light-gray;
         &_account {
@@ -79,6 +80,11 @@
             @media (max-width: 767px) {
                 border-top: none;
             }
+        }
+        &::before,
+        &::after {
+           display: none!important;
+       //     // margin: 0!important;
         }
         // &:last-child {
         //     border-bottom: none;

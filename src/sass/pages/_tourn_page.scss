@@ -139,19 +139,20 @@
     &__link {
         margin-bottom: 10px;
     }
+    //удалить, сделала общие стили для вложенных документов
     &__attached-files {
         width: 100%;
         border-top: 1px solid $border;
         padding-top: 15px;
     }
-    .sidebar-single__lastnews,
-    .sidebar-single__lasttourn {
-        display: none;
-    }
+   // .sidebar-single__lastnews,
+    //.sidebar-single__lasttourn {
+      //  display: none;
+    //}
     // .sidebar-single__lastnews {
     //     display: none;
     // }
-    .sidebar-single__lastadvts {
-        margin-top: 0;
-    }
+   // .sidebar-single__lastadvts {
+       // margin-top: 0;
+   // }
 }

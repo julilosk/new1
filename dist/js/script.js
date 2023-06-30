@@ -37,13 +37,19 @@ $(document).ready(function() {
 
 
 
-    //tabs calendar
-    $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
-        $(this)
-            .addClass('calendar__tab_active').siblings().removeClass('calendar__tab_active')
-            .closest('div.calendar').find('div.calendar__content').removeClass('calendar__content_active').eq($(this).index()).addClass('calendar__content_active');
-    });
+    //tabs calendar - можно удалить в теме поменяла на chesstabs
+   // $('ul.calendar__tabs').on('click', 'li:not(.calendar__tab_active)', function() {
+     //   $(this)
+       //     .addClass('calendar__tab_active').siblings().removeClass('calendar__tab_active')
+         //   .closest('div.calendar').find('div.calendar__content').removeClass('calendar__content_active').eq($(this).index()).addClass('calendar__content_active');
+    //});
 
+  //tabs calendar
+  $('ul.chesstabs__tabs').on('click', 'li:not(.chesstabs__tab_active)', function() {
+    $(this)
+        .addClass('chesstabs__tab_active').siblings().removeClass('chesstabs__tab_active')
+        .closest('div.chesstabs').find('div.chesstabs__content').removeClass('chesstabs__content_active').eq($(this).index()).addClass('chesstabs__content_active');
+});
 
 
     //tabs sidebar  
@@ -61,6 +67,12 @@ $(document).ready(function() {
     });
 
 
+        //Табы на блок "Турниры" на главной странице
+        $('ul.chess-tabs__tabs').on('click', 'li:not(.chess-tabs__tab_active)', function() {
+            $(this)
+                .addClass('chess-tabs__tab_active').siblings().removeClass('chess-tabs__tab_active')
+                .closest('div.chess-tabs').find('div.chess-tabs__content').removeClass('chess-tabs__content_active').eq($(this).index()).addClass('chess-tabs__content_active');
+        });
 
 
     //tabs news-all  
@@ -78,12 +90,7 @@ $(document).ready(function() {
     // });
 
 
-    //Табы на блок "Турниры" на главной странице
-    $('ul.chess-tabs__tabs').on('click', 'li:not(.chess-tabs__tab_active)', function() {
-        $(this)
-            .addClass('chess-tabs__tab_active').siblings().removeClass('chess-tabs__tab_active')
-            .closest('div.chess-tabs').find('div.chess-tabs__content').removeClass('chess-tabs__content_active').eq($(this).index()).addClass('chess-tabs__content_active');
-    });
+
 
     //tabs tourn-all  
     // $('ul.tourn-all__tabs').on('click', 'li:not(.tourn-all__tab_active)', function() {
@@ -100,9 +107,9 @@ $(document).ready(function() {
 
 
     //  modal
-    $('[data-modal=registry]').on('click', function() {
-        $('.overlay, #registry').fadeIn('slow');
-    });
+    //$('[data-modal=registry]').on('click', function() {
+      //  $('.overlay, #registry').fadeIn('slow');
+    //});
     $('.modal-chess__close').on('click', function() {
         $('.overlay, #registry, #feedback').fadeOut('slow');
     });
@@ -113,7 +120,7 @@ $(document).ready(function() {
 
 
 
-    function validateForms(form) {
+   /*  function validateForms(form) {
         $('#registration-form').validate({
             rules: {
                 name: {
@@ -132,11 +139,7 @@ $(document).ready(function() {
                 },
                 homeaddress: "required",
                 phone: "required",
-                birthday: "required",
-                // feedtext: {
-                //   required: true,
-                //   minlength: 10
-                // },
+                birthday: "required",               
                 email: {
                     required: true,
                     email: true
@@ -173,7 +176,7 @@ $(document).ready(function() {
                 }
             }
         });
-    }
+    } */
 
     function validateForms2(form) {
         $('#feedback-form').validate({
@@ -217,8 +220,8 @@ $(document).ready(function() {
         });
     }
 
-    validateForms('#consultation-form');
-    validateForms('#registry form');
+   // validateForms('#consultation-form');
+   // validateForms('#registry form');
     validateForms2('#feedback form');
     // $('input[name=phone]').mask("7(999) 999-99-99");
     // $.mask.definitions['~'] = '[78]';
@@ -501,13 +504,13 @@ $(document).ready(function() {
 
 
     //добавление класс на положительные и отрицательные изменения рейтинга
-    $('#ratingTable td.rating__change').each(function() {
-        if (parseInt($(this).html()) > 0) {
-            $(this).addClass("higherthan0");
-        } else if (parseInt($(this).html()) < 0) {
-            $(this).addClass("lowerthan0");
-        }
-    });
+   // $('#ratingTable td.rating__change').each(function() {
+     //   if (parseInt($(this).html()) > 0) {
+       //     $(this).addClass("higherthan0");
+        //} else if (parseInt($(this).html()) < 0) {
+            //$(this).addClass("lowerthan0");
+        //}
+    //});
 
 
     //ленивая загрузка 
@@ -546,7 +549,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 });
-
+/* 
 
 // установка значения left для выпадающего меню авторизованного пользователя
 window.addEventListener('DOMContentLoaded', () => {
@@ -614,8 +617,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 
-});
-
+}
+);
+ */
 
 
 // // if (window.matchMedia("(max-width: 575px)").matches) {

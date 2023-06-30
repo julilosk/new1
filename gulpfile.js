@@ -1,10 +1,11 @@
 const gulp        = require('gulp');
 const browserSync = require('browser-sync');
-const sass        = require('gulp-sass');
+//const sass        = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
-const imagemin = require('gulp-imagemin');
+const imagemin = require('compress-images');
 const htmlmin = require('gulp-htmlmin');
 
 gulp.task('server', function() {
@@ -93,10 +94,27 @@ gulp.task('mailer', function () {
         .pipe(gulp.dest("dist/mailer"));
 });
 
+//gulp.task('images', function () {
+  //  return gulp.src("src/img/**/*")
+    //    .pipe(imagemin())
+      //  .pipe(gulp.dest("dist/img"));
+//});
+
 gulp.task('images', function () {
-    return gulp.src("src/img/**/*")
-        .pipe(imagemin())
-        .pipe(gulp.dest("dist/img"));
+imagemin(
+	"src/img/**/*", // Берём все изображения из папки источника
+	"adist/img", // Выгружаем оптимизированные изображения в папку назначения
+	{ compress_force: false, statistic: true, autoupdate: true }, false, // Настраиваем основные параметры
+	{ jpg: { engine: "mozjpeg", command: ["-quality", "75"] } }, // Сжимаем и оптимизируем изображеня
+	{ png: { engine: "pngquant", command: ["--quality=75-100", "-o"] } },
+	{ svg: { engine: "svgo", command: "--multipass" } },
+	{ gif: { engine: "gifsicle", command: ["--colors", "64", "--use-col=web"] } },
+	function (err, completed) { // Обновляем страницу по завершению
+		if (completed === true) {
+			browserSync.reload()
+		}
+	}
+)
 });
 
 gulp.task('video', function () {

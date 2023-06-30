@@ -1,0 +1,90 @@
+/* для страницы ведущие шахматисты */
+.leading {
+    width: 100%;   
+    padding-left: 15px;
+    padding-right: 15px; 
+    @media (max-width: 767px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    @media (max-width: 575px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;    
+        margin-top: 20px;     
+        @media (max-width: 575px) {
+            margin-top: 10px; 
+        }   
+    }
+    &__header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;   
+        padding: 7px 0;
+        font-weight: 500;
+        @media (max-width: 575px) {           
+            font-size: 12px;
+        }
+    }
+    &__players {
+        display: flex;
+        flex-direction: row;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        width: 100%;        
+        border-bottom: 0.5px solid $border;        
+        text-decoration: none !important;     
+        color: $black;
+        &:hover {            
+            @include hover-main;
+            text-decoration: none !important;
+        }
+        &:first-child {
+            border-top: 0.5px solid $border;
+        }        
+    }    
+    .photo{
+        width: 20%;
+        padding: 5px;
+    } 
+    .FIO{
+        width: 20%;      
+        padding: 5px; 
+    } 
+    .birth{
+        width: 15%;
+        text-align: center;
+        padding: 5px;
+    }
+    .title, .rating {
+        width: 15%;
+        text-align: center;
+        padding: 0 5px;
+    }
+    &__img {
+        display: block;   
+        width: 120px;
+        margin: 0 25px;
+        height: 120px;        
+        object-fit: cover;
+        float: left;
+        @media (max-width: 575px) {
+            width: 100%;
+            margin: 0;
+            height: 10vh;
+        }          
+    }
+    &__FIO {
+        padding-left: 20px;
+        padding-right: 15px;
+        @media (max-width: 575px) {
+            padding-left: 5px;
+            padding-right: 5px;
+        } 
+    } 
+    
+}

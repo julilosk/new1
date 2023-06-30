@@ -27,8 +27,8 @@
 /**/
 
 @import'blocks/news_card';
-@import'blocks/enter-user';
-@import'blocks/logos';
+/* @import'blocks/enter-user';
+ */@import'blocks/logos';
 @import'blocks/advts';
 @import'blocks/tournaments';
 @import'blocks/project';
@@ -37,39 +37,35 @@
 @import'blocks/table-fshak';
 // @import'blocks/tabs-page'; /*поменяла на chess-tabs*/
 @import'blocks/tags';
-@import'blocks/login';
-@import'blocks/wp';
+//@import'blocks/login';
+@import'blocks/wp';/*  если сайт не на вордпрессе можно удалить */
 @import'blocks/img';
 @import'blocks/media';
 @import'blocks/icons';
-@import'blocks/registration-tourn';
-// @import'blocks/feedback';
+//* @import'blocks/registration-tourn';
+ @import'blocks/feedback';
+ @import'blocks/attached'; /* вложенные документы */
 
-/*shop*/
-
-@import'shop/shop-product';
-@import'shop/shop-products';
-@import'shop/cart';
-@import'shop/goods';
-@import'shop/woocommerce';
-@import'shop/checkout';
 
 /*pages*/
 
 @import'pages/page-block';
 @import'pages/academy';
 @import'pages/tourn_page';
-@import'pages/account';
-@import'pages/schools';
+/* @import'pages/account';
+ */@import'pages/schools';
 @import'pages/federation';
 @import'pages/projects-page';
-@import'pages/calendar';
+@import'pages/plan';
 @import'pages/news-advts-all';
 @import'pages/advts-page';
 @import'pages/team';
 @import'pages/champ';
 @import'pages/rating';
 @import'pages/kshk';
+@import'pages/leading'; /* стили для ведущих спортсменов */
+@import'pages/profile'; /* стили для страницы игрока (из ведущих спортсменов) */
+@import'pages/partner'; /* для страницы партнеры */
 
 /*components*/
 
@@ -85,5 +81,9 @@
 @import'components/modal';
 @import'components/chess-tabs';
 @import'components/chess-tabs-vertical';
+@import'components/chesstabs';
+@import'components/chess-table';
+
 @import'blocks/structure';
+
 // @import'blocks/owl';

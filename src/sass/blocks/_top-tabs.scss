@@ -1,7 +1,15 @@
+.chess-top-block{
+    h5 {
+        font-size: 1.0em; 
+    } 
+}
 .top {
     margin-top: 15px;
     @media (max-width: 991px) {
         margin-top: 25px;
+    }
+    h5 {
+        font-size: 1.0em; 
     }
     .tabs {
         width: 100%;
@@ -14,7 +22,7 @@
             margin-bottom: 0;
         }
         &__nav li {
-            width: 40%;
+            width: 22%;
             // color: $gray;
             color: $light-gray;
             padding: 8px 0;
@@ -37,8 +45,9 @@
             text-transform: none;
             transition: background-color 0.2s ease-in-out;
             h5 {
-                margin: 0 0;
+                margin: 0;
                 // color: $white;
+                font-weight: 400;
                 @media (max-width: 575px) {
                     font-size: 16px;
                 }

@@ -1,0 +1,87 @@
+//стили для таблиц
+.chess-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+
+    th {
+        vertical-align: top !important;
+        text-align: center;
+        line-height: 1.1;
+        padding-bottom: 10px;
+        background-color: $second-color !important;
+        color: $gray2;
+        padding: 10px 5px;
+        font-weight: 300 !important;
+        font-size: 16px;
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 376px) {
+            font-size: 8px;
+        }
+
+      /*   &:first-child {
+            border-radius: 0px 0px 0px 0px;
+
+            @media (max-width: 575px) {
+                border-radius: 5px 0px 0px 0px;
+                padding-left: 10px;
+            }
+        }
+
+        &:last-child {
+            border-radius: 0px 5px 0px 0px;
+        }   */
+    }
+
+    tr {
+        width: 100%;
+        // height: 28px;
+        font-size: 14px;        
+        // border-bottom: 0.5px solid $gray2;
+        // color: $main-color;
+        // background-color: $light-color;
+        // &:last-child {
+        //     border-bottom: none;
+        // }
+
+        @media (max-width: 991px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 10px;
+        }
+
+        @media (max-width: 376px) {
+            font-size: 8px;
+        }
+
+        &:nth-child(odd) {
+            // background-color: #dfdfed;
+            background-color: $gray_bc;
+        }
+
+        &:hover {
+            background-color: #868cad;
+            // cursor: pointer;
+            color: #fff;
+        }
+    }
+
+    td {
+        vertical-align: middle !important;
+        padding: 7px;    
+        &:first-child {
+            text-align: center;
+        }    
+    }
+
+}

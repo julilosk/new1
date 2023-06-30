@@ -6,20 +6,8 @@
         padding-left: 0;
         padding-right: 0;
     }
-    &__text {
-        margin: 15px 0;
-        ul {
-            @include link-item-before ();
-            // margin-left: 15px;
-            // li::before {
-            //     content: "\2714";
-            //     margin-right: 5px;
-            //     color: $second-color;
-            //     display: inline-block;
-            //     /* Расстояние между точкой и текстом */
-            //     width: 1em;
-            // }
-        }
+    ul {
+        @include link-item-before ();
     }
     &__contact {
         display: flex;

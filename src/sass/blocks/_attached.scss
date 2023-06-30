@@ -1,0 +1,37 @@
+//для вложенных файлах (исп. на стр. "сборная", "рейтинг-лист")
+.attached {
+    display: flex;
+    flex-direction: column;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    @media (max-width: 767px) {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    @media (max-width: 575px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    &__file {
+        display: block;
+        padding: 7px 0;
+        &:first-child {
+            border-top: 0.5px solid $border;
+        }
+    }
+    &__doc {
+        // width: 100%;
+        // width: 35px;
+        padding-right: 20px;
+        height: 25px;
+        // object-fit: cover;
+        float: left;
+        @media (max-width: 767px) {
+            // width: 25px;
+            height: 20px;
+            padding-right: 10px;
+        }
+    }
+   
+}

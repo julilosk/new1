@@ -3,15 +3,8 @@
     padding-right: 15px;
     padding-left: 15px;
     @media (max-width: 575px) {
-        padding-right: 0;
-        padding-left: 0;
-    }
-    .dataTables_info,
-    .structure__document {
-        margin-left: 10px;
-        @media (max-width: 575px) {
-            margin-left: 5px;
-        }
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     &__title {
         // padding: 0 15px;
@@ -34,54 +27,33 @@
         width: 100%;
         border-collapse: collapse;
         margin-bottom: 30px;
+        @media (max-width: 575px) {
+            line-height: 1em;
+        }        
         a {
             color: $black;
             &:hover {
                 font-size: 14px;
             }
         }
-        th {
+        th {            
             vertical-align: top;
             text-align: center;
             line-height: 1.1;
             background-color: $second-color !important;
             color: $gray2;
             padding: 10px 5px;
-            font-weight: 500 !important;
-            font-size: 16px;
-            &:first-child {
-                border-radius: 5px 0px 0px 0px;
-            }
-            &:nth-child(2) {
-                // width: 10%;
-                @media (max-width: 376px) {
-                    // width: auto;
-                    display: none;
-                }
-            }
-            &:last-child {
-                border-radius: 0px 5px 0px 0px;
-            }
+            font-weight: 400 !important;
+            font-size: 16px;         
             @media (max-width: 767px) {
                 font-size: 14px;
             }
             @media (max-width: 575px) {
                 font-size: 10px;
-            }
-            &:nth-child(5) {
-                width: 13%;
-                @media (max-width: 767px) {
-                    display: none;
-                }
-            }
-            &:nth-child(4) {
-                // width: 13%;
-                @media (max-width: 575px) {
-                    display: none;
-                }
-            }
+            }           
         }
-        tr {
+        tr {             
+            //width: 100%;
             font-size: 14px;
             margin: 10px 0;
             color: $black;
@@ -104,73 +76,48 @@
                 font-size: 10px;
             }
         }
-        td {
+        td {          
             padding: 7px 5px;
-            @media (max-width: 376px) {
+            @media (max-width: 575px) {
                 padding: 5px 3px;
-            }
-            &:first-child {
-                width: 5%;
-                text-align: center;
-                @media (max-width: 376px) {
-                    width: auto;
-                }
-            }
-            &:nth-child(2) {
-                width: 10%;
-                &:hover {
-                    text-decoration: underline;
-                }
-                @media (max-width: 376px) {
-                    // width: auto;
-                    display: none;
-                }
-            }
-            &:nth-child(3) {
-                width: 25%;
-                @media (max-width: 376px) {
-                    width: auto;
-                }
-            }
-            &:nth-child(4) {
-                width: 8%;
-                text-align: center;
-                @media (max-width: 575px) {
-                    display: none;
-                }
-            }
-            &:nth-child(5) {
-                width: 13%;
-                @media (max-width: 767px) {
-                    display: none;
-                }
-            }
-            &:nth-child(6),
-            &:nth-child(8),
-            &:nth-child(10) {
-                width: 8%;
-                text-align: center;
-                @media (max-width: 376px) {
-                    width: auto;
-                }
-            }
-            &:nth-child(7),
-            &:nth-child(9),
-            &:nth-child(11) {
-                width: 5%;
-                text-align: center;
-                font-weight: 700;
-                font-size: 10px;
-                @media (max-width: 575px) {
-                    font-weight: 500;
-                    font-size: 8px;
-                }
-                @media (max-width: 376px) {
-                    width: auto;
-                }
+                width: auto;
             }
         }
     }
+    &__number  {
+        width: 5%;
+        text-align: center;
+        @media (max-width: 575px) {
+            width: auto;
+        }
+    }
+    &__value {
+        width: 8%;
+        text-align: center;
+    }
+    &__ID {
+        width: 8%;
+        @media (max-width: 575px) {
+            width: auto;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__male, &__birth {
+        width: 5%;
+        text-align: center;
+        @media (max-width: 575px) {
+            display: none;
+        }
+    }
+    &__FIO {
+        width: auto;
+        a &:hover {
+            text-decoration: underline;
+        }
+    }
+    
 }
 
 .lowerthan0 {
@@ -196,4 +143,45 @@
 //для плагина tablepress
 .dataTables_wrapper .dataTables_filter input {
     padding: 0 5px;
+}
+
+//для фильтра и поиска на странице рейтинг-лист
+.table-header-options {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: 20px;
+    font-size: 14px;   
+    .hide-players-option {
+        a {
+            color: $black;
+        }
+    }
+}
+.list-group {
+    display: flex;
+    flex-direction: row;
+    .list-group-item {         
+        text-align: center;
+        padding: 10px 15px;
+        margin-right: 5px;
+        min-width: 100px;
+        background-color: #868cad;
+        color: $light-gray;
+        border-radius: 5px;
+        @media (max-width: 991px) {
+            width: auto;
+            padding: 10px;
+        }
+        @media (max-width: 575px) {
+            border-radius: 5px;
+            padding: 5px  10px;
+            margin-bottom: 5px;
+            min-width: auto;
+        }
+    }
+    .active {
+        background-color: $second-color;
+        color: $gray2;
+    }
 }

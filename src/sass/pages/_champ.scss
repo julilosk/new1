@@ -1,9 +1,29 @@
 .champ {
+    width: 100%;
+    //padding-left: 15px;
+    //padding-right: 15px;
     @media (max-width: 575px) {
         padding: 0 25px;
     }
     .row {
         @include justify-content(center);
+    }
+    //удалить временно!!!!
+    &__block {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+        margin-top: 10px;
+        margin-bottom: 45px;
+    }  
+  
+    &__table {   
+        td {
+            width: 33%!important;
+        }
     }
     &__title {
         font-size: 25px;

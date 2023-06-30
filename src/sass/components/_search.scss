@@ -27,3 +27,17 @@
         color: $main-color;
     }
 }
+
+.form-search-white {
+    width: 300px; 
+    height: 35px;
+    border: 0.5px solid $border;
+    background: none;
+    padding-right: 0px;
+    input   {
+     background: none;
+    }
+    .button-search {
+     background: none;
+    }
+ }

@@ -1,39 +1,29 @@
 {
-  "name": "ijustdoit",
+  "name": "myproject",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nodelib/fs.stat": "^2.0.4",
-    "browser-sync": "^2.26.14",
+    "auto-prefixer": "^0.4.2",
+    "browser-sync": "^2.29.1",
+    "compress-images": "^2.0.5",
+    "gifsicle": "^5.3.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-real-favicon": "^0.3.2",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "nodelib": "^1.0.0"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.2.4",
-    "bootstrap-icons": "^1.0.0-alpha2",
-    "common": "^0.2.5",
-    "webp-converter": "2.2.3"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/julilosk/learn_js.git"
-  },
-  "bugs": {
-    "url": "https://github.com/julilosk/learn_js/issues"
-  },
-  "homepage": "https://github.com/julilosk/learn_js#readme",
-  "description": ""
+    "gulp-sass": "^5.1.0",
+    "pngquant-bin": "^6.0.0",
+    "sass": "^1.62.0"
+  }
 }

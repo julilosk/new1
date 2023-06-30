@@ -12,15 +12,15 @@
         padding-left: 0;
         font-size: 14px;
         border-bottom: 1px solid $border;
-        margin: 15px -15px;
+        margin: 15px -15px!important;
         &_main {
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: 0!important;
+            margin-right: 0!important;
             // margin: 0; 
         }
         &_tourn {
-            margin-top: 0;
-            margin-bottom: 0;
+            margin-top: 0!important;
+            margin-bottom: 0!important;
             border-bottom: none;
         }
     }
@@ -61,16 +61,19 @@
         &:last-child {
             margin-right: 0;
         }
-        // &::before,
-        // &::after {
-        //     display: none!important;
+         &::before,
+         &::after {
+            display: none!important;
         //     // margin: 0!important;
-        // }
+         }
     }
     &__content {
         margin-top: 35px;
         width: 100%;
         display: none;
+        @media (max-width: 575px) {
+            margin-top: 20px;
+        }  
         &_active {
             display: flex;
             flex-direction: column

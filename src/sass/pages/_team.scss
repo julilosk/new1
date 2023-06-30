@@ -18,8 +18,10 @@
             }
         }
     }
+    
     &__composition {
         justify-content: center;
+        margin-bottom: 25px;
     }
     &__card {
         background: linear-gradient(to left, #dbdde8 0%, #FFF, #dbdde8);
@@ -47,7 +49,11 @@
             // min-height: auto !important;
             margin-bottom: 25px;
         }
+        &-odd {
+            background: linear-gradient(to left, #9a9a9a 0%, #FFF, #9a9a9a);
+        }
     }
+    
     &__year {
         font-size: 20px;
         // letter-spacing: 1.5px;
@@ -93,6 +99,7 @@
             font-weight: bold;
             // color: #77AEDB;
             color: $third-color;
+            //content: "\2655";
             content: "\2606";
             transition-duration: 0.5s;
         }
@@ -110,5 +117,8 @@
                 color: $third-color;
             }
         }
+    }
+    &__note {
+        margin: 5px 0;
     }
 }
